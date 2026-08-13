@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="generator" content="Hugo 0.123.7"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My New Hugo Site | My New Hugo Site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fbfaf8;
+            font-family: Spectral, Georgia, serif;
+            color: #3f3b35;
+        }
+
+        a {
+            color: #7d2231;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #5a1622;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 44px;
+            border-bottom: 1px solid #e2ded6;
+            background: #fbfaf8;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-img {
+            width: 38px;
+            height: auto;
+        }
+
+        .logo-text h1 {
+            font: 600 17px/1 Spectral, serif;
+            color: #1c1a17;
+            margin: 0;
+            letter-spacing: 0.01em;
+        }
+
+        .logo-text .subtitle {
+            font: 500 9.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            font: 400 14px/1 Spectral, serif;
+            color: #3f3b35;
+        }
+
+        nav a {
+            position: relative;
+            padding-bottom: 3px;
+        }
+
+        nav a.active {
+            color: #7d2231;
+            border-bottom: 1.5px solid #7d2231;
+        }
+
+        nav a:not(.active):hover {
+            color: #5a1622;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fbfaf8;
+        }
+
+        footer {
+            padding: 26px 44px;
+            border-top: 1px solid #e2ded6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font: 400 13px Spectral, serif;
+            color: #6b665e;
+            background: #fbfaf8;
+        }
+
+        footer a {
+            color: #6b665e;
+        }
+
+        .footer-links {
+            font: 400 11px 'JetBrains Mono', monospace;
+            letter-spacing: 0.08em;
+        }
+
+        .footer-links a {
+            margin-left: 12px;
+        }
+
+        h1 {
+            font: 300 46px/1.12 Spectral, serif;
+            color: #1c1a17;
+            letter-spacing: -0.015em;
+            text-wrap: pretty;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font: 600 13px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #1c1a17;
+            margin: 28px 0 16px 0;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font: 400 22px/1.25 Spectral, serif;
+            color: #1c1a17;
+            text-wrap: pretty;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font: 400 16px/1.6 Spectral, serif;
+            color: #4a463f;
+            margin-bottom: 16px;
+            max-width: 65ch;
+            text-wrap: pretty;
+        }
+
+        .issue-header {
+            font: 500 10.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #7d2231;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .reading-time {
+            font: 500 11px/1 'JetBrains Mono', monospace;
+            color: #6b665e;
+        }
+
+        .button {
+            display: inline-block;
+            background: #7d2231;
+            color: #fff;
+            padding: 12px 22px;
+            font: 500 11px/1.5 'JetBrains Mono', monospace;
+            letter-spacing: 0.1em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .button:hover {
+            background: #5a1622;
+        }
+
+        .container {
+            padding: 52px 44px 40px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 56px;
+            align-items: start;
+        }
+
+        .sidebar-box {
+            border: 1px solid #ded9d1;
+            background: #f5f2ec;
+        }
+
+        .sidebar-header {
+            padding: 14px 18px;
+            border-bottom: 1px solid #ded9d1;
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+        }
+
+        .sidebar-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 18px;
+            border-bottom: 1px solid #e6e1d9;
+            font: 400 14px Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .sidebar-row:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-row .value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        }
+
+        .card {
+            background: #fbfaf8;
+            padding: 26px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-bottom: 1px solid #e2ded6;
+        }
+
+        .card:last-child {
+            border-bottom: none;
+        }
+
+        .card-tag {
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #7d2231;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font: 400 22px/1.25 Spectral, serif;
+            color: #1c1a17;
+            text-wrap: pretty;
+            margin: 0;
+        }
+
+        .card-text {
+            font: 400 15px/1.55 Spectral, serif;
+            color: #57534c;
+            margin: 0;
+        }
+
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            padding-top: 4px;
+        }
+
+        .tag {
+            font: 400 10.5px/1 'JetBrains Mono', monospace;
+            color: #6b665e;
+            border: 1px solid #ded9d1;
+            padding: 5px 8px;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="/logo.png" alt="Ghosts in the Wire" class="logo-img">
+            <div class="logo-text">
+                <h1>My New Hugo Site</h1>
+                <div class="subtitle"></div>
+            </div>
+        </div>
+        <nav>
+            
+        </nav>
+    </header>
+
+    <main>
+        
+<div style="padding: 48px 44px;">
+    <h1>Your Site</h1>
+    <p>Welcome to your threat research site.</p>
+    
+    <h2 style="margin-top: 40px;">All Pages</h2>
+    
+    <div style="padding: 20px 0; border-bottom: 1px solid #e2ded6;">
+        <p><strong>My New Hugo Site</strong> (page)</p>
+        <p><a href="http://localhost:1313/">View</a></p>
+    </div>
+    
+    <div style="padding: 20px 0; border-bottom: 1px solid #e2ded6;">
+        <p><strong>Your first threat research issue</strong> (issues)</p>
+        <p><a href="http://localhost:1313/issue-33/">View</a></p>
+    </div>
+    
+    <div style="padding: 20px 0; border-bottom: 1px solid #e2ded6;">
+        <p><strong>Categories</strong> (categories)</p>
+        <p><a href="http://localhost:1313/categories/">View</a></p>
+    </div>
+    
+    <div style="padding: 20px 0; border-bottom: 1px solid #e2ded6;">
+        <p><strong>Tags</strong> (tags)</p>
+        <p><a href="http://localhost:1313/tags/">View</a></p>
+    </div>
+    
+</div>
+
+    </main>
+
+    <footer>
+        <span>My New Hugo Site · Written and maintained by </span>
+        <div class="footer-links">
+            <span>RSS</span>
+            <span>·</span>
+            <a href="https://github.com/">GITHUB</a>
+            <span>·</span>
+            <span>CONTACT</span>
+        </div>
+    </footer>
+</body>
+</html>

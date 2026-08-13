@@ -1,0 +1,14 @@
+{{ define "main" }}
+<div style="padding: 48px 44px;">
+    <h1>Your Site</h1>
+    <p>Welcome to your threat research site.</p>
+    
+    <h2 style="margin-top: 40px;">All Pages</h2>
+    {{ range site.Pages }}
+    <div style="padding: 20px 0; border-bottom: 1px solid #e2ded6;">
+        <p><strong>{{ .Title }}</strong> ({{ .Type }})</p>
+        <p><a href="{{ .Permalink }}">View</a></p>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

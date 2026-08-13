@@ -1,0 +1,37 @@
+ baseURL = "https://dcollette4456.github.io/"
+languageCode = "en-us"
+title = "Ghosts in the Wire"
+
+
+  [[menu.main]]
+    name = "Latest"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
+    weight = 2
+  [[menu.main]]
+    name = "Hunt Library"
+    url = "/hunts/"
+    weight = 3
+  [[menu.main]]
+    name = "Coverage"
+    url = "/coverage/"
+    weight = 4
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    weight = 5
+
+[params]
+  subtitle = "CYBER THREAT HIGHLIGHTS"
+  author = "MSG Collette, David"
+  description = "Weekly threat research on cyber intrusions and threat actor behavior"
+  twitter = "your-handle"
+  github = "dcollette4456"
+
+[outputFormats]
+  [outputFormats.HTML]
+    mediatype = "text/html"
+    baseName = "index"

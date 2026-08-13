@@ -1,14 +1,78 @@
 {{ define "main" }}
-<div style="padding: 48px 44px;">
-    <h1>Your Site</h1>
-    <p>Welcome to your threat research site.</p>
-    
-    <h2 style="margin-top: 40px;">All Pages</h2>
-    {{ range site.Pages }}
-    <div style="padding: 20px 0; border-bottom: 1px solid #e2ded6;">
-        <p><strong>{{ .Title }}</strong> ({{ .Type }})</p>
-        <p><a href="{{ .Permalink }}">View</a></p>
+<div class="container">
+    <div class="content">
+        {{ $latest := first 1 (where .Site.RegularPages "Type" "issues") }}
+        {{ range $latest }}
+        <article>
+            <div class="issue-header">ISSUE {{ .Params.issueNumber }} · {{ .Date.Format "2 JANUARY 2006" }}</div>
+            <h1>{{ .Title }}</h1>
+            <p>{{ .Params.excerpt }}</p>
+            <a href="{{ .Permalink }}" style="font: 400 15px/1 Spectral, serif; color: #7d2231; border-bottom: 1px solid #c9a3ab; padding-bottom: 3px;">Read the full issue</a>
+            <span class="reading-time" style="margin-left: 20px;">{{ .Params.readingTime }}</span>
+        </article>
+
+        {{ if .Params.stats }}
+        <div class="sidebar-box">
+            <div class="sidebar-header">THIS ISSUE AT A GLANCE</div>
+            {{ range .Params.stats }}
+            <div class="sidebar-row">
+                <span>{{ .label }}</span>
+                <span class="value">{{ .value }}</span>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>
+
+{{ $issues := where .Site.RegularPages "Type" "issues" }}
+{{ if $issues }}
+<div style="padding: 40px 44px 48px; display: flex; flex-direction: column; gap: 26px; border-top: 1px solid #e2ded6;">
+    {{ range first 1 $issues }}
+    {{ if .Params.behaviors }}
+    <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #e2ded6; padding-bottom: 12px;">
+        <h2>BEHAVIORS THIS WEEK</h2>
+        <span style="font: 400 14px Spectral, serif; color: #7d2231;"><a href="/behaviors/">All behaviors →</a></span>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #e2ded6; border: 1px solid #e2ded6;">
+        {{ range .Params.behaviors }}
+        <div class="card">
+            <div class="card-tag">{{ .id }} · {{ .tactic }}</div>
+            <h3 class="card-title">{{ .title }}</h3>
+            <p class="card-text">{{ .description }}</p>
+            <div class="tags">
+                {{ range .techniques }}
+                <span class="tag">{{ . }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
     </div>
     {{ end }}
+    {{ end }}
+</div>
+{{ end }}
+
+<div style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6; display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">WEEKLY, BY EMAIL</div>
+        <p style="margin: 0; font: 400 17px/1.5 Spectral, serif; color: #3f3b35; max-width: 44ch;">One issue every Monday. Behavior-first analysis, ATT&CK mapping, and queries you can run the same day.</p>
+        <div style="display: flex; gap: 0; max-width: 400px; margin-top: 6px;">
+            <input type="email" placeholder="you@organization.com" style="flex: 1; border: 1px solid #cfc9c0; border-right: none; background: #fff; padding: 12px 14px; font: 400 14px Spectral, serif; color: #a09a91;">
+            <button class="button" style="margin-top: 0;">SUBSCRIBE</button>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">RECENT ISSUES</div>
+        <div style="display: flex; flex-direction: column;">
+            {{ range first 3 (where .Site.RegularPages "Type" "issues") }}
+            <div style="display: flex; gap: 20px; padding: 11px 0; {{ if ne .Permalink "index.html" }}border-bottom: 1px solid #e2ded6;{{ end }} font: 400 15px Spectral, serif; color: #3f3b35;">
+                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">{{ .Params.issueNumber }}</span>
+                <a href="{{ .Permalink }}" style="color: #3f3b35;">{{ .Title }}</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
 </div>
 {{ end }}

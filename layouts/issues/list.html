@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div style="padding: 48px 44px 20px; display: flex; flex-direction: column; gap: 10px;">
+    <h1>Archive</h1>
+    <p style="max-width: 60ch;">{{ .Params.description | default "Every issue. Filter by tactic or technique to find prior coverage of a behavior before you build a new hunt." }}</p>
+</div>
+
+<div style="padding: 22px 44px; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #e2ded6;">
+    <span style="font: 500 10.5px/1 'JetBrains Mono', monospace; letter-spacing: .08em; color: #fff; background: #7d2231; padding: 7px 11px;">ALL</span>
+    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">EXECUTION</span>
+    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">PERSISTENCE</span>
+    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">DEFENSE EVASION</span>
+    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">LATERAL MOVEMENT</span>
+    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">C2</span>
+</div>
+
+<div style="display: flex; flex-direction: column;">
+    {{ range .Paginator.Pages }}
+    <div style="display: grid; grid-template-columns: 96px 1fr 220px; gap: 32px; padding: 26px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 5px;">
+            <span style="font: 500 20px/1 'JetBrains Mono', monospace; color: #7d2231;">{{ .Params.issueNumber }}</span>
+            <span style="font: 400 11px/1 'JetBrains Mono', monospace; color: #6b665e;">{{ .Date.Format "2 JAN" }}</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 7px;">
+            <h3 style="margin: 0; font: 400 21px/1.3 Spectral, serif; color: #1c1a17;"><a href="{{ .Permalink }}" style="color: #1c1a17;">{{ .Title }}</a></h3>
+            <p style="margin: 0; font: 400 15px/1.5 Spectral, serif; color: #57534c;">{{ .Params.excerpt }}</p>
+        </div>
+        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+            {{ range first 2 .Params.behaviors }}
+            <span style="font: 400 10px/1 'JetBrains Mono', monospace; color: #6b665e; border: 1px solid #ded9d1; padding: 5px 7px;">{{ .tactic }}</span>
+            {{ end }}
+        </div>
+    </div>
+    {{ end }}
+</div>
+
+<div style="padding: 26px 44px; border-top: 1px solid #e2ded6; display: flex; justify-content: center; gap: 14px; font: 400 12px 'JetBrains Mono', monospace; color: #6b665e;">
+    {{ if .Paginator.HasPrev }}<a href="{{ .Paginator.Prev.URL }}">← PREV</a>{{ end }}
+    {{ range .Paginator.Pagers }}
+    {{ if eq .PageNumber .Paginator.PageNumber }}<span style="color: #7d2231;">{{ .PageNumber }}</span>{{ else }}<a href="{{ .URL }}">{{ .PageNumber }}</a>{{ end }}
+    {{ end }}
+    {{ if .Paginator.HasNext }}<a href="{{ .Paginator.Next.URL }}">NEXT →</a>{{ end }}
+</div>
+{{ end }}

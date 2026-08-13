@@ -13,12 +13,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: latest
       - run: hugo --minify
-      - uses: actions/upload-pages-artifact@v2
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 

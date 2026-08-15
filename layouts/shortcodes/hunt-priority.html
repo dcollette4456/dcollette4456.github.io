@@ -1,0 +1,9 @@
+{{- $label := .Get "label" | default "Hunt Priority" -}}
+{{- $collection := .Get "collection" -}}
+<div class="hunt-priority">
+    <div class="hunt-priority-header">
+        <strong>Hunt Priority [{{ $label }}]</strong>
+        {{- with $collection }}Collection point: {{ . }}{{ end }}
+    </div>
+    {{ .Page.RenderString .Inner }}
+</div>

@@ -4,7 +4,7 @@
         {{ $latest := first 1 (where .Site.RegularPages "Type" "issues") }}
         {{ range $latest }}
         <article>
-            <div class="issue-header">ISSUE {{ .Params.issueNumber }} · {{ .Date.Format "2 JANUARY 2006" }}</div>
+            <div class="issue-header">ISSUE {{ .Params.issueNumber }} · {{ .Date.Format "2 January 2006" | upper }}</div>
             <h1>{{ .Title }}</h1>
             <p>{{ .Params.excerpt }}</p>
             <a href="{{ .Permalink }}" style="font: 400 15px/1 Spectral, serif; color: #7d2231; border-bottom: 1px solid #c9a3ab; padding-bottom: 3px;">Read the full issue</a>

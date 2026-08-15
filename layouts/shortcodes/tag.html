@@ -1,0 +1,10 @@
+{{- $code := .Get 0 -}}
+{{- $prefix := index (split $code "-") 0 | lower -}}
+{{- $class := "tag-badge " -}}
+{{- if eq $prefix "am" }}{{ $class = print $class "tag-am" }}
+{{- else if eq $prefix "ix" }}{{ $class = print $class "tag-ix" }}
+{{- else if eq $prefix "gt" }}{{ $class = print $class "tag-gt" }}
+{{- else if eq $prefix "sp" }}{{ $class = print $class "tag-sp" }}
+{{- else }}{{ $class = print $class "tag-am" }}
+{{- end -}}
+<span class="{{ $class }}">[{{ $code | upper }}]</span>

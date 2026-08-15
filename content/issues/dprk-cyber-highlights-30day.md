@@ -1,5 +1,5 @@
 ---
-title: "DPRK Cyber Threat Highlights — 30-Day Look Back"
+title: "AI-Assisted Espionage: Kimsuky's Automated Document Analysis"
 date: 2026-08-11
 type: "issues"
 issueNumber: 34

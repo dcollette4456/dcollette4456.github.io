@@ -1,31 +1,91 @@
 {{ define "main" }}
-<div class="container">
-    <div class="content">
-        <article>
-            <div class="issue-header">ISSUE {{ .Params.issueNumber }} · {{ .Date.Format "2 JANUARY 2006" }}</div>
-            <h1>{{ .Title }}</h1>
-            <p>{{ .Params.excerpt }}</p>
-            <a href="{{ .Permalink }}" class="button">Read the full issue</a>
-            <span class="reading-time">{{ .Params.readingTime }}</span>
-
-            <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid #e2ded6;">
-                {{ .Content }}
+<article>
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="article-badge-row">
+                {{ with .Params.primaryThreat }}<span>{{ . }}</span>{{ end }}
+                {{ with .Params.dateRange }}<span class="sep">·</span><span>{{ . }}</span>{{ end }}
+                {{ with .Params.version }}<span class="sep">·</span><span>V{{ . }}</span>{{ end }}
             </div>
-        </article>
+            <h1>{{ .Title }}</h1>
+            {{ with (.Params.dek | default .Params.excerpt) }}<p class="article-dek">{{ . }}</p>{{ end }}
+        </div>
+        <div class="article-info-grid">
+            <div class="info-item">
+                <span class="info-label">AUTHOR</span>
+                <span class="info-value">{{ .Params.author | default .Site.Params.author }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">PUBLISHED</span>
+                <span class="info-value">{{ .Date.Format "2 January 2006" }}</span>
+            </div>
+            {{ with .Params.version }}
+            <div class="info-item">
+                <span class="info-label">VERSION</span>
+                <span class="info-value">{{ . }}</span>
+            </div>
+            {{ end }}
+            {{ with .Params.sourceBasis }}
+            <div class="info-item info-item-wide">
+                <span class="info-label">SOURCE BASIS</span>
+                <span class="info-value">{{ . }}</span>
+            </div>
+            {{ end }}
+        </div>
     </div>
 
-    {{ if .Params.stats }}
-    <div class="sidebar-box">
-        <div class="sidebar-header">THIS ISSUE AT A GLANCE</div>
-        {{ range .Params.stats }}
-        <div class="sidebar-row">
-            <span>{{ .label }}</span>
-            <span class="value">{{ .value }}</span>
+    <div class="article-layout">
+        <aside class="article-sidebar">
+            {{ if .TableOfContents }}
+            <div>
+                <div class="sidebar-label">CONTENTS</div>
+                {{ .TableOfContents }}
+            </div>
+            {{ end }}
+            {{ if .Params.huntPriorities }}
+            <div class="sidebar-divider"></div>
+            <div>
+                <div class="sidebar-label">HUNT PRIORITIES</div>
+                <div class="hunt-priorities-list">
+                    {{ range .Params.huntPriorities }}<span>{{ . }}</span>{{ end }}
+                </div>
+            </div>
+            {{ end }}
+            {{ if .Params.stats }}
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-box">
+                <div class="sidebar-header">AT A GLANCE</div>
+                {{ range .Params.stats }}
+                <div class="sidebar-row">
+                    <span>{{ .label }}</span>
+                    <span class="value">{{ .value }}</span>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+        </aside>
+
+        <div class="article-body">
+            {{ if .Params.classificationLegend }}
+            <div class="classification-box">
+                <div class="sidebar-label">INFORMATION CLASSIFICATION SYSTEM</div>
+                <div class="classification-rows">
+                    <div class="classification-row"><span class="tag-badge tag-am">[AM]</span><span><strong>Ambient:</strong> Widely distributed information, standard training data, general public knowledge</span></div>
+                    <div class="classification-row"><span class="tag-badge tag-ix">[IX]</span><span><strong>Indexed:</strong> Publicly available but requires deliberate searching, academic databases, archived materials</span></div>
+                    <div class="classification-row"><span class="tag-badge tag-gt">[GT]</span><span><strong>Gated:</strong> Behind access restrictions, paywalls, subscriptions, authentication requirements</span></div>
+                    <div class="classification-row"><span class="tag-badge tag-sp">[SP]</span><span><strong>Specialized:</strong> Requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</span></div>
+                </div>
+            </div>
+            {{ end }}
+
+            {{ .Content }}
         </div>
-        {{ end }}
     </div>
+
+    {{ with .Params.disclaimer }}
+    <p class="article-disclaimer">{{ . }}</p>
     {{ end }}
-</div>
+</article>
 
 {{ if .Params.behaviors }}
 <div style="padding: 40px 44px 48px; display: flex; flex-direction: column; gap: 26px; border-top: 1px solid #e2ded6;">
@@ -71,4 +131,27 @@
         </div>
     </div>
 </div>
+
+{{ if .TableOfContents }}
+<script>
+(function () {
+    var headings = document.querySelectorAll('.article-body h2[id], .article-body h3[id]');
+    var links = document.querySelectorAll('#TableOfContents a[href^="#"]');
+    if (!headings.length || !links.length) return;
+    var linkByHash = {};
+    links.forEach(function (a) { linkByHash[a.getAttribute('href')] = a; });
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            var link = linkByHash['#' + entry.target.id];
+            if (!link) return;
+            if (entry.isIntersecting) {
+                links.forEach(function (a) { a.classList.remove('active'); });
+                link.classList.add('active');
+            }
+        });
+    }, { rootMargin: '-10% 0px -70% 0px' });
+    headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>
+{{ end }}
 {{ end }}

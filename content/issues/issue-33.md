@@ -1,6 +1,6 @@
 ---
 title: "Your first threat research issue"
-date: 2026-08-13
+date: 2026-08-04
 type: "issues"
 issueNumber: 33
 readingTime: "5 min"

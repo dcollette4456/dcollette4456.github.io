@@ -9,6 +9,7 @@ dek: "Open-Source Intelligence Summary: 30-Day Look Back. Threat Operations Asse
 primaryThreat: "DPRK"
 dateRange: "12 JUL – 11 AUG 2026"
 version: 7
+reportSerial: "TI-20260811-001"
 author: "not important"
 sourceBasis: "Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations."
 classificationLegend: true
@@ -102,50 +103,41 @@ Threat hunters should prioritize hunts for exploitation of zero-days in mandator
 
 Nine technical sources summarized below as reference material for threat hunters. For detailed technical analysis, MITRE ATT&CK mapping, indicators of compromise, and reverse-engineering detail, follow source links directly.
 
-**01. Genians: Kimsuky AI/LLM Integration (Operation GitPower)** {{< tag "SP" >}}
-Genians Security Center, 10 Aug 2026 · Kimsuky/APT43 · [genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm](https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm)
-
+{{< source title=`01. Genians: Kimsuky AI/LLM Integration (Operation GitPower)` tag="SP" meta=`Genians Security Center, 10 Aug 2026 · Kimsuky/APT43 · [genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm](https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm)` >}}
 ZIP-archived malicious LNK files disguised as honorarium, legal/embassy, investment, and international documents. LNK execution triggers 3,800+ character obfuscated PowerShell command (300+ inserted spaces hiding payload from Properties view) staging scripts, setting scheduled-task persistence, and pulling RC4-encrypted AsyncRAT payloads disguised as PNG images from GitHub Raw Content API using hardcoded personal access token. Genians identified fully configured offline LLM stack (Ollama, GPT4All with LocalDocs retrieval-augmented-generation database of stolen files, Msty) plus Whisper speech-to-text on Kimsuky C2 infrastructure, first documented state-sponsored LLM environment on attack servers. Korean-dialect keystroke artifacts and DPRK hardware/software fingerprints (Arirang system, Astrill VPN) support attribution. Targets include diplomatic missions, military/security personnel, cryptocurrency platforms, policy/academic/international-cooperation professionals.
+{{< /source >}}
 
-**02. Fortinet: DPRK Campaigns with LNK and GitHub C2 (XenoRAT)** {{< tag "IX" >}}
-Fortinet FortiGuard Labs, Cara Lin, 2 Apr 2026 · XenoRAT cluster · [fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2](https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2)
-
+{{< source title=`02. Fortinet: DPRK Campaigns with LNK and GitHub C2 (XenoRAT)` tag="IX" meta=`Fortinet FortiGuard Labs, Cara Lin, 2 Apr 2026 · XenoRAT cluster · [fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2](https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2)` >}}
 LNK files disguised as investment/business-proposal PDFs (forged "Hangul Document" metadata) drop decoy PDFs while embedded XOR-obfuscated commands run multi-stage PowerShell: anti-VM/anti-analysis checks, scheduled-task persistence with SID-formatted names, host reconnaissance, and GitHub Raw Content/Contents API payload retrieval using hardcoded personal access tokens, ultimately deploying XenoRAT. Attacker-controlled GitHub accounts: motoralis (primary hub), God0808RAMA, Pigresy80, entire73, pandora0009, brandonleeodd93-blip. South Korean fintech/investment sector targeting, active since 2024–2026.
+{{< /source >}}
 
-**03. AhnLab ASEC: Operation Double Barrel (Primary Technical Analysis)** {{< tag "SP-AGG" >}}
-AhnLab ASEC with NIS/NPA/KISA/FSI, 29 Jul–11 Aug 2026 (v1.2) · [asec.ahnlab.com/en/94696](https://asec.ahnlab.com/en/94696/)
-
+{{< source title=`03. AhnLab ASEC: Operation Double Barrel (Primary Technical Analysis)` tag="SP-AGG" meta=`AhnLab ASEC with NIS/NPA/KISA/FSI, 29 Jul–11 Aug 2026 (v1.2) · [asec.ahnlab.com/en/94696](https://asec.ahnlab.com/en/94696/)` >}}
 Primary technical source for 30 July advisory wave. AhnLab documents exploitation of unpatched buffer-overflow zero-day in AnySign4PC via watering-hole compromise requiring no user interaction. Exploit chain delivers Struggle (SIGNBT 3.0) and Brandoor (COPPERHEDGE) backdoors via steganographic PNG exchanges over local WebSocket. Key assessment: "numerous commonalities" identified between espionage cluster and Gunra ransomware intrusions (identical vulnerability, matching malware/filename patterns, identical SSH key fingerprint, shared reverse-tunnel/C2 infrastructure) but relationship between operators explicitly remains unconfirmed. Espionage cluster targeted 72+ organizations in 2026; Gunra claimed 32 global victims.
+{{< /source >}}
 
-**04. ENKI WhiteHat: Watering Hole Malware Analysis** {{< tag "SP" >}}
-ENKI Corp with NIS/NPA/KISA/FSI, 30 Jul 2026 · [enki.co.kr/en/media-center/blog/joint-cybersecurity-advisory-watering-hole-malware-analysis](https://www.enki.co.kr/en/media-center/blog/joint-cybersecurity-advisory-watering-hole-malware-analysis)
-
+{{< source title=`04. ENKI WhiteHat: Watering Hole Malware Analysis` tag="SP" meta=`ENKI Corp with NIS/NPA/KISA/FSI, 30 Jul 2026 · [enki.co.kr/en/media-center/blog/joint-cybersecurity-advisory-watering-hole-malware-analysis](https://www.enki.co.kr/en/media-center/blog/joint-cybersecurity-advisory-watering-hole-malware-analysis)` >}}
 Malware-internals deep dive on AnySign4PC watering-hole chain describing three loader variants deploying COPPERHEDGE-family backdoor via ChaCha20/AES-128 in-memory decryption. Heavy anti-forensic tradecraft: self-deletion after memory loading, file restoration only at system shutdown, encrypted-only registry and NTFS ADS storage, service-hijacking and Security Support Provider persistence, C2 traffic disguised as Google search queries. Public text redacts concrete indicators; fuller technical indicators distributed through restricted channels.
+{{< /source >}}
 
-**05. S2W Talon: SIGNBT Malware Cluster Analysis** {{< tag "SP" >}}
-S2W Inc. (TALON), Medium, 30 Jul 2026 · Lazarus-linked (SIGNBT) · [s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf](https://s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf)
-
+{{< source title=`05. S2W Talon: SIGNBT Malware Cluster Analysis` tag="SP" meta=`S2W Inc. (TALON), Medium, 30 Jul 2026 · Lazarus-linked (SIGNBT) · [s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf](https://s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf)` >}}
 Deep reverse-engineering of three distinct SIGNBT malware clusters (Cases A, B, C) observed against South Korean software companies and government-adjacent targets. Each case uses different loader chain and configuration; version 1.2 introduces RSA-based key exchange, AES-256-CBC session encryption, and VMProtect code virtualization. Analysis emphasizes memory-resident, largely fileless tradecraft and argues for behavior-based detection over hash-based approaches.
+{{< /source >}}
 
-**06. PLAINBIT: Watering Hole Case Studies** {{< tag "SP" >}}
-PLAINBIT with NIS/NPA/KISA/FSI, 30 Jul 2026 · COPPERHEDGE operations · [plainbit.co.kr/data/bbsData/17853783441.pdf](https://plainbit.co.kr/data/bbsData/17853783441.pdf)
-
+{{< source title=`06. PLAINBIT: Watering Hole Case Studies` tag="SP" meta=`PLAINBIT with NIS/NPA/KISA/FSI, 30 Jul 2026 · COPPERHEDGE operations · [plainbit.co.kr/data/bbsData/17853783441.pdf](https://plainbit.co.kr/data/bbsData/17853783441.pdf)` >}}
 Case-study technical report on watering-hole compromises of supplier portals, community sites, news outlets, and association websites via SQL injection (SQLMAP) and RCE flaws in third-party security software. Post-compromise: privilege escalation via Windows driver CVEs and GodPotato, credential theft via Mimikatz/Pwdump7, reverse-SSH-tunnel C2 via renamed ssh.exe, anti-forensic cleanup with SDelete/CCleaner. Cross-campaign infrastructure correlation (shared SSH fingerprint, tunnel IP, domain) ties cluster to March 2026 Gunra ransomware intrusion.
+{{< /source >}}
 
-**07. KISA Joint Advisory: State-Sponsored Hacking Groups** {{< tag "AM" >}}
-NIS/NPA/KISA/FSI, 30 Jul 2026 · Government-level advisory · [boho.or.kr/kr/bbs/view.do](https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&menuNo=205020&nttId=72144)
-
+{{< source title=`07. KISA Joint Advisory: State-Sponsored Hacking Groups` tag="AM" meta=`NIS/NPA/KISA/FSI, 30 Jul 2026 · Government-level advisory · [boho.or.kr/kr/bbs/view.do](https://www.boho.or.kr/kr/bbs/view.do?bbsId=B0000133&menuNo=205020&nttId=72144)` >}}
 Government warning covering resume/job-offer/investment-themed spearphishing and watering-hole attacks on compromised Korean websites (news, healthcare, education, manufacturing) combined with mandatory financial/security software exploitation. Advisory frames risk as broad (any user running vulnerable required software) and directs incident reporting to KISA or hotline 118. Full technical detail in attached PDF.
+{{< /source >}}
 
-**08. iZOOlogic / Tech Times: Contagious Interview Campaign** {{< tag "SP-AGG" >}}
-iZOOlogic via Tech Times, 7 Aug 2026 · Contagious Interview (UNC5342) · [techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm](https://www.techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm)
-
+{{< source title=`08. iZOOlogic / Tech Times: Contagious Interview Campaign` tag="SP-AGG" meta=`iZOOlogic via Tech Times, 7 Aug 2026 · Contagious Interview (UNC5342) · [techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm](https://www.techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm)` >}}
 Researcher gained 22 months covert visibility into DPRK operator infrastructure after operators infected their own workstations with their own malware, accessing approximately 5 terabytes of exfiltrated operator data. Identified 1,640 organizations across 57 countries with detectable compromise footprint, 700–800 seriously damaged (root-level server access, AWS/cloud compromise, developer-account takeover, cryptocurrency wallet theft). Victims span crypto/fintech, healthcare, technology, financial services, government (Italy, Belgium). IT contractors with standing access across 30+ client organizations created structural amplification.
+{{< /source >}}
 
-**09. Al Jazeera / Genians: AI-Assisted Operations Reporting** {{< tag "AM" >}}
-Al Jazeera (Genians findings), 10 Aug 2026 · Kimsuky/APT43 · [aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says](https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says)
-
+{{< source title=`09. Al Jazeera / Genians: AI-Assisted Operations Reporting` tag="AM" meta=`Al Jazeera (Genians findings), 10 Aug 2026 · Kimsuky/APT43 · [aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says](https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says)` >}}
 Coverage documenting Kimsuky's use of AI-generated documents (fake research reports, invitations) in spearphishing campaigns. Genians cautioned that traditional red flags (grammar errors, formatting inconsistencies) no longer provide reliable detection signals when AI-assisted content generation is operational.
+{{< /source >}}
 
 ## References
 

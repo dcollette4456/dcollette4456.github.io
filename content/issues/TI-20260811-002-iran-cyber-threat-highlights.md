@@ -1,5 +1,5 @@
 ---
-title: "Iran Cyber Threat Highlights - Multi-Vector Operational Escalation"
+title: "Disabling the Fail-Safes: CyberAv3ngers' PLC Attacks on U.S. Water Systems"
 date: 2026-08-11T12:00:00
 type: "issues"
 issueNumber: 35

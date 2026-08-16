@@ -6,21 +6,21 @@
     <description>Recent content on Knights Who Say Ni</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 12:00:00 +0000</lastBuildDate>
     <atom:link href="https://dcollette4456.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Iran Cyber Threat Highlights - Multi-Vector Operational Escalation</title>
+      <link>https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/</link>
+      <pubDate>Tue, 11 Aug 2026 12:00:00 +0000</pubDate>
+      <guid>https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/</guid>
+      <description>Executive Summary [AM] Open-source reporting over the past thirty days shows sustained Iranian state-sponsored cyber operations across three distinct vectors: operational technology targeting against U.S. critical infrastructure water systems, espionage and credential harvesting campaigns against global government and defense sectors, and emerging AI-assisted malware development and deployment. Four developments establish immediate defensive priorities.&#xA;[IX] Iranian-affiliated actors conducted a coordinated attack on more than thirty Minnesota municipal water systems on 26 July, four days following a CISA advisory update warning of expanded programmable logic controller exploitation across Rockwell, Siemens, and Schneider Electric platforms.</description>
+    </item>
     <item>
       <title>AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</title>
       <link>https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/</link>
       <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
       <guid>https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/</guid>
       <description>Executive Summary [AM] Open-source reporting over the past thirty days documents continued, multi-pronged North Korean cyber activity targeting South Korean government, defense contractors, financial institutions, and software supply chains. This activity demonstrates evolving operational tradecraft and infrastructure patterns worth flagging for threat hunters working Korean-adjacent environments.&#xA;[IX] Four significant developments stand out this cycle. First, four South Korean security agencies formally linked Lazarus Group to the Gunra ransomware operation through technical analysis, publishing joint advisories on shared infrastructure and tooling.</description>
-    </item>
-    <item>
-      <title>Iran Cyber Threat Highlights - Multi-Vector Operational Escalation</title>
-      <link>https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/</link>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate>
-      <guid>https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/</guid>
-      <description>Executive Summary [AM] Open-source reporting over the past thirty days shows sustained Iranian state-sponsored cyber operations across three distinct vectors: operational technology targeting against U.S. critical infrastructure water systems, espionage and credential harvesting campaigns against global government and defense sectors, and emerging AI-assisted malware development and deployment. Four developments establish immediate defensive priorities.&#xA;[IX] Iranian-affiliated actors conducted a coordinated attack on more than thirty Minnesota municipal water systems on 26 July, four days following a CISA advisory update warning of expanded programmable logic controller exploitation across Rockwell, Siemens, and Schneider Electric platforms.</description>
     </item>
     <item>
       <title>Your first threat research issue</title>

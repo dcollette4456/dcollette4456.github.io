@@ -1,20 +1,20 @@
 {{ define "main" }}
 <div class="container">
     <div class="content">
-        {{ $latest := first 1 (where .Site.RegularPages "Type" "issues") }}
-        {{ range $latest }}
-        <article>
-            <div class="issue-header">ISSUE {{ .Params.issueNumber }} · {{ .Date.Format "2 January 2006" | upper }}</div>
-            <h1>{{ .Title }}</h1>
-            <p>{{ .Params.excerpt }}</p>
-            <a href="{{ .Permalink }}" style="font: 400 15px/1 Spectral, serif; color: #7d2231; border-bottom: 1px solid #c9a3ab; padding-bottom: 3px;">Read the full issue</a>
-            <span class="reading-time" style="margin-left: 20px;">{{ .Params.readingTime }}</span>
+        {{ $allIssues := sort (where .Site.RegularPages "Type" "issues") "Date" "desc" }}
+        {{ range $i, $e := $allIssues }}
+        <article{{ if gt $i 0 }} style="border-top: 1px solid #e2ded6; padding-top: 40px;"{{ end }}>
+            <div class="issue-header">ISSUE {{ $e.Params.issueNumber }} · {{ $e.Date.Format "2 January 2006" | upper }}</div>
+            <h1>{{ $e.Title }}</h1>
+            <p>{{ $e.Params.excerpt }}</p>
+            <a href="{{ $e.Permalink }}" style="font: 400 15px/1 Spectral, serif; color: #7d2231; border-bottom: 1px solid #c9a3ab; padding-bottom: 3px;">Read the full issue</a>
+            <span class="reading-time" style="margin-left: 20px;">{{ $e.Params.readingTime }}</span>
         </article>
 
-        {{ if .Params.stats }}
-        <div class="sidebar-box">
+        {{ if $e.Params.stats }}
+        <div class="sidebar-box"{{ if gt $i 0 }} style="margin-top: 40px;"{{ end }}>
             <div class="sidebar-header">THIS ISSUE AT A GLANCE</div>
-            {{ range .Params.stats }}
+            {{ range $e.Params.stats }}
             <div class="sidebar-row">
                 <span>{{ .label }}</span>
                 <span class="value">{{ .value }}</span>
@@ -26,10 +26,9 @@
     </div>
 </div>
 
-{{ $issues := where .Site.RegularPages "Type" "issues" }}
-{{ if $issues }}
+{{ if $allIssues }}
 <div style="padding: 40px 44px 48px; display: flex; flex-direction: column; gap: 26px; border-top: 1px solid #e2ded6;">
-    {{ range first 1 $issues }}
+    {{ range first 1 $allIssues }}
     {{ if .Params.behaviors }}
     <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #e2ded6; padding-bottom: 12px;">
         <h2>BEHAVIORS THIS WEEK</h2>
@@ -66,7 +65,7 @@
     <div style="display: flex; flex-direction: column; gap: 14px;">
         <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">RECENT ISSUES</div>
         <div style="display: flex; flex-direction: column;">
-            {{ range first 3 (where .Site.RegularPages "Type" "issues") }}
+            {{ range first 3 $allIssues }}
             <div style="display: flex; gap: 20px; padding: 11px 0; {{ if ne .Permalink "index.html" }}border-bottom: 1px solid #e2ded6;{{ end }} font: 400 15px Spectral, serif; color: #3f3b35;">
                 <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">{{ .Params.issueNumber }}</span>
                 <a href="{{ .Permalink }}" style="color: #3f3b35;">{{ .Title }}</a>

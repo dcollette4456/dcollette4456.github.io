@@ -1,6 +1,6 @@
 ---
 title: "Iran Cyber Threat Highlights - Multi-Vector Operational Escalation"
-date: 2026-08-11
+date: 2026-08-11T12:00:00
 type: "issues"
 issueNumber: 35
 readingTime: "10 min"

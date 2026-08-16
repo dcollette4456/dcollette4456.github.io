@@ -11,6 +11,12 @@
             {{ with (.Params.dek | default .Params.excerpt) }}<p class="article-dek">{{ . }}</p>{{ end }}
         </div>
         <div class="article-info-grid">
+            {{ with .Params.reportSerial }}
+            <div class="info-item">
+                <span class="info-label">REPORT SERIAL</span>
+                <span class="info-value">{{ . }}</span>
+            </div>
+            {{ end }}
             <div class="info-item">
                 <span class="info-label">AUTHOR</span>
                 <span class="info-value">{{ .Params.author | default .Site.Params.author }}</span>

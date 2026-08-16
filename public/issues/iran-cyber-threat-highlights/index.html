@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iran Cyber Threat Highlights - Multi-Vector Operational Escalation | Knights Who Say Ni</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e8e5df;
+            font-family: Spectral, Georgia, serif;
+            color: #3f3b35;
+        }
+
+        a {
+            color: #7d2231;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #5a1622;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 44px;
+            border-bottom: 1px solid #e2ded6;
+            background: #fbfaf8;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: auto;
+        }
+
+        .logo-text h1 {
+            font: 600 17px/1 Spectral, serif;
+            color: #1c1a17;
+            margin: 0;
+            letter-spacing: 0.01em;
+        }
+
+        .logo-text .subtitle {
+            font: 500 9.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+        }
+
+        nav {
+            display: flex;
+            gap: 30px;
+            font: 400 14px/1 Spectral, serif;
+            color: #3f3b35;
+        }
+
+        nav a {
+            position: relative;
+            padding-bottom: 3px;
+        }
+
+        nav a.active {
+            color: #7d2231;
+            border-bottom: 1.5px solid #7d2231;
+        }
+
+        nav a:not(.active):hover {
+            color: #5a1622;
+        }
+
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: #fbfaf8;
+            border-left: 1px solid #ded9d1;
+            border-right: 1px solid #ded9d1;
+        }
+
+        footer {
+            padding: 26px 44px;
+            border-top: 1px solid #e2ded6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font: 400 13px Spectral, serif;
+            color: #6b665e;
+            background: #fbfaf8;
+        }
+
+        footer a {
+            color: #6b665e;
+        }
+
+        .footer-links {
+            font: 400 11px 'JetBrains Mono', monospace;
+            letter-spacing: 0.08em;
+        }
+
+        .footer-links a {
+            margin-left: 12px;
+        }
+
+        h1 {
+            font: 300 46px/1.12 Spectral, serif;
+            color: #1c1a17;
+            letter-spacing: -0.015em;
+            text-wrap: pretty;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font: 600 13px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #1c1a17;
+            margin: 28px 0 16px 0;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font: 400 22px/1.25 Spectral, serif;
+            color: #1c1a17;
+            text-wrap: pretty;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font: 400 16px/1.6 Spectral, serif;
+            color: #4a463f;
+            margin-bottom: 16px;
+            max-width: 65ch;
+            text-wrap: pretty;
+        }
+
+        .issue-header {
+            font: 500 10.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #7d2231;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .reading-time {
+            font: 500 11px/1 'JetBrains Mono', monospace;
+            color: #6b665e;
+        }
+
+        .button {
+            display: inline-block;
+            background: #7d2231;
+            color: #fff;
+            padding: 12px 22px;
+            font: 500 11px/1.5 'JetBrains Mono', monospace;
+            letter-spacing: 0.1em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .button:hover {
+            background: #5a1622;
+        }
+
+        .container {
+            padding: 52px 44px 40px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 56px;
+            align-items: start;
+        }
+
+        .sidebar-box {
+            border: 1px solid #ded9d1;
+            background: #f5f2ec;
+        }
+
+        .sidebar-header {
+            padding: 14px 18px;
+            border-bottom: 1px solid #ded9d1;
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+        }
+
+        .sidebar-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 18px;
+            border-bottom: 1px solid #e6e1d9;
+            font: 400 14px Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .sidebar-row:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-row .value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        }
+
+        .card {
+            background: #fbfaf8;
+            padding: 26px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-bottom: 1px solid #e2ded6;
+        }
+
+        .card:last-child {
+            border-bottom: none;
+        }
+
+        .card-tag {
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #7d2231;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font: 400 22px/1.25 Spectral, serif;
+            color: #1c1a17;
+            text-wrap: pretty;
+            margin: 0;
+        }
+
+        .card-text {
+            font: 400 15px/1.55 Spectral, serif;
+            color: #57534c;
+            margin: 0;
+        }
+
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            padding-top: 4px;
+        }
+
+        .tag {
+            font: 400 10.5px/1 'JetBrains Mono', monospace;
+            color: #6b665e;
+            border: 1px solid #ded9d1;
+            padding: 5px 8px;
+        }
+
+         
+
+        .article-header {
+            padding: 56px 56px 40px;
+            border-bottom: 1px solid #e2ded6;
+        }
+
+        .article-header-inner {
+            max-width: 820px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .article-badge-row {
+            display: flex;
+            gap: 14px;
+            align-items: center;
+            font: 500 10.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #7d2231;
+            text-transform: uppercase;
+        }
+
+        .article-badge-row .sep {
+            color: #c9bfb4;
+        }
+
+        .article-header h1 {
+            margin: 0;
+            font: 300 40px/1.15 Spectral, serif;
+            letter-spacing: -0.02em;
+        }
+
+        .article-dek {
+            margin: 0;
+            font: 400 19px/1.55 Spectral, serif;
+            color: #4a463f;
+            max-width: 64ch;
+        }
+
+        .article-info-grid {
+            margin-top: 34px;
+            padding-top: 22px;
+            border-top: 1px solid #e2ded6;
+            display: grid;
+            grid-template-columns: repeat(4, auto) 1fr;
+            gap: 44px;
+            max-width: 1000px;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .info-label {
+            font: 500 9.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+        }
+
+        .info-value {
+            font: 400 15px Spectral, serif;
+            color: #1c1a17;
+        }
+
+        .info-item-wide .info-value {
+            font: 400 14px/1.5 Spectral, serif;
+            color: #57534c;
+        }
+
+        .article-layout {
+            display: grid;
+            grid-template-columns: 236px 1fr;
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+
+        .article-sidebar {
+            border-right: 1px solid #e2ded6;
+            padding: 36px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+            align-self: start;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar-label {
+            font: 500 9.5px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+            margin-bottom: 11px;
+        }
+
+        .sidebar-divider {
+            height: 1px;
+            background: #e2ded6;
+        }
+
+        #TableOfContents,
+        #TableOfContents ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        #TableOfContents ul {
+            margin-top: 6px;
+            margin-left: 12px;
+        }
+
+        #TableOfContents a {
+            font: 400 14px/1.35 Spectral, serif;
+            color: #3f3b35;
+            text-decoration: none;
+        }
+
+        #TableOfContents a:hover,
+        #TableOfContents a.active {
+            color: #7d2231;
+        }
+
+        .hunt-priorities-list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font: 400 13px/1.4 Spectral, serif;
+            color: #57534c;
+        }
+
+        .article-body {
+            padding: 36px 56px 56px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            max-width: 860px;
+            overflow-x: auto;
+        }
+
+        .article-body h2 {
+            font: 600 15px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.16em;
+            color: #1c1a17;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #e2ded6;
+            margin: 0 0 16px;
+            scroll-margin-top: 20px;
+        }
+
+        .article-body h3 {
+            font: 300 30px/1.28 Spectral, serif;
+            color: #1c1a17;
+            margin: 10px 0 0;
+        }
+
+        .article-body p {
+            font: 400 17px/1.68 Spectral, serif;
+            color: #3f3b35;
+            max-width: none;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            font: 400 17px/1.68 Spectral, serif;
+            color: #3f3b35;
+            padding-left: 22px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .classification-box {
+            border: 1px solid #ded9d1;
+            background: #f5f2ec;
+            padding: 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .classification-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font: 400 12.5px/1.4 Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .classification-row {
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+        }
+
+        .tag-badge {
+            flex: 0 0 auto;
+            display: inline-block;
+            width: 44px;
+            text-align: center;
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            padding: 4px 0;
+            margin-right: 5px;
+        }
+
+        p .tag-badge {
+            padding: 3px 5px;
+            width: auto;
+        }
+
+        .tag-am { background: #e4e0d6; color: #4a463f; }
+        .tag-ix { background: #d7dee2; color: #2f4450; }
+        .tag-gt { background: #e8dcc6; color: #5c4718; }
+        .tag-sp { background: #ecd7dc; color: #7d2231; }
+
+        .hunt-priority {
+            border-left: 3px solid #7d2231;
+            background: #f5f2ec;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 6px 0;
+        }
+
+        .hunt-priority-header {
+            font: 400 13px/1.6 'JetBrains Mono', monospace;
+            color: #1c1a17;
+        }
+
+        .hunt-priority-header strong {
+            font-weight: 500;
+            color: #7d2231;
+            display: block;
+        }
+
+        .hunt-priority p {
+            margin: 0;
+            font: 400 16px/1.65 Spectral, serif;
+        }
+
+        .article-body table {
+            width: 100%;
+            min-width: 640px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border: 1px solid #e2ded6;
+            font-size: 14px;
+        }
+
+        .article-body th:first-child,
+        .article-body td:first-child {
+            width: 9%;
+        }
+
+        .article-body th:nth-child(2),
+        .article-body td:nth-child(2) {
+            width: 22%;
+        }
+
+        .article-body th:last-child,
+        .article-body td:last-child {
+            width: 14%;
+        }
+
+        .article-body th {
+            background: #f5f2ec;
+            padding: 11px 12px;
+            font: 500 9.5px/1.3 'JetBrains Mono', monospace;
+            letter-spacing: 0.1em;
+            color: #3f3b35;
+            text-align: left;
+            vertical-align: bottom;
+            border-bottom: 1px solid #e2ded6;
+        }
+
+        .article-body td {
+            background: #fbfaf8;
+            padding: 14px 12px;
+            font: 400 13px/1.5 Spectral, serif;
+            color: #1c1a17;
+            border-top: 1px solid #e2ded6;
+            vertical-align: top;
+        }
+
+        .source-summary {
+            border: 1px solid #e2ded6;
+            background: #fbfaf8;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .source-summary-head {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .source-summary-title {
+            font: 600 15px/1.4 Spectral, serif;
+            color: #1c1a17;
+        }
+
+        .source-summary-meta {
+            font: 400 12px/1.5 'JetBrains Mono', monospace;
+            color: #857f74;
+            letter-spacing: 0.01em;
+        }
+
+        .source-summary-meta a {
+            color: #7d2231;
+        }
+
+        .source-summary-meta p {
+            margin: 0;
+        }
+
+        .source-summary-body {
+            font: 400 15px/1.6 Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .source-summary-body p {
+            margin: 0;
+        }
+
+        .article-disclaimer {
+            margin: 0 56px 48px;
+            padding-top: 26px;
+            border-top: 1px solid #e2ded6;
+            font: italic 400 14.5px/1.6 Spectral, serif;
+            color: #6b665e;
+            text-align: center;
+            max-width: 70ch;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .article-header,
+            .article-body {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+            .article-header h1 {
+                font-size: 34px;
+            }
+
+            .article-info-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .article-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .article-sidebar {
+                position: static;
+                border-right: none;
+                border-bottom: 1px solid #e2ded6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-section">
+            <img src="/images/logo.png" alt="Knights Who Say Ni" class="logo-img">
+            <div class="logo-text">
+                <h1>Knights Who Say Ni</h1>
+                <div class="subtitle">Ghosts in the Wires</div>
+            </div>
+        </div>
+        <nav>
+            
+            <a href="/" >Latest</a>
+            
+            <a href="/archive/" >Archive</a>
+            
+            <a href="/hunts/" >Hunt Library</a>
+            
+            <a href="/coverage/" >Coverage</a>
+            
+            <a href="/projects/" >Projects</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        
+<article>
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="article-badge-row">
+                <span>Iran</span>
+                <span class="sep">·</span><span>12 JUL – 11 AUG 2026</span>
+                <span class="sep">·</span><span>V1</span>
+            </div>
+            <h1>Iran Cyber Threat Highlights - Multi-Vector Operational Escalation</h1>
+            <p class="article-dek">Open-Source Intelligence Summary: 12 July - 11 August 2026. Threat Operations Assessment.</p>
+        </div>
+        <div class="article-info-grid">
+            
+            <div class="info-item">
+                <span class="info-label">REPORT SERIAL</span>
+                <span class="info-value">TI-20260811-002</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-label">AUTHOR</span>
+                <span class="info-value">not important</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">PUBLISHED</span>
+                <span class="info-value">11 August 2026</span>
+            </div>
+            
+            <div class="info-item">
+                <span class="info-label">VERSION</span>
+                <span class="info-value">1</span>
+            </div>
+            
+            
+            <div class="info-item info-item-wide">
+                <span class="info-label">SOURCE BASIS</span>
+                <span class="info-value">Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations.</span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="article-layout">
+        <aside class="article-sidebar">
+            
+            <div>
+                <div class="sidebar-label">CONTENTS</div>
+                <nav id="TableOfContents">
+  <ul>
+    <li><a href="#executive-summary">Executive Summary</a></li>
+    <li><a href="#scope-and-sourcing">Scope and Sourcing</a></li>
+    <li><a href="#incident-timeline-last-30-days">Incident Timeline (Last 30 Days)</a></li>
+    <li><a href="#threat-actor-highlights">Threat Actor Highlights</a></li>
+    <li><a href="#operational-impact-assessment">Operational Impact Assessment</a></li>
+    <li><a href="#emerging-tradecraft-patterns">Emerging Tradecraft Patterns</a></li>
+    <li><a href="#assessment-and-outlook">Assessment and Outlook</a></li>
+    <li><a href="#cross-source-technical-convergence-multi-vendor-plc-exploitation">Cross-Source Technical Convergence: Multi-Vendor PLC Exploitation</a></li>
+    <li><a href="#appendix-a-source-summaries">Appendix A: Source Summaries</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+            </div>
+            
+            
+            <div class="sidebar-divider"></div>
+            <div>
+                <div class="sidebar-label">HUNT PRIORITIES</div>
+                <div class="hunt-priorities-list">
+                    <span>Presence-stage: MuddyWater initial-access hardening (macros, MFA, password spray)</span><span>Engagement–Presence: CyberAv3ngers PLC exploitation (Rockwell/Siemens/Schneider)</span><span>Effect-stage: APT33 wiper deployment (Tickler, SHAPESHIFT)</span>
+                </div>
+            </div>
+            
+            
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-box">
+                <div class="sidebar-header">AT A GLANCE</div>
+                
+                <div class="sidebar-row">
+                    <span>Reporting window</span>
+                    <span class="value">30 days</span>
+                </div>
+                
+                <div class="sidebar-row">
+                    <span>Primary threat</span>
+                    <span class="value">Iran</span>
+                </div>
+                
+            </div>
+            
+        </aside>
+
+        <div class="article-body">
+            
+            <div class="classification-box">
+                <div class="sidebar-label">INFORMATION CLASSIFICATION SYSTEM</div>
+                <div class="classification-rows">
+                    <div class="classification-row"><span class="tag-badge tag-am">[AM]</span><span><strong>Ambient:</strong> Widely distributed information, standard training data, general public knowledge</span></div>
+                    <div class="classification-row"><span class="tag-badge tag-ix">[IX]</span><span><strong>Indexed:</strong> Publicly available but requires deliberate searching, academic databases, archived materials</span></div>
+                    <div class="classification-row"><span class="tag-badge tag-gt">[GT]</span><span><strong>Gated:</strong> Behind access restrictions, paywalls, subscriptions, authentication requirements</span></div>
+                    <div class="classification-row"><span class="tag-badge tag-sp">[SP]</span><span><strong>Specialized:</strong> Requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</span></div>
+                </div>
+            </div>
+            
+
+            <h2 id="executive-summary">Executive Summary</h2>
+<p><span class="tag-badge tag-am">[AM]</span>
+ Open-source reporting over the past thirty days shows sustained Iranian state-sponsored cyber operations across three distinct vectors: operational technology targeting against U.S. critical infrastructure water systems, espionage and credential harvesting campaigns against global government and defense sectors, and emerging AI-assisted malware development and deployment. Four developments establish immediate defensive priorities.</p>
+<p><span class="tag-badge tag-ix">[IX]</span>
+ Iranian-affiliated actors conducted a coordinated attack on more than thirty Minnesota municipal water systems on 26 July, four days following a CISA advisory update warning of expanded programmable logic controller exploitation across Rockwell, Siemens, and Schneider Electric platforms. The same activity is attributed to CyberAv3ngers, an IRGC-CEC affiliated group, representing a direct escalation in both scale and capability from previous water utility compromises.</p>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ MuddyWater, the primary Iranian state-sponsored espionage actor, deployed a previously undocumented Rust-based malware framework, RustyWater, targeting Israeli government and infrastructure while simultaneously maintaining active intrusions against U.S. financial, aviation, and defense-sector networks first established in February 2026, suggesting pre-positioned access for rapid disruption if geopolitical escalation occurs.</p>
+<p><span class="tag-badge tag-ix">[IX]</span>
+ Charming Kitten continued its characteristic credential-harvesting campaigns with renewed intensity, targeting government, diplomatic, and international conference participants across Europe and the Middle East using sophisticated phishing-as-a-service infrastructure. Malware families previously associated with destructive campaigns, including wipers and disruptive code, are being redeployed operationally in coordination with infrastructure access established by espionage actors, indicating a deliberate convergence of intelligence collection and disruptive capability.</p>
+<h2 id="scope-and-sourcing">Scope and Sourcing</h2>
+<p><span class="tag-badge tag-am">[AM]</span>
+ This report synthesizes open-source reporting published between approximately 12 July and 11 August 2026, drawn from U.S. government agencies (FBI, CISA, NSA, EPA, Department of Energy), private threat intelligence firms (Mandiant, Proofpoint, CrowdStrike, Microsoft, Group-IB, Halcyon, Trellix), international cybersecurity researchers, and specialist threat tracking outlets (SecurityWeek, TechCrimes, Dark Reading, The Record). None of it is derived from classified or government-restricted sources; treat it as an indicator of trend and public attribution claims, not a validated intelligence assessment. Some items reference intrusions that began well before this window, including February 2026 pre-positioning activity, but were disclosed, attributed, or significantly escalated during the past thirty days. Those are flagged in the timeline below. Sourcing emphasizes primary vendor threat reporting and direct government advisories over secondary press coverage; where secondary sources provided the only pathway to a technical detail or campaign attribution, that limitation is noted.</p>
+<h2 id="incident-timeline-last-30-days">Incident Timeline (Last 30 Days)</h2>
+<table>
+<thead>
+<tr>
+<th>Date (2026)</th>
+<th>Actor / Campaign</th>
+<th>Summary</th>
+<th>Source Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jul 22</td>
+<td>CyberAv3ngers (IRGC-CEC)</td>
+<td><span class="tag-badge tag-ix">[IX]</span>
+ CISA advisory AA26-097A updated to confirm expanded PLC targeting scope: Siemens S7-1200, Schneider Electric BMX P34 / Modicon M340 confirmed alongside continued Rockwell Automation targeting. Advisory details malicious project file injection disabling safety shutdown and alarm logic.</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Jul 26-27</td>
+<td>CyberAv3ngers (IRGC-CEC)</td>
+<td><span class="tag-badge tag-ix">[IX]</span>
+ Coordinated attack on 30+ Minnesota municipal water and wastewater systems; confirmation of automation control functions disrupted; geographically dispersed vector consistent with expanded vendor targeting documented four days prior in CISA update.</td>
+<td>Moderate-High</td>
+</tr>
+<tr>
+<td>Jul 30</td>
+<td>Iran (CyberAv3ngers)</td>
+<td><span class="tag-badge tag-am">[AM]</span>
+ Washington Post reports U.S. intelligence assessment that Iran is likely behind Minnesota water system attacks; assessment tied to broader context of Iranian cyber operations and geopolitical tensions.</td>
+<td>Moderate</td>
+</tr>
+<tr>
+<td>Aug 10</td>
+<td>APT33 (IRGC)</td>
+<td><span class="tag-badge tag-sp">[SP]</span>
+ Trellix reports APT33 deployment of Tickler and SHAPESHIFT destructive wiper malware against U.S. aerospace and petrochemical targets in active disruptive campaign.</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<h2 id="threat-actor-highlights">Threat Actor Highlights</h2>
+<h3 id="cyberav3ngers-critical-infrastructure-targeting-escalation">CyberAv3ngers: Critical Infrastructure Targeting Escalation</h3>
+<p><span class="tag-badge tag-ix">[IX]</span>
+ CyberAv3ngers, operating under direct IRGC Cyber Electronic Command authority, demonstrated a substantial capability expansion in July 2026 when CISA and seven co-authoring U.S. federal agencies updated their April 2026 advisory to document active exploitation of internet-exposed programmable logic controllers across multiple major vendors. The group initially surfaced in open reporting in November 2023 targeting Unitronics PLC devices across U.S. water and wastewater facilities using default or weak credentials, a campaign that compromised at least seventy-five devices and generated widespread but ultimately limited disruption. The July 22 advisory update confirmed the group had pivoted to Rockwell Automation CompactLogix and Micro850 controllers and had expanded confirmed targeting to include Siemens S7-1200 and Schneider Electric BMX P34 / Modicon M340 platforms.</p>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ Most significantly, the advisory documented a deliberate escalation in tradecraft. Rather than simply accessing PLCs via weak authentication, the group now downloads malicious project files using engineering configuration software and injects logic that overrides specific instruction sets responsible for maintaining safe operating parameters. At one U.S. victim site, the FBI observed the injected logic retain ladder logic for downstream function while deliberately disabling shutdown procedures and alarm logic, a technique that transforms low-threat reconnaissance into an immediate containment problem if the attacker chooses to trigger it. The timing of the update and the Minnesota attack just four days later is not incidental; Dragos assessed that attack techniques have proliferated to an estimated sixty or more affiliated pro-Iranian hacktivist groups, meaning the threat persists regardless of what happens to the core CyberAv3ngers organization.</p>
+<div class="hunt-priority">
+    <div class="hunt-priority-header">
+        <strong>Hunt Priority [Engagement to Presence-stage indicator]</strong>Collection point: Network-perimeter PLC scanning logs, outbound proxy logs to known Iranian infrastructure, PLC configuration and firmware audit logs
+    </div>
+    Organizations operating internet-exposed PLCs should treat this as an urgent, active threat. Detection strategy should focus on two layers: network perimeter scanning for any inbound connection attempts to ports known to serve Rockwell Automation, Siemens, or Schneider Electric PLCs (typically 44818 for Rockwell, 502 for Modbus, 21/25 for file transfer), and configuration audit for any unexpected changes to ladder logic or project files, particularly injection of logic that disables shutdown or alarm functions. The advisory provides specific IOCs; immediate prioritization should be network isolation of any PLC directly internet-connected and implementation of a jump host architecture for any legitimate remote engineering access.
+</div>
+
+<h3 id="muddywater-espionage-and-pre-positioned-access-convergence">MuddyWater: Espionage and Pre-Positioned Access Convergence</h3>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ MuddyWater, the primary Iranian Ministry of Intelligence and Security cyber arm and one of the world&rsquo;s most consistently active espionage actors, demonstrated a dual-track approach through July and August 2026 that suggests deliberate operational planning for rapid escalation if geopolitical circumstances warrant. The group maintained active intrusions established in February 2026 against U.S. financial, aviation, and defense-sector software company networks, documented in March public reporting as the Dindoor campaign leveraging a previously undocumented Deno JavaScript runtime backdoor and the Python-based Fakeset implant. The timing of that February pre-positioning, just weeks before the February 28 U.S.-Israeli strikes on Iranian military infrastructure, was flagged by analysts as indicative of pre-positioning rather than reactive response. In July, the group deployed RustyWater, a Rust-based remote access trojan targeting Israeli government infrastructure and diplomacy, documented by multiple independent researchers including Rescana, CrowdStrike, and Broadcom Symantec. The Rust implementation provides both stealth advantages through implementation novelty (Rust-based malware is not yet commonly seen and detection signatures lag behind C++ or C# counterparts) and evasion advantages through memory-safety guarantees that reduce certain classes of exploitation-based detection.</p>
+<div class="hunt-priority">
+    <div class="hunt-priority-header">
+        <strong>Hunt Priority [Presence-stage indicator]</strong>Collection point: EDR/XDR logs for Office macro execution and PowerShell execution, cloud identity logs for anomalous sign-in patterns, proxy/firewall logs for command-and-control traffic
+    </div>
+    MuddyWater remains the Iranian threat actor with the most direct operational interest in U.S. enterprises. Defend against initial access through: mandatory disabling of Office macro execution across all enterprise systems unless explicitly whitelisted per application, enterprise-wide enforcement of multi-factor authentication on all cloud identities (Microsoft 365, Azure, AWS, Google Cloud), password-spray detection on Microsoft 365 and Azure AD targeting high-value accounts (executives, security personnel, system administrators), and behavioral detection for common MuddyWater tradecraft including use of legitimate tools (WMIC, tasklist, net.exe) for reconnaissance and credential access post-compromise. The group&rsquo;s reliance on spear-phishing and living-off-the-land techniques means signature-based detection is ineffective; behavioral baselines and anomaly detection are the primary detection levers.
+</div>
+
+<h3 id="charming-kitten-credential-harvesting-at-scale">Charming Kitten: Credential Harvesting at Scale</h3>
+<p><span class="tag-badge tag-ix">[IX]</span>
+ Charming Kitten, the Iranian Islamic Revolutionary Guard Corps cyber espionage unit affiliated with the IRGC Intelligence Organization, has operated continuously since at least 2011 and maintains a reputation as one of Iran&rsquo;s most persistent, adaptive, and visible state-backed cyber actors. The group renewed credential-harvesting campaigns through July and August 2026 targeting government, military, academic, media, diplomatic, and international conference participants across the United States, Middle East, and Europe. Multiple threat researchers including Check Point, SilentPush, and Google Threat Analysis Group documented phishing infrastructure hosting credential-harvesting pages designed to impersonate legitimate government portals, email services, and conference event portals. The group&rsquo;s characteristic approach combines spear-phishing emails impersonating journalists, academics, or credible organizations with elaborately crafted fake websites mimicking legitimate services and Telegram-based operator notification channels that alert attackers in real-time when a victim visits a phishing page.</p>
+<div class="hunt-priority">
+    <div class="hunt-priority-header">
+        <strong>Hunt Priority [Engagement-stage indicator]</strong>Collection point: Email security logs for inbound phishing emails from spoofed domains, web-proxy logs for access to known credential-harvesting domains, user training and reporting metrics
+    </div>
+    Charming Kitten&rsquo;s campaigns are highly dependent on human behavior and social engineering rather than technical exploitation. Primary defense is rapid phishing reporting and account lockout procedures for any user reporting credential compromise. Secondary defense is email authentication enforcement (DMARC, SPF, DKIM) on all government and defense-aligned domains, aggressive spoofing domain monitoring, and automated takedown procedures for phishing infrastructure. User training should emphasize that government, military, and diplomatic communications rarely occur through public email services and that legitimate government conference invitations can be verified through direct contact with the hosting organization rather than clicking email links.
+</div>
+
+<h3 id="apt33-destructive-capability-deployment">APT33: Destructive Capability Deployment</h3>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ APT33, tracked by Microsoft as Peach Sandstorm and by CrowdStrike as Elfin, operates as the primary destructive arm of the IRGC and has been conducting cyber operations since at least 2013 with a consistent focus on U.S. and Saudi Arabian aerospace, defense, energy, and petrochemical sectors. The group has historically prioritized intellectual property theft supporting Iran&rsquo;s domestic aerospace and energy industries, but in early 2026 shifted operational emphasis toward disruptive and destructive malware deployment. Trellix reporting through August 2026 documents active deployment of Tickler and SHAPESHIFT wipers against U.S. aerospace and petrochemical targets in what the firm assessed as a deliberately damaging campaign coinciding with heightened Iran-U.S.-Israel tensions. The group also shifted its primary initial access method beginning in 2023 from targeted spear-phishing campaigns to large-scale password-spray attacks against Microsoft 365 and Azure Active Directory environments, moving from low-volume, high-precision targeting to high-volume, broad-based credential attacks.</p>
+<div class="hunt-priority">
+    <div class="hunt-priority-header">
+        <strong>Hunt Priority [Effect-stage indicator]</strong>Collection point: Email authentication logs for password-spray attacks against cloud identities, SIEM/XDR logs for anomalous administrative account sign-ins, EDR logs for wiper malware execution signatures
+    </div>
+    APT33 represents an active threat to U.S. critical infrastructure. Password spray at scale requires defensive measures that go beyond endpoint detection: cloud identity sign-in anomaly detection tuned for geographically impossible logins, blocked-login alerting for repeated failed attempts against high-value accounts, and immediate notification to infrastructure security teams of any successful sign-in from foreign IP space. Wiper malware detection requires both signature-based detection for known variants (Tickler, SHAPESHIFT, DustMan, Shamoon) and behavioral detection for file-wiping patterns: rapid deletion or encryption of files across wide directory trees, particularly focusing on critical system and database directories.
+</div>
+
+<h2 id="operational-impact-assessment">Operational Impact Assessment</h2>
+<p><span class="tag-badge tag-ix">[IX]</span>
+ The Minnesota water system attacks on 26-27 July represent the first confirmed successful operational technology disruption by Iranian-affiliated actors in the continental United States at scale. The incident is not incidental to the broader Iranian cyber posture; it is direct operational evidence of capability maturation, infrastructure pre-positioning, and willingness to target essential services. None of the open-source reporting reviewed for this assessment confirmed direct compromise of U.S. Department of Defense Information Network (DoDIN) systems during this window. However, the threat is not a future possibility but a present exposure through multiple indirect pathways. Iranian actors have demonstrated sustained interest in supply-chain compromise, targeting defense contractors and software vendors whose infrastructure interconnects with government and military networks. The convergence of espionage access established in February 2026 with operational capability demonstrated in July suggests Iranian doctrine treats cyber operations as a layered approach: maintain long-term intelligence collection access through undetected espionage, pre-position disruptive or destructive capability through the same channel, and execute disruption if geopolitical circumstances warrant.</p>
+<h2 id="emerging-tradecraft-patterns">Emerging Tradecraft Patterns</h2>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ MuddyWater&rsquo;s deployment of RustyWater, a Rust-based implant, signals a broader Iranian adoption of memory-safe languages for malware development. Rust malware is still uncommon in open-source reporting and detection signatures lag significantly behind C/C++ and C# variants. Organizations should anticipate expanded use of Rust, Go, and other memory-safe languages by sophisticated threat actors, which implies traditional string-signature and bytecode-signature detection will become progressively less effective. Behavioral and heuristic detection become the primary lever.</p>
+<p><span class="tag-badge tag-ix">[IX]</span>
+ Multiple open-source sources document evidence of Iranian actors leveraging generative AI for social engineering content generation, document creation, and initial phishing lure development. This mirrors documented use by other state actors and criminal groups. The implication is straightforward: grammar-based and formatting-based phishing detection, which has historically been reliable, becomes unreliable. Organizations should not rely on user training built around &ldquo;check for grammar errors&rdquo; and should instead emphasize verification of sender identity through out-of-band communication channels and recognition of contextual inconsistencies in messaging.</p>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ CyberAv3ngers&rsquo; evolution from default-credential exploitation to malicious project file injection represents a significant tradecraft maturation. The technique allows for persistent, stealthy manipulation of operational logic within critical infrastructure control systems. This pattern suggests Iranian operators have studied defensive measures implemented after previous campaigns and adapted their approach to evade both traditional access controls and perimeter-based detection.</p>
+<h2 id="assessment-and-outlook">Assessment and Outlook</h2>
+<p><span class="tag-badge tag-am">[AM]</span>
+ Open-source indicators over the past thirty days point to sustained, multi-vector Iranian cyber activity rather than a lull. Operational tempo has remained elevated through August following the February 28 U.S.-Israeli strikes on Iranian military targets, contradicting historical patterns of Iranian cyber retaliation as transient and reactive. The convergence of long-dwell espionage access established in February with demonstrated operational technology disruption capability in July suggests strategic planning beyond immediate response. Geopolitical context matters: U.S.-Iran tensions remain elevated into August, and Iranian doctrine treats cyber operations as a core component of asymmetric competition. Organizations should not interpret the absence of a directly confirmed attack on U.S. military or federal networks as an absence of Iranian capability or intent. The infrastructure is in place; the access has been established; the capability is demonstrated. The decision point is geopolitical and remains outside the purview of this assessment. Defenders of any network that touches government, critical infrastructure, or defense-industrial systems should treat the indicators documented in this report as a standing threat profile rather than a transient crisis and should invest in permanent detection and response capabilities rather than temporary surge staffing.</p>
+<h2 id="cross-source-technical-convergence-multi-vendor-plc-exploitation">Cross-Source Technical Convergence: Multi-Vendor PLC Exploitation</h2>
+<p><span class="tag-badge tag-sp">[SP]</span>
+ The single most corroborated technical finding in this reporting period comes from five independent sources: CISA, FBI, NSA, EPA, and Department of Energy publishing joint advisories, alongside analysis from SafeBreach, IOActive, ExtraHop, SOCRadar, and Tenable. All sources published within the July 22 advisory update window and document the same underlying intrusion activity against internet-exposed programmable logic controllers. The converged picture shows Iranian-affiliated actors exploiting internet-exposed PLCs from three major vendors using a deliberate escalation in tradecraft: injection of malicious project files that retain legitimate ladder logic while disabling safety shutdown and alarm logic. This technique has proliferated to approximately sixty or more affiliated pro-Iranian hacktivist groups, meaning the threat persists regardless of what happens to the core CyberAv3ngers organization. This convergence represents the strongest infrastructure evidence of the reporting cycle and validates the assessment that Iranian cyber doctrine has shifted from reconnaissance to pre-positioned disruption capability.</p>
+<h2 id="appendix-a-source-summaries">Appendix A: Source Summaries</h2>
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-001]. CISA AA26-097A: Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers</span>
+        <span class="tag-badge tag-am">[AM]</span>
+    </div>
+    <div class="source-summary-meta">FBI/CISA/NSA/EPA/DOE, &ldquo;Iranian-Affiliated Cyber Actors Exploit PLCs&rdquo;, July 22, 2026 · CyberAv3ngers · <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a">cisa.gov/news-events/cybersecurity-advisories/aa26-097a</a></div>
+    <div class="source-summary-body">Joint advisory documenting Iranian-affiliated targeting of internet-exposed PLCs. The July update expands confirmed vendor targeting from Rockwell Automation (April) to include Siemens S7-1200 and Schneider Electric systems. Documents active exploitation technique: malicious project file injection that disables safety shutdown and alarm logic. Primary U.S. government advisory on this campaign.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-002]. ExtraHop: Anatomy of an Attack - Iranian-Affiliated Actors Target U.S. Critical Infrastructure</span>
+        <span class="tag-badge tag-ix">[IX]</span>
+    </div>
+    <div class="source-summary-meta">ExtraHop, &ldquo;Anatomy of an Attack&rdquo;, August 2026 · CyberAv3ngers/IRGC-CEC · <a href="https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs">extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs</a></div>
+    <div class="source-summary-body">Analysis of Minnesota water system attacks timing relative to CISA advisory update. Notes four-day gap between July 22 advisory and July 26-27 attacks, suggesting either rapid exploitation of newly-disclosed capability or pre-positioning attack execution timed to follow advisory. Provides operational timeline correlation.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-003]. KELA: MuddyWater in 2026 - Iran&#39;s APT Hits U.S. Targets</span>
+        <span class="tag-badge tag-sp">[SP]</span>
+    </div>
+    <div class="source-summary-meta">KELA Intelligence, &ldquo;MuddyWater in 2026&rdquo;, March 2026 · MuddyWater/MOIS · <a href="https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/">kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater</a></div>
+    <div class="source-summary-body">Analysis of MuddyWater&rsquo;s shift to military-tempo operations against U.S. enterprises in 2026. Documents pre-positioning in U.S. financial, aviation, and defense-sector networks beginning in February 2026, weeks before U.S.-Israeli strikes. Frames MuddyWater as having matured from regionally-focused espionage actor to global intelligence capability.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-004]. Washington Post: U.S. Spy Agencies Suspect Iran Behind Minnesota Water Attacks</span>
+        <span class="tag-badge tag-am">[AM]</span>
+    </div>
+    <div class="source-summary-meta">Nakashima &amp; Verma, &ldquo;U.S. Spy Agencies Suspect Iran&rdquo;, The Washington Post, July 30, 2026 · Iran/CyberAv3ngers · <a href="https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/">washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities</a></div>
+    <div class="source-summary-body">Public reporting of U.S. intelligence assessment that Iran was responsible for coordinated attack on 30+ Minnesota municipal water systems on July 26-27. Creates direct operational link between newly disclosed capability (CISA advisory, July 22) and active exploitation (water system attacks, July 26-27). Establishes timeline of escalation.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-005]. Rescana: RustyWater - Iranian MuddyWater APT Targets Israeli Government</span>
+        <span class="tag-badge tag-sp">[SP]</span>
+    </div>
+    <div class="source-summary-meta">Rescana, &ldquo;RustyWater&rdquo;, February 24, 2026 · MuddyWater/MOIS · <a href="https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust">rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust</a></div>
+    <div class="source-summary-body">Documents MuddyWater deployment of RustyWater, a Rust-based remote access trojan, targeting Israeli government and infrastructure during heightened Middle East tensions. Describes technical advancement in stealth, persistence, and evasion capabilities. Rust implementation represents emerging tradecraft to evade detection signatures.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-006]. SafeBreach: CISA AA26-097A Iranian PLC Attacks Coverage</span>
+        <span class="tag-badge tag-sp">[SP]</span>
+    </div>
+    <div class="source-summary-meta">SafeBreach Labs, &ldquo;CISA AA26-097A Coverage&rdquo;, July 2026 · CyberAv3ngers/IRGC-CEC · <a href="https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/">safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage</a></div>
+    <div class="source-summary-body">Deep technical analysis of PLC exploitation techniques documented in CISA advisory. Provides detection engineering guidance for organizations defending Rockwell, Siemens, and Schneider platforms. Includes MITRE ATT&amp;CK mapping for Iranian-linked PLC targeting campaigns.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-007]. SOCRadar: Iranian Hackers Broaden PLC Attacks on US Critical Infrastructure</span>
+        <span class="tag-badge tag-ix">[IX]</span>
+    </div>
+    <div class="source-summary-meta">SOCRadar, &ldquo;Iranian Hackers Broaden PLC Attacks&rdquo;, July 2026 · CyberAv3ngers/IRGC-CEC · <a href="https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/">socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure</a></div>
+    <div class="source-summary-body">Analysis of July 2026 advisory update and Minnesota water system attacks. Documents shift from single-vendor targeting (Unitronics, 2023) to multi-vendor campaigns (Rockwell, Siemens, Schneider, 2026). Details escalation in tradecraft from weak-credential exploitation to malicious project file injection.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-008]. TechTimes: Iranian Hackers Infiltrate Siemens and Schneider PLCs</span>
+        <span class="tag-badge tag-ix">[IX]</span>
+    </div>
+    <div class="source-summary-meta">TechTimes, &ldquo;Iranian Hackers Infiltrate Siemens and Schneider&rdquo;, July 23, 2026 · CyberAv3ngers/IRGC-CEC · <a href="https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm">techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm</a></div>
+    <div class="source-summary-body">Coverage of Iranian-linked PLC compromise techniques that inject logic disabling operator displays and safety functions. Documents scope of vulnerable systems across U.S. critical infrastructure. Emphasizes that dominant share of installed ICS equipment from major vendors is now confirmed attack target category.</div>
+</div>
+
+<div class="source-summary">
+    <div class="source-summary-head">
+        <span class="source-summary-title">[REF-009]. Trellix: The Iranian Cyber Capability 2026</span>
+        <span class="tag-badge tag-sp">[SP]</span>
+    </div>
+    <div class="source-summary-meta">Trellix Threat Research, &ldquo;The Iranian Cyber Capability 2026&rdquo;, August 2026 · Multiple actors · <a href="https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/">trellix.com/blogs/research/the-iranian-cyber-capability-2026</a></div>
+    <div class="source-summary-body">Comprehensive threat assessment covering MuddyWater, OilRig (APT34), APT33, APT35, and affiliated actors. Documents APT33 deployment of Tickler and SHAPESHIFT destructive malware against aerospace and petrochemical targets. Discusses infrastructure diversification by MuddyWater suggesting deliberate pre-positioning ahead of geopolitical escalation.</div>
+</div>
+
+<h2 id="references">References</h2>
+<ul>
+<li>Cybersecurity and Infrastructure Security Agency. &ldquo;Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure.&rdquo; Joint Cybersecurity Advisory AA26-097A, Updated July 22, 2026. <a href="https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a">https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a</a></li>
+<li>ExtraHop. &ldquo;Anatomy of an Attack: Iranian-Affiliated Actors Target U.S. Critical Infrastructure Through PLCs.&rdquo; Published August 2026. <a href="https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs">https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs</a></li>
+<li>KELA Intelligence. &ldquo;MuddyWater in 2026: Iran&rsquo;s APT Hits U.S. Targets.&rdquo; Analysis and ATT&amp;CK-mapped detection guidance, Published March 2026. <a href="https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/">https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/</a></li>
+<li>Nakashima, Ellen and Pranshu Verma. &ldquo;U.S. Spy Agencies Suspect Iran Launched Cyberattack on Minnesota Water Facilities.&rdquo; The Washington Post, July 30, 2026. <a href="https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/">https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/</a></li>
+<li>Rescana. &ldquo;RustyWater: Iranian MuddyWater APT Targets Israeli Government and Infrastructure With Advanced Rust-Based Malware.&rdquo; Published February 24, 2026. <a href="https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust">https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust</a></li>
+<li>SafeBreach. &ldquo;CISA AA26-097A: Iranian PLC Attacks Coverage.&rdquo; Published July 2026. <a href="https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/">https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/</a></li>
+<li>SOCRadar. &ldquo;Iranian Hackers Broaden PLC Attacks on US Critical Infrastructure.&rdquo; Blog post analyzing July 2026 advisory update. <a href="https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/">https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/</a></li>
+<li>TechTimes. &ldquo;Iranian Hackers Infiltrate Siemens and Schneider PLCs, Blinding Operators With Fake Readings.&rdquo; July 23, 2026. <a href="https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm">https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm</a></li>
+<li>Trellix. &ldquo;The Iranian Cyber Capability 2026.&rdquo; Threat Research Blog. Published August 2026. <a href="https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/">https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/</a></li>
+</ul>
+
+        </div>
+    </div>
+
+    
+    <p class="article-disclaimer">This report synthesizes open-source threat intelligence to support threat-hunting operations and risk assessment. All material is publicly available. Information sourced, dated, and classified for transparency and verification.</p>
+    
+</article>
+
+
+
+<div style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6; display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">WEEKLY, BY EMAIL</div>
+        <p style="margin: 0; font: 400 17px/1.5 Spectral, serif; color: #3f3b35; max-width: 44ch;">One issue every Monday. Behavior-first analysis, ATT&CK mapping, and queries you can run the same day.</p>
+        <div style="display: flex; gap: 0; max-width: 400px; margin-top: 6px;">
+            <input type="email" placeholder="you@organization.com" style="flex: 1; border: 1px solid #cfc9c0; border-right: none; background: #fff; padding: 12px 14px; font: 400 14px Spectral, serif; color: #a09a91;">
+            <button class="button" style="margin-top: 0;">SUBSCRIBE</button>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">RECENT ISSUES</div>
+        <div style="display: flex; flex-direction: column;">
+            
+            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
+                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">34</span>
+                <a href="https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/" style="color: #3f3b35;">AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</a>
+            </div>
+            
+            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
+                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">35</span>
+                <a href="https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/" style="color: #3f3b35;">Iran Cyber Threat Highlights - Multi-Vector Operational Escalation</a>
+            </div>
+            
+            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
+                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">33</span>
+                <a href="https://dcollette4456.github.io/issues/issue-33/" style="color: #3f3b35;">Your first threat research issue</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<script>
+(function () {
+    var headings = document.querySelectorAll('.article-body h2[id], .article-body h3[id]');
+    var links = document.querySelectorAll('#TableOfContents a[href^="#"]');
+    if (!headings.length || !links.length) return;
+    var linkByHash = {};
+    links.forEach(function (a) { linkByHash[a.getAttribute('href')] = a; });
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            var link = linkByHash['#' + entry.target.id];
+            if (!link) return;
+            if (entry.isIntersecting) {
+                links.forEach(function (a) { a.classList.remove('active'); });
+                link.classList.add('active');
+            }
+        });
+    }, { rootMargin: '-10% 0px -70% 0px' });
+    headings.forEach(function (h) { observer.observe(h); });
+})();
+</script>
+
+
+    </main>
+
+    <footer>
+        <span>Knights Who Say Ni · Written and maintained by not important</span>
+        <div class="footer-links">
+            <span>RSS</span>
+            <span>·</span>
+            <a href="https://github.com/dcollette4456">GITHUB</a>
+            <span>·</span>
+            <span>CONTACT</span>
+        </div>
+    </footer>
+</body>
+</html>

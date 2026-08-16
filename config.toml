@@ -9,7 +9,7 @@ title = "Knights Who Say Ni"
     weight = 1
   [[menu.main]]
     name = "Archive"
-    url = "/archive/"
+    url = "/issues/"
     weight = 2
   [[menu.main]]
     name = "Hunt Library"

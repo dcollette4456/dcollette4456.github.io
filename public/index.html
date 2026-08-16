@@ -483,7 +483,8 @@
             margin-right: 5px;
         }
 
-        p .tag-badge {
+        p .tag-badge,
+        td .tag-badge {
             padding: 3px 5px;
             width: auto;
         }
@@ -517,6 +518,19 @@
         .hunt-priority p {
             margin: 0;
             font: 400 16px/1.65 Spectral, serif;
+        }
+
+        .hunt-priority p.ioc-extraction-note {
+            font: 400 12.5px/1.6 'JetBrains Mono', monospace;
+            color: #6b665e;
+            border-top: 1px dashed #d8c2c7;
+            padding-top: 12px;
+            margin-top: 2px;
+        }
+
+        .hunt-priority p.ioc-extraction-note strong {
+            color: #7d2231;
+            font-weight: 500;
         }
 
         .article-body table {

@@ -6,8 +6,15 @@
     <description>Recent content on Knights Who Say Ni</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2026 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dcollette4456.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Access Through the Front Door: Trusted Channel Compromise in PRC-Nexus Operations</title>
+      <link>https://dcollette4456.github.io/issues/prc-trusted-channel-compromise/</link>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://dcollette4456.github.io/issues/prc-trusted-channel-compromise/</guid>
+      <description>Executive Summary Two disclosures this window describe the same access pattern reached by different routes. In both, the actor never had to defeat an endpoint control, because they arrived through something the endpoint was already configured to trust. A VPN client shipped a backdoor inside its own signed installer for eleven months3. A remote management platform handed an intruder the same reach over downstream estates that it grants its own operators1.</description>
+    </item>
     <item>
       <title>Disabling the Fail-Safes: CyberAv3ngers&#39; PLC Attacks on U.S. Water Systems</title>
       <link>https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/</link>

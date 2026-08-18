@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Legend | Knights Who Say Ni</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --paper: #fdfcfa;
+            --ink: #1f1d1b;
+            --muted: #5f5a55;
+            --faint: #8f8880;
+            --rule: #e7e2da;
+            --hair: #f0ece5;
+            --accent: #1a3d5f;
+            --crimson: #a8385a;
+            --legend-bg: #faf8f4;
+            --hunt-bg: #f2f6fb;
+            --hunt-rule: #2c5f8a;
+            --hunt-ink: #1b3d5c;
+            --serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+            --mono: 'SF Mono', ui-monospace, 'Consolas', 'Courier New', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--paper);
+            font-family: var(--serif);
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(26, 61, 95, .28);
+        }
+
+        a:hover {
+            color: var(--crimson);
+            border-bottom-color: var(--crimson);
+        }
+
+         
+
+        .site {
+            border-bottom: 1px solid var(--rule);
+            background: #fff;
+        }
+
+        .site-in {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 16px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            border: none;
+        }
+
+        .brand .mark {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            flex: none;
+            display: block;
+            object-fit: cover;
+        }
+
+        .brand .name {
+            font-family: var(--serif);
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.15;
+        }
+
+        .brand .motto {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-top: 2px;
+        }
+
+        .site-nav {
+            display: flex;
+            gap: 26px;
+            font-size: 15px;
+        }
+
+        .site-nav a {
+            color: var(--crimson);
+            text-decoration: none;
+            border: none;
+        }
+
+        .site-nav a:hover,
+        .site-nav a[aria-current] {
+            border-bottom: 1.5px solid var(--crimson);
+            padding-bottom: 2px;
+        }
+
+         
+
+        h1 {
+            font-family: var(--serif);
+            font-size: 40px;
+            line-height: 1.15;
+            font-weight: 400;
+            letter-spacing: -.012em;
+            margin: 0 0 16px;
+            color: var(--ink);
+        }
+
+        h2 {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: .17em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--crimson);
+            margin: 54px 0 6px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        h3 {
+            font-family: var(--serif);
+            font-size: 23px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: var(--ink);
+            margin: 44px 0 7px;
+            letter-spacing: -.006em;
+        }
+
+        p {
+            margin: 0 0 20px;
+        }
+
+        .reading-time {
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--muted);
+        }
+
+        .button {
+            display: inline-block;
+            background: var(--crimson);
+            color: #fff;
+            padding: 12px 22px;
+            font: 500 11px/1.5 var(--mono);
+            letter-spacing: 0.1em;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .button:hover {
+            background: #7d2c47;
+        }
+
+         
+
+        .container {
+            padding: 52px 44px 40px;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 56px;
+            align-items: start;
+        }
+
+        .content article h1 {
+            font: 300 32px/1.2 Spectral, serif;
+            letter-spacing: -0.01em;
+            margin-bottom: 14px;
+        }
+
+        .sidebar-box {
+            border: 1px solid #ded9d1;
+            background: #f5f2ec;
+        }
+
+        .sidebar-header {
+            padding: 14px 18px;
+            border-bottom: 1px solid #ded9d1;
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #6b665e;
+        }
+
+        .sidebar-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 13px 18px;
+            border-bottom: 1px solid #e6e1d9;
+            font: 400 14px Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .sidebar-row:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-row .value {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+        }
+
+        .card {
+            background: #fbfaf8;
+            padding: 26px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border-bottom: 1px solid #e2ded6;
+        }
+
+        .card:last-child {
+            border-bottom: none;
+        }
+
+        .card-tag {
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            letter-spacing: 0.14em;
+            color: #7d2231;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font: 400 22px/1.25 Spectral, serif;
+            color: #1c1a17;
+            text-wrap: pretty;
+            margin: 0;
+        }
+
+        .card-text {
+            font: 400 15px/1.55 Spectral, serif;
+            color: #57534c;
+            margin: 0;
+        }
+
+        .tags {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            padding-top: 4px;
+        }
+
+        .tag {
+            font: 400 10.5px/1 'JetBrains Mono', monospace;
+            color: #6b665e;
+            border: 1px solid #ded9d1;
+            padding: 5px 8px;
+        }
+
+         
+
+        .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 44px 32px 80px;
+            display: grid;
+            grid-template-columns: 190px minmax(0, 1fr);
+            gap: 112px;
+        }
+
+        .rail {
+            position: sticky;
+            top: 32px;
+            align-self: start;
+            font-family: var(--mono);
+            font-size: 10.5px;
+            line-height: 1.95;
+            letter-spacing: .045em;
+        }
+
+        .rail .rail-h {
+            color: var(--faint);
+            margin-bottom: 11px;
+            font-size: 9px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+        }
+
+        .rail ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .rail a {
+            display: block;
+            color: var(--muted);
+            text-decoration: none;
+            border: none;
+            padding: 2px 0;
+        }
+
+        .rail a:hover {
+            color: var(--crimson);
+        }
+
+        .doc {
+            max-width: 700px;
+        }
+
+         
+
+        .kicker {
+            font-family: var(--mono);
+            font-size: 10.5px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 16px;
+        }
+
+        .standfirst {
+            font-size: 17.5px;
+            line-height: 1.55;
+            color: var(--muted);
+            margin: 0 0 30px;
+        }
+
+        dl.meta {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 18px 0;
+            margin: 0 0 26px;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, auto)) minmax(220px, 1.6fr);
+            gap: 18px 30px;
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.55;
+        }
+
+        dl.meta dt {
+            color: var(--faint);
+            letter-spacing: .11em;
+            text-transform: uppercase;
+            font-size: 8.5px;
+            margin-bottom: 4px;
+            white-space: nowrap;
+        }
+
+        dl.meta dd {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        dl.meta a {
+            color: var(--muted);
+            border-bottom: 1px solid rgba(95, 90, 85, .3);
+        }
+
+         
+
+        .legend {
+            background: var(--legend-bg);
+            border: 1px solid var(--rule);
+            padding: 18px 22px;
+            margin: 0 0 34px;
+            font-size: 13.5px;
+            line-height: 1.62;
+            color: var(--muted);
+        }
+
+        .legend h4 {
+            font-family: var(--mono);
+            font-size: 9px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin: 0 0 12px;
+            font-weight: 600;
+        }
+
+        .legend p {
+            margin: 0 0 9px;
+        }
+
+        .legend p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legend b,
+        .legend strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .legend code {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            background: #f2eee7;
+            padding: 1px 4px;
+            border-radius: 2px;
+        }
+
+        .legend a {
+            color: var(--accent);
+            border-bottom: 1px solid rgba(26, 61, 95, .3);
+            text-decoration: none;
+        }
+
+        .legend .legend-tag {
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 1px 5px;
+        }
+
+         
+
+        .glance {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 17px 0 18px;
+            margin: 0 0 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px 26px;
+        }
+
+        .glance .k {
+            font-family: var(--mono);
+            font-size: 8.5px;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 5px;
+        }
+
+        .glance .v {
+            font-size: 15px;
+            line-height: 1.35;
+            color: var(--ink);
+        }
+
+        .glance-note {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin: 0 0 8px;
+        }
+
+         
+
+        .dossier {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: .055em;
+            color: var(--faint);
+            text-transform: uppercase;
+            line-height: 1.9;
+            margin: 0 0 22px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .dossier b {
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+         
+
+        .claim {
+            position: relative;
+        }
+
+        .claim > .tag {
+            position: absolute;
+            left: -102px;
+            top: .5em;
+            width: 88px;
+            text-align: right;
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .06em;
+            line-height: 1.5;
+            color: #94a6b7;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .claim > .tag .corr {
+            display: block;
+            color: #b1bec9;
+            font-weight: 400;
+        }
+
+        .claim > .tag .disputed {
+            display: block;
+            color: var(--crimson);
+            font-weight: 600;
+        }
+
+        .section-tag {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .08em;
+            color: #c08a2e;
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        sup.cite {
+            font-size: 9.5px;
+            line-height: 0;
+            vertical-align: super;
+            font-family: var(--mono);
+        }
+
+        sup.cite a {
+            color: var(--crimson);
+            border: none;
+            font-weight: 600;
+            padding: 0 1px;
+        }
+
+        sup.cite a:hover {
+            text-decoration: underline;
+        }
+
+         
+
+        .hunt {
+            background: var(--hunt-bg);
+            border-left: 2px solid var(--hunt-rule);
+            padding: 22px 26px 18px;
+            margin: 30px 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .hunt-label {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--hunt-rule);
+            font-weight: 600;
+            margin: 0 0 14px;
+        }
+
+        .hunt p {
+            font-size: 15.5px;
+            line-height: 1.72;
+            color: var(--hunt-ink);
+            margin: 0 0 16px;
+        }
+
+        .hunt p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .hunt-foot {
+            margin-top: 18px;
+            padding-top: 12px;
+            border-top: 1px solid #dde6ef;
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .045em;
+            line-height: 1.85;
+            color: #7d93a8;
+            text-transform: uppercase;
+        }
+
+        .hunt-foot b {
+            font-weight: 600;
+            color: #5d768f;
+        }
+
+        .hunt-sources {
+            margin-top: 14px;
+            font-size: 13px;
+            line-height: 1.62;
+            color: #5d768f;
+            font-family: var(--serif);
+            font-style: italic;
+        }
+
+        .hunt-sources a {
+            color: #3d6b93;
+            border-bottom-color: rgba(61, 107, 147, .3);
+        }
+
+         
+
+        .src {
+            margin: 0 0 26px;
+            padding: 0 0 24px;
+            border-bottom: 1px solid var(--hair);
+        }
+
+        .src:last-of-type {
+            border-bottom: none;
+        }
+
+        .src h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.35;
+            margin: 0 0 5px;
+            color: var(--ink);
+        }
+
+        .src .byline {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .07em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 9px;
+        }
+
+        .src .url {
+            font-family: var(--mono);
+            font-size: 10.5px;
+            word-break: break-all;
+            margin-bottom: 10px;
+            display: block;
+            color: var(--muted);
+            border: none;
+        }
+
+        .src .url:hover {
+            color: var(--crimson);
+        }
+
+        .src p {
+            font-size: 15px;
+            line-height: 1.68;
+            margin: 0;
+            color: #3b3733;
+        }
+
+        .src .rec {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-top: 8px;
+        }
+
+        .src .rec a {
+            color: var(--faint);
+            border-bottom-color: rgba(143, 136, 128, .4);
+        }
+
+         
+
+        .continuity {
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.9;
+            color: var(--muted);
+            margin: 30px 0 0;
+            padding-top: 14px;
+            border-top: 1px solid var(--rule);
+        }
+
+        .continuity .continuity-h {
+            font-size: 9px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 8px;
+        }
+
+        .continuity .cluster {
+            color: var(--ink);
+            font-weight: 600;
+            display: inline-block;
+            width: 90px;
+        }
+
+         
+
+        ol.refs {
+            font-size: 13.5px;
+            line-height: 1.65;
+            padding-left: 24px;
+            color: #3b3733;
+        }
+
+        ol.refs li {
+            margin-bottom: 11px;
+            scroll-margin-top: 24px;
+        }
+
+        ol.refs li:target {
+            background: #fdf6e3;
+            outline: 2px solid #d9a441;
+            outline-offset: 4px;
+            border-radius: 2px;
+        }
+
+         
+
+        .migration-banner {
+            background: #fdf6e3;
+            border: 1px solid #d9a441;
+            padding: 12px 16px;
+            margin: 0 0 24px;
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.7;
+            color: #7a5c14;
+        }
+
+        .buildnote {
+            font-family: var(--mono);
+            font-size: 10px;
+            line-height: 1.8;
+            color: var(--faint);
+            border-top: 1px solid var(--rule);
+            margin-top: 52px;
+            padding-top: 16px;
+            letter-spacing: .03em;
+        }
+
+         
+
+        .operational-context {
+            background: var(--legend-bg);
+            border-left: 3px solid var(--accent);
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .operational-context h4 {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin: 0 0 12px;
+            font-weight: 600;
+        }
+
+        .operational-context p {
+            font-size: 15px;
+            line-height: 1.65;
+            margin: 0 0 12px;
+        }
+
+        .operational-context ul {
+            margin: 0 0 12px;
+            padding-left: 20px;
+        }
+
+        .operational-context li {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+         
+
+        .article-body {
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            overflow-x: auto;
+        }
+
+        .article-body h2 {
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: .17em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--crimson);
+            padding-bottom: 9px;
+            border-bottom: 1px solid var(--rule);
+            margin: 0;
+            scroll-margin-top: 20px;
+        }
+
+        .article-body h3 {
+            font-family: var(--serif);
+            font-size: 23px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: var(--ink);
+            margin: 10px 0 0;
+        }
+
+        .article-body p {
+            font-size: 17px;
+            line-height: 1.68;
+            color: var(--ink);
+            max-width: none;
+            margin: 0;
+        }
+
+        .article-body ul,
+        .article-body ol {
+            font: 400 17px/1.68 var(--serif);
+            color: var(--ink);
+            padding-left: 22px;
+        }
+
+        .article-body li {
+            margin-bottom: 10px;
+        }
+
+        .classification-box {
+            border: 1px solid #ded9d1;
+            background: #f5f2ec;
+            padding: 14px 18px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .classification-rows {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            font: 400 12.5px/1.4 Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .classification-row {
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+        }
+
+        .tag-badge {
+            flex: 0 0 auto;
+            display: inline-block;
+            width: 44px;
+            text-align: center;
+            font: 500 10px/1 'JetBrains Mono', monospace;
+            padding: 4px 0;
+            margin-right: 5px;
+        }
+
+        p .tag-badge,
+        td .tag-badge {
+            padding: 3px 5px;
+            width: auto;
+        }
+
+        .tag-am { background: #e4e0d6; color: #4a463f; }
+        .tag-ix { background: #d7dee2; color: #2f4450; }
+        .tag-gt { background: #e8dcc6; color: #5c4718; }
+        .tag-sp { background: #ecd7dc; color: #7d2231; }
+
+        .hunt-priority {
+            border-left: 3px solid #7d2231;
+            background: #f5f2ec;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 6px 0;
+        }
+
+        .hunt-priority-header {
+            font: 400 13px/1.6 'JetBrains Mono', monospace;
+            color: #1c1a17;
+        }
+
+        .hunt-priority-header strong {
+            font-weight: 500;
+            color: #7d2231;
+            display: block;
+        }
+
+        .hunt-priority p {
+            margin: 0;
+            font: 400 16px/1.65 Spectral, serif;
+        }
+
+        .hunt-priority p.ioc-extraction-note {
+            font: 400 12.5px/1.6 'JetBrains Mono', monospace;
+            color: #6b665e;
+            border-top: 1px dashed #d8c2c7;
+            padding-top: 12px;
+            margin-top: 2px;
+        }
+
+        .hunt-priority p.ioc-extraction-note strong {
+            color: #7d2231;
+            font-weight: 500;
+        }
+
+        .article-body table {
+            width: 100%;
+            min-width: 640px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border: 1px solid #e2ded6;
+            font-size: 14px;
+        }
+
+        .article-body th:first-child,
+        .article-body td:first-child {
+            width: 9%;
+        }
+
+        .article-body th:nth-child(2),
+        .article-body td:nth-child(2) {
+            width: 22%;
+        }
+
+        .article-body th:last-child,
+        .article-body td:last-child {
+            width: 14%;
+        }
+
+        .article-body th {
+            background: #f5f2ec;
+            padding: 11px 12px;
+            font: 500 9.5px/1.3 'JetBrains Mono', monospace;
+            letter-spacing: 0.1em;
+            color: #3f3b35;
+            text-align: left;
+            vertical-align: bottom;
+            border-bottom: 1px solid #e2ded6;
+        }
+
+        .article-body td {
+            background: #fbfaf8;
+            padding: 14px 12px;
+            font: 400 13px/1.5 Spectral, serif;
+            color: #1c1a17;
+            border-top: 1px solid #e2ded6;
+            vertical-align: top;
+        }
+
+        .source-summary {
+            border: 1px solid #e2ded6;
+            background: #fbfaf8;
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .source-summary-head {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .source-summary-title {
+            font: 600 15px/1.4 Spectral, serif;
+            color: #1c1a17;
+        }
+
+        .source-summary-meta {
+            font: 400 12px/1.5 'JetBrains Mono', monospace;
+            color: #857f74;
+            letter-spacing: 0.01em;
+        }
+
+        .source-summary-meta a {
+            color: #7d2231;
+            border-bottom-color: rgba(125, 34, 49, .3);
+        }
+
+        .source-summary-meta p {
+            margin: 0;
+        }
+
+        .source-summary-body {
+            font: 400 15px/1.6 Spectral, serif;
+            color: #3f3b35;
+        }
+
+        .source-summary-body p {
+            margin: 0;
+        }
+
+        .article-disclaimer {
+            margin: 40px 0 0;
+            padding-top: 26px;
+            border-top: 1px solid #e2ded6;
+            font: italic 400 14.5px/1.6 Spectral, serif;
+            color: #6b665e;
+            text-align: center;
+        }
+
+         
+
+        table {
+            border-collapse: collapse;
+        }
+
+         
+
+        .foot {
+            border-top: 1px solid var(--rule);
+            background: #fff;
+            margin-top: 70px;
+        }
+
+        .foot-in {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 34px 32px 44px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 28px 40px;
+            font-size: 13.5px;
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .foot h5 {
+            font-family: var(--mono);
+            font-size: 8.5px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin: 0 0 10px;
+            font-weight: 600;
+        }
+
+        .foot a {
+            color: var(--muted);
+            border-bottom: 1px solid rgba(95, 90, 85, .25);
+            display: inline-block;
+        }
+
+        .foot a:hover {
+            color: var(--crimson);
+            border-bottom-color: var(--crimson);
+        }
+
+        .foot .fnote {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: .03em;
+            color: var(--faint);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 960px) {
+            .wrap {
+                grid-template-columns: 1fr;
+                gap: 0;
+                padding: 28px 20px 60px;
+            }
+
+            .rail {
+                display: none;
+            }
+
+            .doc,
+            .article-body {
+                max-width: none;
+            }
+
+            .site-in {
+                flex-wrap: wrap;
+                padding: 14px 20px;
+            }
+
+            .site-nav {
+                gap: 18px;
+                font-size: 14px;
+                width: 100%;
+            }
+
+            .claim > .tag {
+                position: static;
+                display: inline-block;
+                width: auto;
+                text-align: left;
+                margin: 0 8px 0 0;
+                vertical-align: 1px;
+            }
+
+            .claim > .tag .corr,
+            .claim > .tag .disputed {
+                display: inline;
+                margin-left: 5px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            dl.meta {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 20px;
+            }
+
+            .glance {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 20px;
+            }
+
+            .foot-in {
+                padding: 28px 20px 36px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site">
+    <div class="site-in">
+        <a class="brand" href="/">
+            <img class="mark" src="/images/logo.png" alt="Knights Who Say Ni">
+            <span><span class="name">Knights Who Say Ni</span><br><span class="motto">Ghosts in the Wires</span></span>
+        </a>
+        <nav class="site-nav">
+            
+            <a href="/" >Latest</a>
+            
+            <a href="/issues/" >Archive</a>
+            
+            <a href="/hunts/" >Hunt Library</a>
+            
+            <a href="/coverage/" >Coverage</a>
+            
+            <a href="/projects/" >Projects</a>
+            
+        </nav>
+    </div>
+</header>
+
+
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<main class="doc" style="max-width: none;">
+
+<div class="kicker">Coverage</div>
+<h1>Tag Legend</h1>
+<p class="standfirst">The canonical, versioned legend. Every issue's masthead links here so a reader can confirm what a tag meant at the time it was published.</p>
+
+<h2 id="v3-7">Classification v3.7 (current)</h2>
+
+<p>Every sourced claim carries a tag in the left margin like <code>VND-1</code>. The letters say what kind of source it came from. The number says how much of it you can check for yourself.</p>
+
+<h3>Source type</h3>
+<table style="width: 100%; font-size: 14px; margin: 16px 0;">
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">GOV</td><td style="padding: 6px 0;">Government agency, advisory, statement, court filing, indictment</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">VND</td><td style="padding: 6px 0;">Commercial security vendor research, IR reporting, blog</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">MED</td><td style="padding: 6px 0;">News and trade press</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">ACA</td><td style="padding: 6px 0;">Academic and peer-reviewed</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">TEC</td><td style="padding: 6px 0;">Structured record: CVE entry, KEV catalog, RFC, repository, patch note, certificate log</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">IND</td><td style="padding: 6px 0;">Independent researcher, personal blog, conference talk</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">NPO</td><td style="padding: 6px 0;">Non-profit and community: Shadowserver, Spamhaus, Team Cymru, ISACs, non-governmental CERTs</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">ADV</td><td style="padding: 6px 0;">Adversary-controlled: leak site, ransom note, actor claim, forum ad</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">ANL</td><td style="padding: 6px 0;">This product's own judgment. Not a source</td></tr>
+</table>
+
+<h3>Grade</h3>
+<table style="width: 100%; font-size: 14px; margin: 16px 0;">
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">1</td><td style="padding: 6px 0;">Direct, fully evidenced. The source saw it and showed its work. You can check the artifacts</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">2</td><td style="padding: 6px 0;">Direct, partially evidenced. The source saw it but did not publish enough for you to check</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">3</td><td style="padding: 6px 0;">Direct, aggregate. The source saw it in data only it holds. Nobody outside can reproduce the number</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">4</td><td style="padding: 6px 0;">Relay. The source is repeating a named finding it did not observe</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">5</td><td style="padding: 6px 0;">Unretrievable. The evidence trail ends somewhere nobody can open</td></tr>
+</table>
+<p>The digit means the same thing under every prefix: it measures the claim's evidentiary posture, not the industry the publisher sits in, and it does not describe hunt value or how easily a reader can obtain the document.</p>
+
+<h3>Access mark</h3>
+<p>Separate from the grade. <code>open</code> is the default and is not printed. <code>gated</code> means the document was retrieved and graded but a reader may need a subscription to reach it. <code>withdrawn</code> means the document has since returned 404 or 410, and the archive pointer becomes the citation. <code>unarchived</code> means no archive provider captured it; the citation stands and the reader is told the copy is not backed up.</p>
+
+<h3>Corroboration</h3>
+<p><code>&times;2 corroborated</code> means two sources observed a claim independently, using data neither got from the other. Four outlets repeating one report is still one source, and a relay can never contribute to a corroboration count. This site publishes behavior rather than indicator feeds; indicators live in the sources named on each claim, and a reader's own tooling is expected to extract them.</p>
+
+<h3>Analyst blocks</h3>
+<p><code>ANL</code> takes no digit. Confidence is expressed as <code>ANL-High</code>, <code>ANL-Moderate</code>, or <code>ANL-Low</code>, capped by the weakest input the block rests on. Hunt Priority blocks, the executive summary, and the assessment and outlook section are all <code>ANL</code> constructs and are marked as such.</p>
+
+<h2 id="v1">v1 (Iran and DPRK, published before classification v3.7)</h2>
+
+<p>The Iran and DPRK issues published before this classification system existed and use a different, simpler four-category scheme. Their tags do not carry a grade digit and are not comparable to a v3.7 <code>VND-1</code>-style tag. This section describes what those tags meant, drawn from what those issues actually print.</p>
+
+<p><span class="legend-tag tag-am" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[AM]</span> <strong>Ambient:</strong> widely distributed information, standard training data, general public knowledge.</p>
+<p><span class="legend-tag tag-ix" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[IX]</span> <strong>Indexed:</strong> publicly available but requires deliberate searching, academic databases, archived materials.</p>
+<p><span class="legend-tag tag-gt" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[GT]</span> <strong>Gated:</strong> behind access restrictions, paywalls, subscriptions, authentication requirements.</p>
+<p><span class="legend-tag tag-sp" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[SP]</span> <strong>Specialized:</strong> requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</p>
+
+<p>Both published issues also append a qualifier suffix to most of these tags, for example <code>[AM-gov]</code>, <code>[IX-vendor]</code>, or <code>[SP-technical]</code>, naming the specific source type or the nature of the specialized judgment (technical, inference, synthesis, or aggregation across multiple sources). This was an addition made to the same four base categories, not a distinct version of the classification system, and carries no grade digit or gate-based computation behind it.</p>
+
+</main>
+</div>
+
+
+<footer class="foot">
+    <div class="foot-in">
+        <div>
+            <h5>By email</h5>
+            <p style="margin:0"><a href="/subscribe/">Subscribe</a></p>
+        </div>
+        <div>
+            <h5>Recent issues</h5>
+            <p style="margin:0">
+                
+                <a href="https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/">Iran</a><br>
+                
+                <a href="https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/">DPRK</a><br>
+                
+                <a href="/issues/">Archive</a>
+            </p>
+        </div>
+        <div>
+            <h5>Method</h5>
+            <p style="margin:0">
+                <a href="/coverage/legend/">Tag legend</a><br>
+                <a href="/coverage/sources/">Source records</a><br>
+                <a href="/coverage/corrections/">Corrections</a>
+            </p>
+        </div>
+        <div>
+            <h5>Elsewhere</h5>
+            <p style="margin:0"><a href="/index.xml">RSS</a> &middot; <a href="https://github.com/dcollette4456">GitHub</a> &middot; <a href="/contact/">Contact</a></p>
+            <p class="fnote" style="margin:14px 0 0">Open-source intelligence for threat hunters.<br>Author: not important.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

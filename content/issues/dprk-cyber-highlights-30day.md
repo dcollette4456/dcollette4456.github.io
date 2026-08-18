@@ -10,6 +10,11 @@ primaryThreat: "DPRK"
 dateRange: "12 JUL – 11 AUG 2026"
 version: 7
 reportSerial: "TI-20260809-001"
+serial: "TI-20260809-001"
+kicker: "DPRK"
+window_start: 2026-07-12
+window_end: 2026-08-11
+description: "Open-source intelligence summary on North Korean cyber activity targeting South Korean government, defense, and financial sectors over 12 July to 11 August 2026."
 author: "not important"
 sourceBasis: "Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations."
 classificationLegend: true

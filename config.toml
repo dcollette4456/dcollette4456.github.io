@@ -12,8 +12,8 @@ title = "Knights Who Say Ni"
     url = "/issues/"
     weight = 2
   [[menu.main]]
-    name = "Hunt Library"
-    url = "/hunts/"
+    name = "Academics"
+    url = "/academics/"
     weight = 3
   [[menu.main]]
     name = "Coverage"

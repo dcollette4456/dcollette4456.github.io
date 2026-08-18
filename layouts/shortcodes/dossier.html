@@ -1,0 +1,4 @@
+{{- $names := .Get "names" -}}
+{{- $techniques := .Get "techniques" -}}
+{{- $caveat := .Get "caveat" -}}
+<div class="dossier">{{ $.Page.RenderString $names }}{{ with $techniques }} &nbsp;|&nbsp; {{ . }}{{ end }}{{ with $caveat }} &nbsp;|&nbsp; {{ . | upper }}{{ end }}</div>

@@ -1,0 +1,10 @@
+{{- $current := 3.7 -}}
+{{- $cv := .Params.classification_version -}}
+{{- if or (not $cv) (lt (float $cv) $current) -}}
+<div class="migration-banner">
+  This issue was published under an earlier classification system. Its tags do
+  not mean what tags in current issues mean. See
+  <a href="/coverage/legend/">the versioned tag legend</a> for what applied at
+  the time.
+</div>
+{{- end -}}

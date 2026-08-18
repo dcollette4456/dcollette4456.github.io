@@ -1,0 +1,8 @@
+{{- $tag := .Get "tag" -}}
+{{- $corr := .Get "corroborated" -}}
+{{- $disputed := .Get "disputed" -}}
+{{- $claim := .Get "claim" -}}
+<div class="claim">
+  <span class="tag"{{ with $claim }} data-claim="{{ . }}"{{ end }}>{{ $tag }}{{ with $corr }}<span class="corr">&times;{{ . }} corroborated</span>{{ end }}{{ with $disputed }}<span class="disputed">disputed</span>{{ end }}</span>
+  {{ .Page.RenderString .Inner }}
+</div>

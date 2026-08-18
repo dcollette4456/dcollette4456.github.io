@@ -1,0 +1,10 @@
+{{- $stage := .Get "stage" -}}
+{{- $telemetry := .Get "telemetry" -}}
+{{- $builtOn := .Get "built-on" -}}
+{{- $sources := .Get "sources" -}}
+<div class="hunt">
+  <div class="hunt-label">How this would be hunted</div>
+  {{ .Page.RenderString .Inner }}
+  <div class="hunt-foot"><b>Stage</b> {{ $stage }} &nbsp;&middot;&nbsp; <b>Look in</b> {{ $telemetry }} &nbsp;&middot;&nbsp; <b>Built on</b> {{ $builtOn }}</div>
+  {{ with $sources }}<div class="hunt-sources">Indicators for your SIEM live in the sources, not here. {{ $.Page.RenderString . }}</div>{{ end }}
+</div>

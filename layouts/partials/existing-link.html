@@ -1,0 +1,6 @@
+{{- $path := .path -}}
+{{- $text := .text -}}
+{{- $target := site.GetPage $path -}}
+{{- if $target -}}
+<a href="{{ $target.RelPermalink }}">{{ $text | default $target.Title }}</a>
+{{- end -}}

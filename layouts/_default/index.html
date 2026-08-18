@@ -54,9 +54,12 @@
 {{ end }}
 
 <div style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6; display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
+    <!-- Cadence (weekly vs monthly) is an open decision, article spec section 3 and
+         classification spec section 17 decision 6. Do not add a frequency promise
+         here until it is settled; update this line and the one below together. -->
     <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">WEEKLY, BY EMAIL</div>
-        <p style="margin: 0; font: 400 17px/1.5 Spectral, serif; color: #3f3b35; max-width: 44ch;">One issue every Monday. Behavior-first analysis, ATT&CK mapping, and queries you can run the same day.</p>
+        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">BY EMAIL</div>
+        <p style="margin: 0; font: 400 17px/1.5 Spectral, serif; color: #3f3b35; max-width: 44ch;">New issues by email. Behavior-first analysis, ATT&CK mapping, and queries you can run the same day.</p>
         <div style="display: flex; gap: 0; max-width: 400px; margin-top: 6px;">
             <input type="email" placeholder="you@organization.com" style="flex: 1; border: 1px solid #cfc9c0; border-right: none; background: #fff; padding: 12px 14px; font: 400 14px Spectral, serif; color: #a09a91;">
             <button class="button" style="margin-top: 0;">SUBSCRIBE</button>

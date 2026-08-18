@@ -27,7 +27,10 @@ title = "Knights Who Say Ni"
 [params]
   subtitle = "Ghosts in the Wires"
   author = "not important"
-  description = "Weekly threat research on cyber intrusions and threat actor behavior"
+  # Cadence (weekly vs monthly) is an open decision; see the comment in
+  # layouts/_default/index.html. Do not reintroduce a frequency word here
+  # until it is settled.
+  description = "Open-source threat research on cyber intrusions and threat actor behavior"
   twitter = "your-handle"
   github = "dcollette4456"
 

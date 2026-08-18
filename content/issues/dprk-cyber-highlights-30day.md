@@ -1,6 +1,6 @@
 ---
 title: "AI-Assisted Espionage: Kimsuky's Automated Document Analysis"
-date: 2026-08-11
+date: 2026-08-09
 type: "issues"
 issueNumber: 34
 readingTime: "12 min"
@@ -9,7 +9,7 @@ dek: "Open-Source Intelligence Summary: 30-Day Look Back. Threat Operations Asse
 primaryThreat: "DPRK"
 dateRange: "12 JUL – 11 AUG 2026"
 version: 7
-reportSerial: "TI-20260811-001"
+reportSerial: "TI-20260809-001"
 author: "not important"
 sourceBasis: "Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations."
 classificationLegend: true

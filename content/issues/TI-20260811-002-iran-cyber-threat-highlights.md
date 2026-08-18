@@ -9,7 +9,7 @@ dek: "Open-Source Intelligence Summary: 12 July - 11 August 2026. Threat Operati
 primaryThreat: "Iran"
 dateRange: "12 JUL – 11 AUG 2026"
 version: 1
-reportSerial: "TI-20260811-002"
+reportSerial: "TI-20260811-001"
 author: "not important"
 sourceBasis: "Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations."
 classificationLegend: true

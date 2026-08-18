@@ -11,10 +11,10 @@
             <span class="reading-time" style="margin-left: 20px;">{{ $e.Params.readingTime }}</span>
         </article>
 
-        {{ if $e.Params.stats }}
+        {{ if or $e.Params.stats $e.Params.glance }}
         <div class="sidebar-box"{{ if gt $i 0 }} style="margin-top: 40px;"{{ end }}>
             <div class="sidebar-header">THIS ISSUE AT A GLANCE</div>
-            {{ range $e.Params.stats }}
+            {{ range ($e.Params.glance | default $e.Params.stats) }}
             <div class="sidebar-row">
                 <span>{{ .label }}</span>
                 <span class="value">{{ .value }}</span>

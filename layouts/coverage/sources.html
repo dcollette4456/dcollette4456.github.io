@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<main class="doc" style="max-width: none;">
+
+<div class="kicker">Coverage</div>
+<h1>Source Records</h1>
+<p class="standfirst">Computed from the claims index, never assigned. A source's record is measured across every claim ever built on it; grading never consults this page while a claim is being graded.</p>
+
+{{ $registry := .Site.Data.sources.registry }}
+{{ if not $registry }}
+<p style="font-size: 16px; line-height: 1.7; color: var(--muted); margin: 30px 0;">No sources have been recorded under the current classification version. This page renders directly from <code>/data/sources/registry.json</code>, which is empty; nothing is fabricated to fill it. Fifteen unique claims per pool are required before a distribution publishes for a source, so this page stays sparse for the first several issues under the automated pipeline. See classification spec &sect;12.</p>
+{{ else }}
+{{ range $registry }}
+<div style="border-top: 1px solid var(--rule); padding: 24px 0;">
+    <h3 style="margin-top: 0;">{{ .name }}</h3>
+    <p style="font-family: var(--mono); font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 14px;">{{ .type }} &middot; {{ .origin }} &middot; {{ .access }} &middot; first cited {{ .first_cited }} &middot; last cited {{ .last_cited }}</p>
+
+    {{ with .live }}
+    {{ if eq .record_status "established" }}
+    <p>Live pool: <strong>{{ .unique_claims }}</strong> unique claims, {{ .citations }} citations. Grade 5 rate {{ .grade_5_rate }}% ({{ index .distribution "5" }}/{{ .unique_claims }}).</p>
+    {{ else }}
+    <p>Live pool: insufficient ({{ .unique_claims }} unique claims; fifteen required to publish a distribution).</p>
+    {{ end }}
+    {{ end }}
+
+    {{ with .hunt_value }}
+    <p>Hunt value: {{ .huntable }}/{{ .behavioral }} behavioral claims huntable ({{ .huntable_rate }}), split {{ .huntable_stated }} stated / {{ .huntable_derived }} derived. {{ .indicator_bearing }} indicator-bearing.</p>
+    {{ end }}
+
+    <p style="font-size: 13px; color: var(--muted);">Disputed claims: {{ .disputed_claims }} &middot; unarchived: {{ .unarchived_claims }}</p>
+</div>
+{{ end }}
+{{ end }}
+
+</main>
+</div>
+{{ end }}

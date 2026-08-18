@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issues | Knights Who Say Ni</title>
+    <title>Coverage | Knights Who Say Ni</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -1157,11 +1157,11 @@
             
             <a href="/" >Latest</a>
             
-            <a href="/issues/" aria-current="page">Archive</a>
+            <a href="/issues/" >Archive</a>
             
             <a href="/academics/" >Academics</a>
             
-            <a href="/coverage/" >Coverage</a>
+            <a href="/coverage/" aria-current="page">Coverage</a>
             
             <a href="/projects/" >Projects</a>
             
@@ -1170,55 +1170,20 @@
 </header>
 
 
-<div style="padding: 48px 44px 20px; display: flex; flex-direction: column; gap: 10px;">
-    <h1>Archive</h1>
-    <p style="max-width: 60ch;">Every issue. Filter by tactic or technique to find prior coverage of a behavior before you build a new hunt.</p>
-</div>
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<main class="doc" style="max-width: none;">
 
-<div style="padding: 22px 44px; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #e2ded6;">
-    <span style="font: 500 10.5px/1 'JetBrains Mono', monospace; letter-spacing: .08em; color: #fff; background: #7d2231; padding: 7px 11px;">ALL</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">EXECUTION</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">PERSISTENCE</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">DEFENSE EVASION</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">LATERAL MOVEMENT</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">C2</span>
-</div>
+<div class="kicker">Coverage</div>
+<h1>Coverage</h1>
+<p class="standfirst">The measured record behind this product: where a source's claims graded, how it names actors, and what the reader-facing tags mean, by classification version.</p>
 
-<div style="display: flex; flex-direction: column;">
-    
-    <div style="display: grid; grid-template-columns: 96px 1fr 220px; gap: 32px; padding: 26px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
-        <div style="display: flex; flex-direction: column; gap: 5px;">
-            <span style="font: 500 20px/1 'JetBrains Mono', monospace; color: #7d2231;">35</span>
-            <span style="font: 400 11px/1 'JetBrains Mono', monospace; color: #6b665e;">11 AUG</span>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 7px;">
-            <h3 style="margin: 0; font: 400 21px/1.3 Spectral, serif; color: #1c1a17;"><a href="https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/" style="color: #1c1a17;">Disabling the Fail-Safes: CyberAv3ngers&#39; PLC Attacks on U.S. Water Systems</a></h3>
-            <p style="margin: 0; font: 400 15px/1.5 Spectral, serif; color: #57534c;">Open-source intelligence summary on Iranian state-sponsored cyber operations across critical infrastructure, espionage, and destructive malware, 12 July – 11 August 2026.</p>
-        </div>
-        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            
-        </div>
-    </div>
-    
-    <div style="display: grid; grid-template-columns: 96px 1fr 220px; gap: 32px; padding: 26px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
-        <div style="display: flex; flex-direction: column; gap: 5px;">
-            <span style="font: 500 20px/1 'JetBrains Mono', monospace; color: #7d2231;">34</span>
-            <span style="font: 400 11px/1 'JetBrains Mono', monospace; color: #6b665e;">9 AUG</span>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 7px;">
-            <h3 style="margin: 0; font: 400 21px/1.3 Spectral, serif; color: #1c1a17;"><a href="https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/" style="color: #1c1a17;">AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</a></h3>
-            <p style="margin: 0; font: 400 15px/1.5 Spectral, serif; color: #57534c;">Open-source intelligence summary on North Korean cyber activity targeting South Korean government, defense, and financial sectors over 12 July – 11 August 2026.</p>
-        </div>
-        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            
-        </div>
-    </div>
-    
-</div>
+<ul style="padding-left: 20px; margin: 30px 0; font-size: 16px; line-height: 2;">
+    <li><a href="/coverage/sources/">Source records</a> &middot; grade distribution, hunt value rates, and naming metrics for every source ever cited</li>
+    <li><a href="/coverage/legend/">Tag legend</a> &middot; the canonical, versioned legend explaining what a tag means, for every classification version this site has published under</li>
+    <li><a href="/coverage/corrections/">Corrections</a> &middot; the standing record of what was published, what was wrong, and what changed</li>
+</ul>
 
-<div style="padding: 26px 44px; border-top: 1px solid #e2ded6; display: flex; justify-content: center; gap: 14px; font: 400 12px 'JetBrains Mono', monospace; color: #6b665e;">
-    
-    
+</main>
 </div>
 
 

@@ -7,6 +7,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --paper: #fdfcfa;
+            --ink: #1f1d1b;
+            --muted: #5f5a55;
+            --faint: #8f8880;
+            --rule: #e7e2da;
+            --hair: #f0ece5;
+            --accent: #1a3d5f;
+            --crimson: #a8385a;
+            --legend-bg: #faf8f4;
+            --hunt-bg: #f2f6fb;
+            --hunt-rule: #2c5f8a;
+            --hunt-ink: #1b3d5c;
+            --serif: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
+            --mono: 'SF Mono', ui-monospace, 'Consolas', 'Courier New', monospace;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -14,156 +31,145 @@
         }
 
         body {
-            background: #e8e5df;
-            font-family: Spectral, Georgia, serif;
-            color: #3f3b35;
+            background: var(--paper);
+            font-family: var(--serif);
+            font-size: 17px;
+            line-height: 1.7;
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
         }
 
         a {
-            color: #7d2231;
+            color: var(--accent);
             text-decoration: none;
+            border-bottom: 1px solid rgba(26, 61, 95, .28);
         }
 
         a:hover {
-            color: #5a1622;
+            color: var(--crimson);
+            border-bottom-color: var(--crimson);
         }
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 20px 44px;
-            border-bottom: 1px solid #e2ded6;
-            background: #fbfaf8;
+         
+
+        .site {
+            border-bottom: 1px solid var(--rule);
+            background: #fff;
         }
 
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .logo-img {
-            width: 60px;
-            height: auto;
-        }
-
-        .logo-text h1 {
-            font: 600 17px/1 Spectral, serif;
-            color: #1c1a17;
-            margin: 0;
-            letter-spacing: 0.01em;
-        }
-
-        .logo-text .subtitle {
-            font: 500 9.5px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.14em;
-            color: #6b665e;
-        }
-
-        nav {
-            display: flex;
-            gap: 30px;
-            font: 400 14px/1 Spectral, serif;
-            color: #3f3b35;
-        }
-
-        nav a {
-            position: relative;
-            padding-bottom: 3px;
-        }
-
-        nav a.active {
-            color: #7d2231;
-            border-bottom: 1.5px solid #7d2231;
-        }
-
-        nav a:not(.active):hover {
-            color: #5a1622;
-        }
-
-        main {
-            max-width: 1400px;
+        .site-in {
+            max-width: 1180px;
             margin: 0 auto;
-            background: #fbfaf8;
-            border-left: 1px solid #ded9d1;
-            border-right: 1px solid #ded9d1;
-        }
-
-        footer {
-            padding: 26px 44px;
-            border-top: 1px solid #e2ded6;
+            padding: 16px 32px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            font: 400 13px Spectral, serif;
-            color: #6b665e;
-            background: #fbfaf8;
+            justify-content: space-between;
+            gap: 24px;
         }
 
-        footer a {
-            color: #6b665e;
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            border: none;
         }
 
-        .footer-links {
-            font: 400 11px 'JetBrains Mono', monospace;
-            letter-spacing: 0.08em;
+        .brand .mark {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            flex: none;
+            display: block;
+            object-fit: cover;
         }
 
-        .footer-links a {
-            margin-left: 12px;
+        .brand .name {
+            font-family: var(--serif);
+            font-size: 19px;
+            font-weight: 600;
+            color: var(--ink);
+            line-height: 1.15;
         }
+
+        .brand .motto {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-top: 2px;
+        }
+
+        .site-nav {
+            display: flex;
+            gap: 26px;
+            font-size: 15px;
+        }
+
+        .site-nav a {
+            color: var(--crimson);
+            text-decoration: none;
+            border: none;
+        }
+
+        .site-nav a:hover,
+        .site-nav a[aria-current] {
+            border-bottom: 1.5px solid var(--crimson);
+            padding-bottom: 2px;
+        }
+
+         
 
         h1 {
-            font: 300 46px/1.12 Spectral, serif;
-            color: #1c1a17;
-            letter-spacing: -0.015em;
-            text-wrap: pretty;
-            margin-bottom: 20px;
+            font-family: var(--serif);
+            font-size: 40px;
+            line-height: 1.15;
+            font-weight: 400;
+            letter-spacing: -.012em;
+            margin: 0 0 16px;
+            color: var(--ink);
         }
 
         h2 {
-            font: 600 13px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.14em;
-            color: #1c1a17;
-            margin: 28px 0 16px 0;
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: .17em;
             text-transform: uppercase;
+            font-weight: 600;
+            color: var(--crimson);
+            margin: 54px 0 6px;
+            padding-bottom: 9px;
+            border-bottom: 1px solid var(--rule);
         }
 
         h3 {
-            font: 400 22px/1.25 Spectral, serif;
-            color: #1c1a17;
-            text-wrap: pretty;
-            margin-bottom: 12px;
+            font-family: var(--serif);
+            font-size: 23px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: var(--ink);
+            margin: 44px 0 7px;
+            letter-spacing: -.006em;
         }
 
         p {
-            font: 400 16px/1.6 Spectral, serif;
-            color: #4a463f;
-            margin-bottom: 16px;
-            max-width: 65ch;
-            text-wrap: pretty;
-        }
-
-        .issue-header {
-            font: 500 10.5px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.14em;
-            color: #7d2231;
-            text-transform: uppercase;
-            margin-bottom: 12px;
+            margin: 0 0 20px;
         }
 
         .reading-time {
-            font: 500 11px/1 'JetBrains Mono', monospace;
-            color: #6b665e;
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 500;
+            color: var(--muted);
         }
 
         .button {
             display: inline-block;
-            background: #7d2231;
+            background: var(--crimson);
             color: #fff;
             padding: 12px 22px;
-            font: 500 11px/1.5 'JetBrains Mono', monospace;
+            font: 500 11px/1.5 var(--mono);
             letter-spacing: 0.1em;
             border: none;
             cursor: pointer;
@@ -172,11 +178,15 @@
         }
 
         .button:hover {
-            background: #5a1622;
+            background: #7d2c47;
         }
+
+         
 
         .container {
             padding: 52px 44px 40px;
+            max-width: 1180px;
+            margin: 0 auto;
         }
 
         .content {
@@ -272,176 +282,556 @@
 
          
 
-        .article-header {
-            padding: 56px 56px 40px;
-            border-bottom: 1px solid #e2ded6;
+        .wrap {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 44px 32px 80px;
+            display: grid;
+            grid-template-columns: 190px minmax(0, 1fr);
+            gap: 112px;
         }
 
-        .article-header-inner {
-            max-width: 820px;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+        .rail {
+            position: sticky;
+            top: 32px;
+            align-self: start;
+            font-family: var(--mono);
+            font-size: 10.5px;
+            line-height: 1.95;
+            letter-spacing: .045em;
         }
 
-        .article-badge-row {
-            display: flex;
-            gap: 14px;
-            align-items: center;
-            font: 500 10.5px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.14em;
-            color: #7d2231;
+        .rail .rail-h {
+            color: var(--faint);
+            margin-bottom: 11px;
+            font-size: 9px;
+            letter-spacing: .14em;
             text-transform: uppercase;
         }
 
-        .article-badge-row .sep {
-            color: #c9bfb4;
-        }
-
-        .article-header h1 {
-            margin: 0;
-            font: 300 40px/1.15 Spectral, serif;
-            letter-spacing: -0.02em;
-        }
-
-        .article-dek {
-            margin: 0;
-            font: 400 19px/1.55 Spectral, serif;
-            color: #4a463f;
-            max-width: 64ch;
-        }
-
-        .article-info-grid {
-            margin-top: 34px;
-            padding-top: 22px;
-            border-top: 1px solid #e2ded6;
-            display: grid;
-            grid-template-columns: repeat(4, auto) 1fr;
-            gap: 44px;
-            max-width: 1000px;
-        }
-
-        .info-item {
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-
-        .info-label {
-            font: 500 9.5px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.14em;
-            color: #6b665e;
-        }
-
-        .info-value {
-            font: 400 15px Spectral, serif;
-            color: #1c1a17;
-        }
-
-        .info-item-wide .info-value {
-            font: 400 14px/1.5 Spectral, serif;
-            color: #57534c;
-        }
-
-        .article-layout {
-            display: grid;
-            grid-template-columns: 236px 1fr;
-            max-width: 1120px;
-            margin: 0 auto;
-        }
-
-        .article-sidebar {
-            border-right: 1px solid #e2ded6;
-            padding: 36px 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 26px;
-            align-self: start;
-            position: sticky;
-            top: 0;
-        }
-
-        .sidebar-label {
-            font: 500 9.5px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.14em;
-            color: #6b665e;
-            margin-bottom: 11px;
-        }
-
-        .sidebar-divider {
-            height: 1px;
-            background: #e2ded6;
-        }
-
-        #TableOfContents,
-        #TableOfContents ul {
+        .rail ul {
             list-style: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            gap: 9px;
         }
 
-        #TableOfContents ul {
-            margin-top: 6px;
-            margin-left: 12px;
+        .rail a {
+            display: block;
+            color: var(--muted);
+            text-decoration: none;
+            border: none;
+            padding: 2px 0;
         }
 
-        #TableOfContents a {
-            font: 400 14px/1.35 Spectral, serif;
-            color: #3f3b35;
+        .rail a:hover {
+            color: var(--crimson);
+        }
+
+        .doc {
+            max-width: 700px;
+        }
+
+         
+
+        .kicker {
+            font-family: var(--mono);
+            font-size: 10.5px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--crimson);
+            margin-bottom: 16px;
+        }
+
+        .standfirst {
+            font-size: 17.5px;
+            line-height: 1.55;
+            color: var(--muted);
+            margin: 0 0 30px;
+        }
+
+        dl.meta {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 18px 0;
+            margin: 0 0 26px;
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, auto)) minmax(220px, 1.6fr);
+            gap: 18px 30px;
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.55;
+        }
+
+        dl.meta dt {
+            color: var(--faint);
+            letter-spacing: .11em;
+            text-transform: uppercase;
+            font-size: 8.5px;
+            margin-bottom: 4px;
+            white-space: nowrap;
+        }
+
+        dl.meta dd {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        dl.meta a {
+            color: var(--muted);
+            border-bottom: 1px solid rgba(95, 90, 85, .3);
+        }
+
+         
+
+        .legend {
+            background: var(--legend-bg);
+            border: 1px solid var(--rule);
+            padding: 18px 22px;
+            margin: 0 0 34px;
+            font-size: 13.5px;
+            line-height: 1.62;
+            color: var(--muted);
+        }
+
+        .legend h4 {
+            font-family: var(--mono);
+            font-size: 9px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin: 0 0 12px;
+            font-weight: 600;
+        }
+
+        .legend p {
+            margin: 0 0 9px;
+        }
+
+        .legend p:last-child {
+            margin-bottom: 0;
+        }
+
+        .legend b,
+        .legend strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+
+        .legend code {
+            font-family: var(--mono);
+            font-size: 11.5px;
+            color: var(--accent);
+            background: #f2eee7;
+            padding: 1px 4px;
+            border-radius: 2px;
+        }
+
+        .legend a {
+            color: var(--accent);
+            border-bottom: 1px solid rgba(26, 61, 95, .3);
             text-decoration: none;
         }
 
-        #TableOfContents a:hover,
-        #TableOfContents a.active {
-            color: #7d2231;
+        .legend .legend-tag {
+            font-family: var(--mono);
+            font-size: 11px;
+            font-weight: 600;
+            padding: 1px 5px;
         }
 
-        .hunt-priorities-list {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            font: 400 13px/1.4 Spectral, serif;
-            color: #57534c;
+         
+
+        .glance {
+            border-top: 1px solid var(--rule);
+            border-bottom: 1px solid var(--rule);
+            padding: 17px 0 18px;
+            margin: 0 0 16px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px 26px;
         }
+
+        .glance .k {
+            font-family: var(--mono);
+            font-size: 8.5px;
+            letter-spacing: .13em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 5px;
+        }
+
+        .glance .v {
+            font-size: 15px;
+            line-height: 1.35;
+            color: var(--ink);
+        }
+
+        .glance-note {
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--muted);
+            margin: 0 0 8px;
+        }
+
+         
+
+        .dossier {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: .055em;
+            color: var(--faint);
+            text-transform: uppercase;
+            line-height: 1.9;
+            margin: 0 0 22px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .dossier b {
+            font-weight: 600;
+            color: var(--muted);
+        }
+
+         
+
+        .claim {
+            position: relative;
+        }
+
+        .claim > .tag {
+            position: absolute;
+            left: -102px;
+            top: .5em;
+            width: 88px;
+            text-align: right;
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .06em;
+            line-height: 1.5;
+            color: #94a6b7;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .claim > .tag .corr {
+            display: block;
+            color: #b1bec9;
+            font-weight: 400;
+        }
+
+        .claim > .tag .disputed {
+            display: block;
+            color: var(--crimson);
+            font-weight: 600;
+        }
+
+        .section-tag {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .08em;
+            color: #c08a2e;
+            text-transform: uppercase;
+            margin: 0 0 14px;
+            font-weight: 600;
+        }
+
+        sup.cite {
+            font-size: 9.5px;
+            line-height: 0;
+            vertical-align: super;
+            font-family: var(--mono);
+        }
+
+        sup.cite a {
+            color: var(--crimson);
+            border: none;
+            font-weight: 600;
+            padding: 0 1px;
+        }
+
+        sup.cite a:hover {
+            text-decoration: underline;
+        }
+
+         
+
+        .hunt {
+            background: var(--hunt-bg);
+            border-left: 2px solid var(--hunt-rule);
+            padding: 22px 26px 18px;
+            margin: 30px 0;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .hunt-label {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--hunt-rule);
+            font-weight: 600;
+            margin: 0 0 14px;
+        }
+
+        .hunt p {
+            font-size: 15.5px;
+            line-height: 1.72;
+            color: var(--hunt-ink);
+            margin: 0 0 16px;
+        }
+
+        .hunt p:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .hunt-foot {
+            margin-top: 18px;
+            padding-top: 12px;
+            border-top: 1px solid #dde6ef;
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .045em;
+            line-height: 1.85;
+            color: #7d93a8;
+            text-transform: uppercase;
+        }
+
+        .hunt-foot b {
+            font-weight: 600;
+            color: #5d768f;
+        }
+
+        .hunt-sources {
+            margin-top: 14px;
+            font-size: 13px;
+            line-height: 1.62;
+            color: #5d768f;
+            font-family: var(--serif);
+            font-style: italic;
+        }
+
+        .hunt-sources a {
+            color: #3d6b93;
+            border-bottom-color: rgba(61, 107, 147, .3);
+        }
+
+         
+
+        .src {
+            margin: 0 0 26px;
+            padding: 0 0 24px;
+            border-bottom: 1px solid var(--hair);
+        }
+
+        .src:last-of-type {
+            border-bottom: none;
+        }
+
+        .src h4 {
+            font-family: var(--serif);
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 1.35;
+            margin: 0 0 5px;
+            color: var(--ink);
+        }
+
+        .src .byline {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .07em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 9px;
+        }
+
+        .src .url {
+            font-family: var(--mono);
+            font-size: 10.5px;
+            word-break: break-all;
+            margin-bottom: 10px;
+            display: block;
+            color: var(--muted);
+            border: none;
+        }
+
+        .src .url:hover {
+            color: var(--crimson);
+        }
+
+        .src p {
+            font-size: 15px;
+            line-height: 1.68;
+            margin: 0;
+            color: #3b3733;
+        }
+
+        .src .rec {
+            font-family: var(--mono);
+            font-size: 9.5px;
+            letter-spacing: .05em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-top: 8px;
+        }
+
+        .src .rec a {
+            color: var(--faint);
+            border-bottom-color: rgba(143, 136, 128, .4);
+        }
+
+         
+
+        .continuity {
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.9;
+            color: var(--muted);
+            margin: 30px 0 0;
+            padding-top: 14px;
+            border-top: 1px solid var(--rule);
+        }
+
+        .continuity .continuity-h {
+            font-size: 9px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin-bottom: 8px;
+        }
+
+        .continuity .cluster {
+            color: var(--ink);
+            font-weight: 600;
+            display: inline-block;
+            width: 90px;
+        }
+
+         
+
+        ol.refs {
+            font-size: 13.5px;
+            line-height: 1.65;
+            padding-left: 24px;
+            color: #3b3733;
+        }
+
+        ol.refs li {
+            margin-bottom: 11px;
+            scroll-margin-top: 24px;
+        }
+
+        ol.refs li:target {
+            background: #fdf6e3;
+            outline: 2px solid #d9a441;
+            outline-offset: 4px;
+            border-radius: 2px;
+        }
+
+         
+
+        .migration-banner {
+            background: #fdf6e3;
+            border: 1px solid #d9a441;
+            padding: 12px 16px;
+            margin: 0 0 24px;
+            font-family: var(--mono);
+            font-size: 11px;
+            line-height: 1.7;
+            color: #7a5c14;
+        }
+
+        .buildnote {
+            font-family: var(--mono);
+            font-size: 10px;
+            line-height: 1.8;
+            color: var(--faint);
+            border-top: 1px solid var(--rule);
+            margin-top: 52px;
+            padding-top: 16px;
+            letter-spacing: .03em;
+        }
+
+         
+
+        .operational-context {
+            background: var(--legend-bg);
+            border-left: 3px solid var(--accent);
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .operational-context h4 {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin: 0 0 12px;
+            font-weight: 600;
+        }
+
+        .operational-context p {
+            font-size: 15px;
+            line-height: 1.65;
+            margin: 0 0 12px;
+        }
+
+        .operational-context ul {
+            margin: 0 0 12px;
+            padding-left: 20px;
+        }
+
+        .operational-context li {
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 6px;
+        }
+
+         
 
         .article-body {
-            padding: 36px 56px 56px;
+            max-width: 700px;
             display: flex;
             flex-direction: column;
             gap: 22px;
-            max-width: 860px;
             overflow-x: auto;
         }
 
         .article-body h2 {
-            font: 600 15px/1 'JetBrains Mono', monospace;
-            letter-spacing: 0.16em;
-            color: #1c1a17;
-            padding-bottom: 12px;
-            border-bottom: 1px solid #e2ded6;
-            margin: 0 0 16px;
+            font-family: var(--mono);
+            font-size: 11px;
+            letter-spacing: .17em;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: var(--crimson);
+            padding-bottom: 9px;
+            border-bottom: 1px solid var(--rule);
+            margin: 0;
             scroll-margin-top: 20px;
         }
 
         .article-body h3 {
-            font: 300 30px/1.28 Spectral, serif;
-            color: #1c1a17;
+            font-family: var(--serif);
+            font-size: 23px;
+            line-height: 1.3;
+            font-weight: 400;
+            color: var(--ink);
             margin: 10px 0 0;
         }
 
         .article-body p {
-            font: 400 17px/1.68 Spectral, serif;
-            color: #3f3b35;
+            font-size: 17px;
+            line-height: 1.68;
+            color: var(--ink);
             max-width: none;
+            margin: 0;
         }
 
         .article-body ul,
         .article-body ol {
-            font: 400 17px/1.68 Spectral, serif;
-            color: #3f3b35;
+            font: 400 17px/1.68 var(--serif);
+            color: var(--ink);
             padding-left: 22px;
         }
 
@@ -605,6 +995,7 @@
 
         .source-summary-meta a {
             color: #7d2231;
+            border-bottom-color: rgba(125, 34, 49, .3);
         }
 
         .source-summary-meta p {
@@ -621,137 +1012,169 @@
         }
 
         .article-disclaimer {
-            margin: 0 56px 48px;
+            margin: 40px 0 0;
             padding-top: 26px;
             border-top: 1px solid #e2ded6;
             font: italic 400 14.5px/1.6 Spectral, serif;
             color: #6b665e;
             text-align: center;
-            max-width: 70ch;
         }
 
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column;
-                gap: 20px;
+         
+
+        table {
+            border-collapse: collapse;
+        }
+
+         
+
+        .foot {
+            border-top: 1px solid var(--rule);
+            background: #fff;
+            margin-top: 70px;
+        }
+
+        .foot-in {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 34px 32px 44px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 28px 40px;
+            font-size: 13.5px;
+            line-height: 1.75;
+            color: var(--muted);
+        }
+
+        .foot h5 {
+            font-family: var(--mono);
+            font-size: 8.5px;
+            letter-spacing: .15em;
+            text-transform: uppercase;
+            color: var(--faint);
+            margin: 0 0 10px;
+            font-weight: 600;
+        }
+
+        .foot a {
+            color: var(--muted);
+            border-bottom: 1px solid rgba(95, 90, 85, .25);
+            display: inline-block;
+        }
+
+        .foot a:hover {
+            color: var(--crimson);
+            border-bottom-color: var(--crimson);
+        }
+
+        .foot .fnote {
+            font-family: var(--mono);
+            font-size: 10px;
+            letter-spacing: .03em;
+            color: var(--faint);
+            line-height: 1.8;
+        }
+
+        @media (max-width: 960px) {
+            .wrap {
+                grid-template-columns: 1fr;
+                gap: 0;
+                padding: 28px 20px 60px;
             }
 
-            nav {
-                flex-direction: column;
-                gap: 12px;
+            .rail {
+                display: none;
+            }
+
+            .doc,
+            .article-body {
+                max-width: none;
+            }
+
+            .site-in {
+                flex-wrap: wrap;
+                padding: 14px 20px;
+            }
+
+            .site-nav {
+                gap: 18px;
+                font-size: 14px;
+                width: 100%;
+            }
+
+            .claim > .tag {
+                position: static;
+                display: inline-block;
+                width: auto;
+                text-align: left;
+                margin: 0 8px 0 0;
+                vertical-align: 1px;
+            }
+
+            .claim > .tag .corr,
+            .claim > .tag .disputed {
+                display: inline;
+                margin-left: 5px;
+            }
+
+            h1 {
+                font-size: 29px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+            dl.meta {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 20px;
+            }
+
+            .glance {
+                grid-template-columns: 1fr 1fr;
+                gap: 16px 20px;
+            }
+
+            .foot-in {
+                padding: 28px 20px 36px;
             }
 
             .content {
                 grid-template-columns: 1fr;
             }
-
-            h1 {
-                font-size: 32px;
-            }
-
-            p {
-                font-size: 15px;
-            }
-
-            .article-header,
-            .article-body {
-                padding-left: 24px;
-                padding-right: 24px;
-            }
-
-            .article-header h1 {
-                font-size: 34px;
-            }
-
-            .article-info-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-
-            .article-layout {
-                grid-template-columns: 1fr;
-            }
-
-            .article-sidebar {
-                position: static;
-                border-right: none;
-                border-bottom: 1px solid #e2ded6;
-            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="logo-section">
-            <img src="/images/logo.png" alt="Knights Who Say Ni" class="logo-img">
-            <div class="logo-text">
-                <h1>Knights Who Say Ni</h1>
-                <div class="subtitle">Ghosts in the Wires</div>
-            </div>
-        </div>
-        <nav>
+
+<header class="site">
+    <div class="site-in">
+        <a class="brand" href="/">
+            <img class="mark" src="/images/logo.png" alt="Knights Who Say Ni">
+            <span><span class="name">Knights Who Say Ni</span><br><span class="motto">Ghosts in the Wires</span></span>
+        </a>
+        <nav class="site-nav">
             
             <a href="/" >Latest</a>
             
             <a href="/issues/" >Archive</a>
             
-            <a href="/hunts/" >Hunt Library</a>
+            <a href="/academics/" >Academics</a>
             
             <a href="/coverage/" >Coverage</a>
             
             <a href="/projects/" >Projects</a>
             
         </nav>
-    </header>
-
-    <main>
-        
-<article>
-    <div class="article-header">
-        <div class="article-header-inner">
-            <div class="article-badge-row">
-                <span>DPRK</span>
-                <span class="sep">·</span><span>12 JUL – 11 AUG 2026</span>
-                <span class="sep">·</span><span>V7</span>
-            </div>
-            <h1>AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</h1>
-            <p class="article-dek">Open-Source Intelligence Summary: 30-Day Look Back. Threat Operations Assessment.</p>
-        </div>
-        <div class="article-info-grid">
-            
-            <div class="info-item">
-                <span class="info-label">REPORT SERIAL</span>
-                <span class="info-value">TI-20260811-001</span>
-            </div>
-            
-            <div class="info-item">
-                <span class="info-label">AUTHOR</span>
-                <span class="info-value">not important</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">PUBLISHED</span>
-                <span class="info-value">11 August 2026</span>
-            </div>
-            
-            <div class="info-item">
-                <span class="info-label">VERSION</span>
-                <span class="info-value">7</span>
-            </div>
-            
-            
-            <div class="info-item info-item-wide">
-                <span class="info-label">SOURCE BASIS</span>
-                <span class="info-value">Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations.</span>
-            </div>
-            
-        </div>
     </div>
+</header>
 
-    <div class="article-layout">
-        <aside class="article-sidebar">
-            
-            <div>
-                <div class="sidebar-label">CONTENTS</div>
-                <nav id="TableOfContents">
+
+<div class="wrap">
+
+<nav class="rail">
+    <div class="rail-h">Contents</div>
+    <nav id="TableOfContents">
   <ul>
     <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#scope-and-sourcing">Scope and Sourcing</a></li>
@@ -766,50 +1189,60 @@
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
-            </div>
-            
-            
-            <div class="sidebar-divider"></div>
-            <div>
-                <div class="sidebar-label">HUNT PRIORITIES</div>
-                <div class="hunt-priorities-list">
-                    <span>Presence-stage: Lazarus / Gunra infrastructure</span><span>Engagement &#43; Presence: GitHub C2 and LNK chains</span><span>Engagement-stage: mandatory client software zero-days</span>
-                </div>
-            </div>
-            
-            
-            <div class="sidebar-divider"></div>
-            <div class="sidebar-box">
-                <div class="sidebar-header">AT A GLANCE</div>
-                
-                <div class="sidebar-row">
-                    <span>Reporting window</span>
-                    <span class="value">30 days</span>
-                </div>
-                
-                <div class="sidebar-row">
-                    <span>Primary threat</span>
-                    <span class="value">DPRK</span>
-                </div>
-                
-            </div>
-            
-        </aside>
+</nav>
 
-        <div class="article-body">
-            
-            <div class="classification-box">
-                <div class="sidebar-label">INFORMATION CLASSIFICATION SYSTEM</div>
-                <div class="classification-rows">
-                    <div class="classification-row"><span class="tag-badge tag-am">[AM]</span><span><strong>Ambient:</strong> Widely distributed information, standard training data, general public knowledge</span></div>
-                    <div class="classification-row"><span class="tag-badge tag-ix">[IX]</span><span><strong>Indexed:</strong> Publicly available but requires deliberate searching, academic databases, archived materials</span></div>
-                    <div class="classification-row"><span class="tag-badge tag-gt">[GT]</span><span><strong>Gated:</strong> Behind access restrictions, paywalls, subscriptions, authentication requirements</span></div>
-                    <div class="classification-row"><span class="tag-badge tag-sp">[SP]</span><span><strong>Specialized:</strong> Requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</span></div>
-                </div>
-            </div>
-            
+<main class="doc">
+<article data-issue="TI-20260809-001"
+         >
 
-            <h2 id="executive-summary">Executive Summary</h2>
+<div class="migration-banner">
+  This issue was published under an earlier classification system. Its tags do
+  not mean what tags in current issues mean. See
+  <a href="/coverage/legend/">the versioned tag legend</a> for what applied at
+  the time.
+</div>
+
+<div class="kicker">DPRK &middot; 12 JUL – 11 AUG 2026 &middot; V7</div>
+<h1>AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</h1>
+<p class="standfirst">Open-Source Intelligence Summary: 30-Day Look Back. Threat Operations Assessment.</p>
+
+<dl class="meta">
+    
+    <div><dt>Report Serial</dt><dd>TI-20260809-001</dd></div>
+    
+    <div><dt>Author</dt><dd>not important</dd></div>
+    <div><dt>Published</dt><dd>9 August 2026</dd></div>
+    
+    <div><dt>Version</dt><dd>7</dd></div>
+    
+    
+    <div><dt>Source Basis</dt><dd>Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations.</dd></div>
+    
+</dl>
+
+
+<div class="legend">
+    <h4>Information classification system</h4>
+    <p><span class="legend-tag tag-am">[AM]</span> <b>Ambient:</b> widely distributed information, standard training data, general public knowledge.</p>
+    <p><span class="legend-tag tag-ix">[IX]</span> <b>Indexed:</b> publicly available but requires deliberate searching, academic databases, archived materials.</p>
+    <p><span class="legend-tag tag-gt">[GT]</span> <b>Gated:</b> behind access restrictions, paywalls, subscriptions, authentication requirements.</p>
+    <p><span class="legend-tag tag-sp">[SP]</span> <b>Specialized:</b> requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</p>
+    <p>This issue predates the current classification system. See <a href="/coverage/legend/">coverage/legend</a> for what these tags meant at the time.</p>
+</div>
+
+
+
+<div class="glance">
+    
+    <div><div class="k">Reporting window</div><div class="v">30 days</div></div>
+    
+    <div><div class="k">Primary threat</div><div class="v">DPRK</div></div>
+    
+</div>
+
+
+<div class="article-body">
+<h2 id="executive-summary">Executive Summary</h2>
 <p><span class="tag-badge tag-am">[AM-VENDOR]</span>
  Open-source reporting over the past thirty days documents continued, multi-pronged North Korean cyber activity targeting South Korean government, defense contractors, financial institutions, and software supply chains. This activity demonstrates evolving operational tradecraft and infrastructure patterns worth flagging for threat hunters working Korean-adjacent environments.</p>
 <p><span class="tag-badge tag-ix">[IX-VENDOR]</span>
@@ -1023,82 +1456,51 @@
 <li>The Record (Recorded Future News). &ldquo;North Korea&rsquo;s Lazarus Group Sharing Tools with Ransomware Hackers, South Korean Agencies Warn.&rdquo; The Record, 30 July 2026, therecord.media/north-korea-hackers-ransomware.</li>
 </ul>
 
-        </div>
-    </div>
-
-    
-    <p class="article-disclaimer">This report synthesizes open-source threat intelligence to support threat-hunting operations and risk assessment. All material is publicly available. Information sourced, dated, and classified for transparency and verification.</p>
-    
-</article>
-
-
-
-<div style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6; display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
-    <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">WEEKLY, BY EMAIL</div>
-        <p style="margin: 0; font: 400 17px/1.5 Spectral, serif; color: #3f3b35; max-width: 44ch;">One issue every Monday. Behavior-first analysis, ATT&CK mapping, and queries you can run the same day.</p>
-        <div style="display: flex; gap: 0; max-width: 400px; margin-top: 6px;">
-            <input type="email" placeholder="you@organization.com" style="flex: 1; border: 1px solid #cfc9c0; border-right: none; background: #fff; padding: 12px 14px; font: 400 14px Spectral, serif; color: #a09a91;">
-            <button class="button" style="margin-top: 0;">SUBSCRIBE</button>
-        </div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">RECENT ISSUES</div>
-        <div style="display: flex; flex-direction: column;">
-            
-            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
-                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">35</span>
-                <a href="https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/" style="color: #3f3b35;">Disabling the Fail-Safes: CyberAv3ngers&#39; PLC Attacks on U.S. Water Systems</a>
-            </div>
-            
-            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
-                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">34</span>
-                <a href="https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/" style="color: #3f3b35;">AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</a>
-            </div>
-            
-            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
-                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">33</span>
-                <a href="https://dcollette4456.github.io/issues/issue-33/" style="color: #3f3b35;">Your first threat research issue</a>
-            </div>
-            
-        </div>
-    </div>
 </div>
 
 
-<script>
-(function () {
-    var headings = document.querySelectorAll('.article-body h2[id], .article-body h3[id]');
-    var links = document.querySelectorAll('#TableOfContents a[href^="#"]');
-    if (!headings.length || !links.length) return;
-    var linkByHash = {};
-    links.forEach(function (a) { linkByHash[a.getAttribute('href')] = a; });
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            var link = linkByHash['#' + entry.target.id];
-            if (!link) return;
-            if (entry.isIntersecting) {
-                links.forEach(function (a) { a.classList.remove('active'); });
-                link.classList.add('active');
-            }
-        });
-    }, { rootMargin: '-10% 0px -70% 0px' });
-    headings.forEach(function (h) { observer.observe(h); });
-})();
-</script>
+<p class="article-disclaimer">This report synthesizes open-source threat intelligence to support threat-hunting operations and risk assessment. All material is publicly available. Information sourced, dated, and classified for transparency and verification.</p>
 
 
-    </main>
 
-    <footer>
-        <span>Knights Who Say Ni · Written and maintained by not important</span>
-        <div class="footer-links">
-            <span>RSS</span>
-            <span>·</span>
-            <a href="https://github.com/dcollette4456">GITHUB</a>
-            <span>·</span>
-            <span>CONTACT</span>
+
+</article>
+</main>
+</div>
+
+
+<footer class="foot">
+    <div class="foot-in">
+        <div>
+            <h5>By email</h5>
+            <p style="margin:0"><a href="/subscribe/">Subscribe</a></p>
         </div>
-    </footer>
+        <div>
+            <h5>Recent issues</h5>
+            <p style="margin:0">
+                
+                <a href="https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/">Iran</a><br>
+                
+                <a href="https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/">DPRK</a><br>
+                
+                <a href="/issues/">Archive</a>
+            </p>
+        </div>
+        <div>
+            <h5>Method</h5>
+            <p style="margin:0">
+                <a href="/coverage/legend/">Tag legend</a><br>
+                <a href="/coverage/sources/">Source records</a><br>
+                <a href="/coverage/corrections/">Corrections</a>
+            </p>
+        </div>
+        <div>
+            <h5>Elsewhere</h5>
+            <p style="margin:0"><a href="/index.xml">RSS</a> &middot; <a href="https://github.com/dcollette4456">GitHub</a> &middot; <a href="/contact/">Contact</a></p>
+            <p class="fnote" style="margin:14px 0 0">Open-source intelligence for threat hunters.<br>Author: not important.</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,11 @@
+{{- $title := .Get "title" -}}
+{{- $byline := .Get "byline" -}}
+{{- $url := .Get "url" -}}
+{{- $urltext := .Get "urltext" -}}
+<div class="src">
+  <h4>{{ $title }}</h4>
+  <div class="byline">{{ $byline }}</div>
+  <a class="url" href="{{ $url }}">{{ $urltext | default $url }}</a>
+  {{ .Page.RenderString .Inner }}
+  <div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
+</div>

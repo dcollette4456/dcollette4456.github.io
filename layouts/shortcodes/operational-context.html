@@ -1,0 +1,12 @@
+{{- $topic := .Get "topic" -}}
+{{- $link := .Get "link" -}}
+{{- $linktext := .Get "linktext" -}}
+{{- $rendered := "" -}}
+{{- if $link -}}
+{{- $rendered = partial "existing-link.html" (dict "path" $link "text" $linktext) -}}
+{{- end -}}
+<div class="operational-context">
+  <h4>Operational Context: {{ $topic }}</h4>
+  {{ .Page.RenderString .Inner }}
+  {{ if $rendered }}<p><strong>Learn more:</strong> {{ $rendered | safeHTML }}</p>{{ end }}
+</div>

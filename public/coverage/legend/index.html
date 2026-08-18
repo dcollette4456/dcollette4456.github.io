@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Issues | Knights Who Say Ni</title>
+    <title>Tag Legend | Knights Who Say Ni</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -1157,7 +1157,7 @@
             
             <a href="/" >Latest</a>
             
-            <a href="/issues/" aria-current="page">Archive</a>
+            <a href="/issues/" >Archive</a>
             
             <a href="/academics/" >Academics</a>
             
@@ -1170,55 +1170,61 @@
 </header>
 
 
-<div style="padding: 48px 44px 20px; display: flex; flex-direction: column; gap: 10px;">
-    <h1>Archive</h1>
-    <p style="max-width: 60ch;">Every issue. Filter by tactic or technique to find prior coverage of a behavior before you build a new hunt.</p>
-</div>
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<main class="doc" style="max-width: none;">
 
-<div style="padding: 22px 44px; display: flex; gap: 8px; flex-wrap: wrap; border-bottom: 1px solid #e2ded6;">
-    <span style="font: 500 10.5px/1 'JetBrains Mono', monospace; letter-spacing: .08em; color: #fff; background: #7d2231; padding: 7px 11px;">ALL</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">EXECUTION</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">PERSISTENCE</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">DEFENSE EVASION</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">LATERAL MOVEMENT</span>
-    <span style="font: 400 10.5px/1 'JetBrains Mono', monospace; color: #57534c; border: 1px solid #ded9d1; padding: 7px 11px; cursor: pointer;">C2</span>
-</div>
+<div class="kicker">Coverage</div>
+<h1>Tag Legend</h1>
+<p class="standfirst">The canonical, versioned legend. Every issue's masthead links here so a reader can confirm what a tag meant at the time it was published.</p>
 
-<div style="display: flex; flex-direction: column;">
-    
-    <div style="display: grid; grid-template-columns: 96px 1fr 220px; gap: 32px; padding: 26px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
-        <div style="display: flex; flex-direction: column; gap: 5px;">
-            <span style="font: 500 20px/1 'JetBrains Mono', monospace; color: #7d2231;">35</span>
-            <span style="font: 400 11px/1 'JetBrains Mono', monospace; color: #6b665e;">11 AUG</span>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 7px;">
-            <h3 style="margin: 0; font: 400 21px/1.3 Spectral, serif; color: #1c1a17;"><a href="https://dcollette4456.github.io/issues/iran-cyber-threat-highlights/" style="color: #1c1a17;">Disabling the Fail-Safes: CyberAv3ngers&#39; PLC Attacks on U.S. Water Systems</a></h3>
-            <p style="margin: 0; font: 400 15px/1.5 Spectral, serif; color: #57534c;">Open-source intelligence summary on Iranian state-sponsored cyber operations across critical infrastructure, espionage, and destructive malware, 12 July – 11 August 2026.</p>
-        </div>
-        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            
-        </div>
-    </div>
-    
-    <div style="display: grid; grid-template-columns: 96px 1fr 220px; gap: 32px; padding: 26px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
-        <div style="display: flex; flex-direction: column; gap: 5px;">
-            <span style="font: 500 20px/1 'JetBrains Mono', monospace; color: #7d2231;">34</span>
-            <span style="font: 400 11px/1 'JetBrains Mono', monospace; color: #6b665e;">9 AUG</span>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 7px;">
-            <h3 style="margin: 0; font: 400 21px/1.3 Spectral, serif; color: #1c1a17;"><a href="https://dcollette4456.github.io/issues/dprk-cyber-highlights-30day/" style="color: #1c1a17;">AI-Assisted Espionage: Kimsuky&#39;s Automated Document Analysis</a></h3>
-            <p style="margin: 0; font: 400 15px/1.5 Spectral, serif; color: #57534c;">Open-source intelligence summary on North Korean cyber activity targeting South Korean government, defense, and financial sectors over 12 July – 11 August 2026.</p>
-        </div>
-        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
-            
-        </div>
-    </div>
-    
-</div>
+<h2 id="v3-7">Classification v3.7 (current)</h2>
 
-<div style="padding: 26px 44px; border-top: 1px solid #e2ded6; display: flex; justify-content: center; gap: 14px; font: 400 12px 'JetBrains Mono', monospace; color: #6b665e;">
-    
-    
+<p>Every sourced claim carries a tag in the left margin like <code>VND-1</code>. The letters say what kind of source it came from. The number says how much of it you can check for yourself.</p>
+
+<h3>Source type</h3>
+<table style="width: 100%; font-size: 14px; margin: 16px 0;">
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">GOV</td><td style="padding: 6px 0;">Government agency, advisory, statement, court filing, indictment</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">VND</td><td style="padding: 6px 0;">Commercial security vendor research, IR reporting, blog</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">MED</td><td style="padding: 6px 0;">News and trade press</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">ACA</td><td style="padding: 6px 0;">Academic and peer-reviewed</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">TEC</td><td style="padding: 6px 0;">Structured record: CVE entry, KEV catalog, RFC, repository, patch note, certificate log</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">IND</td><td style="padding: 6px 0;">Independent researcher, personal blog, conference talk</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">NPO</td><td style="padding: 6px 0;">Non-profit and community: Shadowserver, Spamhaus, Team Cymru, ISACs, non-governmental CERTs</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">ADV</td><td style="padding: 6px 0;">Adversary-controlled: leak site, ransom note, actor claim, forum ad</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">ANL</td><td style="padding: 6px 0;">This product's own judgment. Not a source</td></tr>
+</table>
+
+<h3>Grade</h3>
+<table style="width: 100%; font-size: 14px; margin: 16px 0;">
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">1</td><td style="padding: 6px 0;">Direct, fully evidenced. The source saw it and showed its work. You can check the artifacts</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">2</td><td style="padding: 6px 0;">Direct, partially evidenced. The source saw it but did not publish enough for you to check</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">3</td><td style="padding: 6px 0;">Direct, aggregate. The source saw it in data only it holds. Nobody outside can reproduce the number</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">4</td><td style="padding: 6px 0;">Relay. The source is repeating a named finding it did not observe</td></tr>
+<tr><td style="padding: 6px 12px 6px 0; font-family: var(--mono); color: var(--crimson); font-weight: 600;">5</td><td style="padding: 6px 0;">Unretrievable. The evidence trail ends somewhere nobody can open</td></tr>
+</table>
+<p>The digit means the same thing under every prefix: it measures the claim's evidentiary posture, not the industry the publisher sits in, and it does not describe hunt value or how easily a reader can obtain the document.</p>
+
+<h3>Access mark</h3>
+<p>Separate from the grade. <code>open</code> is the default and is not printed. <code>gated</code> means the document was retrieved and graded but a reader may need a subscription to reach it. <code>withdrawn</code> means the document has since returned 404 or 410, and the archive pointer becomes the citation. <code>unarchived</code> means no archive provider captured it; the citation stands and the reader is told the copy is not backed up.</p>
+
+<h3>Corroboration</h3>
+<p><code>&times;2 corroborated</code> means two sources observed a claim independently, using data neither got from the other. Four outlets repeating one report is still one source, and a relay can never contribute to a corroboration count. This site publishes behavior rather than indicator feeds; indicators live in the sources named on each claim, and a reader's own tooling is expected to extract them.</p>
+
+<h3>Analyst blocks</h3>
+<p><code>ANL</code> takes no digit. Confidence is expressed as <code>ANL-High</code>, <code>ANL-Moderate</code>, or <code>ANL-Low</code>, capped by the weakest input the block rests on. Hunt Priority blocks, the executive summary, and the assessment and outlook section are all <code>ANL</code> constructs and are marked as such.</p>
+
+<h2 id="v1">v1 (Iran and DPRK, published before classification v3.7)</h2>
+
+<p>The Iran and DPRK issues published before this classification system existed and use a different, simpler four-category scheme. Their tags do not carry a grade digit and are not comparable to a v3.7 <code>VND-1</code>-style tag. This section describes what those tags meant, drawn from what those issues actually print.</p>
+
+<p><span class="legend-tag tag-am" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[AM]</span> <strong>Ambient:</strong> widely distributed information, standard training data, general public knowledge.</p>
+<p><span class="legend-tag tag-ix" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[IX]</span> <strong>Indexed:</strong> publicly available but requires deliberate searching, academic databases, archived materials.</p>
+<p><span class="legend-tag tag-gt" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[GT]</span> <strong>Gated:</strong> behind access restrictions, paywalls, subscriptions, authentication requirements.</p>
+<p><span class="legend-tag tag-sp" style="display: inline-block; padding: 1px 5px; font-family: var(--mono); font-size: 11px; font-weight: 600;">[SP]</span> <strong>Specialized:</strong> requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</p>
+
+<p>Both published issues also append a qualifier suffix to most of these tags, for example <code>[AM-gov]</code>, <code>[IX-vendor]</code>, or <code>[SP-technical]</code>, naming the specific source type or the nature of the specialized judgment (technical, inference, synthesis, or aggregation across multiple sources). This was an addition made to the same four base categories, not a distinct version of the classification system, and carries no grade digit or gate-based computation behind it.</p>
+
+</main>
 </div>
 
 

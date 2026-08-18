@@ -1,163 +1,87 @@
 {{ define "main" }}
-<article>
-    <div class="article-header">
-        <div class="article-header-inner">
-            <div class="article-badge-row">
-                {{ with .Params.primaryThreat }}<span>{{ . }}</span>{{ end }}
-                {{ with .Params.dateRange }}<span class="sep">·</span><span>{{ . }}</span>{{ end }}
-                {{ with .Params.version }}<span class="sep">·</span><span>V{{ . }}</span>{{ end }}
-            </div>
-            <h1>{{ .Title }}</h1>
-            {{ with (.Params.dek | default .Params.excerpt) }}<p class="article-dek">{{ . }}</p>{{ end }}
-        </div>
-        <div class="article-info-grid">
-            {{ with .Params.reportSerial }}
-            <div class="info-item">
-                <span class="info-label">REPORT SERIAL</span>
-                <span class="info-value">{{ . }}</span>
-            </div>
-            {{ end }}
-            <div class="info-item">
-                <span class="info-label">AUTHOR</span>
-                <span class="info-value">{{ .Params.author | default .Site.Params.author }}</span>
-            </div>
-            <div class="info-item">
-                <span class="info-label">PUBLISHED</span>
-                <span class="info-value">{{ .Date.Format "2 January 2006" }}</span>
-            </div>
-            {{ with .Params.version }}
-            <div class="info-item">
-                <span class="info-label">VERSION</span>
-                <span class="info-value">{{ . }}</span>
-            </div>
-            {{ end }}
-            {{ with .Params.sourceBasis }}
-            <div class="info-item info-item-wide">
-                <span class="info-label">SOURCE BASIS</span>
-                <span class="info-value">{{ . }}</span>
-            </div>
-            {{ end }}
-        </div>
-    </div>
+<div class="wrap">
 
-    <div class="article-layout">
-        <aside class="article-sidebar">
-            {{ if .TableOfContents }}
-            <div>
-                <div class="sidebar-label">CONTENTS</div>
-                {{ .TableOfContents }}
-            </div>
-            {{ end }}
-            {{ if .Params.huntPriorities }}
-            <div class="sidebar-divider"></div>
-            <div>
-                <div class="sidebar-label">HUNT PRIORITIES</div>
-                <div class="hunt-priorities-list">
-                    {{ range .Params.huntPriorities }}<span>{{ . }}</span>{{ end }}
-                </div>
-            </div>
-            {{ end }}
-            {{ if .Params.stats }}
-            <div class="sidebar-divider"></div>
-            <div class="sidebar-box">
-                <div class="sidebar-header">AT A GLANCE</div>
-                {{ range .Params.stats }}
-                <div class="sidebar-row">
-                    <span>{{ .label }}</span>
-                    <span class="value">{{ .value }}</span>
-                </div>
-                {{ end }}
-            </div>
-            {{ end }}
-        </aside>
+<nav class="rail">
+    <div class="rail-h">Contents</div>
+    {{ .TableOfContents }}
+</nav>
 
-        <div class="article-body">
-            {{ if .Params.classificationLegend }}
-            <div class="classification-box">
-                <div class="sidebar-label">INFORMATION CLASSIFICATION SYSTEM</div>
-                <div class="classification-rows">
-                    <div class="classification-row"><span class="tag-badge tag-am">[AM]</span><span><strong>Ambient:</strong> Widely distributed information, standard training data, general public knowledge</span></div>
-                    <div class="classification-row"><span class="tag-badge tag-ix">[IX]</span><span><strong>Indexed:</strong> Publicly available but requires deliberate searching, academic databases, archived materials</span></div>
-                    <div class="classification-row"><span class="tag-badge tag-gt">[GT]</span><span><strong>Gated:</strong> Behind access restrictions, paywalls, subscriptions, authentication requirements</span></div>
-                    <div class="classification-row"><span class="tag-badge tag-sp">[SP]</span><span><strong>Specialized:</strong> Requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</span></div>
-                </div>
-            </div>
-            {{ end }}
+<main class="doc">
+<article {{ with .Params.serial | default .Params.reportSerial }}data-issue="{{ . }}"{{ end }}
+         {{ with .Params.classification_version }}data-classification-version="{{ . }}"{{ end }}>
 
-            {{ .Content }}
-        </div>
-    </div>
+{{ partial "migration-banner.html" . }}
 
-    {{ with .Params.disclaimer }}
-    <p class="article-disclaimer">{{ . }}</p>
+<div class="kicker">{{ .Params.primaryThreat | default .Params.kicker }} &middot; {{ .Params.dateRange }} &middot; V{{ .Params.version }}</div>
+<h1>{{ .Title }}</h1>
+{{ with (.Params.standfirst | default .Params.dek | default .Params.excerpt) }}<p class="standfirst">{{ . }}</p>{{ end }}
+
+<dl class="meta">
+    {{ with .Params.serial | default .Params.reportSerial }}
+    <div><dt>Report Serial</dt><dd>{{ . }}</dd></div>
     {{ end }}
+    <div><dt>Author</dt><dd>{{ .Params.author | default .Site.Params.author }}</dd></div>
+    <div><dt>Published</dt><dd>{{ .Date.Format "2 January 2006" }}</dd></div>
+    {{ with .Params.version }}
+    <div><dt>Version</dt><dd>{{ . }}</dd></div>
+    {{ end }}
+    {{ with .Params.sourceBasis }}
+    <div><dt>Source Basis</dt><dd>{{ . }}</dd></div>
+    {{ end }}
+</dl>
+
+{{ if .Params.classification_version }}
+<div class="legend">
+    <h4>Reading the tags</h4>
+    <p>Every sourced claim carries a tag in the left margin like <code>VND-1</code>. The letters say what kind of source it came from. The number says how much of it you can check for yourself.</p>
+    <p><code>GOV</code> government &middot; <code>VND</code> commercial vendor &middot; <code>MED</code> press &middot; <code>TEC</code> catalog or technical record &middot; <code>ACA</code> academic &middot; <code>IND</code> independent researcher &middot; <code>NPO</code> non-profit &middot; <code>ADV</code> the actor itself</p>
+    <p><b>1</b> observed directly and evidenced &middot; <b>2</b> observed directly, not enough published to check &middot; <b>3</b> observed in the source's own telemetry &middot; <b>4</b> relaying someone else's finding &middot; <b>5</b> the trail ends somewhere you cannot reach</p>
+    <p><code>&times;2 corroborated</code> means two sources observed it independently, using data neither got from the other. Four outlets repeating one report is still one source. We publish behavior rather than indicator feeds; indicators live in the sources we name.</p>
+    <p>Full legend and the accumulated record for every source cited: <a href="/coverage/legend/">coverage/legend</a> and <a href="/coverage/sources/">coverage/sources</a>.</p>
+</div>
+{{ else if .Params.classificationLegend }}
+<div class="legend">
+    <h4>Information classification system</h4>
+    <p><span class="legend-tag tag-am">[AM]</span> <b>Ambient:</b> widely distributed information, standard training data, general public knowledge.</p>
+    <p><span class="legend-tag tag-ix">[IX]</span> <b>Indexed:</b> publicly available but requires deliberate searching, academic databases, archived materials.</p>
+    <p><span class="legend-tag tag-gt">[GT]</span> <b>Gated:</b> behind access restrictions, paywalls, subscriptions, authentication requirements.</p>
+    <p><span class="legend-tag tag-sp">[SP]</span> <b>Specialized:</b> requires domain expertise to interpret correctly. Lay interpretation may differ significantly from expert analysis.</p>
+    <p>This issue predates the current classification system. See <a href="/coverage/legend/">coverage/legend</a> for what these tags meant at the time.</p>
+</div>
+{{ end }}
+
+{{ if .Params.glance }}
+<div class="glance">
+    {{ range .Params.glance }}
+    <div><div class="k">{{ .label }}</div><div class="v">{{ .value }}</div></div>
+    {{ end }}
+</div>
+{{ with .Params.glanceNote }}<p class="glance-note">{{ . }}</p>{{ end }}
+{{ else if .Params.stats }}
+<div class="glance">
+    {{ range .Params.stats }}
+    <div><div class="k">{{ .label }}</div><div class="v">{{ .value }}</div></div>
+    {{ end }}
+</div>
+{{ end }}
+
+<div class="article-body">
+{{ .Content }}
+</div>
+
+{{ with .Params.disclaimer }}
+<p class="article-disclaimer">{{ . }}</p>
+{{ end }}
+
+{{ with .Params.classification_version }}
+<div class="buildnote">
+    Classification system v{{ . }} &middot; Article and site specification v{{ $.Params.article_spec_version | default "2.4" }} &middot;
+    Grading metadata for this issue lives in the ledger at /data/ledger/ and renders at
+    <a href="/coverage/sources/">coverage/sources</a>.
+</div>
+{{ end }}
+
 </article>
-
-{{ if .Params.behaviors }}
-<div style="padding: 40px 44px 48px; display: flex; flex-direction: column; gap: 26px; border-top: 1px solid #e2ded6;">
-    <div style="display: flex; align-items: baseline; justify-content: space-between; border-bottom: 1px solid #e2ded6; padding-bottom: 12px;">
-        <h2>BEHAVIORS THIS WEEK</h2>
-        <span style="font: 400 14px Spectral, serif; color: #7d2231;"><a href="/behaviors/">All behaviors →</a></span>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #e2ded6; border: 1px solid #e2ded6;">
-        {{ range .Params.behaviors }}
-        <div class="card">
-            <div class="card-tag">{{ .id }} · {{ .tactic }}</div>
-            <h3 class="card-title">{{ .title }}</h3>
-            <p class="card-text">{{ .description }}</p>
-            <div class="tags">
-                {{ range .techniques }}
-                <span class="tag">{{ . }}</span>
-                {{ end }}
-            </div>
-        </div>
-        {{ end }}
-    </div>
+</main>
 </div>
-{{ end }}
-
-<div style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6; display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
-    <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">WEEKLY, BY EMAIL</div>
-        <p style="margin: 0; font: 400 17px/1.5 Spectral, serif; color: #3f3b35; max-width: 44ch;">One issue every Monday. Behavior-first analysis, ATT&CK mapping, and queries you can run the same day.</p>
-        <div style="display: flex; gap: 0; max-width: 400px; margin-top: 6px;">
-            <input type="email" placeholder="you@organization.com" style="flex: 1; border: 1px solid #cfc9c0; border-right: none; background: #fff; padding: 12px 14px; font: 400 14px Spectral, serif; color: #a09a91;">
-            <button class="button" style="margin-top: 0;">SUBSCRIBE</button>
-        </div>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 14px;">
-        <div style="font: 500 10px/1 'JetBrains Mono', monospace; letter-spacing: .14em; color: #6b665e;">RECENT ISSUES</div>
-        <div style="display: flex; flex-direction: column;">
-            {{ range first 3 (where .Site.RegularPages "Type" "issues") }}
-            <div style="display: flex; gap: 20px; padding: 11px 0; border-bottom: 1px solid #e2ded6; font: 400 15px Spectral, serif; color: #3f3b35;">
-                <span style="font: 400 12px 'JetBrains Mono', monospace; color: #6b665e; width: 52px;">{{ .Params.issueNumber }}</span>
-                <a href="{{ .Permalink }}" style="color: #3f3b35;">{{ .Title }}</a>
-            </div>
-            {{ end }}
-        </div>
-    </div>
-</div>
-
-{{ if .TableOfContents }}
-<script>
-(function () {
-    var headings = document.querySelectorAll('.article-body h2[id], .article-body h3[id]');
-    var links = document.querySelectorAll('#TableOfContents a[href^="#"]');
-    if (!headings.length || !links.length) return;
-    var linkByHash = {};
-    links.forEach(function (a) { linkByHash[a.getAttribute('href')] = a; });
-    var observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-            var link = linkByHash['#' + entry.target.id];
-            if (!link) return;
-            if (entry.isIntersecting) {
-                links.forEach(function (a) { a.classList.remove('active'); });
-                link.classList.add('active');
-            }
-        });
-    }, { rootMargin: '-10% 0px -70% 0px' });
-    headings.forEach(function (h) { observer.observe(h); });
-})();
-</script>
-{{ end }}
 {{ end }}

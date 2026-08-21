@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://dcollette4456.github.io/tags/article-spec-v2.5/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dcollette4456.github.io/tags/build-notes/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dcollette4456.github.io/tags/classification-v3.8/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dcollette4456.github.io/issues/russia-onboarding-trap/</loc>
     <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
@@ -9,6 +18,15 @@
     <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dcollette4456.github.io/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dcollette4456.github.io/projects/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dcollette4456.github.io/projects/roadblocks-and-spec-gaps/</loc>
+    <lastmod>2026-08-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dcollette4456.github.io/tags/</loc>
     <lastmod>2026-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dcollette4456.github.io/issues/prc-trusted-channel-compromise/</loc>
@@ -28,12 +46,8 @@
   </url><url>
     <loc>https://dcollette4456.github.io/coverage/</loc>
   </url><url>
-    <loc>https://dcollette4456.github.io/projects/</loc>
-  </url><url>
     <loc>https://dcollette4456.github.io/coverage/sources/</loc>
   </url><url>
     <loc>https://dcollette4456.github.io/coverage/legend/</loc>
-  </url><url>
-    <loc>https://dcollette4456.github.io/tags/</loc>
   </url>
 </urlset>

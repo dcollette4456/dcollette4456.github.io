@@ -1,0 +1,25 @@
+{{ define "main" }}
+<article>
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="article-badge-row">
+                <span>PROJECT NOTE</span>
+                {{ with .Params.status }}<span class="sep">·</span><span>{{ . }}</span>{{ end }}
+                {{ with .Params.year }}<span class="sep">·</span><span>{{ . }}</span>{{ end }}
+            </div>
+            <h1>{{ .Title }}</h1>
+            {{ with .Params.excerpt }}<p class="article-dek">{{ . }}</p>{{ end }}
+        </div>
+    </div>
+
+    <div class="article-body" style="max-width: 760px;">
+        <p><a href="/projects/" style="font: 400 14px 'JetBrains Mono', monospace; color: #7d2231;">&larr; All projects</a></p>
+        {{ .Content }}
+        {{ if .Params.tags }}
+        <div class="tags" style="margin-top: 8px;">
+            {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+    </div>
+</article>
+{{ end }}

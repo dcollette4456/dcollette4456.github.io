@@ -6,8 +6,15 @@
     <description>Recent content on Knights Who Say Ni</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dcollette4456.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install to Continue: How Russia-Nexus Operators Turned Routine Prompts Into Initial Access</title>
+      <link>https://dcollette4456.github.io/issues/russia-onboarding-trap/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://dcollette4456.github.io/issues/russia-onboarding-trap/</guid>
+      <description>Executive Summary Two disclosures this window show a Russia-nexus pattern of reaching a target through a step the victim expected to take anyway, rather than through an exploit. A cluster Microsoft tracks as Storm-2945, assessed as a Midnight Blizzard sub-cluster, compromised the Wi-Fi gateways of hotels and conference venues and used administrative control of those gateways to redirect corporate travelers into credential theft and malware delivery, no phishing email required3. Separately, CERT-UA reported a Sandworm-linked cluster tracked as UAC-0145 running a months-long fake hiring process against Ukrainian system administrators, ending in a trojanized WireGuard client that the candidate was talked into installing as part of a bogus technical interview2.</description>
+    </item>
     <item>
       <title>Access Through the Front Door: Trusted Channel Compromise in PRC-Nexus Operations</title>
       <link>https://dcollette4456.github.io/issues/prc-trusted-channel-compromise/</link>

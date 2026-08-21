@@ -16,6 +16,13 @@
       <description>Executive Summary Two disclosures this window show a Russia-nexus pattern of reaching a target through a step the victim expected to take anyway, rather than through an exploit. A cluster Microsoft tracks as Storm-2945, assessed as a Midnight Blizzard sub-cluster, compromised the Wi-Fi gateways of hotels and conference venues and used administrative control of those gateways to redirect corporate travelers into credential theft and malware delivery, no phishing email required3. Separately, CERT-UA reported a Sandworm-linked cluster tracked as UAC-0145 running a months-long fake hiring process against Ukrainian system administrators, ending in a trojanized WireGuard client that the candidate was talked into installing as part of a bogus technical interview2.</description>
     </item>
     <item>
+      <title>Roadblocks &amp; Spec Gaps: Building TI-20260822-001</title>
+      <link>https://dcollette4456.github.io/projects/roadblocks-and-spec-gaps/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://dcollette4456.github.io/projects/roadblocks-and-spec-gaps/</guid>
+      <description>Written while authoring the Russia-nexus issue directly against both specs, no pipeline, the same way TI-20260817-001 was built. Every item below is something that actually happened during that process, not a hypothetical gap.&#xA;1. Non-US, non-English primary sources fail silently at Gate 2, and nothing distinguishes &amp;ldquo;unfetchable by this tool&amp;rdquo; from &amp;ldquo;unfetchable by anyone&amp;rdquo; CERT-UA&amp;rsquo;s advisory on UAC-0145 (the Sandworm fake-hiring campaign) is a real, named, dated document. It is not a private briefing or a deleted post, the two examples Gate 2 gives for a true grade-5 dead end.</description>
+    </item>
+    <item>
       <title>Access Through the Front Door: Trusted Channel Compromise in PRC-Nexus Operations</title>
       <link>https://dcollette4456.github.io/issues/prc-trusted-channel-compromise/</link>
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>

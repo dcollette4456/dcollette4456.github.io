@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Knights Who Say Ni</title>
+    <title>Roadblocks &amp; Spec Gaps: Building TI-20260822-001 | Knights Who Say Ni</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -1068,48 +1068,68 @@
             
             <a href="/coverage/" >Coverage</a>
             
-            <a href="/projects/" class="active">Projects</a>
+            <a href="/projects/" >Projects</a>
             
         </nav>
     </header>
 
     <main>
         
-<div style="padding: 48px 44px 28px; display: flex; justify-content: space-between; align-items: flex-end; gap: 40px; border-bottom: 1px solid #e2ded6;">
-    <div style="display: flex; flex-direction: column; gap: 10px;">
-        <h1>Projects</h1>
-        <p style="max-width: 58ch;">Research tools, security automation, threat-hunting frameworks, and other work-in-progress projects from this research effort.</p>
-    </div>
-</div>
-
-<div style="display: flex; flex-direction: column;">
-    
-    <div style="display: grid; grid-template-columns: 200px 1fr; gap: 40px; padding: 32px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
-        <div style="display: flex; flex-direction: column; gap: 8px;">
-            <h3 style="margin: 0; font: 500 18px/1 Spectral, serif; color: #7d2231;">2026</h3>
-            
-            <span style="font: 400 12px/1 'JetBrains Mono', monospace; color: #6b665e;">Build notes</span>
-            
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-            <h3 style="margin: 0; font: 400 24px/1.3 Spectral, serif; color: #1c1a17;"><a href="https://dcollette4456.github.io/projects/roadblocks-and-spec-gaps/" style="color: #1c1a17;">Roadblocks &amp; Spec Gaps: Building TI-20260822-001</a></h3>
-            <p style="margin: 0; font: 400 16px/1.6 Spectral, serif; color: #57534c;">Notes from authoring the Russia-nexus issue by hand against Classification System v3.8 and Article &amp; Site Design Specification v2.5, no pipeline yet.</p>
-            
-            
-            <div class="tags" style="margin-top: 8px;">
-                
-                <span class="tag">classification v3.8</span>
-                
-                <span class="tag">article spec v2.5</span>
-                
-                <span class="tag">build notes</span>
-                
+<article>
+    <div class="article-header">
+        <div class="article-header-inner">
+            <div class="article-badge-row">
+                <span>PROJECT NOTE</span>
+                <span class="sep">·</span><span>Build notes</span>
+                <span class="sep">·</span><span>2026</span>
             </div>
-            
+            <h1>Roadblocks &amp; Spec Gaps: Building TI-20260822-001</h1>
+            <p class="article-dek">Notes from authoring the Russia-nexus issue by hand against Classification System v3.8 and Article &amp; Site Design Specification v2.5, no pipeline yet.</p>
         </div>
     </div>
-    
-</div>
+
+    <div class="article-body" style="max-width: 760px;">
+        <p><a href="/projects/" style="font: 400 14px 'JetBrains Mono', monospace; color: #7d2231;">&larr; All projects</a></p>
+        <p>Written while authoring the Russia-nexus issue directly against both specs, no pipeline, the same way <code>TI-20260817-001</code> was built. Every item below is something that actually happened during that process, not a hypothetical gap.</p>
+<h2 id="1-non-us-non-english-primary-sources-fail-silently-at-gate-2-and-nothing-distinguishes-unfetchable-by-this-tool-from-unfetchable-by-anyone">1. Non-US, non-English primary sources fail silently at Gate 2, and nothing distinguishes &ldquo;unfetchable by this tool&rdquo; from &ldquo;unfetchable by anyone&rdquo;</h2>
+<p>CERT-UA&rsquo;s advisory on UAC-0145 (the Sandworm fake-hiring campaign) is a real, named, dated document. It is not a private briefing or a deleted post, the two examples Gate 2 gives for a true grade-5 dead end. It simply would not render through the fetch tool available to me, a JavaScript-driven Ukrainian government site. Both press accounts of it are US trade press.</p>
+<p>Gate 2&rsquo;s second bullet already covers &ldquo;the primary is a real document the pipeline could not retrieve,&rdquo; and correctly routes to grading the relay at 4. That part works. What&rsquo;s missing is that this outcome is indistinguishable, in the published tag, from a case where the primary genuinely cannot be reached by anyone. A hunter reading <code>MED-4</code> has no way to know whether a better-resourced reader could pull the CERT-UA page directly and get a <code>GOV-1</code>, or whether the trail really does end at a press paraphrase. Over a run of issues, this will systematically demote non-English, non-US government sources, CERT-UA, BSI, ANSSI, JPCERT, relative to US and UK vendor and government sources that happen to render cleanly in a browser, and that demotion has nothing to do with the evidentiary quality of the underlying document.</p>
+<p><strong>Suggested addition to the classification spec, Gate 2 or the access mark (5A):</strong> a fourth access value, something like <code>retrieval_failed</code>, distinct from <code>unarchived</code>. <code>unarchived</code> means no archive provider captured a document the pipeline did see. This new value would mean the pipeline&rsquo;s own tooling failed against a document that appears to exist and be open, and would prompt a retry with a different method (translation-aware fetch, a different renderer, a human check) before the claim is graded down permanently. Whether that retry is worth building is a pipeline question outside this document&rsquo;s scope, but the tag distinction is a classification question and belongs here.</p>
+<h2 id="2-the-30-day-cadence-target-four-to-five-threads-is-contradicted-by-the-only-30-day-issue-that-has-actually-shipped">2. The 30-day cadence target (four to five threads) is contradicted by the only 30-day issue that has actually shipped</h2>
+<p>Article spec §3 sets the 30-day target at four to five activity threads and roughly 6,000 words. <code>TI-20260817-001</code>, the reference implementation, is a 30-day issue with two threads and well under that length. Building this issue, the real search turned up exactly two threads that cleared the corroboration and evidence bar the specs set, one well-corroborated, one resting on a single relayed advisory. Padding to four or five would have meant including weaker material just to hit a count, which the disclosure doctrine&rsquo;s own logic argues against, thin material is fine to publish, but manufacturing volume to meet a target is a different thing than reporting what a window produced.</p>
+<p>The spec anticipates something like this in the open item on cadence (§3, &ldquo;Open, pending Track E&rdquo;) but frames it as a future editorial decision, not as guidance for what to do right now when a real window&rsquo;s evidence doesn&rsquo;t fill the stated shape. Nothing currently tells an author or a model whether the reference implementation&rsquo;s two-thread issue is the actual template to follow, in which case the four-to-five figure should be marked aspirational or provisional rather than a target, or whether that issue under-delivered and a real 30-day issue should be pushed harder to find more threads.</p>
+<p><strong>Suggested fix:</strong> either mark the cadence table explicitly provisional pending Track E, with a note that the reference implementation is the current authority on shape, not the table, or state directly that thread count is bounded by what clears the evidence bar and never padded, the way length already is (&ldquo;A quiet window publishes shorter and says so&rdquo;).</p>
+<h2 id="3-attck-technique-ids-in-the-dossier-strip-have-no-sourcing-rule-when-the-vendor-doesnt-publish-them">3. ATT&amp;CK technique IDs in the dossier strip have no sourcing rule when the vendor doesn&rsquo;t publish them</h2>
+<p>Gate 5&rsquo;s artifact test lists &ldquo;ATT&amp;CK technique ID&rdquo; as one of several things that can satisfy checkability. Article spec §6 says the dossier strip carries &ldquo;technique identifiers&hellip; the handful that matter for this section, not the full mapping, which lives in the source,&rdquo; which reads as an assumption that the source states them.</p>
+<p>Microsoft&rsquo;s CaptiveCrunch post, the best-sourced document in this issue, does not. It gives a table of tactics and Defender detection names, not MITRE technique IDs. Reconstructing IDs from the described behavior (a captive-portal DNS redirect, an AitM position, a ClickFix-style lure) is a mapping judgment made by whoever writes the issue, not a fact transcribed from the document. Nothing in either spec flags that this mapping is interpretive, requires it to carry any marker distinguishing it from a source-stated ID, or says what to do when confidence in the mapping is low. A wrong self-assigned ID would sit in the dossier strip looking exactly like a transcribed fact, and a reader has no way to tell the difference. That&rsquo;s a real integrity gap given how much weight both documents put on never asserting something a reader can&rsquo;t check.</p>
+<p><strong>Suggested addition:</strong> state explicitly, probably in classification spec §5 alongside the artifact test, that a technique ID not stated by the source is an analytic mapping, not a sourced fact, and either (a) requires an <code>ANL</code> marker of its own even inline in the dossier strip, or (b) is barred from the strip entirely when the source doesn&rsquo;t name it, with the mapping left to a hunter&rsquo;s own tooling the same way indicator extraction already is per §9.</p>
+<h2 id="4-partial-corroboration-inside-one-narrative-thread-has-no-attachment-point">4. Partial corroboration inside one narrative thread has no attachment point</h2>
+<p>ReliaQuest and Microsoft both cover the captive-portal Wi-Fi campaign, but only partially overlap. Microsoft explicitly cites ReliaQuest&rsquo;s July 23 report for the device-code phishing slice of the finding, meaning that specific piece is not independent under the §7 independence gate, &ldquo;did this source publish evidence drawn from data the first source did not provide.&rdquo; But Microsoft&rsquo;s malware-delivery findings (CornFlake, ChocoShell) are not in ReliaQuest&rsquo;s report at all and are genuinely new data.</p>
+<p>Section 2&rsquo;s segmentation rule is the correct mechanical fix here, split into separate claims wherever the gate vector changes, and a corroboration mark attaches per claim, not per paragraph or per thread. That did resolve it in this issue. But nothing in either document names this as a recognizable failure pattern the way §6 names the reconciliation-pass drift risk (&ldquo;a legitimate tag on an overstated sentence&hellip; is the default drift direction&rdquo;). The natural authoring impulse, especially writing prose about &ldquo;the campaign&rdquo; as a single narrative, is to inherit one corroboration mark for the whole thread once two vendors are both cited in it, exactly the drift the merge rule in §2 already guards against for grades. Worth stating in plain language, next to that reconciliation-drift note, since it&rsquo;s the same underlying risk applied to corroboration instead of grade.</p>
+<p><strong>Suggested addition to classification spec §7:</strong> a short paragraph naming this pattern directly: two sources covering overlapping ground almost never corroborate uniformly across everything they both touch, and a <code>×2</code> mark earned on one sentence must not be allowed to color the reader&rsquo;s sense of the whole thread.</p>
+<h2 id="5-vendor-stated-government-attribution-cite-the-vendors-paraphrase-or-go-find-the-governments-own-document">5. Vendor-stated government attribution: cite the vendor&rsquo;s paraphrase, or go find the government&rsquo;s own document?</h2>
+<p>Microsoft&rsquo;s post states, in its own prose, that Midnight Blizzard is attributed by the US and UK governments to Russia&rsquo;s SVR. Gate 3&rsquo;s guidance (&ldquo;a government advisory built on vendor reporting is GOV-4 unless&hellip;&rdquo;) is written for the GOV-citing-VND direction. It doesn&rsquo;t say what to do in the reverse case, a vendor stating a government attribution as background, without citing a specific advisory or indictment.</p>
+<p>I graded this <code>VND-4</code>, reporting a named finding (the government&rsquo;s designation) it did not itself make. But a stricter reading of the disclosure doctrine argues the correct move is to go find the actual NCSC or CISA document making that designation and cite it directly, since it&rsquo;s a checkable, findable primary and using it would upgrade a <code>VND-4</code> boilerplate line to a real <code>GOV</code> claim. Neither document tells the author which is required, and the choice materially changes how corroborated a &ldquo;this is a Russian state actor&rdquo; claim looks to a reader, at a category of claim, state attribution, that both documents already flag elsewhere as one of the most consequential categories to get right.</p>
+<p><strong>Suggested addition:</strong> a short rule in Gate 3 or §1A stating that a standing government attribution repeated as background by a vendor should be re-sourced to the government&rsquo;s own document when one is findable, rather than graded from the vendor&rsquo;s restatement, since the primary is by definition public and citable and the whole point of the grading system is not to launder a checkable fact through an unnecessary intermediary.</p>
+<h2 id="6-neither-specs-worked-examples-cover-a-cve-free-pure-tradecraft-campaign-which-is-what-most-of-this-windows-russia-nexus-reporting-actually-was">6. Neither spec&rsquo;s worked examples cover a CVE-free, pure-tradecraft campaign, which is what most of this window&rsquo;s Russia-nexus reporting actually was</h2>
+<p>Every worked example in classification spec §2 and §13 involves vendor IR reporting with hashes, CVE identifiers, or KEV entries, artifact-rich material. Both threads in this issue were pure social-engineering and infrastructure-abuse campaigns with no CVE, no KEV entry, and no <code>TEC</code> source anywhere. That&rsquo;s not a rare case, it&rsquo;s the profile of a growing share of Russia-nexus reporting this window (device-code phishing, DNS gateway compromise, a trojanized VPN client distributed through a fake hiring process). The gates themselves handled it fine once applied by hand, but there&rsquo;s no worked example anywhere in either document showing segmentation and grading run against a campaign with zero structured records and zero named CVEs, so an author has to extrapolate the CVE-heavy examples rather than follow one.</p>
+<p><strong>Suggested addition:</strong> one worked example in classification spec §2, alongside the existing vendor-IR one, that walks a pure-tradecraft, no-CVE campaign through segmentation and the gates end to end, since this shape of evidence is exactly where an author is least likely to have a template to check their own segmentation against.</p>
+<h2 id="7-two-mechanical-front-matter-questions-with-no-stated-answer-for-a-hand-authored-issue">7. Two mechanical front-matter questions with no stated answer for a hand-authored issue</h2>
+<ul>
+<li><strong><code>issueNumber</code>.</strong> Article spec §4 and §9 both describe it as generated by Hugo from publication order, never authored by hand, and never used to reference an issue in prose. But nothing tells a hand-authored issue, one written outside the pipeline the way this one and <code>TI-20260817-001</code> were, whether to omit the field, guess a placeholder, or leave a note for whoever runs the actual Hugo build to fill it in. I omitted it. That&rsquo;s consistent with the spirit of §9&rsquo;s rule for pipeline-derived fields (&ldquo;absent rather than fabricated&rdquo;), but <code>issueNumber</code> isn&rsquo;t in that list, and the omission is my inference, not a documented instruction.</li>
+<li><strong>Serial uniqueness.</strong> §14&rsquo;s checklist requires the serial be &ldquo;recorded in the serial ledger&rdquo; and unique. There is no serial ledger available to an author working outside the pipeline. I assigned <code>TI-20260822-001</code> by the stated date-stamping rule and asserted uniqueness without any way to check it.</li>
+</ul>
+<p><strong>Suggested addition:</strong> a short note in §9 or §13 stating explicitly what a hand-authored, pipeline-less issue should do with both fields, most simply, omit <code>issueNumber</code> explicitly per the existing absent-not-fabricated rule, and treat serial uniqueness as provisional, flagged for a human check at commit time, until the pipeline and its ledger exist.</p>
+<h2 id="not-a-gap-worth-noting-anyway">Not a gap, worth noting anyway</h2>
+<p>The disclosure doctrine and the gates themselves worked exactly as designed on genuinely awkward material: a partially-hedged initial-access assessment (ReliaQuest&rsquo;s low-to-medium-confidence, explicitly unconfirmed claim about how the gateways were first compromised) graded cleanly to <code>VND-2</code> without any temptation to either suppress it or round it up to something more confident than the source stated. That&rsquo;s the system doing its job. The gaps above are all about what happens at the edges the two documents&rsquo; own worked examples don&rsquo;t reach yet, not about the core mechanism, which held up well under real sourcing.</p>
+
+        
+        <div class="tags" style="margin-top: 8px;">
+            <span class="tag">classification v3.8</span><span class="tag">article spec v2.5</span><span class="tag">build notes</span>
+        </div>
+        
+    </div>
+</article>
 
     </main>
 

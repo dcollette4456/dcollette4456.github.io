@@ -9,6 +9,13 @@
     <lastBuildDate>Fri, 21 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dcollette4456.github.io/issues/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Compile to Compromise: A Poisoned Rust Crate and Five Weeks Inside a Windows Kernel Driver</title>
+      <link>https://dcollette4456.github.io/issues/compile-to-compromise-rust-crate-kernel-driver/</link>
+      <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://dcollette4456.github.io/issues/compile-to-compromise-rust-crate-kernel-driver/</guid>
+      <description>Executive Summary Two DPRK-nexus intrusion sets surfaced in the same ten-day window, on two different platforms, and both trace back to infrastructure and tradecraft this product has already logged this year. First, Lazarus Group used a Windows kernel use-after-free, since patched as CVE-2026-68820, for roughly five weeks before Microsoft closed it on 11 August, folding the exploit into a new build of the FudModule rootkit as part of a fresh Operation Dream Job wave against defense, aerospace, and aviation targets in Europe and India.</description>
+    </item>
+    <item>
       <title>Install to Continue: How Russia-Nexus Operators Turned Routine Prompts Into Initial Access</title>
       <link>https://dcollette4456.github.io/issues/russia-onboarding-trap/</link>
       <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>

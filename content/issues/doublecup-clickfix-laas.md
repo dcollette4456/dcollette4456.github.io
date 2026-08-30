@@ -1,5 +1,5 @@
 ---
-title: "Click, Cache, Compromise: DOUBLECUP Turns ClickFix Into a Rentable Kit"
+title: "DOUBLECUP: ClickFix Commoditized as a Loader-as-a-Service Delivering CountLoader and a Blockchain-Resolved RAT, June–August 2026"
 date: 2026-08-30
 type: "issues"
 issueNumber: 40
@@ -217,3 +217,5 @@ The attribution gap is likely to persist. A rentable service by design separates
 </ol>
 
 This piece was authored directly against Article and Site Design Specification v2.5 and Classification System v3.8 without the automated grading pipeline. It carries no ledger file, and every pipeline-derived field reflects the author's own reading rather than a reconciled ledger entry. All three cited news sources were read in full rather than through a summary. One naming discrepancy between the primary source and a relay is disclosed in Attribution rather than silently resolved in either direction.
+
+Title departs from Article Spec &sect;5's "Evocative Hook: Concrete Specific" format in favor of a standard intelligence-report title, subject followed by judgment and date range, matching the convention used in TI-20260830-001. This is a deliberate deviation pending a spec revision, not an oversight.

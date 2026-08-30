@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Install to Continue: How Russia-Nexus Operators Turned Routine Prompts Into Initial Access | Knights Who Say Ni</title>
+    <title>Click, Cache, Compromise: DOUBLECUP Turns ClickFix Into a Rentable Kit | Knights Who Say Ni</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
@@ -1159,24 +1159,24 @@
 
     <main>
         
-<article data-issue="TI-20260822-001"
+<article data-issue="TI-20260830-002"
          data-classification-version="3.8">
     
     <div class="article-header">
         <div class="article-header-inner">
             <div class="article-badge-row">
                 <span>RUS</span>
-                <span class="sep">·</span><span>23 JUL – 22 AUG 2026</span>
+                <span class="sep">·</span><span>3 – 30 AUG 2026</span>
                 <span class="sep">·</span><span>V1</span>
             </div>
-            <h1>Install to Continue: How Russia-Nexus Operators Turned Routine Prompts Into Initial Access</h1>
-            <p class="article-dek">Open-Source Intelligence Summary: 23 July - 22 August 2026. Threat Operations Assessment.</p>
+            <h1>Click, Cache, Compromise: DOUBLECUP Turns ClickFix Into a Rentable Kit</h1>
+            <p class="article-dek">Open-Source Intelligence Summary: 3 - 30 August 2026. Threat Operations Assessment.</p>
         </div>
         <div class="article-info-grid">
             
             <div class="info-item">
                 <span class="info-label">REPORT SERIAL</span>
-                <span class="info-value">TI-20260822-001</span>
+                <span class="info-value">TI-20260830-002</span>
             </div>
             
             <div class="info-item">
@@ -1185,7 +1185,7 @@
             </div>
             <div class="info-item">
                 <span class="info-label">PUBLISHED</span>
-                <span class="info-value">21 August 2026</span>
+                <span class="info-value">30 August 2026</span>
             </div>
             
             <div class="info-item">
@@ -1196,7 +1196,7 @@
             
             <div class="info-item info-item-wide">
                 <span class="info-label">SOURCE BASIS</span>
-                <span class="info-value">Open-source reporting from threat intelligence firms, vendor disclosures, government advisories, and security research. See References for full citations.</span>
+                <span class="info-value">Vendor threat research and corroborating trade press. See References for full citations and a disclosed retrieval limitation this cycle.</span>
             </div>
             
         </div>
@@ -1211,14 +1211,22 @@
   <ul>
     <li><a href="#executive-summary">Executive Summary</a></li>
     <li><a href="#scope-and-sourcing">Scope and Sourcing</a></li>
-    <li><a href="#trusted-channel-compromise">Trusted Channel Compromise</a></li>
-    <li><a href="#what-connects-them">What Connects Them</a></li>
-    <li><a href="#appendix-a-source-summaries">Appendix A: Source Summaries</a></li>
+    <li><a href="#threat-highlights">Threat Highlights</a></li>
+    <li><a href="#assessment-and-outlook">Assessment and Outlook</a></li>
+    <li><a href="#source-summaries">Source Summaries</a></li>
     <li><a href="#references">References</a></li>
   </ul>
 </nav>
             </div>
             
+            
+            <div class="sidebar-divider"></div>
+            <div>
+                <div class="sidebar-label">HUNT PRIORITIES</div>
+                <div class="hunt-priorities-list">
+                    <span>findstr.exe or certutil.exe run against a browser cache path with a decode flag, immediately preceded by a RunMRU or WinX terminal launch</span><span>A cached image file appearing and disappearing from a browser cache folder faster than any normal image load, matched to a script interpreter reading it by exact byte size</span><span>Outbound Ethereum or BNB Smart Chain RPC calls (eth_call, port 8545, or known public RPC hostnames) from a host with no legitimate blockchain use, followed within seconds by a new outbound connection</span>
+                </div>
+            </div>
             
             
             <div class="sidebar-divider"></div>
@@ -1227,27 +1235,27 @@
                 
                 <div class="sidebar-row">
                     <span>Window</span>
-                    <span class="value">30 days</span>
+                    <span class="value">Jun – Aug 2026</span>
                 </div>
                 
                 <div class="sidebar-row">
                     <span>Threat</span>
-                    <span class="value">Russia-nexus</span>
+                    <span class="value">Russia-nexus (commodity LaaS)</span>
                 </div>
                 
                 <div class="sidebar-row">
                     <span>Sectors</span>
-                    <span class="value">Hospitality, cross-sector travelers, IT/MSP</span>
+                    <span class="value">Cross-sector, opportunistic via SaaS login impersonation</span>
                 </div>
                 
                 <div class="sidebar-row">
                     <span>Hunt surface</span>
-                    <span class="value">2 behaviors</span>
+                    <span class="value">3 behaviors</span>
                 </div>
                 
             </div>
             
-            <p style="font: 400 13.5px/1.5 Spectral, serif; color: #6b665e; margin-top: -14px;">Four sources, two of them vendor incident research and two press relaying one unretrieved government advisory.</p>
+            <p style="font: 400 13.5px/1.5 Spectral, serif; color: #6b665e; margin-top: -14px;">Three sources: one vendor primary and two trade-press relays. Two attribution leads are handle-level and unconfirmed; both are disclosed and graded accordingly rather than omitted.</p>
             
             
         </aside>
@@ -1258,144 +1266,147 @@
             
 
             <h2 id="executive-summary">Executive Summary</h2>
-<p>Two disclosures this window show a Russia-nexus pattern of reaching a target through a step the victim expected to take anyway, rather than through an exploit. A cluster Microsoft tracks as Storm-2945, assessed as a Midnight Blizzard sub-cluster, compromised the Wi-Fi gateways of hotels and conference venues and used administrative control of those gateways to redirect corporate travelers into credential theft and malware delivery, no phishing email required<sup class="cite"><a href="#ref3">3</a></sup>. Separately, CERT-UA reported a Sandworm-linked cluster tracked as UAC-0145 running a months-long fake hiring process against Ukrainian system administrators, ending in a trojanized WireGuard client that the candidate was talked into installing as part of a bogus technical interview<sup class="cite"><a href="#ref2">2</a></sup>.</p>
-<p>Neither operation asked the victim to click a suspicious link. The Wi-Fi campaign relied on a captive portal login every traveler already goes through. The hiring campaign relied on a VPN client every remote technical candidate is asked to install. Both actors built a plausible reason for the install to fail on the first try, then supplied the malicious file as the fix.</p>
-<p>The two disclosures also differ in exactly the way a hunter should care about. The Wi-Fi campaign is corroborated by two vendors working from separate telemetry, with one, Microsoft, publishing an unusually complete artifact set: hashes, C2 infrastructure, and hunting queries against Defender and Sentinel data<sup class="cite"><a href="#ref3">3</a></sup>. The hiring campaign rests on a single government advisory that no vendor has yet corroborated with an independent technical report, and that advisory could not be retrieved directly for this issue<sup class="cite"><a href="#ref1">1</a></sup><sup class="cite"><a href="#ref2">2</a></sup>. Both are worth a hunter&rsquo;s attention. Only one of them is currently checkable against a second, independent source.</p>
-<p>A secondary finding from the Wi-Fi campaign deserves separate note. Microsoft&rsquo;s attribution of the specific malware-delivery activity to a Midnight Blizzard sub-cluster rests on technical overlaps ReliaQuest&rsquo;s earlier report did not have access to. ReliaQuest&rsquo;s own investigation of the same window of gateway compromises found tradecraft resembling a different, GRU-linked actor&rsquo;s earlier campaign and declined to attribute further<sup class="cite"><a href="#ref4">4</a></sup>. The two vendors are not contradicting each other. They are describing overlapping infrastructure from different vantage points, and the overlap itself, not either single report, is the more interesting hunt lead.</p>
+<p>DOUBLECUP is a Russian loader-as-a-service that has been renting out a fully packaged ClickFix kit since early June 2026: a Go-based Windows client for building campaigns, a payload builder, and infrastructure that hosts the lure pages, issues encryption keys, and rebuilds payloads automatically. Customers who license it get two payload families. One is an updated, cross-platform build of CountLoader, a loader already tied to the Russian ransomware ecosystem before DOUBLECUP existed. The other is DeviceManager, a previously undocumented Python-based remote access trojan that resolves its command-and-control infrastructure through an Ethereum or BNB Smart Chain contract rather than a domain an operator has to register and defend.</p>
+<p>The infection mechanics are the part worth a hunter&rsquo;s full attention. A victim lands on a page impersonating a NetSuite, Odoo, HubSpot, or Salesforce login screen, loaded through an embedded iframe. The page silently forces the browser to cache a PNG image, then presents a fake verification prompt asking the victim to paste a command into the Run dialog or a terminal. That command doesn&rsquo;t fetch anything from the network; it searches the browser&rsquo;s own cache for the image it just downloaded, matches it by exact file size, and uses <code>findstr</code> or <code>certutil</code> to pull a hidden payload out of pixel data that was sitting on disk the whole time, encrypted with a stream cipher keyed to the victim&rsquo;s own public IP address. Nothing about that chain looks like a download. That is precisely the point, and it is why the naive version of a ClickFix hunt query, alert whenever a host goes from a browser to PowerShell, is both too noisy to run and too shallow to catch this specific mechanism.</p>
+<p>This issue treats that gap as the actual story. Below is a detailed walkthrough of how to hunt DOUBLECUP&rsquo;s chain in Microsoft Defender for Endpoint and Microsoft Sentinel specifically, built around the parts of this chain that are genuinely rare rather than the parts that merely look suspicious in isolation, plus a shorter note on translating the same logic to other SIEM platforms. Attribution is murkier and is treated as such: two handle-level leads exist, neither confirmed, and both are presented with their actual evidentiary weight rather than silently dropped or silently upgraded.</p>
 <h2 id="scope-and-sourcing">Scope and Sourcing</h2>
-<p>Reporting window is 23 July to 22 August 2026. Four sources: two vendor incident research publications and two trade press outlets, both relaying the same government advisory. No subscription sources were consulted. No source in this issue is gated.</p>
-<p>One claim in this issue could not be graded past a relay position. CERT-UA&rsquo;s advisory on the UAC-0145 hiring campaign is cited by both press sources but the advisory page itself did not render retrievable content for this pipeline; the document actually read in both cases is the press account, not the agency&rsquo;s own text, and that is what is tagged. Zero claims are marked disputed. Zero cited sources sit outside the window.</p>
-<p>Three of four sources are US-headquartered vendors or US trade press; the fourth is a Ukrainian government agency, cited only through American press relay. A reader should weigh that a Ukrainian technical response to an operation against Ukrainian IT workers is being read here at two removes from its source.</p>
-<h2 id="trusted-channel-compromise">Trusted Channel Compromise</h2>
-<h3 id="a-hotel-wi-fi-login-became-a-malware-delivery-channel">A hotel Wi-Fi login became a malware delivery channel</h3>
-<div class="dossier"><strong>Storm-2945 (Midnight Blizzard)</strong> &nbsp;|&nbsp; T1584 · T1557 · T1204.002 · T1071.001 &nbsp;|&nbsp; ATTRIBUTED TO A MIDNIGHT BLIZZARD SUB-CLUSTER BY MICROSOFT; RELIAQUEST NOTES SEPARATE TTP OVERLAP WITH APT28 WITHOUT ATTRIBUTING</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C001">VND-1</span>
-  Since at least June 2026, an actor gained administrative control of Wi-Fi gateways at hotels and conference venues across multiple US cities, India, and Saudi Arabia, then used that control to forge DNS responses for every connecting guest<sup class="cite"><a href="#ref4">4</a></sup>. Because the gateway is the DHCP-assigned resolver for the network, no endpoint had to be touched individually: a query for a Microsoft authentication domain was silently answered with an attacker-controlled address, and the redirected session then flowed through infrastructure built to imitate Microsoft&rsquo;s login pages. Traffic to the compromised gateways came from organizations across financial services, professional services, legal, healthcare, energy, and retail, which ReliaQuest reads as targeting of the traveling employee rather than any one sector<sup class="cite"><a href="#ref4">4</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C002">VND-2</span>
-  How the gateways were first compromised is not established. ReliaQuest assesses with low-to-medium confidence that exposed management interfaces, SSH, SNMP, and web administration consoles, combined with weak or reused administrator credentials, but states plainly that visibility constraints prevented confirming this<sup class="cite"><a href="#ref4">4</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C003">VND-1</span>
-  In roughly a third of cases, the actor also attempted to abuse Windows&rsquo; automatic proxy discovery feature, a technique not documented in the vendor&rsquo;s own earlier reporting on a related SOHO router campaign. Where it succeeded, it would route most of a device&rsquo;s application traffic, not just authentication traffic, through the attacker&rsquo;s proxy<sup class="cite"><a href="#ref4">4</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C004">VND-1</span>
-  On at least one domain, ms365-live[.]com, ReliaQuest directly observed the redirect flow abusing Microsoft&rsquo;s device code authentication, a legitimate protocol for sign-in on devices without a normal browser. A user approving what looks like an ordinary sign-in prompt actually authorizes a session the attacker initiated, handing over MFA-satisfied access without the attacker ever touching a password<sup class="cite"><a href="#ref4">4</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C005">VND-1<span class="corr">&times;2 corroborated</span></span>
-  Microsoft&rsquo;s own investigation, published eight days later, describes the same window of captive-portal traffic manipulation and attributes it to Storm-2945, which it assesses is an operational sub-cluster of Midnight Blizzard. The attribution rests on named technical and operational overlaps with Storm-2372, a Midnight Blizzard sub-cluster previously tracked for device code and OAuth phishing, plus shared victimology<sup class="cite"><a href="#ref3">3</a></sup>. Beyond the redirect infrastructure ReliaQuest had already reported, Microsoft&rsquo;s own telemetry adds a second stage that ReliaQuest&rsquo;s report does not describe: malware delivered through fake browser and operating system update prompts. A Go-language remote access tool the vendor calls CornFlake establishes persistence as a disguised Windows service and provides keylogging, clipboard and screenshot capture, audio and video surveillance, and browser credential theft. A companion PowerShell tool, ChocoShell, runs entirely in memory, disables the Windows antimalware interface, and extracts browser session cookies, saved passwords, and Microsoft 365 single sign-on tokens, including from browsers using the newer app-bound encryption scheme<sup class="cite"><a href="#ref3">3</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C006">VND-4</span>
-  Both reporting vendors, and Microsoft directly, state that Midnight Blizzard is attributed by the US and UK governments to Russia&rsquo;s Foreign Intelligence Service, the SVR<sup class="cite"><a href="#ref3">3</a></sup>.
-</div>
-
-<h4 id="operational-context-device-code-phishing">Operational Context: Device Code Phishing</h4>
-<p>Device code authentication is an OAuth flow built for sign-in on devices with no browser of their own, like a streaming box or a CLI tool. A user visits a generic sign-in page and types in a short code shown elsewhere. Abused, an attacker starts that flow on the victim&rsquo;s behalf and needs only to talk the victim into typing the attacker&rsquo;s code into a legitimate Microsoft page. The resulting token belongs to the attacker&rsquo;s session, not the victim&rsquo;s device, and it satisfies MFA because the victim really did complete a valid sign-in, just not their own.</p>
+<p>This issue&rsquo;s primary source is SOCRadar&rsquo;s Threat Research Unit, corroborated by two trade press relays, BleepingComputer and The Hacker News, both of which add independent technical detail beyond a simple restatement. A methodology limitation applies to all three: this cycle&rsquo;s environment blocked direct retrieval of socradar.io, thehackernews.com, and bleepingcomputer.com, so every claim below was read through search-engine result aggregation rather than the rendered source page itself. The content is treated as an accurate relay of what those pages say, consistent across three independently phrased summaries, but this author did not personally read any of the three pages in full, and that is disclosed here rather than left implied.</p>
+<p>Two further sources establish background on CountLoader, the loader DOUBLECUP delivers as one of its two payloads: Silent Push&rsquo;s original research and a September 2025 Hacker News relay of it, both roughly a year outside this window. They are cited only to establish that CountLoader itself predates DOUBLECUP and already carried its own loose attribution before this service existed; nothing in either source is evidence about who operates DOUBLECUP specifically. One claim below is marked disputed: a threat-actor handle tied to DOUBLECUP&rsquo;s own Telegram infrastructure appears in different secondary sources spelled two different ways, and this issue does not resolve which spelling, if either, is correct.</p>
+<h2 id="threat-highlights">Threat Highlights</h2>
+<h3 id="doublecup-turning-clickfix-into-a-subscription">DOUBLECUP: Turning ClickFix Into a Subscription</h3>
+<div class="dossier"><b>DOUBLECUP</b> (SOCRADAR) &middot; DELIVERS COUNTLOADER (WINDOWS/MACOS) AND DEVICEMANAGER RAT &nbsp;|&nbsp; T1204.004 &middot; T1027.003 &middot; T1568 &middot; T1071.001 &middot; T1053.005 &nbsp;|&nbsp; ATTRIBUTION: ASSESSED RUSSIAN BY SOCRADAR, NO NAMED APT OR GROUP DESIGNATION</div>
+<div class="claim"><span class="tag">VND-1</span>
+<p>SOCRadar's Threat Research Unit assesses DOUBLECUP has operated as a commercial loader-as-a-service since early June 2026. Licensees receive a Go-based Windows GUI client with a Payload Builder pane for configuring what a ClickFix decoy triggers and a Broadcast pane for pushing configuration updates, software updates, and commands to active campaigns directly. The service itself hosts the steganographic images, manages session and signal endpoints, issues per-campaign encryption keys, and automatically rebuilds payloads, meaning an operator with no development capability of their own can stand up a working campaign end to end.</p></div>
+<div class="claim"><span class="tag">VND-1</span>
+<p>Observed campaigns use a fake CAPTCHA-style verification prompt embedded via iframe on pages impersonating NetSuite, Odoo, HubSpot, and Salesforce login screens. On page load, the campaign registers the visiting session, resolves the victim's public IP address, and forces the browser to download and cache a PNG image carrying a steganographically embedded payload. The visible prompt then walks the victim through pasting a command, populated on their clipboard by the page itself, into the Run dialog or a terminal.</p></div>
+<div class="claim"><span class="tag">VND-1</span>
+<p>The pasted command does not reach out to the network. It searches the browser's own cache directory for the previously downloaded image, identified by its exact file size rather than filename, and recovers the hidden first-stage payload using <code>findstr</code> or <code>certutil</code> against that cached file. A second stage then decrypts the recovered payload in memory using a custom SHA-256 stream cipher running in Counter mode, XORed against the victim's own public IP address as the key. Because the key is derived from the victim's network position rather than hard-coded, the same cached image decrypts to nothing meaningful on a sandbox or analyst machine reaching out from a different address, a deliberate anti-analysis property rather than a side effect.</p></div>
+<div class="claim"><span class="tag">VND-1</span>
+<p>Successful decryption loads one of two payload families. CountLoader ships in an updated build covering both Windows and macOS, adapting its persistence and reconnaissance behavior to each platform, and had no prior cross-platform build before this service. DeviceManager is a modular, Python-based remote access trojan distributed through an Inno Setup installer, persisting through a scheduled task or a WMI event subscription depending on what the target environment allows. It supports command execution through CMD, PowerShell, or Python directly, and resolves its active command-and-control nodes by reading an Ethereum or Polygon smart contract, a technique called EtherHiding, before communicating over DNS tunneling or HTTP POST.</p></div>
+<div class="operational-context">
+  <h4>Operational Context: What EtherHiding actually buys an operator</h4>
+  <p>A smart contract is public, immutable once deployed, and expensive to take down: no registrar to serve a suspension notice, no hosting provider to null-route, and no single point a defender or a law enforcement request can reach to kill the address. DeviceManager reads a small piece of on-chain data to learn where its real command-and-control server currently lives, then connects there directly. The blockchain isn&rsquo;t the command channel itself; it&rsquo;s a dead-drop that tells the malware where the real channel is, and that dead-drop can be updated by the operator at any time without changing anything a defender could block in advance.</p>
 <p><strong>Key points:</strong></p>
 <ul>
-<li>No credential is intercepted or guessed; the victim authorizes the attacker&rsquo;s session directly</li>
-<li>Works over an already-compromised network channel or through a simple social engineering prompt</li>
-<li>Blockable at the identity provider by disabling the device code flow in Conditional Access where it has no legitimate business use</li>
+<li>The malware&rsquo;s outbound traffic to legitimate public blockchain infrastructure (Ethereum or BNB Smart Chain RPC endpoints) is itself a detectable event, since almost no ordinary business host has a legitimate reason to make raw RPC calls</li>
+<li>Blocking or takedown of the resolved C2 address doesn&rsquo;t stop the operator from publishing a new one to the same contract</li>
+<li>The pattern to hunt is the RPC call itself, followed shortly by a new outbound connection to whatever address that call resolved, not any single domain or IP, since the domain is disposable and the RPC call is not</li>
 </ul>
-<div class="hunt">
-  <div class="hunt-label">How this would be hunted</div>
-  <p>The redirect infrastructure is the durable surface, not any single implant. A captive-portal compromise gives an actor DNS for every guest on the network, and endpoint controls see nothing until a device already following the poisoned resolver&rsquo;s answers reaches out for an update. The single control that closes this path for corporate devices is an always-on, full-tunnel VPN that establishes before internet access is permitted, so DNS never reaches the venue&rsquo;s resolver at all. Where that is not yet universal, hunt for Windows devices making automatic proxy discovery lookups shortly after joining a new network, followed within minutes by a download of an executable, installer, or archive: that sequence is what a hunter can query for now against data most managed fleets already keep.</p>
-<p>Device code abuse deserves its own watch independent of the network layer. A sign-in risk policy or a Conditional Access rule blocking the flow entirely removes the technique regardless of which network the victim is on, and detecting anomalous device code completions after a captive-portal session is a query worth running even in an estate that has not confirmed exposure to this specific campaign.</p>
-<p>On the attribution: Storm-2945&rsquo;s link to Midnight Blizzard rests on data only Microsoft holds, chiefly its comparison to a previously tracked sub-cluster&rsquo;s tradecraft. ReliaQuest&rsquo;s independent look at overlapping gateway-compromise infrastructure points toward tradecraft it has separately linked to a different Russian military intelligence actor, without committing to either identity. A hunt scoped to &ldquo;Midnight Blizzard&rdquo; alone would miss infrastructure that ReliaQuest&rsquo;s report describes and that Microsoft&rsquo;s does not fully subsume, and the reverse is also true.</p>
 
-  <div class="hunt-foot"><b>Stage</b> Presence &nbsp;&middot;&nbsp; <b>Look in</b> dns, proxy-http, authentication, file-write, process-execution &nbsp;&middot;&nbsp; <b>Built on</b> two vendor observations of overlapping but not identical infrastructure</div>
-  <div class="hunt-sources">Indicators for your SIEM live in the sources, not here. ReliaQuest<sup class="cite"><a href="#ref4">4</a></sup> publishes the gateway-redirect IP addresses, four impersonation domains, and the registrant email tying them together. Microsoft<sup class="cite"><a href="#ref3">3</a></sup> publishes a separate, non-overlapping infrastructure set for the malware-delivery stage, two file hashes, and four Kusto hunting queries for Defender and Sentinel. Point your own model at both reports; they do not share an indicator set.</div>
-</div>
-
-<h3 id="a-months-long-fake-hiring-process-delivered-a-trojanized-vpn-client">A months-long fake hiring process delivered a trojanized VPN client</h3>
-<div class="dossier"><strong>Sandworm (UAC-0145)</strong> &nbsp;|&nbsp; ATTRIBUTED BY CERT-UA ONLY; NO INDEPENDENT VENDOR TECHNICAL REPORT</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C007">MED-4</span>
-  CERT-UA reports that a Sandworm-linked cluster it tracks as UAC-0145, a sub-cluster of UAC-0002, has since at least May 2026 been posing as recruiters on legitimate Ukrainian job platforms to target system administrators and other IT professionals. After reviewing a candidate&rsquo;s resume, the operators made contact claiming to represent a staffing firm called Atlas Business Group hiring for a project with Sopra Steria Bulgaria, part of a real international IT services company. Contact moved from the job site&rsquo;s chat to Telegram, then to a Zoom interview with an English-speaking interviewer CERT-UA could not confirm was a live participant<sup class="cite"><a href="#ref1">1</a></sup><sup class="cite"><a href="#ref2">2</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C008">MED-4</span>
-  The candidate was then sent, by an email address styled to resemble a regional Sopra Steria address, WireGuard configuration files for a claimed technical assessment. Those files were built to fail. When the candidate reported a connection error, the fake interviewer directed them to a custom client called SopraVPN, hosted on SourceForge and linked from a spoofed site at soprasteria-bg[.]com<sup class="cite"><a href="#ref1">1</a></sup><sup class="cite"><a href="#ref2">2</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C009">MED-4</span>
-  SopraVPN is built from the legitimate, unmodified WireGuard open-source codebase with one addition: a custom configuration option, SymmetricKey, that the client uses along with the connection&rsquo;s private key to decrypt a payload embedded in the configuration file itself using AES-256-GCM. On successful decryption, the Windows variant creates a scheduled task and retrieves an additional payload; a Linux variant uses curl to fetch an executable from attacker infrastructure<sup class="cite"><a href="#ref1">1</a></sup>. CERT-UA did not disclose a victim count or a stated objective for the operation<sup class="cite"><a href="#ref2">2</a></sup>.
-</div>
-
-<div class="claim">
-  <span class="tag" data-claim="C010">MED-4</span>
-  CERT-UA attributes the cluster to Sandworm, also tracked as APT44, Seashell Blizzard, and UAC-0002, long linked by Western governments to Russia&rsquo;s GRU military intelligence service and to some of the most disruptive cyberattacks recorded against Ukrainian infrastructure<sup class="cite"><a href="#ref2">2</a></sup>.
+  
 </div>
 
 <div class="hunt">
-  <div class="hunt-label">How this would be hunted</div>
-  <p>Nothing about this chain requires a vulnerability. The choke point is the moment a candidate is asked to run an unfamiliar installer as part of a legitimate-seeming hiring process, and that moment is defined by human process, not by network telemetry alone. An organization&rsquo;s own recruiting workflow is the place to start: does any legitimate technical assessment at this organization ever require installing software from outside a managed catalog, and if the answer is no, that policy is worth restating to staff explicitly rather than assumed to be obvious.</p>
-<p>Where telemetry can help, the useful signal is a WireGuard-derived binary that is not the organization&rsquo;s sanctioned client, particularly one that decrypts and executes content pulled from its own configuration file. Endpoint tooling that inspects configuration files as inert text will not catch a payload hidden inside one; file integrity or application control policies scoped to installed VPN clients, keyed on binary hash or publisher signature rather than file name, would.</p>
-<p>The wider pattern is not new. State actors from more than one country have used fake recruiters to reach specific technical roles this year, and a hunt team&rsquo;s screening process for its own hiring pipeline is a legitimate place to apply the same suspicion it would apply to an unsolicited email.</p>
-
-  <div class="hunt-foot"><b>Stage</b> Initial access &nbsp;&middot;&nbsp; <b>Look in</b> file-write, process-execution, scheduled-task, network-flow &nbsp;&middot;&nbsp; <b>Built on</b> one government advisory, unretrieved, read through press relay</div>
-  <div class="hunt-sources">Indicators for your SIEM live in the sources, not here. Neither press account reproduces file hashes, IP addresses, or the full SourceForge project names CERT-UA&rsquo;s advisory reportedly documents. Point your own model at CERT-UA&rsquo;s advisory directly if your environment can reach it; this issue could not.</div>
+<div class="hunt-label">How this would be hunted: Microsoft Defender for Endpoint</div>
+<p>The naive version of this hunt, flag any host that goes from a browser to a shell, will drown a SOC in normal IT and developer activity, since plenty of legitimate work looks exactly like that in isolation. The version worth actually running keys on two things almost nothing benign does: recovering a hidden payload from a browser's own cache by exact byte size, and reaching a Run dialog or WinX terminal launch with a fetch-and-execute pattern inside a tight time window after a browser clipboard write.</p>
+<p>Start with the cache-recovery step, since it is the single most distinctive artifact in this entire chain and carries the lowest false-positive rate of anything below:</p>
+<pre><code>DeviceProcessEvents
+| where FileName in~ ("findstr.exe", "certutil.exe")
+| where ProcessCommandLine has_any ("Cache", "INetCache", "Code Cache", "Cache_Data")
+| where ProcessCommandLine has_any ("-decode", "/decode", "-urlcache", "-decodehex")
+| where InitiatingProcessFileName in~ ("cmd.exe", "powershell.exe", "pwsh.exe")
+| project Timestamp, DeviceId, DeviceName, AccountName, FileName, ProcessCommandLine, InitiatingProcessFileName, InitiatingProcessCommandLine</code></pre>
+<p>Legitimate administration essentially never scans a browser's cache directory for a file matched by size and pipes it through a decode flag; that combination alone is worth an alert on its own, independent of anything else in this issue. Layer the RunMRU correlation on top of it rather than in place of it, since the cache-recovery step above should already fire whether or not the initial paste happened through Win+R or a WinX terminal:</p>
+<pre><code>let SuspiciousRunMRU =
+    DeviceRegistryEvents
+    | where RegistryKey has @"CurrentVersion\Explorer\RunMRU"
+    | where RegistryValueData has_any ("findstr", "certutil", "mshta", "powershell", "-EncodedCommand")
+    | project RunTime = Timestamp, DeviceId, DeviceName, AccountName, RegistryValueData;
+SuspiciousRunMRU
+| join kind=inner (
+    DeviceProcessEvents
+    | where FileName in~ ("powershell.exe", "pwsh.exe", "cmd.exe", "mshta.exe", "findstr.exe", "certutil.exe")
+    | where InitiatingProcessFileName =~ "explorer.exe"
+    | project ProcTime = Timestamp, DeviceId, FileName, ProcessCommandLine
+) on DeviceId
+| where ProcTime between (RunTime .. RunTime + 30s)
+| project RunTime, ProcTime, DeviceName, AccountName, RegistryValueData, FileName, ProcessCommandLine</code></pre>
+<p>Where the environment routes around Win+R entirely and instructs the victim to open a terminal from the WinX quick-access menu instead, pair a correlated check for <code>powershell.exe</code> or <code>cmd.exe</code> spawned by <code>explorer.exe</code> with file access under <code>%LocalAppData%\Microsoft\Windows\WinX\</code> in the same short window, since RunMRU stays empty on that path by design.</p>
+<p>For the DeviceManager RAT's EtherHiding stage, hunt the RPC call itself rather than any specific resolved address, since the address is disposable and the call pattern is not:</p>
+<pre><code>DeviceNetworkEvents
+| where RemoteUrl has_any ("bsc-dataseed", "rpc.ankr.com", "mainnet.infura.io", "polygon-rpc.com", "eth-mainnet")
+    or RemotePort == 8545
+| summarize RPCCalls = count(), FirstSeen = min(Timestamp), LastSeen = max(Timestamp)
+    by DeviceId, DeviceName, InitiatingProcessFileName, RemoteUrl
+| join kind=inner (
+    DeviceNetworkEvents
+    | project NextTime = Timestamp, DeviceId, NextRemoteUrl = RemoteUrl, NextRemoteIP = RemoteIP
+) on DeviceId
+| where NextTime between (LastSeen .. LastSeen + 15s)
+| where NextRemoteUrl != RemoteUrl
+| project DeviceName, InitiatingProcessFileName, RemoteUrl, RPCCalls, NextRemoteUrl, NextRemoteIP, LastSeen, NextTime</code></pre>
+<p>An ordinary business host with no cryptocurrency, wallet, or blockchain-development purpose making raw RPC calls at all is already unusual; one that does so and then opens a fresh connection to whatever that call returned, within seconds, is close to a direct behavioral signature for a dead-drop resolver regardless of which malware family is using it.</p>
 </div>
-
-<h2 id="what-connects-them">What Connects Them</h2>
+<div class="hunt">
+<div class="hunt-label">How this would be hunted: Microsoft Sentinel</div>
+<p>Every table referenced above, DeviceProcessEvents, DeviceRegistryEvents, and DeviceNetworkEvents, streams into a Sentinel workspace unchanged through the Microsoft Defender XDR data connector, so the three KQL queries above run as-is from the Sentinel Logs blade with no rewrite required. The value Sentinel adds over running these as ad hoc MDE hunting queries is packaging and correlation, and it's worth building out rather than skipping.</p>
+<p>Convert the cache-recovery query into a scheduled Analytics Rule first, since it is the highest-fidelity of the three and the one most worth an incident rather than a dashboard tile. Set entity mappings on <code>DeviceName</code> as Host and <code>AccountName</code> as Account so a firing rule creates an incident with the right entities pre-attached for a triage analyst, and set the query frequency and lookback to overlap (for example a 15-minute schedule over a 20-minute lookback) so a fast-executing chain doesn't fall into a scheduling gap.</p>
+<p>For the RPC-to-connection correlation, maintain a Sentinel watchlist of known public Ethereum and BNB Smart Chain RPC hostnames rather than hard-coding them in the query body. A watchlist survives provider changes and lets a non-KQL analyst add a newly identified RPC endpoint without editing rule logic, and it keeps the same detection reusable against a different EtherHiding-based family later, since this technique is not unique to DeviceManager and has already appeared in unrelated malware this year.</p>
+<p>Finally, treat this as a case where Sentinel's UEBA and Fusion layers may surface the signal before a specific rule does: a host making its first-ever blockchain RPC call, or its first-ever <code>certutil</code> invocation against a browser cache path, is exactly the kind of per-entity behavioral anomaly UEBA baselining is built to flag, and is worth checking as a secondary validation path even where the explicit Analytics Rule above is already deployed, since a host that fires on rarity grounds but not on the exact string match is still worth a look.</p>
+<div class="hunt-foot"><b>Stage</b> Delivery and execution, staged entirely from the victim's own browser cache &middot; <b>Look in</b> process-execution, registry-set, network-flow, browser-cache access &middot; <b>Built on</b> one vendor primary, corroborated in technical depth by two trade-press relays</div>
+<div class="hunt-sources">Indicators for your SIEM live in the sources, not here. SOCRadar's original writeup is the primary technical source and the one most likely to carry sample hashes and campaign domains; this issue could not retrieve it directly this cycle (see Scope and Sourcing) and did not reproduce indicators secondhand. Point your own model at the SOCRadar report directly, and at the two relays below, to extract indicators into your own schema.</div>
+</div>
+<div class="operational-context">
+<h4>Operational Context: A note on other SIEM platforms</h4>
+<p>Nothing about this hunt logic is Microsoft-specific in principle; DeviceProcessEvents, DeviceRegistryEvents, and DeviceNetworkEvents are simply Defender's names for process creation, registry modification, and network connection telemetry that any EDR-fed SIEM collects in some form. The practical gap is that Defender for Endpoint ships this telemetry unified and enabled by default, where a Splunk or Elastic deployment typically needs Sysmon (or an equivalent) explicitly configured to log registry value sets, and several published guides note that RunMRU specifically is not captured by common default Sysmon configurations and has to be added deliberately.</p>
+<p><strong>Key points:</strong></p>
+<ul>
+<li>Splunk: build the equivalent correlation from Sysmon Event ID 13 (registry value set) filtered to the RunMRU key path, joined to Event ID 1 (process creation) within a short bin using <code>transaction</code> or a <code>stats</code> aggregation by host, and add the same cache-path-plus-decode-flag filter to the process command line for the highest-fidelity leg of this chain</li>
+<li>Elastic: a prebuilt rule already exists for PowerShell clipboard retrieval behavior; extend it with a custom rule matching <code>findstr</code> or <code>certutil</code> command lines referencing a browser cache path, since that combination is not covered by the generic clipboard rule</li>
+<li>Regardless of platform, confirm registry auditing actually captures RunMRU before relying on it; this is the single most common gap between a hunt query that looks correct and one that silently returns nothing because the source event was never logged</li>
+</ul>
+</div>
+<h3 id="attribution-two-unconfirmed-leads-not-a-named-actor">Attribution: Two Unconfirmed Leads, Not a Named Actor</h3>
+<div class="dossier"><b>NO NAMED APT OR GROUP DESIGNATION</b> &middot; TWO HANDLE-LEVEL LEADS, NEITHER CONFIRMED &nbsp;|&nbsp; ATTRIBUTION LOW CONFIDENCE, AGGREGATOR-SOURCED, DISPUTED ON SPELLING</div>
+<div class="claim"><span class="tag">MED-4<span class="disputed">disputed</span></span>
+<p>Coverage of DOUBLECUP's own operational infrastructure describes a Telegram bot, reachable at a handle resembling <code>@harrypoterlohBOT</code>, used to track client visits, issue commands, deliver decryption keys, and receive payload callbacks from active campaigns. That bot is described as managed by a threat actor whose handle appears in secondary coverage as either "johnnysilverhe" or "johnysilverhe," with at least one aggregator additionally attaching the alias "Rognar" to the same handle. This issue does not resolve which spelling or alias is accurate; all three appear in circulation and none has been independently verified against a primary account record.</p></div>
+<div class="claim"><span class="tag">MED-4</span>
+<p>The same handle is separately reported to have published a Visual Studio Code extension named "Agent IDE" to the official Microsoft marketplace, described in that coverage as suspicious rather than confirmed malicious. If accurate, this would put the same persona operating both DOUBLECUP's Telegram control infrastructure and a published developer-tooling extension under review on an official marketplace, which is a meaningfully different risk surface than a ClickFix operator alone, but this issue treats the connection as reported rather than verified, since it rests on secondary aggregation rather than a primary account or marketplace record this author reviewed directly.</p></div>
+<div class="claim"><span class="tag">VND-2</span>
+<p>Separately, and predating DOUBLECUP by roughly a year, Silent Push's research tied the earliest observed abuse of CountLoader, the loader DOUBLECUP now delivers as one of its two payloads, to a persona calling himself "RalfHacker": a self-described penetration tester, red-team operator, and malware developer maintaining a Russian-language Telegram channel with a large public following, and linked through recovered email addresses to a known hacking-forum account. Silent Push connects RalfHacker to AdaptixC2, an open-source command-and-control framework, and to the broader ecosystem around CountLoader, which by that point had already been observed supporting LockBit, BlackBasta, and Qilin ransomware affiliates as an initial-access tool.<sup class="cite"><a href="#ref-silentpush">1</a></sup></p></div>
+<p>Nothing in the sourcing available for this issue connects RalfHacker to DOUBLECUP's own operator directly. The two leads are presented separately because they plausibly describe two different roles: RalfHacker as a figure in CountLoader's own development or distribution lineage well before DOUBLECUP existed, and the johnnysilverhe or johnysilverhe handle as whoever currently runs DOUBLECUP's Telegram-based control channel. A hunter should read this section as two open threads worth watching for a future, better-sourced resolution, not as a resolved identity.</p>
+<h2 id="assessment-and-outlook">Assessment and Outlook</h2>
 <div class="section-tag">Our assessment · moderate confidence</div>
-<p>Both operations moved the point of compromise away from anything an endpoint security stack is built to watch. One redirected DNS at the network gateway, upstream of every device on it. The other redirected trust through a hiring process, upstream of any file an email gateway would have scanned. In both cases the actor did not need the target to make a mistake; they needed the target to complete a step that looked like the next reasonable one in a process already underway.</p>
-<p>The failure-then-fix structure appears in both chains independently, and it is worth naming as a pattern rather than a coincidence specific to either actor. A provided WireGuard configuration engineered to fail, followed by a &ldquo;fix&rdquo; that is the actual payload, and a captive portal connectivity check that never succeeds until a fake update is accepted, are the same move: manufacture a small, plausible obstacle, then hand the victim the malicious file as the solution to a problem the actor created. A defender briefing staff on phishing awareness alone will miss this, because nothing about either lure resembles a phishing email.</p>
-<p>Confidence on the connection is moderate rather than high because the two clusters are tracked separately, by different reporting organizations, with no source in this issue asserting operational coordination between them. The pattern is a tradecraft observation, not an attribution claim.</p>
-<h2 id="appendix-a-source-summaries">Appendix A: Source Summaries</h2>
+<p>Read past the specific malware families, DOUBLECUP is a packaging change, not a technique change, and packaging changes are usually the more consequential development. ClickFix itself, browser cache steganography, and blockchain-resolved command-and-control have all been documented separately before this service existed. What DOUBLECUP does is bundle all three behind a licensing model with a GUI client, automated payload rebuilding, and managed infrastructure, meaning the skill floor to run a campaign using this specific combination of techniques just dropped to whatever it costs to buy a license. That is the actual escalation worth naming: not a new capability, but the compression of what used to require several distinct pieces of tradecraft into a rentable kit any lower-skill affiliate can operate.</p>
+<p>The victim-side targeting reinforces that reading. Impersonating NetSuite, Odoo, HubSpot, and Salesforce login pages is not a campaign aimed at a specific sector or region; it is a campaign aimed at whichever organizations happen to use any of four extremely common SaaS platforms, which is to say most mid-size and larger organizations somewhere in their stack. Combined with a service model built for high campaign turnover, the realistic expectation is broad, opportunistic reach rather than a targeted intrusion set, closer in shape to a commodity stealer campaign than to a named APT&rsquo;s operation.</p>
+<p>The attribution gap is likely to persist. A rentable service by design separates its developer from its operators from its individual campaign runners, and the two leads in this issue describe, at best, people adjacent to different layers of that stack at different points in time. A hunter&rsquo;s realistic posture is to treat the technique, not the actor, as the durable object worth tracking: the cache-recovery-by-exact-size mechanism and the RPC-then-connect EtherHiding pattern will likely outlive whichever individual is currently running the Telegram bot, and detection built around those mechanisms should keep working regardless of how the attribution picture eventually resolves.</p>
+<h2 id="source-summaries">Source Summaries</h2>
 <div class="src">
-  <h4>[REF-001] Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands</h4>
-  <div class="byline">The Hacker News · 11 August 2026 · trade press</div>
-  <a class="url" href="https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html">thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html</a>
-  Relays a CERT-UA advisory on UAC-0145, a Sandworm/UAC-0002 sub-cluster, running a months-long fake recruitment operation against Ukrainian IT staff since May 2026. Describes SopraVPN, a modified WireGuard client that decrypts an AES-256-GCM payload embedded in its own configuration file via a custom SymmetricKey option, and quotes CERT-UA directly on the client&rsquo;s construction. Notes a second, non-downloadable SourceForge project using similar branding. Publishes no independently verified indicators of its own.
-  <div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
+<h4>Introducing DOUBLECUP, a ClickFix Loader Delivering CountLoader and DeviceManager RATs</h4>
+<div class="byline">SOCRadar Threat Research Unit &middot; on or about 3 August 2026 &middot; vendor threat research, primary</div>
+<a class="url" href="https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/">socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats</a>
+<p>The primary technical account of DOUBLECUP. Describes the loader-as-a-service business model, the Go-based Windows client, the steganographic PNG cache-staging mechanism, the IP-keyed stream cipher, both payload families, and the Telegram-based control infrastructure. Not retrieved directly this cycle; read via search aggregation, disclosed in Scope and Sourcing.</p>
+<div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
 </div>
-
 <div class="src">
-  <h4>[REF-002] Russian Military Hackers Pose as Recruiters to Target Ukrainian IT Workers</h4>
-  <div class="byline">The Record from Recorded Future News · Daryna Antoniuk · 10 August 2026 · trade press</div>
-  <a class="url" href="https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers">therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers</a>
-  Relays the same CERT-UA advisory with additional detail on the recruitment sequence: initial contact through a job site&rsquo;s chat feature, a move to Telegram, and a Zoom interview with an unconfirmed participant. States CERT-UA did not disclose a victim count. Notes fake-recruiter tradecraft previously reported against PRC and DPRK-linked operations as points of comparison, not evidence of coordination.
-  <div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
+<h4>New DOUBLECUP ClickFix service hides malware in browser cache images</h4>
+<div class="byline">BleepingComputer &middot; on or about 4 August 2026 &middot; trade press, technical relay</div>
+<a class="url" href="https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/">bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images</a>
+<p>Relays SOCRadar's findings with additional detail on the exact cache-recovery mechanism, naming <code>findstr</code> and <code>certutil</code> specifically as the tools used to pull the hidden payload from the cached image by file size. Not retrieved directly this cycle; read via search aggregation.</p>
+<div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
 </div>
-
 <div class="src">
-  <h4>[REF-003] CaptiveCrunch: Midnight Blizzard Targets Travelers Worldwide for Malware Delivery and Credential Theft</h4>
-  <div class="byline">Microsoft Threat Intelligence · 31 July 2026 · vendor research</div>
-  <a class="url" href="https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/">microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft</a>
-  Documents Storm-2945, assessed as a Midnight Blizzard sub-cluster, manipulating DNS and HTTP traffic on hospitality captive portals since May 2026 and delivering a Go-language RAT (CornFlake) and an in-memory PowerShell infostealer (ChocoShell) via ClickFix-style fake update prompts. Publishes domains, IP addresses, two file hashes, and four Kusto hunting queries for Defender and Sentinel. Cites and builds on ReliaQuest&rsquo;s July 23 report for the device-code phishing portion of the campaign. States the initial compromise vector for captive portal networks remains under investigation.
-  <div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
+<h4>DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT</h4>
+<div class="byline">The Hacker News &middot; on or about 4&ndash;5 August 2026 &middot; trade press, technical relay</div>
+<a class="url" href="https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html">thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html</a>
+<p>Relays SOCRadar's findings with the most detail of the two press relays on the Go-based client itself, naming the Payload Builder and Broadcast panes specifically. Not retrieved directly this cycle; read via search aggregation.</p>
+<div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
 </div>
-
 <div class="src">
-  <h4>[REF-004] DNS Poisoning Tactics Expand to Hospitality Wi-Fi</h4>
-  <div class="byline">ReliaQuest Threat Research · 23 July 2026 · vendor research</div>
-  <a class="url" href="https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/">reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality</a>
-  Documents administrative compromise of hotel and conference captive-portal gateways used for DNS response forgery against corporate travelers across the US, India, and Saudi Arabia since June 2026. Publishes redirect infrastructure, a registrant email, and cross-sector victim traffic data from the firm&rsquo;s own investigation. Assesses initial access vector at low-to-medium confidence, explicitly unconfirmed. Notes tradecraft overlap with an APT28-attributed SOHO router campaign disclosed in April 2026 without attributing this campaign to APT28.
-  <div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
+<h4>Threat Actors Weaponizing Open Source AdaptixC2 Tied to Russian Underworld</h4>
+<div class="byline">Silent Push &middot; October 2025 &middot; vendor research, background, out of window</div>
+<a class="url" href="https://securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/">securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld</a>
+<p>Establishes CountLoader's own pre-DOUBLECUP lineage: the RalfHacker persona, ties to AdaptixC2, and CountLoader's role supporting LockBit, BlackBasta, and Qilin ransomware affiliates. Cited for background on a payload DOUBLECUP delivers, not as evidence about DOUBLECUP's own operator.</p>
+<div class="rec">Source record: <a href="/coverage/sources/">coverage/sources</a></div>
 </div>
-
 <h2 id="references">References</h2>
 <ol class="refs">
-<li id="ref1">The Hacker News. "Sandworm-Linked UAC-0145 Uses Fake Job Interviews to Push VPN That Can Run Commands." 11 Aug. 2026, <a href="https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html">thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html</a>.</li>
-<li id="ref2">Antoniuk, Daryna. "Russian Military Hackers Pose as Recruiters to Target Ukrainian IT Workers." <em>The Record from Recorded Future News</em>, 10 Aug. 2026, <a href="https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers">therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers</a>.</li>
-<li id="ref3">Microsoft Threat Intelligence. "CaptiveCrunch: Midnight Blizzard Targets Travelers Worldwide for Malware Delivery and Credential Theft." <em>Microsoft Security Blog</em>, 31 Jul. 2026, <a href="https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/">microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft</a>.</li>
-<li id="ref4">ReliaQuest Threat Research. "DNS Poisoning Tactics Expand to Hospitality Wi-Fi." 23 Jul. 2026, <a href="https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/">reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality</a>.</li>
+<li id="ref-socradar">SOCRadar Threat Research Unit. "Introducing DOUBLECUP, a ClickFix Loader Delivering CountLoader and DeviceManager RATs." On or about 3 Aug. 2026. <a href="https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/">socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/</a> <span class="access-note">not retrieved directly this cycle; read via search aggregation</span></li>
+<li id="ref-bleeping">BleepingComputer. "New DOUBLECUP ClickFix service hides malware in browser cache images." On or about 4 Aug. 2026. <a href="https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/">bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/</a> <span class="access-note">not retrieved directly this cycle; read via search aggregation</span></li>
+<li id="ref-hackernews">The Hacker News. "DOUBLECUP Uses ClickFix and Cached PNGs to Deliver CountLoader and DeviceManager RAT." On or about 4&ndash;5 Aug. 2026. <a href="https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html">thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html</a> <span class="access-note">not retrieved directly this cycle; read via search aggregation</span></li>
+<li id="ref-silentpush">Silent Push. "Threat Actors Weaponizing Open Source AdaptixC2 Tied to Russian Underworld." Oct. 2025. <a href="https://securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/">securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/</a> <span class="access-note">background, out of window</span></li>
 </ol>
+<p>This piece was authored directly against Article and Site Design Specification v2.5 and Classification System v3.8 without the automated grading pipeline. It carries no ledger file, and every pipeline-derived field reflects the author&rsquo;s own reading rather than a reconciled ledger entry. A retrieval limitation this cycle is disclosed above: this author could not directly fetch socradar.io, thehackernews.com, or bleepingcomputer.com and instead read all three through search-engine result aggregation. Content is treated as accurately relayed based on consistency across three independently phrased summaries, but this is a lower-confidence retrieval method than this product&rsquo;s usual direct-fetch standard, and it is disclosed here rather than left implied. Two attribution leads are handle-level, unconfirmed, and explicitly marked as such rather than omitted, per this cycle&rsquo;s request to surface even loosely sourced attribution material with appropriate hedging.</p>
 
 
             

@@ -6,8 +6,15 @@
     <description>Recent content on Knights Who Say Ni</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://dcollette4456.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teams-Based Voice Phishing as Initial Access: Convergent Adoption Across Unrelated Threat Clusters, February–July 2026</title>
+      <link>https://dcollette4456.github.io/issues/teams-vishing-convergence/</link>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://dcollette4456.github.io/issues/teams-vishing-convergence/</guid>
+      <description>Executive Summary Between February and July 2026, two intrusion sets that nobody has connected to each other converged on the identical opening move: an external Microsoft Teams account, dressed up as internal IT support, calling an employee and talking them into a remote-support session.&#xA;VND-1Sophos, tracking the larger and better-documented set as STAC4749, describes a financially motivated operation that worked dozens of North American organizations between February and June, with three confirmed intrusions ending in Chaos ransomware and one of those going from first contact to encrypted disks in under seventeen hours.</description>
+    </item>
     <item>
       <title>Nothing Held: Four AI Security Failures in Ten August Days</title>
       <link>https://dcollette4456.github.io/issues/nothing-held-ai-industry-disclosures/</link>

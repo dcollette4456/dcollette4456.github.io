@@ -50,8 +50,10 @@ def validate(instance, schema, path="$"):
             raise SchemaError(path, f"expected one of {schema['enum']!r}, got {instance!r}")
 
     if "type" in schema:
-        if not _type_ok(instance, schema["type"]):
-            raise SchemaError(path, f"expected type {schema['type']!r}, got {type(instance).__name__}")
+        expected = schema["type"]
+        expected_list = expected if isinstance(expected, list) else [expected]
+        if not any(_type_ok(instance, t) for t in expected_list):
+            raise SchemaError(path, f"expected type {expected!r}, got {type(instance).__name__}")
 
     if isinstance(instance, str):
         if "minLength" in schema and len(instance) < schema["minLength"]:

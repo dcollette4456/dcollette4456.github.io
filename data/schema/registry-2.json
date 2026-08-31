@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dcollette4456.github.io/schema/registry-2.json",
+  "title": "Source registry entry, schema version 2",
+  "description": "CLAUDECODEBRIEF §5, informed by classification spec §12 and §21. One entry per source publication, keyed on a stable source_id that never re-keys. This is the minimum-viable shape: hunt_value, naming, and revision blocks (classification spec §12's fuller example) are additive fields for a later schema version once claim ledgers exist to compute them from.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "canonical_name", "canonical_domain", "type", "language", "synthetic", "admission", "live", "backfill"],
+  "properties": {
+    "source_id": { "type": "string", "pattern": "^SRC-[0-9]{4,}$" },
+    "canonical_name": { "type": "string", "minLength": 1 },
+    "canonical_domain": { "type": "string", "minLength": 1 },
+    "type": {
+      "type": "string",
+      "description": "Classification spec §3.",
+      "enum": ["GOV", "VND", "MED", "ACA", "TEC", "IND", "NPO", "AGG", "SOC", "ADV"]
+    },
+    "origin": {
+      "type": "string",
+      "description": "Two-letter country code. Absent where not established with confidence; never guessed.",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "language": { "type": "string", "pattern": "^[a-z]{2}$" },
+    "synthetic": { "type": "boolean" },
+    "access": {
+      "type": "string",
+      "enum": ["open", "gated", "restricted", "withdrawn", "unarchived", "retracted", "retrieval_failed"]
+    },
+    "cited_in": {
+      "type": "array",
+      "description": "Serials in which this source is cited in References. Traceability aid, computed from the content files, not part of the classification spec's own registry field list.",
+      "items": { "type": "string", "pattern": "^(TI|IW)-(RETRO-[0-9]{3}|[0-9]{8}-[0-9]{3})$" }
+    },
+    "admission": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["first_seen_url", "admitted", "assigned_type", "type_basis", "impersonation_check", "review_flag", "reviewed"],
+      "properties": {
+        "first_seen_url": { "type": "string", "pattern": "^https?://" },
+        "admitted": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(Z|[+-][0-9]{2}:[0-9]{2})$" },
+        "assigned_type": {
+          "type": "string",
+          "enum": ["GOV", "VND", "MED", "ACA", "TEC", "IND", "NPO", "AGG", "SOC", "ADV"]
+        },
+        "type_basis": { "type": "string", "minLength": 1 },
+        "domain_age_days": { "type": ["integer", "null"], "minimum": 0 },
+        "impersonation_check": { "type": "string", "minLength": 1 },
+        "review_flag": { "type": "string", "enum": ["first_citation", "held_impersonation", "none"] },
+        "reviewed": { "type": "boolean" }
+      }
+    },
+    "live": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unique_claims", "citations", "distribution", "record_status"],
+      "properties": {
+        "unique_claims": { "type": "integer", "minimum": 0 },
+        "citations": { "type": "integer", "minimum": 0 },
+        "distribution": { "type": "object" },
+        "record_status": { "type": "string", "enum": ["insufficient", "established"] }
+      }
+    },
+    "backfill": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unique_claims", "citations", "distribution", "record_status"],
+      "properties": {
+        "unique_claims": { "type": "integer", "minimum": 0 },
+        "citations": { "type": "integer", "minimum": 0 },
+        "distribution": { "type": "object" },
+        "record_status": { "type": "string", "enum": ["insufficient", "established"] },
+        "from_issues": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "pre_3_9": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "5_unsplit": { "type": "integer", "minimum": 0 }
+      }
+    }
+  }
+}

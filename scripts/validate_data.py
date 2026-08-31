@@ -22,8 +22,10 @@ land as their own schemas and data files exist; this script is written
 to grow, not to be replaced.
 """
 import json
+import re
 import sys
 from pathlib import Path
+from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).parent))
 from jsonschema_mini import validate, SchemaError
@@ -120,9 +122,86 @@ def check_published_issues_have_serials(ledger_by_serial):
                  "CLAUDECODEBRIEF §4 item 2")
 
 
+def validate_registry():
+    schema_path = DATA / "schema" / "registry-2.json"
+    registry_path = DATA / "sources" / "registry.json"
+    rel = str(registry_path.relative_to(ROOT))
+
+    schema = load_json(schema_path)
+    registry = load_json(registry_path)
+
+    if not isinstance(registry, list):
+        fail(rel, "$", "registry must be a JSON array of source entries", "CLAUDECODEBRIEF §5")
+        return None
+
+    seen_ids = {}
+    domains_by_id = {}
+    for i, entry in enumerate(registry):
+        path = f"$[{i}]"
+        try:
+            validate(entry, schema)
+        except SchemaError as e:
+            fail(rel, f"{path}.{e.path.lstrip('$.')}" if e.path != "$" else path, e.message,
+                 "CLAUDECODEBRIEF §5 / schema/registry-2.json")
+            continue
+
+        check_empty_strings(entry, rel, path)
+
+        sid = entry["source_id"]
+        if sid in seen_ids:
+            fail(rel, f"{path}.source_id", f"duplicate source_id {sid!r} (also at index {seen_ids[sid]})",
+                 "classification spec §12: source_id is stable and never re-keyed")
+        seen_ids[sid] = i
+        domains_by_id[sid] = entry["canonical_domain"]
+
+        # brief §8 item 8: a registry entry with no admission record
+        if "admission" not in entry:
+            fail(rel, path, "registry entry has no admission record", "CLAUDECODEBRIEF §8 item 8 / classification spec §21")
+
+    return {e["canonical_domain"]: e["source_id"] for e in registry if "canonical_domain" in e}
+
+
+def check_published_issue_sources_are_registered(registry_by_domain):
+    if registry_by_domain is None:
+        return
+
+    for md_path in sorted(CONTENT_ISSUES.glob("*.md")):
+        rel = str(md_path.relative_to(ROOT))
+        text = md_path.read_text(encoding="utf-8")
+        fm = read_front_matter_scalars(text)
+        if fm.get("draft") is True:
+            continue
+
+        m = re.search(r'\n## References\n(.*?)(\n## |\Z)', text, re.DOTALL)
+        if not m:
+            continue
+        refs_block = m.group(1)
+        # References are cited either as full https:// URLs or, in a couple
+        # of markdown-list issues, as a bare domain-led path (MLA-ish
+        # citation style with no scheme). Catch both.
+        urls = re.findall(r'https?://[^\s")>\]]+', refs_block)
+        bare = re.findall(
+            r'(?<![\w/.-])(?:[a-zA-Z0-9-]+\.)+(?:com|org|net|io|ai|dev|media|news|co\.uk|co\.kr|or\.kr)/[^\s,."<>)]*',
+            refs_block,
+        )
+        for url in urls:
+            domain = re.sub(r'^www\.', '', urlparse(url).netloc.lower())
+            if domain not in registry_by_domain:
+                fail(rel, "References", f"cited domain {domain!r} ({url}) has no registry entry",
+                     "CLAUDECODEBRIEF §9 / classification spec §21")
+        for raw in bare:
+            domain = re.sub(r'^www\.', '', raw.split("/")[0].lower())
+            if domain not in registry_by_domain:
+                fail(rel, "References", f"cited domain {domain!r} ({raw}) has no registry entry",
+                     "CLAUDECODEBRIEF §9 / classification spec §21")
+
+
 def main():
     ledger_by_serial = validate_serials_ledger()
     check_published_issues_have_serials(ledger_by_serial)
+
+    registry_by_domain = validate_registry()
+    check_published_issue_sources_are_registered(registry_by_domain)
 
     if errors:
         print(f"data validation FAILED with {len(errors)} error(s):\n", file=sys.stderr)

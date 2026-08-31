@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 820px;">
 <main class="doc" style="max-width: none;">
 
 <div class="kicker">Coverage</div>
@@ -10,34 +10,51 @@
 {{ if not $registry }}
 <p style="font-size: 16px; line-height: 1.7; color: var(--muted); margin: 30px 0;">No sources have been recorded under the current classification version. This page renders directly from <code>/data/sources/registry.json</code>, which is empty; nothing is fabricated to fill it. Fifteen unique claims per pool are required before a distribution publishes for a source, so this page stays sparse for the first several issues under the automated pipeline. See classification spec &sect;12.</p>
 {{ else }}
-{{ range $registry }}
-<div style="border-top: 1px solid var(--rule); padding: 24px 0;">
-    <h3 style="margin-top: 0;">{{ .canonical_name }}</h3>
-    <p style="font-family: var(--mono); font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 14px;">
-        {{ .source_id }} &middot; {{ .type }}{{ with .origin }} &middot; {{ . }}{{ end }} &middot; {{ .canonical_domain }}{{ with .access }} &middot; {{ . }}{{ end }}
-    </p>
 
-    {{ with .live }}
-    {{ if eq .record_status "established" }}
-    <p>Live pool: <strong>{{ .unique_claims }}</strong> unique claims, {{ .citations }} citations.</p>
-    {{ else }}
-    <p>Live pool: insufficient ({{ .unique_claims }} unique claims; fifteen required to publish a distribution).</p>
-    {{ end }}
-    {{ end }}
+{{ $establishedCount := 0 }}
+{{ range $registry }}{{ if or (eq .live.record_status "established") (eq .backfill.record_status "established") }}{{ $establishedCount = add $establishedCount 1 }}{{ end }}{{ end }}
+<p style="font-size: 14px; line-height: 1.7; color: var(--muted); background: var(--legend-bg); border: 1px solid var(--rule); padding: 14px 18px; margin: 30px 0;">
+{{ len $registry }} sources registered, all in the backfill pool from the six issues published to date, none yet in the live pool. {{ $establishedCount }} have crossed the fifteen-unique-claim threshold that publishes a distribution; the rest show counts, per classification spec &sect;12. Every entry below shares the same admission basis unless noted otherwise: assigned from publisher name and domain as cited, not yet verified against a fetched masthead page, no impersonation near-match found, flagged <code>first_citation</code> and not yet reviewed. Full detail lives in <code>/data/sources/registry.json</code>.
+</p>
 
-    {{ with .backfill }}
-    {{ if eq .record_status "established" }}
-    <p>Backfill pool: <strong>{{ .unique_claims }}</strong> unique claims, {{ .citations }} citations, from {{ delimit .from_issues ", " }}.</p>
-    {{ else }}
-    <p>Backfill pool: insufficient ({{ .unique_claims }} unique claims; fifteen required to publish a distribution).{{ with .from_issues }} Cited in {{ delimit . ", " }}.{{ end }}</p>
-    {{ end }}
-    {{ end }}
+{{ $typeOrder := slice "GOV" "TEC" "VND" "MED" "ACA" "NPO" "IND" "AGG" "SOC" "ADV" "ANL" }}
+{{ $typeNames := dict "GOV" "Government" "TEC" "Structured record" "VND" "Vendor" "MED" "News and trade press" "ACA" "Academic" "NPO" "Non-profit and community" "IND" "Independent researcher" "AGG" "Aggregator" "SOC" "Social and messaging" "ADV" "Adversary-controlled" "ANL" "Analytic" }}
 
-    {{ with .admission }}
-    <p style="font-size: 13px; color: var(--muted);">Admitted {{ dateFormat "2 January 2006" .admitted }}, type basis: {{ .type_basis }}. {{ .impersonation_check }}.{{ if not .reviewed }} Flagged <code>{{ .review_flag }}</code>, not yet reviewed.{{ end }}</p>
-    {{ end }}
-</div>
+{{ range $typeOrder }}
+{{ $type := . }}
+{{ $group := where $registry "type" $type }}
+{{ if $group }}
+{{ $group = sort $group "canonical_name" }}
+<section style="margin: 40px 0 0;">
+    <h3 style="display: flex; align-items: baseline; gap: 10px; margin: 0 0 4px; padding-bottom: 8px; border-bottom: 1px solid var(--rule);">
+        <span style="font-family: var(--mono); font-size: 12px; font-weight: 600; color: var(--crimson); letter-spacing: .04em;">{{ $type }}</span>
+        <span style="font: 400 15px/1 var(--serif); color: var(--ink);">{{ index $typeNames $type }}</span>
+        <span style="font-family: var(--mono); font-size: 11px; color: var(--faint); margin-left: auto;">{{ len $group }} source{{ if ne (len $group) 1 }}s{{ end }}</span>
+    </h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
+        {{ range $group }}
+        <tr style="border-bottom: 1px solid var(--hair);">
+            <td style="padding: 10px 12px 10px 0; font-family: var(--serif); white-space: nowrap;">{{ .canonical_name }}</td>
+            <td style="padding: 10px 12px; font-family: var(--mono); font-size: 12px; color: var(--faint);">{{ .canonical_domain }}{{ with .origin }} &middot; {{ . }}{{ end }}</td>
+            <td style="padding: 10px 12px; font-size: 13px; color: var(--muted);">
+                {{ if eq .backfill.record_status "established" }}
+                {{ .backfill.unique_claims }} unique claims, {{ .backfill.citations }} citations
+                {{ else }}
+                insufficient ({{ .backfill.unique_claims }})
+                {{ end }}
+            </td>
+            <td style="padding: 10px 0; font-family: var(--mono); font-size: 11px; color: var(--faint); text-align: right;">
+                {{ with .admission }}{{ if ne .review_flag "first_citation" }}{{ .review_flag }} &middot; {{ end }}{{ end }}{{ with .backfill.from_issues }}{{ delimit . ", " }}{{ end }}
+            </td>
+        </tr>
+        {{ end }}
+    </table>
+</section>
 {{ end }}
+{{ end }}
+
+<p style="font-size: 12px; color: var(--faint); margin-top: 36px;">Full admission and pool detail for any entry: <a href="/data/export/sources.json">/data/export/sources.json</a>.</p>
+
 {{ end }}
 
 </main>

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260830-002",
-  "generated": "2026-08-31T21:24:39Z",
+  "generated": "2026-08-31T22:05:06Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,11 +10,11 @@
       "url": "https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:23:32Z",
+      "fetched": "2026-08-31T22:04:54Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 497112,
-      "sha256_raw": "cad53b57b83bcaa3df4e12623a76deb96414779753210e5610120ce2c4e3618d",
+      "sha256_raw": "0f5111a0a21d3b116bfe36307e9b05cfbf86cf6f671045d5d6336c2bb01938f3",
       "sha256_normalized": "20ec23cf7f26cd8931c0a81f5440b15e55b588011d81f81a348509e8d5b95430",
       "normalizer": "html/v1",
       "extractor": null,
@@ -25,8 +25,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:23:34Z",
-        "note": "HTTP 520"
+        "attempted": "2026-08-31T22:04:56Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -35,23 +35,23 @@
       "url": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:23:43Z",
+      "fetched": "2026-08-31T22:04:57Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 91963,
-      "sha256_raw": "f836d36060643d8dbeea13b98ab52f16e300cc98f9351204d93434ab1cd04ec7",
-      "sha256_normalized": "3245452f8a9d23cea5df9bbfc4db2ed17de6335bdd5ad4ad318908e8f04ad3bc",
+      "sha256_raw": "08ef0d60590574262e55d14032bffb783ab8023031efa8f1c445b6a061a90e94",
+      "sha256_normalized": "330f66d59ce967475fc0bac6a61b010edcab7c028d8cda6327f2e33d066497ff",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "3245452f8a9d23cea5df9bbfc4db2ed17de6335bdd5ad4ad318908e8f04ad3bc"
+        "value": "330f66d59ce967475fc0bac6a61b010edcab7c028d8cda6327f2e33d066497ff"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:23:45Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:04:59Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -60,11 +60,11 @@
       "url": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:24:11Z",
+      "fetched": "2026-08-31T22:05:01Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 175523,
-      "sha256_raw": "0cecb85daa55a74dbb6a0b51e59d7dab5a3eca5fc105aeec05d45bc7a66e49c2",
+      "sha256_raw": "b14723c7d1000c136d1d634fb79922f191eb4cca41efc23a738ec09d991fc862",
       "sha256_normalized": "0c5a5c4eed935acf0e48687b0c316c872bec187e376f3f5cc734b2d888f0a29b",
       "normalizer": "html/v1",
       "extractor": null,
@@ -75,8 +75,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:24:13Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:05:03Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -85,11 +85,11 @@
       "url": "https://securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:24:39Z",
+      "fetched": "2026-08-31T22:05:03Z",
       "http_status": 403,
       "content_type": null,
       "content_length": 5980,
-      "sha256_raw": "822e32f58ff8d6387bbc3e5794a1f31b92f8ab16a193d89d05352a25be767999",
+      "sha256_raw": "9ffbebe8d3a7e81d2c1b6eaa467d1ab8183e06774095e880d9edbfdb66ccdff6",
       "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
       "normalizer": "html/v1",
       "extractor": null,
@@ -98,13 +98,15 @@
         "value": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:24:39Z"
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:05Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       },
-      "notes": "http_status 403; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
     }
   ],
-  "manifest_sha256": "5ff153f6893aab188ea6ebc185252d79c3feccd8b6140557a2e50798b05cc6c0",
+  "manifest_sha256": "ead8df09319644e911795ded2beb19d891a0ee243dcd6dc6aab9f52c8a1c483c",
   "timestamp": {
     "status": "not_yet_anchored"
   }

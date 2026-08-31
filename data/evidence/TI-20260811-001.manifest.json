@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260811-001",
-  "generated": "2026-08-31T21:19:47Z",
+  "generated": "2026-08-31T22:03:28Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,7 +10,7 @@
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:16:47Z",
+      "fetched": "2026-08-31T22:00:53Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 111396,
@@ -25,7 +25,7 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:16:49Z",
+        "attempted": "2026-08-31T22:00:55Z",
         "note": "HTTP 520"
       }
     },
@@ -34,8 +34,8 @@
       "ref": "REF-002",
       "url": "https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:17:03Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:01:04Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 171378,
@@ -48,10 +48,10 @@
         "value": "fe28110999966998bf07911f75de3665d79d73c2bf2c11570930ee749c2bacc4"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:17:05Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831211737/https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs",
+        "attempted": "2026-08-31T22:01:06Z"
       }
     },
     {
@@ -60,7 +60,7 @@
       "url": "https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/",
       "format_family": "html",
       "preservation": "archive_only",
-      "fetched": "2026-08-31T21:17:32Z",
+      "fetched": "2026-08-31T22:01:16Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 469128,
@@ -76,7 +76,7 @@
         "status": "captured",
         "provider": "web.archive.org",
         "url": "https://web.archive.org/web/20260831211739/https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/",
-        "attempted": "2026-08-31T21:17:34Z"
+        "attempted": "2026-08-31T22:01:18Z"
       }
     },
     {
@@ -85,15 +85,21 @@
       "url": "https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/",
       "format_family": "html",
       "preservation": "none",
-      "notes": "fetch failed: TimeoutError: The read operation timed out"
+      "notes": "fetch failed: TimeoutError: The read operation timed out",
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:01:44Z",
+        "note": "HTTP 523"
+      }
     },
     {
       "source_id": "SRC-0005",
       "ref": "REF-005",
       "url": "https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:18:16Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:02:04Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 36502,
@@ -106,10 +112,10 @@
         "value": "25211936de4547e8b7cd6c29b1ac2140ece9f179e812cacf5d40dbcac7e595ed"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:18:18Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831211825/https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust",
+        "attempted": "2026-08-31T22:02:06Z"
       }
     },
     {
@@ -118,7 +124,7 @@
       "url": "https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/",
       "format_family": "html",
       "preservation": "archive_only",
-      "fetched": "2026-08-31T21:18:44Z",
+      "fetched": "2026-08-31T22:02:23Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 148527,
@@ -134,7 +140,7 @@
         "status": "captured",
         "provider": "web.archive.org",
         "url": "https://web.archive.org/web/20260831211850/https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/",
-        "attempted": "2026-08-31T21:18:46Z"
+        "attempted": "2026-08-31T22:02:25Z"
       }
     },
     {
@@ -143,11 +149,11 @@
       "url": "https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:19:08Z",
+      "fetched": "2026-08-31T22:02:36Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 407423,
-      "sha256_raw": "de3dcfdc134fb97101c17379f7267b4c10bcf17e116da14e11511bfcf406a1dd",
+      "sha256_raw": "33c3e519d6c0e9d4d3b7017805b2e17cdd6cc1c1a4cd68a923b53d2fd76b07ce",
       "sha256_normalized": "cf6966bd42cff04b910883b30600ac2eab2b44c199e87a422595d05edcb70265",
       "normalizer": "html/v1",
       "extractor": null,
@@ -158,7 +164,7 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:19:10Z",
+        "attempted": "2026-08-31T22:02:38Z",
         "note": "HTTP 520"
       }
     },
@@ -168,7 +174,7 @@
       "url": "https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:19:18Z",
+      "fetched": "2026-08-31T22:02:47Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 337213,
@@ -183,8 +189,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:19:20Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:02:49Z",
+        "note": "HTTP 523"
       }
     },
     {
@@ -193,26 +199,28 @@
       "url": "https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:19:47Z",
+      "fetched": "2026-08-31T22:03:00Z",
       "http_status": 403,
       "content_type": null,
       "content_length": 446,
-      "sha256_raw": "aceb633ae2d9888613a4889dd3ae750ae95980c9cb01b73aca4c5df881880f47",
-      "sha256_normalized": "2e6870ed1047b353f3181c54d2ac4432fb85597a3a850508c21ac3ada523cee3",
+      "sha256_raw": "0a216c3f8fabbe3b4607f4fd35aac2badf60bd6d3f9e8065f8056a6a273a1d57",
+      "sha256_normalized": "0b370453ce27be67b470bd9e6571e3705cdfe4e5900f7f59aad09109dcfc3aad",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "2e6870ed1047b353f3181c54d2ac4432fb85597a3a850508c21ac3ada523cee3"
+        "value": "0b370453ce27be67b470bd9e6571e3705cdfe4e5900f7f59aad09109dcfc3aad"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:19:47Z"
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:03:02Z",
+        "note": "TimeoutError: The read operation timed out"
       },
-      "notes": "http_status 403; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
     }
   ],
-  "manifest_sha256": "bc08511f54cfe4775b3270e50542db8a78f77fcbaa608e455617602c122e7285",
+  "manifest_sha256": "08eee29ef0c8126728b7aafbddc032511eac7cd306f0d35932e48e3ead959706",
   "timestamp": {
     "status": "not_yet_anchored"
   }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260822-002",
-  "generated": "2026-08-31T21:23:31Z",
+  "generated": "2026-08-31T22:04:52Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,22 +10,22 @@
       "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:19:48Z",
+      "fetched": "2026-08-31T22:03:29Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 91205,
-      "sha256_raw": "5e716e3a093e1090c4b543428a9d6dfa80f749b48ec890c728ae3436ed6ac4f3",
-      "sha256_normalized": "41ceb5c750d6672d5b26b9f33707d30efc9362070fa82060e52f0214a1b71035",
+      "content_length": 91209,
+      "sha256_raw": "a4710ef2a446676a66d5f51d4b7a9f3e336eae25d951c8ce61d58e0d06880adc",
+      "sha256_normalized": "e595491529ee391987d4407085f6d57f8c4dc17371665036246c29c2c8a88a3d",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "41ceb5c750d6672d5b26b9f33707d30efc9362070fa82060e52f0214a1b71035"
+        "value": "e595491529ee391987d4407085f6d57f8c4dc17371665036246c29c2c8a88a3d"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:19:50Z",
+        "attempted": "2026-08-31T22:03:31Z",
         "note": "HTTP 520"
       }
     },
@@ -35,11 +35,11 @@
       "url": "https://www.cryptopolitan.com/did-north-korea-hackers-attack-arrayref/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:20:04Z",
+      "fetched": "2026-08-31T22:03:39Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 485433,
-      "sha256_raw": "ffe00270dd982141d37dad096c0d4ab7240e7c7db2a8df747d2c939141e2c514",
+      "sha256_raw": "ddad2edc9fc3936d2392402f37692b46de2ffd53c3b813d68cc21fa409e10467",
       "sha256_normalized": "2fb2c02812258bb68143059ff4291725a2afbc3403f88d0a787520b9febfbd5b",
       "normalizer": "html/v1",
       "extractor": null,
@@ -50,7 +50,7 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:20:06Z",
+        "attempted": "2026-08-31T22:03:41Z",
         "note": "HTTP 520"
       }
     },
@@ -59,8 +59,8 @@
       "ref": "REF-003",
       "url": "https://cypro.co.uk/insights/cyber-bulletins/windows-ancillary-function-0-day-cisa-confirms-exploited-flaw/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:20:15Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:03:49Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 398948,
@@ -73,10 +73,10 @@
         "value": "e250600f95ca21297279fb7f6373718166762b3337be3ac5791d76347406b6d9"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831212021/https://cypro.co.uk/insights/cyber-bulletins/windows-ancillary-function-0-day-cisa-confirms-exploited-flaw/",
-        "attempted": "2026-08-31T21:20:17Z"
+        "attempted": "2026-08-31T22:03:51Z",
+        "note": "rate limited (429)"
       }
     },
     {
@@ -85,7 +85,7 @@
       "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:20:39Z",
+      "fetched": "2026-08-31T22:03:52Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 16616,
@@ -100,8 +100,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:20:41Z",
-        "note": "HTTP 520"
+        "attempted": "2026-08-31T22:03:54Z",
+        "note": "rate limited (429)"
       }
     },
     {
@@ -110,11 +110,11 @@
       "url": "https://www.infosecurity-magazine.com/news/north-korean-rust-supply-chain/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:20:55Z",
+      "fetched": "2026-08-31T22:03:56Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 104342,
-      "sha256_raw": "d209270aa0c619887d5e8cb68aec178f0b9c99d43c74b274d4eafc6512c7b6b3",
+      "sha256_raw": "cc74ec06354c9bbc62895cb6cf5f4cbbcbe7e77bca73cf8a5653ceafb4fa4381",
       "sha256_normalized": "a8afc93feef762cbce55b8ac80f4b76d700dfad0284728406c81104c8ceaff82",
       "normalizer": "html/v1",
       "extractor": null,
@@ -125,7 +125,7 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:20:57Z",
+        "attempted": "2026-08-31T22:03:58Z",
         "note": "rate limited (429)"
       }
     },
@@ -135,7 +135,7 @@
       "url": "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
       "format_family": "html",
       "preservation": "archive_only",
-      "fetched": "2026-08-31T21:20:59Z",
+      "fetched": "2026-08-31T22:04:00Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 360904,
@@ -151,7 +151,7 @@
         "status": "captured",
         "provider": "web.archive.org",
         "url": "https://web.archive.org/web/20260831212105/https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
-        "attempted": "2026-08-31T21:21:01Z"
+        "attempted": "2026-08-31T22:04:02Z"
       }
     },
     {
@@ -160,23 +160,23 @@
       "url": "https://radar.offseq.com/threat/rust-supply-chain-attack-linked-to-north-korean-hackers-0ce7936d030d6a11",
       "format_family": "html",
       "preservation": "archive_only",
-      "fetched": "2026-08-31T21:21:23Z",
+      "fetched": "2026-08-31T22:04:13Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 147744,
-      "sha256_raw": "6d147a67eeb96e004cc9cf1c1c7b34811cc9fa1fc35feca046101a4937e16a47",
-      "sha256_normalized": "b2beddab06c43d2025cf92912eb3ad9f9f6e66fad8207bb823cdf074d4e57d22",
+      "content_length": 133720,
+      "sha256_raw": "62a307351e99a480c0e97c68f81dec7c92584ad0a1d120cad025d8205ad510ea",
+      "sha256_normalized": "9de078c36612246fda4c4f8a2ec7937b259bf9f6c47553cee52e630c8e575371",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "b2beddab06c43d2025cf92912eb3ad9f9f6e66fad8207bb823cdf074d4e57d22"
+        "value": "9de078c36612246fda4c4f8a2ec7937b259bf9f6c47553cee52e630c8e575371"
       },
       "archive": {
         "status": "captured",
         "provider": "web.archive.org",
         "url": "https://web.archive.org/web/20260831212128/https://radar.offseq.com/threat/rust-supply-chain-attack-linked-to-north-korean-hackers-0ce7936d030d6a11",
-        "attempted": "2026-08-31T21:21:25Z"
+        "attempted": "2026-08-31T22:04:15Z"
       }
     },
     {
@@ -184,8 +184,8 @@
       "ref": "REF-008",
       "url": "https://rewterz.com/threat-advisory/windows-afd-sys-zero-day-exploited-by-lazarus-active-iocs",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:21:48Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:04:25Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 182965,
@@ -198,10 +198,10 @@
         "value": "0d16497c3c7b4dc226a780016944bb157674f80877b7143cc5ac03d5548a010e"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:21:50Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831212206/https://rewterz.com/threat-advisory/windows-afd-sys-zero-day-exploited-by-lazarus-active-iocs",
+        "attempted": "2026-08-31T22:04:27Z"
       }
     },
     {
@@ -209,12 +209,12 @@
       "ref": "REF-009",
       "url": "https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:22:17Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:04:37Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 160026,
-      "sha256_raw": "be5189869ab0e5ee51fb8e7184a712bbfced653601a17704280b0ed5111cd461",
+      "sha256_raw": "01062c46421e7383dbdcd158e93eabc2c3569452714225929419a86a4f4bacf2",
       "sha256_normalized": "920e9ddcba25d8005c1ef424fb40af0a847960b76b599040cbadf5e13bce8ba8",
       "normalizer": "html/v1",
       "extractor": null,
@@ -223,10 +223,10 @@
         "value": "920e9ddcba25d8005c1ef424fb40af0a847960b76b599040cbadf5e13bce8ba8"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831212222/https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/",
-        "attempted": "2026-08-31T21:22:19Z"
+        "attempted": "2026-08-31T22:04:39Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -234,12 +234,12 @@
       "ref": "REF-010",
       "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:22:40Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:04:47Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 176941,
-      "sha256_raw": "af1e363e28c5425db663416fb7d5dc912ca0b864a01c70044df741b22a442e15",
+      "sha256_raw": "2962460ba532fcfdf10069b1d11bc1cefd109753b0ac32ead4ea27ab29d91047",
       "sha256_normalized": "6e969383458245e6f6ff92b86f37b376fe8aa4dba6f94848b92d3170c506fcd6",
       "normalizer": "html/v1",
       "extractor": null,
@@ -248,10 +248,10 @@
         "value": "6e969383458245e6f6ff92b86f37b376fe8aa4dba6f94848b92d3170c506fcd6"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831212246/https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
-        "attempted": "2026-08-31T21:22:42Z"
+        "attempted": "2026-08-31T22:04:49Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -260,11 +260,11 @@
       "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:23:04Z",
+      "fetched": "2026-08-31T22:04:50Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 177288,
-      "sha256_raw": "2a6ca9685ef519283b998139dd81bf15b8b276984defa9f70667c8ccdd646246",
+      "sha256_raw": "231351d789f49ad292951e7e0a9065ba3a4a86188061340937967b3c20bcd9b0",
       "sha256_normalized": "f28926d52dce8b03ad2794ea8d3953303ee587790ddd92f9a5be3a38d25e3126",
       "normalizer": "html/v1",
       "extractor": null,
@@ -275,12 +275,12 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:23:06Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:04:52Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     }
   ],
-  "manifest_sha256": "44fadcadfb0140c4481a03c3c78d7c86beed0e00355fe9eb6fcfca50288f7608",
+  "manifest_sha256": "8873343dd98795546d120db2d43dd743cf0bef97604f6c6ceb71cf305d9b249e",
   "timestamp": {
     "status": "not_yet_anchored"
   }

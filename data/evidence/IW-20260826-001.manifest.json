@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "IW-20260826-001",
-  "generated": "2026-08-31T21:42:20Z",
+  "generated": "2026-08-31T22:10:26Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -9,8 +9,8 @@
       "ref": "REF-001",
       "url": "https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:30:58Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:26Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 99710,
@@ -23,10 +23,10 @@
         "value": "45fb54d5e4bf43345301603e0c16bcdc5aa98ed1948c6daf325c56d01fd64d4a"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213104/https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/",
-        "attempted": "2026-08-31T21:31:00Z"
+        "attempted": "2026-08-31T22:06:28Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -35,23 +35,23 @@
       "url": "https://www.bleepingcomputer.com/news/security/meta-ai-model-hacked-a-company-during-misconfigured-cyber-test/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:31:25Z",
+      "fetched": "2026-08-31T22:06:30Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 93153,
-      "sha256_raw": "fd4e1d21da1f8c56c286c525f6b0dfdb91cbec686c6ba3875a9a49eee6475991",
-      "sha256_normalized": "c70405008c512e70fec1e1dcbe645607afcb50011b4b68c37a85d3e7a4ddb6c2",
+      "content_length": 93149,
+      "sha256_raw": "a63149d97fbdc695516cfc0a8bb75191c7c776206c99c5c6da1a630f1c2aa7b9",
+      "sha256_normalized": "06c15b1ca2fd422dc93feffac2045fbdfb7e4e560b6b21b5678348445d70c322",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "c70405008c512e70fec1e1dcbe645607afcb50011b4b68c37a85d3e7a4ddb6c2"
+        "value": "06c15b1ca2fd422dc93feffac2045fbdfb7e4e560b6b21b5678348445d70c322"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:31:27Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:06:32Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -59,24 +59,24 @@
       "ref": "REF-003",
       "url": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:31:53Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:34Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 90975,
-      "sha256_raw": "67a9507e84cbf4f121d3440928dbaa43f2028c6a91d04051be1401f7f9b32cf0",
-      "sha256_normalized": "c7e3ced203f9a47cfe97ee0d764197a1534e7d24fd95ddec363e338f1e42a751",
+      "sha256_raw": "0a49cb3ae3abebaf9a0c8097b5260fb5ab84252b543cbf9714e172b17bd88b0c",
+      "sha256_normalized": "bc372b10fb3e460cb806116d6788d86e6d2f910beae419347e606952f19aeb82",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "c7e3ced203f9a47cfe97ee0d764197a1534e7d24fd95ddec363e338f1e42a751"
+        "value": "bc372b10fb3e460cb806116d6788d86e6d2f910beae419347e606952f19aeb82"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213159/https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
-        "attempted": "2026-08-31T21:31:55Z"
+        "attempted": "2026-08-31T22:06:36Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -85,11 +85,11 @@
       "url": "https://betanews.com/article/meta-muse-spark-1-1-security-breach/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:32:25Z",
+      "fetched": "2026-08-31T22:06:37Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 103718,
-      "sha256_raw": "9147c0676536aa2c8f5239b405d5ea53d116a225e4303395e05ccb3c2c8b2e48",
+      "sha256_raw": "cff9a9364e80e0fe66a6d1755e0166e538c44b21ef1f5a897184e3b4b8fa2615",
       "sha256_normalized": "26d0462a455c139b6994fc87ab5f727ecc9d82296bdb2d814493c6276fac69ec",
       "normalizer": "html/v1",
       "extractor": null,
@@ -100,8 +100,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:32:27Z",
-        "note": "HTTP 523"
+        "attempted": "2026-08-31T22:06:39Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -110,11 +110,11 @@
       "url": "https://cybermagazine.com/news/hugging-face-breach-how-openai-agents-planned-the-attack",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:32:36Z",
+      "fetched": "2026-08-31T22:06:41Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 180706,
-      "sha256_raw": "f09b4a65abee9b2aec7795ea727186e1fb68cc1a78bdb13f019af32869f686ba",
+      "sha256_raw": "8e380a8ef39003797c83aede9a0a772f22ced742688e75c58a737e628edbb9e4",
       "sha256_normalized": "bd21800771219feff2e2ae4ab6ceef35b6298f089c34afd86203e225eb0d8139",
       "normalizer": "html/v1",
       "extractor": null,
@@ -125,8 +125,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:32:38Z",
-        "note": "HTTP 520"
+        "attempted": "2026-08-31T22:06:43Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -135,7 +135,7 @@
       "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:32:48Z",
+      "fetched": "2026-08-31T22:06:45Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 620090,
@@ -150,8 +150,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:32:50Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:06:47Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -160,11 +160,11 @@
       "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-ai-models-black-hat/827167/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:33:16Z",
+      "fetched": "2026-08-31T22:06:48Z",
       "http_status": 403,
       "content_type": null,
       "content_length": 286148,
-      "sha256_raw": "5b8eecbeddd0c0139b969c7bcdc0f1adb96d25fc79dad9b133e9e9430813fd16",
+      "sha256_raw": "0bf1c451cb00097eb09294c77ef8a28796369fd8292cac5b2933f9a0f08714a2",
       "sha256_normalized": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "normalizer": "html/v1",
       "extractor": null,
@@ -173,22 +173,24 @@
         "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:33:16Z"
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:50Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       },
-      "notes": "http_status 403; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
     },
     {
       "source_id": "SRC-0038",
       "ref": "REF-008",
       "url": "https://dataconomy.com/2026/08/21/xais-grok-chat-agent-vulnerable-to-cryptographic-context/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:33:19Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:53Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 149999,
-      "sha256_raw": "fa49bfd70a31efdac7d3352d0137aed6028131ab3958b49fb5dfc2ac9a4b76cd",
+      "sha256_raw": "e9efb10332eeab0465a30fbb3e61de7690948a4f58e25f94b865fede8cf457db",
       "sha256_normalized": "81ca2d2e464b3394a794773eedce07921167db159d60e89de77906616aad9a39",
       "normalizer": "html/v1",
       "extractor": null,
@@ -197,10 +199,10 @@
         "value": "81ca2d2e464b3394a794773eedce07921167db159d60e89de77906616aad9a39"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213327/https://dataconomy.com/2026/08/21/xais-grok-chat-agent-vulnerable-to-cryptographic-context/",
-        "attempted": "2026-08-31T21:33:21Z"
+        "attempted": "2026-08-31T22:06:55Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -208,8 +210,8 @@
       "ref": "REF-009",
       "url": "https://explainx.ai/blog/openai-agent-swarm-message-board-black-hat-security-incident-august-2026",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:33:50Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:57Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 213840,
@@ -222,10 +224,10 @@
         "value": "df3cef8c0dc8013a0ba89c06e9d103a4b9ac7e9b0e9f84cd6206051244ae695a"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213358/https://explainx.ai/blog/openai-agent-swarm-message-board-black-hat-security-incident-august-2026",
-        "attempted": "2026-08-31T21:33:52Z"
+        "attempted": "2026-08-31T22:06:59Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -233,8 +235,8 @@
       "ref": "REF-010",
       "url": "https://explainx.ai/blog/grok-cryptographic-context-injection-attack-august-2026",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:34:14Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:07:00Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 149486,
@@ -247,10 +249,10 @@
         "value": "6a49c689add45ae61f27322e36fd5e8d3a065804f1199299cb29b1868eccdf27"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213420/https://explainx.ai/blog/grok-cryptographic-context-injection-attack-august-2026",
-        "attempted": "2026-08-31T21:34:16Z"
+        "attempted": "2026-08-31T22:07:02Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -258,12 +260,12 @@
       "ref": "REF-011",
       "url": "https://forkast.news/openais-evaluation-agents-built-a-secret-message-board-exploited-zero-days-and-breached-hugging-face-from-the-inside",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:34:39Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:07:05Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 74704,
-      "sha256_raw": "6e29a6109c6f43c93dc94d58f407ac18f6ddebc8bfe36abf0fc4918e2d16ca13",
+      "content_length": 74699,
+      "sha256_raw": "2977ebd7eacf613e519fca5ef39879804853c7817be2d4a06d2d6bce32cee47b",
       "sha256_normalized": "1cbb1f59f59c69735c70f0d8055a57889b0c416c442b4b6324113c6d568fb545",
       "normalizer": "html/v1",
       "extractor": null,
@@ -272,10 +274,10 @@
         "value": "1cbb1f59f59c69735c70f0d8055a57889b0c416c442b4b6324113c6d568fb545"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:34:41Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831213452/https://forkast.news/openais-evaluation-agents-built-a-secret-message-board-exploited-zero-days-and-breached-hugging-face-from-the-inside/",
+        "attempted": "2026-08-31T22:07:07Z"
       }
     },
     {
@@ -284,7 +286,7 @@
       "url": "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/08/06/black-hat--inside-the-openai-hugging-face-breach",
       "format_family": "html",
       "preservation": "archive_only",
-      "fetched": "2026-08-31T21:35:09Z",
+      "fetched": "2026-08-31T22:07:18Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 65653,
@@ -300,7 +302,7 @@
         "status": "captured",
         "provider": "web.archive.org",
         "url": "https://web.archive.org/web/20260831213516/https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/08/06/black-hat--inside-the-openai-hugging-face-breach",
-        "attempted": "2026-08-31T21:35:11Z"
+        "attempted": "2026-08-31T22:07:20Z"
       }
     },
     {
@@ -308,12 +310,12 @@
       "ref": "REF-013",
       "url": "https://groundlevel-ai.com/p/openai-gives-first-detailed-debrief",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:35:38Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:07:30Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 160665,
-      "sha256_raw": "4690bc2534f3ee7c73b328221fede65b17fdb814a311984689bc99c5527d6abb",
+      "content_length": 160668,
+      "sha256_raw": "0081169ce0936abdb839dc918aea9fc7cf065ca2a955acb2edc51bd9471ec025",
       "sha256_normalized": "fbb51a4b945022a25b4d1f90064b249a19a6ddc30259e489057fe5a94164cb84",
       "normalizer": "html/v1",
       "extractor": null,
@@ -322,10 +324,10 @@
         "value": "fbb51a4b945022a25b4d1f90064b249a19a6ddc30259e489057fe5a94164cb84"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:35:40Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831213547/https://www.groundlevel-ai.com/p/openai-gives-first-detailed-debrief",
+        "attempted": "2026-08-31T22:07:32Z"
       }
     },
     {
@@ -334,11 +336,11 @@
       "url": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:36:06Z",
+      "fetched": "2026-08-31T22:07:43Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 175291,
-      "sha256_raw": "0718e5f5943a24832d1d34337ed328e1643996c62f33edb96e3c1c995fdade51",
+      "sha256_raw": "a3537d6b5c4d96b4a3bc5083b3a5a747395ee6c6105fda1adf7912ea6c0da5d9",
       "sha256_normalized": "77a77f7d33dd3dbe54b10595ff27d4b7318be5484bb0fa1dfabf5bf40c9cf01e",
       "normalizer": "html/v1",
       "extractor": null,
@@ -349,8 +351,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:36:08Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:07:45Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -358,12 +360,12 @@
       "ref": "REF-015",
       "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:36:34Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:07:45Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 176941,
-      "sha256_raw": "af1e363e28c5425db663416fb7d5dc912ca0b864a01c70044df741b22a442e15",
+      "sha256_raw": "2962460ba532fcfdf10069b1d11bc1cefd109753b0ac32ead4ea27ab29d91047",
       "sha256_normalized": "6e969383458245e6f6ff92b86f37b376fe8aa4dba6f94848b92d3170c506fcd6",
       "normalizer": "html/v1",
       "extractor": null,
@@ -372,10 +374,10 @@
         "value": "6e969383458245e6f6ff92b86f37b376fe8aa4dba6f94848b92d3170c506fcd6"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831212246/https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
-        "attempted": "2026-08-31T21:22:42Z"
+        "attempted": "2026-08-31T22:04:49Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -383,8 +385,8 @@
       "ref": "REF-016",
       "url": "https://blog.invidelabs.com/rust-arrayref-supply-chain-attack/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:36:35Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:07:46Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 47700,
@@ -397,10 +399,10 @@
         "value": "15df6eb182f4280cae16a14407a809f9a8464c9218618eeaa5193d027db4d482"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213641/https://blog.invidelabs.com/rust-arrayref-supply-chain-attack/",
-        "attempted": "2026-08-31T21:36:37Z"
+        "attempted": "2026-08-31T22:07:48Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -408,8 +410,8 @@
       "ref": "REF-017",
       "url": "https://benarent.co.uk/talks/black-hat-usa-2026/openai-hugging-face-incident",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:36:59Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:07:50Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 87840,
@@ -422,10 +424,10 @@
         "value": "e0c7a958894590bbbe4edb38460c56c51d1512e559e8afbcdea35d75915ca921"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213706/https://benarent.co.uk/talks/black-hat-usa-2026/openai-hugging-face-incident/",
-        "attempted": "2026-08-31T21:37:01Z"
+        "attempted": "2026-08-31T22:07:52Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -434,7 +436,7 @@
       "url": "https://www.nextgov.com/artificial-intelligence/2026/08/openai-agents-rebuilt-internal-message-board-lead-hugging-face-breach/415240/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:37:25Z",
+      "fetched": "2026-08-31T22:07:54Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 141259,
@@ -449,8 +451,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:37:27Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:07:56Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -458,12 +460,12 @@
       "ref": "REF-019",
       "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:37:55Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:07:58Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 162726,
-      "sha256_raw": "19bd3dde4ab9e4339083d1dfaa9d1fb001835110df8bad3ab276f9bb97834126",
+      "sha256_raw": "356c538b22d9a53ea011fb66d14f5bccd3877b0d1cedae495ee7a75a3bdb311e",
       "sha256_normalized": "399aab456d845b0d3289e9d530b04fda6cb36aa08bc106a3e4a0a8ad885681b3",
       "normalizer": "html/v1",
       "extractor": null,
@@ -472,10 +474,10 @@
         "value": "399aab456d845b0d3289e9d530b04fda6cb36aa08bc106a3e4a0a8ad885681b3"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213806/https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
-        "attempted": "2026-08-31T21:37:57Z"
+        "attempted": "2026-08-31T22:08:00Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -484,7 +486,7 @@
       "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:38:25Z",
+      "fetched": "2026-08-31T22:08:01Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 16616,
@@ -499,8 +501,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:20:41Z",
-        "note": "HTTP 520"
+        "attempted": "2026-08-31T22:03:54Z",
+        "note": "rate limited (429)"
       }
     },
     {
@@ -509,7 +511,7 @@
       "url": "https://semgrep.dev/blog/2026/rust-crates-arrayref-append-only-vec-compromised-proc-macro1",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:38:26Z",
+      "fetched": "2026-08-31T22:08:03Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 76502,
@@ -524,8 +526,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:38:28Z",
-        "note": "HTTP 520"
+        "attempted": "2026-08-31T22:08:05Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -534,11 +536,11 @@
       "url": "https://securityaffairs.com/197717/hacking/zero-click-grok-chat-history-theft-adversa-ai-demonstrates-cryptographic-context-injection.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:38:45Z",
+      "fetched": "2026-08-31T22:08:06Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 131760,
-      "sha256_raw": "83a68d45f791b5daa699f1382f1dffcee2c8fe85f2103faaa533662894e05e3e",
+      "sha256_raw": "dcfb41bcc8cc7aedb6826161aeed1141618f1aab4653be1fa12142705fa4557b",
       "sha256_normalized": "02fc1901d3052e65305182a1abef25ec59a73a641782b916d1b6a6391705396e",
       "normalizer": "html/v1",
       "extractor": null,
@@ -549,8 +551,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:38:47Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:08:08Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -558,12 +560,12 @@
       "ref": "REF-023",
       "url": "https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T21:39:14Z",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:08:19Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 164397,
-      "sha256_raw": "93dde8f5027b52dea00f6e8d18fda4b18a7bcf91250d036844e4340cd9d973ce",
+      "sha256_raw": "ea18203a0b336fd134aab65b596cb78845268aec971bb98f428e31a9c49b67f3",
       "sha256_normalized": "bbf7d418fe06a4a995d90e96dcec460a22f4f7970b981380cd6bd31e397a68f2",
       "normalizer": "html/v1",
       "extractor": null,
@@ -572,10 +574,10 @@
         "value": "bbf7d418fe06a4a995d90e96dcec460a22f4f7970b981380cd6bd31e397a68f2"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831213919/https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/",
-        "attempted": "2026-08-31T21:39:16Z"
+        "attempted": "2026-08-31T22:08:21Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -584,11 +586,11 @@
       "url": "https://www.scworld.com/news/black-hat-2026-openai-reveals-agents-planned-collective-attacks-via-secret-message-board",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:39:37Z",
+      "fetched": "2026-08-31T22:08:22Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 113360,
-      "sha256_raw": "38f5cc780cab3de5a9bfa249bbafa7b1d6ac9b8b89e3e803aada1f49166f34c5",
+      "sha256_raw": "4a7bfe71261cda0d1df60b24ad76869467c129f560b7da40601aeee0671e4a03",
       "sha256_normalized": "9bc591448452b170606459470e0ddb8b6fb89ec2fe3dcb18293d85f397089199",
       "normalizer": "html/v1",
       "extractor": null,
@@ -599,7 +601,7 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:39:39Z",
+        "attempted": "2026-08-31T22:08:24Z",
         "note": "HTTP 520"
       }
     },
@@ -608,12 +610,12 @@
       "ref": "REF-025",
       "url": "https://sofx.com/grok-decrypts-hidden-attack-payload-and-leaks-user-data-to-attacker-servers",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:39:50Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:08:35Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 302892,
-      "sha256_raw": "8a7a6d42944fac4073ee17f61545d44fc77ce2f0ed41193557d3d05d7102748e",
+      "sha256_raw": "fc586c0e419dd5548c827e8cafedffaf9db0f57745b0158f0afcb43776287347",
       "sha256_normalized": "aaf1bc7acda74b36551026510a74d1cc25fd03dadbe32aa0e00a039dab5f877d",
       "normalizer": "html/v1",
       "extractor": null,
@@ -622,10 +624,10 @@
         "value": "aaf1bc7acda74b36551026510a74d1cc25fd03dadbe32aa0e00a039dab5f877d"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:39:52Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831214007/https://www.sofx.com/grok-decrypts-hidden-attack-payload-and-leaks-user-data-to-attacker-servers/",
+        "attempted": "2026-08-31T22:08:37Z"
       }
     },
     {
@@ -633,24 +635,24 @@
       "ref": "REF-026",
       "url": "https://cryptorank.io/news/feed/0a824-grok-leaks-chats-encrypted-webpage",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:40:20Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:08:49Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 227325,
-      "sha256_raw": "2c23bcfc93866b15efc05439a8b7df63993690193e40fdbaffaaea79c1c877ee",
-      "sha256_normalized": "46649415e29f75e97f78650dc113e1f7aa13c3e33268f703464b26bf98981cfb",
+      "content_length": 227322,
+      "sha256_raw": "23896de8e79f729a08b165afd983aa898a8f3b15aedb895dd6b1de1130a6ec63",
+      "sha256_normalized": "fc56a55a1cf28550ee68d1d2a7a49b26af327cf775da77e17369cdccb7082da6",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "46649415e29f75e97f78650dc113e1f7aa13c3e33268f703464b26bf98981cfb"
+        "value": "fc56a55a1cf28550ee68d1d2a7a49b26af327cf775da77e17369cdccb7082da6"
       },
       "archive": {
-        "status": "failed",
+        "status": "captured",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:40:22Z",
-        "note": "TimeoutError: The read operation timed out"
+        "url": "https://web.archive.org/web/20260831214035/https://cryptorank.io/news/feed/0a824-grok-leaks-chats-encrypted-webpage",
+        "attempted": "2026-08-31T22:08:51Z"
       }
     },
     {
@@ -659,11 +661,11 @@
       "url": "https://sqmagazine.co.uk/meta-ai-model-breached-company-irregular-test/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:40:48Z",
+      "fetched": "2026-08-31T22:09:05Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 357004,
-      "sha256_raw": "dc44be005af612d85524aa06fe100d36b504a8dec605eb4a2480738545634e8f",
+      "sha256_raw": "675187d42d6233f41b44a69b74a667021921a22d7dc393b9d69be8023c9559fc",
       "sha256_normalized": "33bd8d4af70acbf37136af48b2c227286fb51abc732c761098deb32ebaba61d8",
       "normalizer": "html/v1",
       "extractor": null,
@@ -674,8 +676,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:40:50Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:09:07Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -684,7 +686,7 @@
       "url": "https://www.stepsecurity.io/blog/arrayref-rust-crate-supply-chain-attack",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:41:17Z",
+      "fetched": "2026-08-31T22:09:09Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 199782,
@@ -699,8 +701,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:41:19Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:09:11Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
       }
     },
     {
@@ -709,11 +711,11 @@
       "url": "https://www.theinformation.com/articles/meta-ai-model-hacked-another-company-cybersecurity-testing",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:41:45Z",
+      "fetched": "2026-08-31T22:09:11Z",
       "http_status": 403,
       "content_type": null,
       "content_length": 5912,
-      "sha256_raw": "ab11f5a9453c77c800b5f7ea804ef1fc3644d675cb3748dba4e4c72bb4836bf6",
+      "sha256_raw": "d2c95606e00435a8cee45b2a6651079f9e3b76ba9f99911fe5d9531f36a41af1",
       "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
       "normalizer": "html/v1",
       "extractor": null,
@@ -722,18 +724,20 @@
         "value": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:41:45Z"
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:09:13Z",
+        "note": "HTTP 520"
       },
-      "notes": "http_status 403; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
     },
     {
       "source_id": "SRC-0054",
       "ref": "REF-030",
       "url": "https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/",
       "format_family": "html",
-      "preservation": "none",
-      "fetched": "2026-08-31T21:41:47Z",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:09:24Z",
       "http_status": 404,
       "content_type": null,
       "content_length": 181506,
@@ -746,10 +750,12 @@
         "value": "30bf58ba41d7932d6cb32088e629742ff4a707a3967559d6308d23f58a565869"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:41:47Z"
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831220930/https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/",
+        "attempted": "2026-08-31T22:09:26Z"
       },
-      "notes": "http_status 404; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 404; local fetch was not 2xx, archive.org was still tried"
     },
     {
       "source_id": "SRC-0054",
@@ -757,7 +763,7 @@
       "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:41:48Z",
+      "fetched": "2026-08-31T22:09:47Z",
       "http_status": 404,
       "content_type": null,
       "content_length": 181563,
@@ -770,10 +776,12 @@
         "value": "30bf58ba41d7932d6cb32088e629742ff4a707a3967559d6308d23f58a565869"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:41:48Z"
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:09:49Z",
+        "note": "HTTP 520"
       },
-      "notes": "http_status 404; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 404; local fetch was not 2xx, archive.org was still tried"
     },
     {
       "source_id": "SRC-0054",
@@ -781,7 +789,7 @@
       "url": "https://www.theregister.com/security/2026/08/21/hackers-poison-popular-rust-crates-to-steal-developers-credentials/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:41:49Z",
+      "fetched": "2026-08-31T22:09:58Z",
       "http_status": 404,
       "content_type": null,
       "content_length": 181563,
@@ -794,10 +802,12 @@
         "value": "30bf58ba41d7932d6cb32088e629742ff4a707a3967559d6308d23f58a565869"
       },
       "archive": {
-        "status": "not_attempted",
-        "attempted": "2026-08-31T21:41:49Z"
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:10:00Z",
+        "note": "HTTP 523"
       },
-      "notes": "http_status 404; archive submission skipped for a non-2xx fetch"
+      "notes": "http_status 404; local fetch was not 2xx, archive.org was still tried"
     },
     {
       "source_id": "SRC-0055",
@@ -805,11 +815,11 @@
       "url": "https://tuxcare.com/blog/rust-attack-arrayref",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T21:41:52Z",
+      "fetched": "2026-08-31T22:10:17Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 657686,
-      "sha256_raw": "b45f4b483142ed40d436e6bd0cd19b6f5c89b27f0d48c69c44f29e839d13285e",
+      "sha256_raw": "99ed66b6152267b1e586d54535806d0d60a3ea1e0a90486732a35955ee68ab55",
       "sha256_normalized": "eb168b0c197ecab196bbd71b6cfc92a7dcbf0d3e4def4eabf72d8175716075bc",
       "normalizer": "html/v1",
       "extractor": null,
@@ -820,8 +830,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T21:41:54Z",
-        "note": "TimeoutError: The read operation timed out"
+        "attempted": "2026-08-31T22:10:19Z",
+        "note": "HTTP 520"
       }
     },
     {
@@ -830,7 +840,7 @@
       "url": "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
       "format_family": "html",
       "preservation": "archive_only",
-      "fetched": "2026-08-31T21:42:20Z",
+      "fetched": "2026-08-31T22:10:26Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 360904,
@@ -846,11 +856,11 @@
         "status": "captured",
         "provider": "web.archive.org",
         "url": "https://web.archive.org/web/20260831212105/https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
-        "attempted": "2026-08-31T21:21:01Z"
+        "attempted": "2026-08-31T22:04:02Z"
       }
     }
   ],
-  "manifest_sha256": "033e0bbe2430cf4938f21ef62d31cab09beb3d9e32a2ad2b0a2133de02a458db",
+  "manifest_sha256": "58379bf4a380200b73bf86765366ac7ea45582de64eef16cddb01d8002b4b2bb",
   "timestamp": {
     "status": "not_yet_anchored"
   }

@@ -1,9 +1,88 @@
-[
-  "TI-20260809-001",
-  "TI-20260811-001",
-  "TI-20260822-001",
-  "TI-20260822-002",
-  "IW-20260826-001",
-  "TI-20260830-001",
-  "TI-20260830-002"
-]
+{
+  "schema_version": 1,
+  "serials": [
+    {
+      "serial": "TI-20260809-001",
+      "assigned": "2026-08-13T19:31:48+09:00",
+      "title": "AI-Assisted Espionage: Kimsuky's Automated Document Analysis",
+      "path": "/issues/dprk-cyber-highlights-30day/",
+      "issue_number": 34,
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "TI-20260811-001",
+      "assigned": "2026-08-16T08:58:07+09:00",
+      "title": "Disabling the Fail-Safes: CyberAv3ngers' PLC Attacks on U.S. Water Systems",
+      "path": "/issues/iran-cyber-threat-highlights/",
+      "issue_number": 35,
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "TI-20260817-001",
+      "assigned": "2026-08-19T07:07:13+09:00",
+      "title": "Access Through the Front Door: Trusted Channel Compromise in PRC-Nexus Operations",
+      "path": "/issues/prc-trusted-channel-compromise/",
+      "issue_number": 36,
+      "classification_version": "3.7",
+      "article_spec_version": "2.4",
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "TI-20260822-001",
+      "assigned": "2026-08-21T21:40:16+00:00",
+      "title": "Install to Continue: How Russia-Nexus Operators Turned Routine Prompts Into Initial Access",
+      "path": "/issues/russia-onboarding-trap/",
+      "issue_number": 37,
+      "classification_version": "3.8",
+      "article_spec_version": "2.5",
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "TI-20260822-002",
+      "assigned": "2026-08-22T01:14:18+00:00",
+      "title": "Compile to Compromise: A Poisoned Rust Crate and Five Weeks Inside a Windows Kernel Driver",
+      "path": "/issues/compile-to-compromise-rust-crate-kernel-driver/",
+      "issue_number": 38,
+      "classification_version": "3.8",
+      "article_spec_version": "2.5",
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "IW-20260826-001",
+      "assigned": "2026-08-26T03:27:01+00:00",
+      "title": "Nothing Held: Four AI Security Failures in Ten August Days",
+      "path": "/issues/nothing-held-ai-industry-disclosures/",
+      "classification_version": "3.8",
+      "article_spec_version": "2.5",
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "TI-20260830-001",
+      "assigned": "2026-08-30T02:37:28+00:00",
+      "title": "Teams-Based Voice Phishing as Initial Access: Convergent Adoption Across Unrelated Threat Clusters, February\u2013July 2026",
+      "path": "/issues/teams-vishing-convergence/",
+      "issue_number": 39,
+      "classification_version": "3.8",
+      "article_spec_version": "2.5",
+      "authoring": "hand",
+      "status": "published"
+    },
+    {
+      "serial": "TI-20260830-002",
+      "assigned": "2026-08-30T05:03:08+00:00",
+      "title": "DOUBLECUP: ClickFix Commoditized as a Loader-as-a-Service Delivering CountLoader and a Blockchain-Resolved RAT, June\u2013August 2026",
+      "path": "/issues/doublecup-clickfix-laas/",
+      "issue_number": 40,
+      "classification_version": "3.8",
+      "article_spec_version": "2.5",
+      "authoring": "hand",
+      "status": "published"
+    }
+  ]
+}

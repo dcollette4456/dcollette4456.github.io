@@ -1,0 +1,84 @@
+{
+  "_comment": "Worked example: classification spec §15's own PLC-injection claim, as input to claim_writer.py. This is illustrative only -- the placeholder serial TI-20990101-999 is deliberately out of range for any real issue -- copy this file and change it rather than running it as-is.",
+  "serial": "TI-20990101-999",
+  "source_id": "SRC-0001",
+  "source_type": "TEC",
+  "text": "Project file injection disabling safety shutdown logic",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": true,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": true,
+    "named_primary": null,
+    "relay_depth": 0,
+    "self_interested_only": false,
+    "aggregate": false,
+    "artifact_test": "pass",
+    "method_test": "pass",
+    "hedge_test": "n/a"
+  },
+  "evidentiary_status": "observed",
+  "polarity": "positive",
+  "volatility": "durable",
+  "scope": null,
+  "document_sha256_normalized": "4d81be0000000000000000000000000000000000000000000000000000abcd",
+  "origin_named": null,
+  "time": {
+    "observed_period": { "start": "2026-06-30", "end": "2026-07-18", "basis": "stated", "precision": "day" },
+    "source_published": "2026-07-22",
+    "fetched": "2026-08-11T09:14:00Z"
+  },
+  "grader": {
+    "model": "MODEL-ID-PLACEHOLDER",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-08-11T09:16:22Z",
+    "passes": 3,
+    "agreement": "unanimous"
+  },
+  "segmentation": {
+    "atomic_assertions": 2,
+    "merged": true,
+    "merge_basis": "identical gate vector",
+    "assertions": [
+      { "key": "A1", "descriptor": "project file injection technique" },
+      { "key": "A2", "descriptor": "safety shutdown logic disabled" }
+    ]
+  },
+  "hunt_value": {
+    "behavioral": true,
+    "behavioral_basis": "described injection technique and disabled logic path",
+    "huntable": true,
+    "telemetry_classes": ["plc-config-audit", "file-write", "network-device-config"],
+    "collection_point_basis": "stated",
+    "collection_point_source": "REF-001, assertion A1",
+    "indicator_bearing": true
+  },
+  "sectors": {
+    "confirmed": ["water", "energy"],
+    "contextual": [],
+    "justified_by": "REF-001, assertion A2, names water and wastewater systems as targeted"
+  },
+  "actors": {
+    "subject": ["CLU-0031"],
+    "referenced": [],
+    "names_used_by_source": ["CyberAv3ngers"],
+    "justified_by": "REF-001, assertion A1, names CyberAv3ngers as responsible actor"
+  },
+  "entities": {
+    "clusters": ["CLU-0031"],
+    "families": [],
+    "tools": [],
+    "campaigns": [],
+    "vulnerabilities": ["CVE-2026-18577"],
+    "justified_by": "REF-001, assertion A1"
+  },
+  "provenance": {
+    "pool": "live",
+    "source_published": "2026-07-22",
+    "window": "2026-07-12/2026-08-11",
+    "capture_is_retrospective": false
+  }
+}

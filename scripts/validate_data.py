@@ -196,12 +196,88 @@ def check_published_issue_sources_are_registered(registry_by_domain):
                      "CLAUDECODEBRIEF §9 / classification spec §21")
 
 
+def validate_ledgers(registry_source_ids):
+    schema = load_json(DATA / "schema" / "ledger-4.json")
+    ledger_dir = DATA / "ledger"
+    known_claim_ids = {}  # serial -> set of claim_id
+
+    for ledger_path in sorted(ledger_dir.glob("*.json")):
+        rel = str(ledger_path.relative_to(ROOT))
+        claims = load_json(ledger_path)
+
+        try:
+            validate(claims, schema)
+        except SchemaError as e:
+            fail(rel, e.path, e.message, "classification spec §15 / schema/ledger-4.json")
+            continue
+
+        check_empty_strings(claims, rel)
+
+        seen_ids = set()
+        for i, claim in enumerate(claims):
+            path = f"$[{i}]"
+            cid = claim.get("claim_id")
+            if cid in seen_ids:
+                fail(rel, f"{path}.claim_id", f"duplicate claim_id {cid!r} within one ledger file",
+                     "classification spec §2 / §6 duplicate block")
+            seen_ids.add(cid)
+
+            # brief §8 item 7, extended from manifests to ledger claims
+            sid = claim.get("source_id")
+            if registry_source_ids is not None and sid not in registry_source_ids:
+                fail(rel, f"{path}.source_id", f"{sid!r} has no registry entry",
+                     "CLAUDECODEBRIEF §8 item 7 / classification spec §21")
+
+            # brief §8 item 9: archive: not_attempted is a block; unavailable is legal
+            archive = claim.get("archive")
+            if archive and archive.get("status") == "not_attempted":
+                fail(rel, f"{path}.archive.status", "archive status is 'not_attempted'; the pipeline must always try",
+                     "CLAUDECODEBRIEF §8 item 9 / classification spec §14")
+
+            # brief §8 item 5: a relay claim (grade 4 or 5) with no relay_depth
+            if claim.get("grade") in (4, 5) and claim.get("relay_depth") is None:
+                fail(rel, f"{path}.relay_depth", "relay-grade claim (4 or 5) carries no relay_depth",
+                     "CLAUDECODEBRIEF §8 item 5 / classification spec §5")
+
+            # brief §8 item 10: a negative-polarity claim published with no stated scope
+            if claim.get("polarity") == "negative" and not claim.get("scope") and claim.get("grade") != 6:
+                fail(rel, f"{path}", "negative-polarity claim has no stated scope but was not graded 6",
+                     "CLAUDECODEBRIEF §8 item 10 / classification spec §29")
+
+        known_claim_ids[ledger_path.stem] = seen_ids
+
+    return known_claim_ids
+
+
+def check_data_claim_attributes_resolve(known_claim_ids):
+    """brief §8 item 3: a data-claim attribute resolving to no ledger entry."""
+    for md_path in sorted(CONTENT_ISSUES.glob("*.md")):
+        rel = str(md_path.relative_to(ROOT))
+        text = md_path.read_text(encoding="utf-8")
+        fm = read_front_matter_scalars(text)
+        serial = fm.get("serial") or fm.get("reportSerial")
+
+        for m in re.finditer(r'data-claim="([^"]+)"', text):
+            ref = m.group(1)
+            claim_id = ref.split("|")[0] if "|" in ref else ref
+            issue_serial = claim_id.rsplit("-C", 1)[0] if "-C" in claim_id else serial
+            ids = known_claim_ids.get(issue_serial, set())
+            if claim_id not in ids:
+                fail(rel, "data-claim", f"{ref!r} resolves to no ledger entry (no /data/ledger/{issue_serial}.json claim {claim_id})",
+                     "CLAUDECODEBRIEF §8 item 3 / classification spec §15")
+
+
 def main():
     ledger_by_serial = validate_serials_ledger()
     check_published_issues_have_serials(ledger_by_serial)
 
     registry_by_domain = validate_registry()
     check_published_issue_sources_are_registered(registry_by_domain)
+
+    registry = load_json(DATA / "sources" / "registry.json")
+    registry_source_ids = {e["source_id"] for e in registry} if isinstance(registry, list) else None
+    known_claim_ids = validate_ledgers(registry_source_ids)
+    check_data_claim_attributes_resolve(known_claim_ids)
 
     if errors:
         print(f"data validation FAILED with {len(errors)} error(s):\n", file=sys.stderr)

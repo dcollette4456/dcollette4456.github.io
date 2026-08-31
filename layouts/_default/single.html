@@ -94,11 +94,24 @@
             {{ .Content }}
 
             {{ with .Params.classification_version }}
+            {{ $serial := $.Params.serial | default $.Params.reportSerial }}
+            {{ $manifest := index $.Site.Data.evidence (printf "%s.manifest" $serial) }}
             <div class="buildnote">
                 Classification system v{{ . }} &middot; Article and site specification v{{ $.Params.article_spec_version | default "2.4" }} &middot;
                 Grading metadata for this issue lives in the ledger at /data/ledger/ and renders at
                 <a href="/coverage/sources/">coverage/sources</a>.
+                {{ with $manifest }}
+                <br>Evidence manifest: <code>sha256:{{ .manifest_sha256 }}</code>, {{ len .entries }} source{{ if ne (len .entries) 1 }}s{{ end }} attested{{ if .capture_is_retrospective }}. Captured retrospectively on {{ dateFormat "2 January 2006" .generated }}, not at publication; see <code>/data/evidence/{{ $serial }}.manifest.json</code>{{ end }}.
+                {{ end }}
             </div>
+            {{ else }}
+            {{ $serial := $.Params.serial | default $.Params.reportSerial }}
+            {{ $manifest := index $.Site.Data.evidence (printf "%s.manifest" $serial) }}
+            {{ with $manifest }}
+            <div class="buildnote">
+                Evidence manifest: <code>sha256:{{ .manifest_sha256 }}</code>, {{ len .entries }} source{{ if ne (len .entries) 1 }}s{{ end }} attested{{ if .capture_is_retrospective }}. Captured retrospectively on {{ dateFormat "2 January 2006" .generated }}, not at publication; see <code>/data/evidence/{{ $serial }}.manifest.json</code>{{ end }}.
+            </div>
+            {{ end }}
             {{ end }}
         </div>
     </div>

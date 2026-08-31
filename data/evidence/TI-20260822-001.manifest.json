@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260822-001",
+  "generated": "2026-08-31T22:12:05Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-001",
+      "url": "https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:38Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 172267,
+      "sha256_raw": "3e25caf0b3da2db55d510e32cc5c361cf4489caab204f8433b7bec49e14c18a7",
+      "sha256_normalized": "055dca783df4ef2844492f98dd3de908af520c0689b3667432adb0844a3e56c3",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "055dca783df4ef2844492f98dd3de908af520c0689b3667432adb0844a3e56c3"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:40Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0032",
+      "ref": "REF-002",
+      "url": "https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:41Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 83004,
+      "sha256_raw": "ffc81852d3ad712e04a4d735322cf97933ac6c26ccbe7af3a81fbbf1c81c2798",
+      "sha256_normalized": "5ecc3650c2f1b8dabb511ff039504f3f83cb7f7b73855fb2bf74c8e63333aa96",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "5ecc3650c2f1b8dabb511ff039504f3f83cb7f7b73855fb2bf74c8e63333aa96"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:43Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0060",
+      "ref": "REF-003",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:11:45Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 349455,
+      "sha256_raw": "4cd0e5c102a080ce1885557a0a7245eea6b23858be753da20b0af9f18a6dff4f",
+      "sha256_normalized": "f571563f145383cbed44bcd2ccaab129f032fd92348103a951c504b8eac9fa5b",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "f571563f145383cbed44bcd2ccaab129f032fd92348103a951c504b8eac9fa5b"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831214651/https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+        "attempted": "2026-08-31T22:11:47Z"
+      }
+    },
+    {
+      "source_id": "SRC-0061",
+      "ref": "REF-004",
+      "url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:56Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 83514,
+      "sha256_raw": "07998349f905fb4917e103fb9039575f4d4fa41390c56c85adf6ee01e0c574d2",
+      "sha256_normalized": "883f2f62d70e0aa78a4e1937f1edf2a368a61144f6859903456c4ade082f8823",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "883f2f62d70e0aa78a4e1937f1edf2a368a61144f6859903456c4ade082f8823"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:58Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    }
+  ],
+  "manifest_sha256": "676043f8afbaf9f223816d6208312fd5f0968f62a772a5011347cba1262f6d6c",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

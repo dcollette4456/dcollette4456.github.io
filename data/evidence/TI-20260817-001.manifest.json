@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260817-001",
+  "generated": "2026-08-31T22:11:37Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0056",
+      "ref": "REF-001",
+      "url": "https://www.huntress.com/blog/n-able-vulnerability-exploitation",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:10:29Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 439806,
+      "sha256_raw": "6780b9a380c4d43678964e8d8e28d2b41ba42785d8784729faad9572691a34ad",
+      "sha256_normalized": "5978263c427504c4cb90720497da4f96eb0fd35cb1327026747cf06bbf555207",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "5978263c427504c4cb90720497da4f96eb0fd35cb1327026747cf06bbf555207"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831214322/https://www.huntress.com/blog/n-able-vulnerability-exploitation",
+        "attempted": "2026-08-31T22:10:31Z"
+      }
+    },
+    {
+      "source_id": "SRC-0057",
+      "ref": "REF-002",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:10:41Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 279647,
+      "sha256_raw": "037b4fb29be8b5e115d465aa30344a57b7e36e64cca37f1122463392123acd3d",
+      "sha256_normalized": "55c5b70ad533ed17ac2518336d15b9945856bfcdcd0788eeeea1d2df2d28ab7c",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "55c5b70ad533ed17ac2518336d15b9945856bfcdcd0788eeeea1d2df2d28ab7c"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831214355/https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+        "attempted": "2026-08-31T22:10:43Z"
+      }
+    },
+    {
+      "source_id": "SRC-0027",
+      "ref": "REF-003",
+      "url": "https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:10:53Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 193625,
+      "sha256_raw": "3975aeb62d52d386dba22a3931a8ae10b2a5dee70f96ea77c77fb4057507cad1",
+      "sha256_normalized": "415f3a5dc54114a5992b48aaf65809cb8264479dd040d98eec6fc87a9e7d86f4",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "415f3a5dc54114a5992b48aaf65809cb8264479dd040d98eec6fc87a9e7d86f4"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831214329/https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant",
+        "attempted": "2026-08-31T22:10:55Z"
+      }
+    },
+    {
+      "source_id": "SRC-0058",
+      "ref": "REF-004",
+      "url": "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:11:05Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 456504,
+      "sha256_raw": "73a0ffb97a9b1f15f5fef398cc171ff60ef8c592b4c1e07b3dab8c826049ebc5",
+      "sha256_normalized": "3ccbc95643f5b56430974283830ebd5db3627f99f656eea2a941dc6ae5c2a1d6",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "3ccbc95643f5b56430974283830ebd5db3627f99f656eea2a941dc6ae5c2a1d6"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831214405/https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
+        "attempted": "2026-08-31T22:11:07Z"
+      }
+    },
+    {
+      "source_id": "SRC-0059",
+      "ref": "REF-005",
+      "url": "https://www.govinfosecurity.com/china-linked-hackers-exploit-n-able-flaw-in-ransomware-attacks-a-32506",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:18Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 400180,
+      "sha256_raw": "17efc673b7bf6d97df3e003449d0b2007709189f9cf4efa3722771cb7ea0b2d4",
+      "sha256_normalized": "310dc921382ba9360152f928e64c31373715961064616a8a737b1752d622ca1f",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "310dc921382ba9360152f928e64c31373715961064616a8a737b1752d622ca1f"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:20Z",
+        "note": "HTTP 523"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-006",
+      "url": "https://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:28Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 172607,
+      "sha256_raw": "feb407d3a1920881f69f337b66ae6be601c690f1f8343c8b0f639ede7b166105",
+      "sha256_normalized": "4a9f93c8756f3a79fee65d78352ab2668b277125d85c02d39791fab0715d9896",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "4a9f93c8756f3a79fee65d78352ab2668b277125d85c02d39791fab0715d9896"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:30Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0028",
+      "ref": "REF-007",
+      "url": "https://attack.mitre.org/groups/G0129/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:31Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 378571,
+      "sha256_raw": "30ee935fbeb7331ddff77a3ee97c8c23b7fc21ebbc106a01fe81ae189b786052",
+      "sha256_normalized": "b21d6e517487a1f95b66965c13be3aca8296e948a202e508375eb9876d21aee8",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "b21d6e517487a1f95b66965c13be3aca8296e948a202e508375eb9876d21aee8"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:33Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-008",
+      "url": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:11:34Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 168365,
+      "sha256_raw": "c8e1e0dacabaa6f2dcf47f8d12da8c1650253f9f3ae16b8ed3cc46a38780070e",
+      "sha256_normalized": "f2f7e4631fa022f6217ed3c3c619d19fa1bbd5fc9342245ffd0fc8b99b57f08b",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "f2f7e4631fa022f6217ed3c3c619d19fa1bbd5fc9342245ffd0fc8b99b57f08b"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:11:36Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    }
+  ],
+  "manifest_sha256": "44ebb9f74b1a222759e4cb48e78a38a1c2581c9804ae57f8f26693bededb0ae3",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

@@ -1,1 +1,2351 @@
-[]
+[
+  {
+    "source_id": "SRC-0001",
+    "canonical_name": "CISA Cybersecurity Advisories",
+    "canonical_domain": "cisa.gov",
+    "type": "GOV",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "GOV",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0002",
+    "canonical_name": "ExtraHop",
+    "canonical_domain": "extrahop.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0003",
+    "canonical_name": "KELA Intelligence",
+    "canonical_domain": "kelacyber.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0004",
+    "canonical_name": "The Washington Post",
+    "canonical_domain": "washingtonpost.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0005",
+    "canonical_name": "Rescana",
+    "canonical_domain": "rescana.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0006",
+    "canonical_name": "SafeBreach",
+    "canonical_domain": "safebreach.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0007",
+    "canonical_name": "SOCRadar",
+    "canonical_domain": "socradar.io",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001",
+      "TI-20260830-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001",
+        "TI-20260830-002"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0008",
+    "canonical_name": "Tech Times",
+    "canonical_domain": "techtimes.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001",
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001",
+        "TI-20260811-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0009",
+    "canonical_name": "Trellix",
+    "canonical_domain": "trellix.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260811-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260811-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0010",
+    "canonical_name": "BleepingComputer",
+    "canonical_domain": "bleepingcomputer.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001",
+      "TI-20260822-002",
+      "TI-20260830-001",
+      "TI-20260830-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001",
+        "TI-20260822-002",
+        "TI-20260830-001",
+        "TI-20260830-002"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0011",
+    "canonical_name": "Cryptopolitan",
+    "canonical_domain": "cryptopolitan.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.cryptopolitan.com/did-north-korea-hackers-attack-arrayref/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-002"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0012",
+    "canonical_name": "CyPro",
+    "canonical_domain": "cypro.co.uk",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://cypro.co.uk/insights/cyber-bulletins/windows-ancillary-function-0-day-cisa-confirms-exploited-flaw/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-002"
+      ]
+    },
+    "origin": "UK"
+  },
+  {
+    "source_id": "SRC-0013",
+    "canonical_name": "Rust Security Response Team",
+    "canonical_domain": "blog.rust-lang.org",
+    "type": "NPO",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001",
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "NPO",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001",
+        "TI-20260822-002"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0014",
+    "canonical_name": "Infosecurity Magazine",
+    "canonical_domain": "infosecurity-magazine.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.infosecurity-magazine.com/news/north-korean-rust-supply-chain/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-002"
+      ]
+    },
+    "origin": "UK"
+  },
+  {
+    "source_id": "SRC-0015",
+    "canonical_name": "Wiz",
+    "canonical_domain": "wiz.io",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001",
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001",
+        "TI-20260822-002"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0016",
+    "canonical_name": "OffSeq Threat Radar",
+    "canonical_domain": "radar.offseq.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://radar.offseq.com/threat/rust-supply-chain-attack-linked-to-north-korean-hackers-0ce7936d030d6a11",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-002"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0017",
+    "canonical_name": "Rewterz",
+    "canonical_domain": "rewterz.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://rewterz.com/threat-advisory/windows-afd-sys-zero-day-exploited-by-lazarus-active-iocs",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-002"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0018",
+    "canonical_name": "SecurityWeek",
+    "canonical_domain": "securityweek.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001",
+      "TI-20260822-002",
+      "TI-20260830-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001",
+        "TI-20260822-002",
+        "TI-20260830-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0019",
+    "canonical_name": "The Hacker News",
+    "canonical_domain": "thehackernews.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001",
+      "TI-20260817-001",
+      "TI-20260822-001",
+      "TI-20260822-002",
+      "TI-20260830-001",
+      "TI-20260830-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001",
+        "TI-20260817-001",
+        "TI-20260822-001",
+        "TI-20260822-002",
+        "TI-20260830-001",
+        "TI-20260830-002"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0020",
+    "canonical_name": "Security Boulevard",
+    "canonical_domain": "securityboulevard.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260830-002"
+    ],
+    "admission": {
+      "first_seen_url": "https://securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260830-002"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0021",
+    "canonical_name": "AhnLab ASEC",
+    "canonical_domain": "asec.ahnlab.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://asec.ahnlab.com/en/94696/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "KR"
+  },
+  {
+    "source_id": "SRC-0022",
+    "canonical_name": "Al Jazeera",
+    "canonical_domain": "aljazeera.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "QA"
+  },
+  {
+    "source_id": "SRC-0023",
+    "canonical_name": "Enki White Hat",
+    "canonical_domain": "enki.co.kr",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.enki.co.kr",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "KR"
+  },
+  {
+    "source_id": "SRC-0024",
+    "canonical_name": "Genians Security Center",
+    "canonical_domain": "genians.co.kr",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "KR"
+  },
+  {
+    "source_id": "SRC-0025",
+    "canonical_name": "Insurance Journal",
+    "canonical_domain": "insurancejournal.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.insurancejournal.com/news/international/2026/07/23/878763.htm",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0026",
+    "canonical_name": "Korea Internet & Security Agency (KISA) joint advisory",
+    "canonical_domain": "boho.or.kr",
+    "type": "GOV",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.boho.or.kr/kr/bbs/view.do",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "GOV",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "KR"
+  },
+  {
+    "source_id": "SRC-0027",
+    "canonical_name": "Fortinet / FortiGuard Labs",
+    "canonical_domain": "fortinet.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001",
+      "TI-20260817-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001",
+        "TI-20260817-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0028",
+    "canonical_name": "MITRE ATT&CK",
+    "canonical_domain": "attack.mitre.org",
+    "type": "TEC",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001",
+      "TI-20260817-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://attack.mitre.org/groups/G0094/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "TEC",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001",
+        "TI-20260817-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0029",
+    "canonical_name": "NK News",
+    "canonical_domain": "nknews.org",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.nknews.org/2026/08/crypto-exchange-sues-north-korean-government-and-hackers-over-1-5b-heist/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0030",
+    "canonical_name": "S2W Talon",
+    "canonical_domain": "s2w.medium.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001"
+      ]
+    },
+    "origin": "KR"
+  },
+  {
+    "source_id": "SRC-0031",
+    "canonical_name": "Security Affairs",
+    "canonical_domain": "securityaffairs.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001",
+      "TI-20260809-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://securityaffairs.com/196417/apt/south-korea-warns-of-state-backed-watering-hole-attacks.html",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001",
+        "TI-20260809-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0032",
+    "canonical_name": "The Record (Recorded Future News)",
+    "canonical_domain": "therecord.media",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260809-001",
+      "TI-20260822-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://therecord.media/south-korea-cyberattack-foreign-ministry",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260809-001",
+        "TI-20260822-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0033",
+    "canonical_name": "Adversa AI",
+    "canonical_domain": "adversa.ai",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0034",
+    "canonical_name": "BetaNews",
+    "canonical_domain": "betanews.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://betanews.com/article/meta-muse-spark-1-1-security-breach/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0035",
+    "canonical_name": "Cyber Magazine",
+    "canonical_domain": "cybermagazine.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://cybermagazine.com/news/hugging-face-breach-how-openai-agents-planned-the-attack",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "UK"
+  },
+  {
+    "source_id": "SRC-0036",
+    "canonical_name": "CBS News",
+    "canonical_domain": "cbsnews.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0037",
+    "canonical_name": "Cybersecurity Dive",
+    "canonical_domain": "cybersecuritydive.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-ai-models-black-hat/827167/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0038",
+    "canonical_name": "Dataconomy",
+    "canonical_domain": "dataconomy.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://dataconomy.com/2026/08/21/xais-grok-chat-agent-vulnerable-to-cryptographic-context/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0039",
+    "canonical_name": "explainx.ai",
+    "canonical_domain": "explainx.ai",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://explainx.ai/blog/openai-agent-swarm-message-board-black-hat-security-incident-august-2026",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0040",
+    "canonical_name": "Forkast",
+    "canonical_domain": "forkast.news",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://forkast.news/openais-evaluation-agents-built-a-secret-message-board-exploited-zero-days-and-breached-hugging-face-from-the-inside",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "HK"
+  },
+  {
+    "source_id": "SRC-0041",
+    "canonical_name": "IANS Research",
+    "canonical_domain": "iansresearch.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/08/06/black-hat--inside-the-openai-hugging-face-breach",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0042",
+    "canonical_name": "Ground Level",
+    "canonical_domain": "groundlevel-ai.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://groundlevel-ai.com/p/openai-gives-first-detailed-debrief",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0043",
+    "canonical_name": "Invide Labs",
+    "canonical_domain": "blog.invidelabs.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://blog.invidelabs.com/rust-arrayref-supply-chain-attack/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0044",
+    "canonical_name": "Ben Arent",
+    "canonical_domain": "benarent.co.uk",
+    "type": "IND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://benarent.co.uk/talks/black-hat-usa-2026/openai-hugging-face-incident",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "IND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0045",
+    "canonical_name": "Nextgov/FCW",
+    "canonical_domain": "nextgov.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.nextgov.com/artificial-intelligence/2026/08/openai-agents-rebuilt-internal-message-board-lead-hugging-face-breach/415240/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0046",
+    "canonical_name": "safedep.io",
+    "canonical_domain": "safedep.io",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0047",
+    "canonical_name": "Semgrep",
+    "canonical_domain": "semgrep.dev",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://semgrep.dev/blog/2026/rust-crates-arrayref-append-only-vec-compromised-proc-macro1",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0048",
+    "canonical_name": "SC World",
+    "canonical_domain": "scworld.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.scworld.com/news/black-hat-2026-openai-reveals-agents-planned-collective-attacks-via-secret-message-board",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0049",
+    "canonical_name": "SOFX",
+    "canonical_domain": "sofx.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://sofx.com/grok-decrypts-hidden-attack-payload-and-leaks-user-data-to-attacker-servers",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0050",
+    "canonical_name": "CryptoRank",
+    "canonical_domain": "cryptorank.io",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://cryptorank.io/news/feed/0a824-grok-leaks-chats-encrypted-webpage",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0051",
+    "canonical_name": "SQ Magazine",
+    "canonical_domain": "sqmagazine.co.uk",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://sqmagazine.co.uk/meta-ai-model-breached-company-irregular-test/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "UK"
+  },
+  {
+    "source_id": "SRC-0052",
+    "canonical_name": "StepSecurity",
+    "canonical_domain": "stepsecurity.io",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.stepsecurity.io/blog/arrayref-rust-crate-supply-chain-attack",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0053",
+    "canonical_name": "The Information",
+    "canonical_domain": "theinformation.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.theinformation.com/articles/meta-ai-model-hacked-another-company-cybersecurity-testing",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0054",
+    "canonical_name": "The Register",
+    "canonical_domain": "theregister.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    },
+    "origin": "UK"
+  },
+  {
+    "source_id": "SRC-0055",
+    "canonical_name": "TuxCare",
+    "canonical_domain": "tuxcare.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "IW-20260826-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://tuxcare.com/blog/rust-attack-arrayref",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "IW-20260826-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0056",
+    "canonical_name": "Huntress",
+    "canonical_domain": "huntress.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260817-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.huntress.com/blog/n-able-vulnerability-exploitation",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260817-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0057",
+    "canonical_name": "CISA Known Exploited Vulnerabilities (KEV) Catalog",
+    "canonical_domain": "cisa.gov",
+    "type": "TEC",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260817-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "TEC",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260817-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0058",
+    "canonical_name": "Darktrace",
+    "canonical_domain": "darktrace.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260817-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260817-001"
+      ]
+    },
+    "origin": "UK"
+  },
+  {
+    "source_id": "SRC-0059",
+    "canonical_name": "GovInfoSecurity",
+    "canonical_domain": "govinfosecurity.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260817-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.govinfosecurity.com/china-linked-hackers-exploit-n-able-flaw-in-ransomware-attacks-a-32506",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "MED",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260817-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0060",
+    "canonical_name": "Microsoft Threat Intelligence",
+    "canonical_domain": "microsoft.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-001",
+      "TI-20260830-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-001",
+        "TI-20260830-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0061",
+    "canonical_name": "ReliaQuest",
+    "canonical_domain": "reliaquest.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260822-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260822-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0062",
+    "canonical_name": "Rapid7",
+    "canonical_domain": "rapid7.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260830-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.rapid7.com/blog/post/tr-muddying-tracks-state-sponsored-shadow-behind-chaos-ransomware/",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260830-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0063",
+    "canonical_name": "Sophos",
+    "canonical_domain": "sophos.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260830-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.sophos.com/en-us/blog/chaos-in-teams-vishing",
+      "admitted": "2026-08-31T09:57:51Z",
+      "assigned_type": "VND",
+      "type_basis": "assigned from publisher name and domain as cited in the issue's References list; not yet verified against a fetched about/masthead page (backfill admission, pre-fetch pass, CLAUDECODEBRIEF §9)",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260830-001"
+      ]
+    },
+    "origin": "UK"
+  }
+]

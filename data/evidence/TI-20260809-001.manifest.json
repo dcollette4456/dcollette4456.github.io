@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260809-001",
+  "generated": "2026-08-31T22:06:26Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0021",
+      "ref": "REF-001",
+      "url": "https://asec.ahnlab.com/en/94696/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:07Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 137839,
+      "sha256_raw": "7bbd80356fb2be6e61c8b53da7155f0f045dda4b76e3f933c6ec6cb9006963fc",
+      "sha256_normalized": "214070ba4c3ed299626c1ec986519b92871f0c05d7c5dd13266fb4cc0b53622e",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "214070ba4c3ed299626c1ec986519b92871f0c05d7c5dd13266fb4cc0b53622e"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:09Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0022",
+      "ref": "REF-002",
+      "url": "https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:12Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 192872,
+      "sha256_raw": "d569dc909ff2f0bc29d1556eb9986b92e666c1abe380a290833c5512f200c4dc",
+      "sha256_normalized": "e2e02e63183c9a216bca6c2b4488ed9bd37ff685d8139aa14bdfda1d671be632",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "e2e02e63183c9a216bca6c2b4488ed9bd37ff685d8139aa14bdfda1d671be632"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:14Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0023",
+      "ref": "REF-003",
+      "url": "https://www.enki.co.kr",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:18Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 1432401,
+      "sha256_raw": "91c7ed2dfd729fa5315ac6c380b2a04ded3022e79eac064d61e6264422827ca1",
+      "sha256_normalized": "2a246f57490f400769e1b80ea965060e0068a9e0462bd7086b5f5c1f9cbb21ae",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "2a246f57490f400769e1b80ea965060e0068a9e0462bd7086b5f5c1f9cbb21ae"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:20Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0024",
+      "ref": "REF-004",
+      "url": "https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:22Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 257112,
+      "sha256_raw": "e5a37611519bf041b1ae4f50f7b5c6ee1a24c84912383f5757085879888b6e66",
+      "sha256_normalized": "d174529bfc93f3b7a0bf4a6770c1526f42a0cf43e4ce009c2e069c92e5a83c60",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "d174529bfc93f3b7a0bf4a6770c1526f42a0cf43e4ce009c2e069c92e5a83c60"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:24Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0025",
+      "ref": "REF-005",
+      "url": "https://www.insurancejournal.com/news/international/2026/07/23/878763.htm",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:25Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 91682,
+      "sha256_raw": "1cf180e677122754c1329c50a7afdecad844d3d1c8c82239e48d8bbe42013131",
+      "sha256_normalized": "aa771a4af2fdef3d3151a5456eae7c4fa24a8147884056580a517570d1c0719c",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "aa771a4af2fdef3d3151a5456eae7c4fa24a8147884056580a517570d1c0719c"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:27Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0026",
+      "ref": "REF-006",
+      "url": "https://www.boho.or.kr/kr/bbs/view.do",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:29Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 959,
+      "sha256_raw": "22aa04702862a23e8eadb32afc0f43af2767bb662d456d3659394e57993d08ee",
+      "sha256_normalized": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:31Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0027",
+      "ref": "REF-007",
+      "url": "https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T22:05:33Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 129979,
+      "sha256_raw": "7982216babab0e22422814b5e6bdad82a4634e5bb08c343ce240fd4387157345",
+      "sha256_normalized": "d771e1032d19a103ccf13381c83172f7d02e02393f6d33dc2154061cfdc376c0",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "d771e1032d19a103ccf13381c83172f7d02e02393f6d33dc2154061cfdc376c0"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831212817/https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2",
+        "attempted": "2026-08-31T22:05:35Z"
+      }
+    },
+    {
+      "source_id": "SRC-0028",
+      "ref": "REF-008",
+      "url": "https://attack.mitre.org/groups/G0094/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:46Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 368578,
+      "sha256_raw": "2826c1077f707d3b92d5b742ddd91b1cef440583e684c67400bd911e6b6994e6",
+      "sha256_normalized": "907aff2dae646db3e6b98c954049c34942fb4bbe30e19c0788fd017408766c94",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "907aff2dae646db3e6b98c954049c34942fb4bbe30e19c0788fd017408766c94"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:48Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0029",
+      "ref": "REF-009",
+      "url": "https://www.nknews.org/2026/08/crypto-exchange-sues-north-korean-government-and-hackers-over-1-5b-heist/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:56Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 125293,
+      "sha256_raw": "81db9f7f610abbf7dd54e2e5455a91a5c335ea4864f37341d47d27d4dbfe61ec",
+      "sha256_normalized": "36199c3c4279459d73edcca465cfeff34febecac6482710775404de0e1505f05",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "36199c3c4279459d73edcca465cfeff34febecac6482710775404de0e1505f05"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:05:58Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0030",
+      "ref": "REF-010",
+      "url": "https://s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:05:59Z",
+      "http_status": 403,
+      "content_type": null,
+      "content_length": 5850,
+      "sha256_raw": "5a6c0ebb36148150780ea049f5f201a844e1173aafb2c10e88fa842a415af6fa",
+      "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:01Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      },
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
+    },
+    {
+      "source_id": "SRC-0031",
+      "ref": "REF-011",
+      "url": "https://securityaffairs.com/196417/apt/south-korea-warns-of-state-backed-watering-hole-attacks.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:04Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 111320,
+      "sha256_raw": "51307e8102b75dc72f7e54602e789cbb95dbae6890716c80b873b66bb124f516",
+      "sha256_normalized": "041f668a10b4809de34f8f8a9675240caf51b56a64fd7b8d6e33795eb46600c5",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "041f668a10b4809de34f8f8a9675240caf51b56a64fd7b8d6e33795eb46600c5"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:06Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0008",
+      "ref": "REF-012",
+      "url": "https://www.techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:07Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 342940,
+      "sha256_raw": "e221f0167af532ff08d12afdf4bf3059cc47236c9f95733c5fd49fc5aee99544",
+      "sha256_normalized": "e731ab3b9b40c2cc5dee2b77645f35819b4f89e6ab811bacd29dd89caddd72e1",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "e731ab3b9b40c2cc5dee2b77645f35819b4f89e6ab811bacd29dd89caddd72e1"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:09Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0032",
+      "ref": "REF-013",
+      "url": "https://therecord.media/south-korea-cyberattack-foreign-ministry",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:10Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 80079,
+      "sha256_raw": "730a7728e2b595e5946bc404d791e2b4347604201f8bdc87509f4b13847cd09b",
+      "sha256_normalized": "4dfc3c431386ddf8352a66a1fbb0f27331d32ff070953f109ef62f4a166a6ec1",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "4dfc3c431386ddf8352a66a1fbb0f27331d32ff070953f109ef62f4a166a6ec1"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:12Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0032",
+      "ref": "REF-014",
+      "url": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:20Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 79144,
+      "sha256_raw": "65f29bbd2142fa00de2072f46eba77ad48ab3b93fec6b7538a8b3c87c5563420",
+      "sha256_normalized": "dfdcf77d9671ec2aba2f6da5a8f315e488691b4e4ddf8004affcb46079aabac4",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "dfdcf77d9671ec2aba2f6da5a8f315e488691b4e4ddf8004affcb46079aabac4"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:22Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    },
+    {
+      "source_id": "SRC-0032",
+      "ref": "REF-015",
+      "url": "https://therecord.media/north-korea-hackers-ransomware",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T22:06:23Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 88833,
+      "sha256_raw": "c79d5983dacd51cec527782b221bdb9a89d9cd61f540a28366898c8440860f6c",
+      "sha256_normalized": "313bb9f3374c3baf24c9c43bc471dc31a2cdbdccf7070ba4efa692aa9058f1eb",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "313bb9f3374c3baf24c9c43bc471dc31a2cdbdccf7070ba4efa692aa9058f1eb"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T22:06:25Z",
+        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+      }
+    }
+  ],
+  "manifest_sha256": "304756ec0244ba450b75ea93aef2e40131ae6bac83b7f69d90ceb5ac6933ac7c",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

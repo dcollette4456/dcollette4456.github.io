@@ -4,7 +4,7 @@
 
 <div class="kicker">Coverage</div>
 <h1>Source Records</h1>
-<p class="standfirst">Computed from the claims index, never assigned. A source's record is measured across every claim ever built on it; grading never consults this page while a claim is being graded.</p>
+<p class="standfirst">Computed from the claims index, never assigned. A source's record is measured across every claim ever built on it; grading never consults this page while a claim is being graded. Live and backfill pools are counted and thresholded independently and are never summed. Classification spec &sect;12 and &sect;13.</p>
 
 {{ $registry := .Site.Data.sources.registry }}
 {{ if not $registry }}
@@ -12,22 +12,30 @@
 {{ else }}
 {{ range $registry }}
 <div style="border-top: 1px solid var(--rule); padding: 24px 0;">
-    <h3 style="margin-top: 0;">{{ .name }}</h3>
-    <p style="font-family: var(--mono); font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 14px;">{{ .type }} &middot; {{ .origin }} &middot; {{ .access }} &middot; first cited {{ .first_cited }} &middot; last cited {{ .last_cited }}</p>
+    <h3 style="margin-top: 0;">{{ .canonical_name }}</h3>
+    <p style="font-family: var(--mono); font-size: 11px; color: var(--faint); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 14px;">
+        {{ .source_id }} &middot; {{ .type }}{{ with .origin }} &middot; {{ . }}{{ end }} &middot; {{ .canonical_domain }}{{ with .access }} &middot; {{ . }}{{ end }}
+    </p>
 
     {{ with .live }}
     {{ if eq .record_status "established" }}
-    <p>Live pool: <strong>{{ .unique_claims }}</strong> unique claims, {{ .citations }} citations. Grade 5 rate {{ .grade_5_rate }}% ({{ index .distribution "5" }}/{{ .unique_claims }}).</p>
+    <p>Live pool: <strong>{{ .unique_claims }}</strong> unique claims, {{ .citations }} citations.</p>
     {{ else }}
     <p>Live pool: insufficient ({{ .unique_claims }} unique claims; fifteen required to publish a distribution).</p>
     {{ end }}
     {{ end }}
 
-    {{ with .hunt_value }}
-    <p>Hunt value: {{ .huntable }}/{{ .behavioral }} behavioral claims huntable ({{ .huntable_rate }}), split {{ .huntable_stated }} stated / {{ .huntable_derived }} derived. {{ .indicator_bearing }} indicator-bearing.</p>
+    {{ with .backfill }}
+    {{ if eq .record_status "established" }}
+    <p>Backfill pool: <strong>{{ .unique_claims }}</strong> unique claims, {{ .citations }} citations, from {{ delimit .from_issues ", " }}.</p>
+    {{ else }}
+    <p>Backfill pool: insufficient ({{ .unique_claims }} unique claims; fifteen required to publish a distribution).{{ with .from_issues }} Cited in {{ delimit . ", " }}.{{ end }}</p>
+    {{ end }}
     {{ end }}
 
-    <p style="font-size: 13px; color: var(--muted);">Disputed claims: {{ .disputed_claims }} &middot; unarchived: {{ .unarchived_claims }}</p>
+    {{ with .admission }}
+    <p style="font-size: 13px; color: var(--muted);">Admitted {{ dateFormat "2 January 2006" .admitted }}, type basis: {{ .type_basis }}. {{ .impersonation_check }}.{{ if not .reviewed }} Flagged <code>{{ .review_flag }}</code>, not yet reviewed.{{ end }}</p>
+    {{ end }}
 </div>
 {{ end }}
 {{ end }}

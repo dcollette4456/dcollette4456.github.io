@@ -1,0 +1,17 @@
+{
+  "vocabulary": "grade",
+  "version": 6,
+  "effective": "2026-08-31",
+  "description": "Classification spec §4. The digit means the same thing under every type prefix: it measures the claim's evidentiary posture, not the industry the publisher sits in. Version 6 names the scale's six-value form, introduced when grade 5 (classification spec pre-3.9) split into 5 (relay, primary unreachable) and 6 (unattributed assertion) at v3.9.",
+  "members": [
+    { "grade": 1, "name": "Direct, fully evidenced", "meaning": "The source saw it and showed its work. You can check the artifacts." },
+    { "grade": 2, "name": "Direct, partially evidenced", "meaning": "The source saw it but did not publish enough for you to check." },
+    { "grade": 3, "name": "Direct, aggregate", "meaning": "The source saw it in data only it holds. Nobody outside can reproduce the number." },
+    { "grade": 4, "name": "Relay, primary identified", "meaning": "The source is repeating a named finding it did not observe. You can go read the primary." },
+    { "grade": 5, "name": "Relay, primary unreachable", "meaning": "Someone is named as having found this and no document behind them can be opened. Also where the chain runs two or more removes deep." },
+    { "grade": 6, "name": "Unattributed assertion", "meaning": "Nothing stands behind this but the assertion. No observation described, no origin named, or the only party vouching for it is the party it benefits." }
+  ],
+  "added_in_version": {
+    "6": ["the 5/6 split itself: grade 5 (relay, primary unreachable) is new at this version, formed by splitting what pre-3.9 called grade 5 into today's 5 and 6"]
+  }
+}

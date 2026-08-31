@@ -1,0 +1,13 @@
+{
+  "vocabulary": "sector",
+  "version": 2,
+  "effective": "2026-08-31",
+  "description": "Flat, no subcategories. Classification spec §9. A sector is tagged only when a graded source claim names it, never inferred from actor history or plausibility.",
+  "members": [
+    "water", "energy", "critical-infrastructure", "defense", "government",
+    "finance", "healthcare", "technology", "supply-chain", "telecom",
+    "media", "education", "aviation", "petrochemical", "manufacturing",
+    "transportation", "legal", "retail", "research", "ngo"
+  ],
+  "added_in_version_note": "Classification spec §24 does not give sector's v1 membership or what changed at v2, and none of this project's own history records it either. Omitted rather than guessed; see telemetry_class-3.json for the shape this field takes where the diff is actually known."
+}

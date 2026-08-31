@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "entity_type": "vulnerability",
+  "description": "Classification spec §10 and §25. Populated as graded claims name them; never inferred.",
+  "entries": []
+}

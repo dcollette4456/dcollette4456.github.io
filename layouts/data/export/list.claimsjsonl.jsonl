@@ -1,0 +1,38 @@
+{{- $gradeVocab := index .Site.Data.vocab "grade-6" -}}
+{{- $registry := .Site.Data.sources.registry -}}
+{{- $serials := .Site.Data.serials.serials -}}
+{{- range $ledgerName, $claims := .Site.Data.ledger -}}
+{{- range $claims -}}
+{{- $claim := . -}}
+{{- $gradeInfo := "" -}}
+{{- range $gradeVocab.members -}}{{- if eq .grade $claim.grade -}}{{- $gradeInfo = printf "%s: %s" .name .meaning -}}{{- end -}}{{- end -}}
+{{- $sourceEntries := where $registry "source_id" $claim.source_id -}}
+{{- $source := "" -}}
+{{- if $sourceEntries -}}{{- $source = index $sourceEntries 0 -}}{{- end -}}
+{{- $issueEntries := where $serials "serial" $claim.issue -}}
+{{- $issuePath := "" -}}
+{{- if $issueEntries -}}{{- $issuePath = (index $issueEntries 0).path -}}{{- end -}}
+{{- $anchorId := replace $claim.claim_id (printf "%s-" $claim.issue) "" -}}
+{{- dict
+    "claim_id" $claim.claim_id
+    "issue" $claim.issue
+    "text" $claim.text
+    "grade" $claim.grade
+    "grade_meaning" $gradeInfo
+    "source_id" $claim.source_id
+    "source_name" (cond (ne $source "") $source.canonical_name nil)
+    "source_type" $claim.source_type
+    "evidentiary_status" $claim.evidentiary_status
+    "polarity" $claim.polarity
+    "volatility" $claim.volatility
+    "disputed" $claim.disputed
+    "contested" $claim.contested
+    "attribution_contested" $claim.attribution_contested
+    "entities" $claim.entities
+    "time" $claim.time
+    "assertion_license" $claim.assertion_license
+    "link" (cond (ne $issuePath "") (printf "%s#%s" (absURL $issuePath) $anchorId) nil)
+    "claim_permalink" (absURL (printf "claims/%s/" $claim.claim_id))
+  | jsonify (dict "indent" "") }}
+{{ end -}}
+{{- end -}}

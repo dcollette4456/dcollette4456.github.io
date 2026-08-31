@@ -34,10 +34,24 @@ title = "Knights Who Say Ni"
   twitter = "your-handle"
   github = "dcollette4456"
 
+[mediaTypes]
+  [mediaTypes."application/jsonl"]
+    suffixes = ["jsonl"]
+
 [outputFormats]
   [outputFormats.HTML]
     mediatype = "text/html"
     baseName = "index"
+  [outputFormats.sourcesjson]
+    mediaType = "application/json"
+    baseName = "sources"
+    isPlainText = true
+    notAlternative = true
+  [outputFormats.claimsjsonl]
+    mediaType = "application/jsonl"
+    baseName = "claims"
+    isPlainText = true
+    notAlternative = true
 
 [markup]
   [markup.tableOfContents]

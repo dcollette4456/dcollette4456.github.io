@@ -153,6 +153,17 @@ def main():
             if not result["ok"]:
                 entry["notes"] = f"fetch failed: {result['error']}"
                 entry["preservation"] = "none"
+                # Still attempt archive.org: it does its own independent
+                # fetch, so our local failure (timeout, DNS, reset) says
+                # nothing about whether archive.org can reach it. Per
+                # classification spec §14, "attempting is required,
+                # succeeding is not" -- and it applies with no fetch-status
+                # precondition attached.
+                if url not in archive_cache:
+                    time.sleep(ARCHIVE_DELAY_SECONDS)
+                    print(f"    submitting to archive.org (local fetch failed)", file=sys.stderr)
+                    archive_cache[url] = submit_archive(url)
+                entry["archive"] = archive_cache[url]
                 entries.append(entry)
                 continue
 
@@ -173,18 +184,19 @@ def main():
                 "version_identity": {"kind": "normalized_hash", "value": sha_norm},
             })
 
-            if result["http_status"] and 200 <= result["http_status"] < 300:
-                if url not in archive_cache:
-                    time.sleep(ARCHIVE_DELAY_SECONDS)
-                    print(f"    submitting to archive.org", file=sys.stderr)
-                    archive_cache[url] = submit_archive(url)
-                entry["archive"] = archive_cache[url]
-                if archive_cache[url]["status"] != "captured":
-                    entry["preservation"] = "none"
-            else:
-                entry["archive"] = {"status": "not_attempted", "attempted": now_iso()}
-                entry["notes"] = f"http_status {result['http_status']}; archive submission skipped for a non-2xx fetch"
+            # Always attempt archive submission -- a non-2xx local fetch
+            # (403, 404, a WAF block) does not mean archive.org's own
+            # crawler will see the same thing, and the spec draws no
+            # fetch-status precondition around "attempt preservation."
+            if url not in archive_cache:
+                time.sleep(ARCHIVE_DELAY_SECONDS)
+                print(f"    submitting to archive.org", file=sys.stderr)
+                archive_cache[url] = submit_archive(url)
+            entry["archive"] = archive_cache[url]
+            if archive_cache[url]["status"] != "captured":
                 entry["preservation"] = "none"
+            if not (result["http_status"] and 200 <= result["http_status"] < 300):
+                entry["notes"] = f"http_status {result['http_status']}; local fetch was not 2xx, archive.org was still tried"
 
             entries.append(entry)
 

@@ -267,6 +267,48 @@ def check_data_claim_attributes_resolve(known_claim_ids):
                      "CLAUDECODEBRIEF §8 item 3 / classification spec §15")
 
 
+def validate_manifests(registry_source_ids):
+    schema = load_json(DATA / "schema" / "manifest-1.json")
+    evidence_dir = DATA / "evidence"
+    if not evidence_dir.is_dir():
+        return
+
+    for manifest_path in sorted(evidence_dir.glob("*.manifest.json")):
+        rel = str(manifest_path.relative_to(ROOT))
+        manifest = load_json(manifest_path)
+
+        try:
+            validate(manifest, schema)
+        except SchemaError as e:
+            fail(rel, e.path, e.message, "CLAUDECODEBRIEF §7.2 / schema/manifest-1.json")
+            continue
+
+        check_empty_strings(manifest, rel)
+
+        recomputed = manifest_recompute_hash(manifest["entries"])
+        if recomputed != manifest["manifest_sha256"]:
+            fail(rel, "$.manifest_sha256", "does not match a recomputed hash of $.entries",
+                 "CLAUDECODEBRIEF §7.2")
+
+        for i, entry in enumerate(manifest["entries"]):
+            path = f"$.entries[{i}]"
+            sid = entry.get("source_id")
+            if registry_source_ids is not None and sid not in registry_source_ids:
+                fail(rel, f"{path}.source_id", f"{sid!r} has no registry entry",
+                     "CLAUDECODEBRIEF §8 item 7 / classification spec §21")
+
+            archive = entry.get("archive")
+            if archive and archive.get("status") == "not_attempted":
+                fail(rel, f"{path}.archive.status", "archive status is 'not_attempted'; the pipeline must always try",
+                     "CLAUDECODEBRIEF §8 item 9 / classification spec §14")
+
+
+def manifest_recompute_hash(entries):
+    import hashlib
+    canonical = json.dumps(entries, sort_keys=True, ensure_ascii=True)
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
 def main():
     ledger_by_serial = validate_serials_ledger()
     check_published_issues_have_serials(ledger_by_serial)
@@ -278,6 +320,8 @@ def main():
     registry_source_ids = {e["source_id"] for e in registry} if isinstance(registry, list) else None
     known_claim_ids = validate_ledgers(registry_source_ids)
     check_data_claim_attributes_resolve(known_claim_ids)
+
+    validate_manifests(registry_source_ids)
 
     if errors:
         print(f"data validation FAILED with {len(errors)} error(s):\n", file=sys.stderr)

@@ -1,0 +1,19 @@
+{
+  "vocabulary": "source_type",
+  "version": 1,
+  "effective": "2026-08-31",
+  "description": "Type prefixes, classification spec §3. Assigned once per source in the registry, looked up thereafter. Structured records take TEC regardless of publisher.",
+  "members": [
+    { "prefix": "GOV", "covers": "Government agency, advisory, statement, court filing, indictment" },
+    { "prefix": "VND", "covers": "Commercial security vendor research, IR reporting, blog" },
+    { "prefix": "MED", "covers": "News and trade press" },
+    { "prefix": "ACA", "covers": "Academic research, whether or not peer-reviewed" },
+    { "prefix": "TEC", "covers": "Structured record: CVE entry, KEV catalog, RFC, repository, patch note, certificate log" },
+    { "prefix": "IND", "covers": "Independent researcher, personal blog, conference talk" },
+    { "prefix": "NPO", "covers": "Non-profit and community: Shadowserver, Spamhaus, Team Cymru, ISACs, non-governmental CERTs" },
+    { "prefix": "AGG", "covers": "Automated aggregator or machine-generated summary: threat feeds that restate other reporting, AI-written digests, auto-summarized newsletters" },
+    { "prefix": "SOC", "covers": "Social and messaging platform post from a non-adversary account: researcher threads, channel posts, forum discussion" },
+    { "prefix": "ADV", "covers": "Adversary-controlled: leak site, ransom note, actor claim, forum ad" },
+    { "prefix": "ANL", "covers": "The author. This product's own judgment, not a source" }
+  ]
+}

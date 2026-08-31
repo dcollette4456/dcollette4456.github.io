@@ -1,0 +1,19 @@
+{
+  "vocabulary": "telemetry_class",
+  "version": 3,
+  "effective": "2026-08-31",
+  "description": "Vendor-neutral collection-point vocabulary. Classification spec §9. A huntable claim's telemetry classes are drawn from this closed list, either stated by the source or derived by the pipeline from described behavior; a claim never gets a free-text collection point.",
+  "members": [
+    "process-execution", "process-injection", "image-load", "driver-load",
+    "file-write", "registry", "scheduled-task", "service-creation",
+    "authentication", "directory-service", "network-flow", "dns",
+    "proxy-http", "tls-metadata", "email-gateway", "web-server-access",
+    "database-audit", "cloud-audit", "saas-audit", "identity-provider",
+    "container-runtime", "ci-cd-pipeline", "vpn-appliance",
+    "network-device-config", "ot-ics-protocol", "plc-config-audit",
+    "edr-generic"
+  ],
+  "added_in_version": {
+    "3": ["container-runtime", "ci-cd-pipeline"]
+  }
+}

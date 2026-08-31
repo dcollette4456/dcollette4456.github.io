@@ -1,0 +1,8 @@
+{
+  "vocabulary": "stage",
+  "version": 1,
+  "effective": "2026-08-31",
+  "description": "Hunt Priority block stage vocabulary, borrowed from the ODNI Common Cyber Threat Framework per classification spec §16 and article spec §6. Classification spec §24 names this as one of four lists that should live in a versioned data file, but unlike sector and telemetry_class it never actually enumerates the framework's stages in prose anywhere in either governing document -- only 'Preparation', 'Engagement', 'Presence', and 'Effect' appear, each cited by example (e.g. 'Presence-stage', 'Effect-stage' in worked hunt blocks) rather than declared as a closed list.",
+  "caveat": "This file's membership is compiled from every stage label actually used in this product's published Hunt Priority blocks (Engagement, Presence, Effect, and the compound 'Engagement–Presence') plus 'Preparation', which the ODNI framework itself is publicly known to include but which no published issue here has used yet. This is the transcribed-from-observed-usage list, not a verified transcription of ODNI's own published framework text, which this project does not hold a copy of. Treat as provisional until someone checks it against the source document.",
+  "members": ["preparation", "engagement", "presence", "effect"]
+}

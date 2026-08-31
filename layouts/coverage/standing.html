@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<main class="doc" style="max-width: none;">
+
+<div class="kicker">Coverage</div>
+<h1>Standing Source List</h1>
+<p class="standfirst">The fixed, versioned list a live issue's sweep is drawn from. Classification spec &sect;22. Additions take effect at the start of the next window, never mid-window; removals take effect immediately and are disclosed in the issue where they happened.</p>
+
+{{ $standing := .Site.Data.sources.standing.standing }}
+{{ if not $standing }}
+<p style="font-size: 16px; line-height: 1.7; color: var(--muted); margin: 30px 0;">No standing source list has been established yet. Every source cited across the archive to date, in every published issue, was <strong>supplied</strong> by an author writing that issue rather than pulled from a swept standing list &mdash; the third value in classification spec &sect;22's discovery vocabulary (<code>standing</code>, <code>followed</code>, <code>supplied</code>). This page renders directly from <code>/data/sources/standing.json</code>, which is empty; nothing is fabricated to fill it. A standing list begins existing the first time an issue's pool is deliberately swept against one rather than assembled by hand.</p>
+{{ else }}
+<table style="width: 100%; font-size: 14px; margin: 16px 0; border-collapse: collapse;">
+<tr style="border-bottom: 1px solid var(--rule); text-align: left;"><th style="padding: 8px 12px 8px 0;">Source</th><th style="padding: 8px 12px;">Added</th><th style="padding: 8px 0;">Removed</th></tr>
+{{ range $standing }}
+<tr style="border-bottom: 1px solid var(--rule);">
+    <td style="padding: 8px 12px 8px 0;">{{ .canonical_name }}</td>
+    <td style="padding: 8px 12px; font-family: var(--mono); font-size: 12px;">{{ .added }}</td>
+    <td style="padding: 8px 0; font-family: var(--mono); font-size: 12px;">{{ if .removed }}{{ .removed }} &mdash; {{ .removed_reason }}{{ else }}&mdash;{{ end }}</td>
+</tr>
+{{ end }}
+</table>
+{{ end }}
+
+</main>
+</div>
+{{ end }}

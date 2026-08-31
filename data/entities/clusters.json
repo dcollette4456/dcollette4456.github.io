@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "entity_type": "cluster",
+  "description": "Classification spec §10 and §25. Named actor clusters, with assigning sources, dates, and stated equivalences. Populated as claims name them; never inferred.",
+  "entries": []
+}

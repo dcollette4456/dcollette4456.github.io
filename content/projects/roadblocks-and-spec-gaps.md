@@ -63,6 +63,10 @@ Every worked example in classification spec §2 and §13 involves vendor IR repo
 
 **Suggested addition:** a short note in §9 or §13 stating explicitly what a hand-authored, pipeline-less issue should do with both fields, most simply, omit `issueNumber` explicitly per the existing absent-not-fabricated rule, and treat serial uniqueness as provisional, flagged for a human check at commit time, until the pipeline and its ledger exist.
 
+## Addendum, 31 August 2026
+
+While checking this write-up for a reported serial mismatch during the ledger/registry build, found that every reference to `TI-20260822-001` here is correct and internally consistent. The actual discrepancy is in the published issue's own front matter, not in this write-up: `russia-onboarding-trap.md`'s `date:` field reads 2026-08-21, one day earlier than the 22nd its own serial and `window_end` encode. `compile-to-compromise-rust-crate-kernel-driver.md` (`TI-20260822-002`) carries the identical one-day mismatch. Left uncorrected on purpose rather than edited after the fact; see the [ledger and evidence build report](/projects/ledger-and-evidence-build-report/) for the fuller reasoning.
+
 ## Not a gap, worth noting anyway
 
 The disclosure doctrine and the gates themselves worked exactly as designed on genuinely awkward material: a partially-hedged initial-access assessment (ReliaQuest's low-to-medium-confidence, explicitly unconfirmed claim about how the gateways were first compromised) graded cleanly to `VND-2` without any temptation to either suppress it or round it up to something more confident than the source stated. That's the system doing its job. The gaps above are all about what happens at the edges the two documents' own worked examples don't reach yet, not about the core mechanism, which held up well under real sourcing.

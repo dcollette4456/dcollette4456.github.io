@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260830-002",
+  "generated": "2026-08-31T10:16:41Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0007",
+      "ref": "REF-001",
+      "url": "https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:15:59Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 497112,
+      "sha256_raw": "610623bd90b7c4d847a31e3b487b4678706d3c034c5b3c884cf8c7efb40a82f1",
+      "sha256_normalized": "20ec23cf7f26cd8931c0a81f5440b15e55b588011d81f81a348509e8d5b95430",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "20ec23cf7f26cd8931c0a81f5440b15e55b588011d81f81a348509e8d5b95430"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:16:01Z",
+        "note": "HTTP 520"
+      }
+    },
+    {
+      "source_id": "SRC-0010",
+      "ref": "REF-002",
+      "url": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:16:09Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 91978,
+      "sha256_raw": "4576866718355c0cb56c5419d1dadd8681656e042225d0ebdc6c2e243c69d011",
+      "sha256_normalized": "e679000728a4f39b8c0876f3d5188fb39ba0185820ac852f96e2fd3519915792",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "e679000728a4f39b8c0876f3d5188fb39ba0185820ac852f96e2fd3519915792"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:16:11Z",
+        "note": "HTTP 520"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-003",
+      "url": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:16:25Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 175523,
+      "sha256_raw": "f3597a1aa265bbe2f05cd7a08d542cb800b00cd0011e8515304fffd3e603893e",
+      "sha256_normalized": "0c5a5c4eed935acf0e48687b0c316c872bec187e376f3f5cc734b2d888f0a29b",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "0c5a5c4eed935acf0e48687b0c316c872bec187e376f3f5cc734b2d888f0a29b"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:16:27Z",
+        "note": "HTTP 520"
+      }
+    },
+    {
+      "source_id": "SRC-0020",
+      "ref": "REF-004",
+      "url": "https://securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:16:41Z",
+      "http_status": 403,
+      "content_type": null,
+      "content_length": 5980,
+      "sha256_raw": "30fb9fbd179c6e68fb36532e34dde4a3e010f5ac7e61992c63d36d6dc172755e",
+      "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c"
+      },
+      "archive": {
+        "status": "not_attempted",
+        "attempted": "2026-08-31T10:16:41Z"
+      },
+      "notes": "http_status 403; archive submission skipped for a non-2xx fetch"
+    }
+  ],
+  "manifest_sha256": "264c3e0fc7116ad10f9078c41ac0775608b46b38672fcff0b1817baff067f1ba",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

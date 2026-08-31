@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260830-001",
+  "generated": "2026-08-31T10:42:08Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0010",
+      "ref": "REF-001",
+      "url": "https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:38:23Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 89970,
+      "sha256_raw": "3bbf5ba17b70a068e70ab263068b5bbb7973882cd90815dfc46098a854bb50f3",
+      "sha256_normalized": "a729a8b77dc94b1228a8c8f19d727a5914fa1ae2f2664adc07251db8fd16487f",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "a729a8b77dc94b1228a8c8f19d727a5914fa1ae2f2664adc07251db8fd16487f"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831103829/https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/",
+        "attempted": "2026-08-31T10:38:25Z"
+      }
+    },
+    {
+      "source_id": "SRC-0010",
+      "ref": "REF-002",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:38:53Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 90646,
+      "sha256_raw": "59370bd3808cf82483f90930dea1748495e90571f017f425bf4580571a57e6ce",
+      "sha256_normalized": "cb11c1650e918bd810d690945b3ea333305004e15a7bab8f8d98aedf8fc8de83",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "cb11c1650e918bd810d690945b3ea333305004e15a7bab8f8d98aedf8fc8de83"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831103859/https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
+        "attempted": "2026-08-31T10:38:55Z"
+      }
+    },
+    {
+      "source_id": "SRC-0010",
+      "ref": "REF-003",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:39:23Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 93039,
+      "sha256_raw": "a9807da30e51cdcbba9c18251cebc980185f154394bc4e4d93963c51a14f1e0c",
+      "sha256_normalized": "479267384a95dea9e6662b7703e98bd1b0d46474e5c16919400445d5d59a1d78",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "479267384a95dea9e6662b7703e98bd1b0d46474e5c16919400445d5d59a1d78"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:39:25Z",
+        "note": "HTTP 520"
+      }
+    },
+    {
+      "source_id": "SRC-0060",
+      "ref": "REF-004",
+      "url": "https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:39:42Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 314011,
+      "sha256_raw": "d32f920cf5e7965140029074527c09019c4a4375da20631791697d92f6d5c7f4",
+      "sha256_normalized": "e1048fd7ac0b0d8ce6bb3034dad108623624d200ab2003a97286742756a93d76",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "e1048fd7ac0b0d8ce6bb3034dad108623624d200ab2003a97286742756a93d76"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:39:44Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0062",
+      "ref": "REF-005",
+      "url": "https://www.rapid7.com/blog/post/tr-muddying-tracks-state-sponsored-shadow-behind-chaos-ransomware/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:40:11Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 702207,
+      "sha256_raw": "bab0ae15f2e6ee6b2e30866dda741727b030a0542ce3dee8b11a6f0fab400cad",
+      "sha256_normalized": "b29bc26401c928505284f2ff7aaa03cc3bdbdd4ecd6b8b5e6af6027dd7c45884",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "b29bc26401c928505284f2ff7aaa03cc3bdbdd4ecd6b8b5e6af6027dd7c45884"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:40:13Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0018",
+      "ref": "REF-006",
+      "url": "https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-08-31T10:40:43Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 160577,
+      "sha256_raw": "e10b524228c6a7df144d671a5aec8c757eefaef480e075eb51a875df97cf227e",
+      "sha256_normalized": "ee570eca675c64c945974eec326814fb6d3d124bb57a86b971cdb5ad4a10c594",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "ee570eca675c64c945974eec326814fb6d3d124bb57a86b971cdb5ad4a10c594"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-08-31T10:40:45Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0063",
+      "ref": "REF-007",
+      "url": "https://www.sophos.com/en-us/blog/chaos-in-teams-vishing",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:41:14Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 705410,
+      "sha256_raw": "c93e09161770d45e800c677333eabe2e4bb81c8d38b2f17178d3d3d7636b5606",
+      "sha256_normalized": "4daa058f288aed4284e65193afa945b3080d5d725118d185c84b80552ad2ffef",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "4daa058f288aed4284e65193afa945b3080d5d725118d185c84b80552ad2ffef"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831104119/https://www.sophos.com/en-us/blog/chaos-in-teams-vishing",
+        "attempted": "2026-08-31T10:41:16Z"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-008",
+      "url": "https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:41:38Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 179587,
+      "sha256_raw": "40b685a923fc7c2952b23c523cbdd8900a194235de4459cb75e66d9ecb1f82ec",
+      "sha256_normalized": "19bafd648691337ab21d02391ddc38883833a9be51fe28a399002e3c4a6c5b56",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "19bafd648691337ab21d02391ddc38883833a9be51fe28a399002e3c4a6c5b56"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831104143/https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html",
+        "attempted": "2026-08-31T10:41:40Z"
+      }
+    }
+  ],
+  "manifest_sha256": "c7fdc840f26d9032b1741e602197e53483a3c7fd7889a7842a099f77d7ed8042",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260822-001",
+  "generated": "2026-08-31T10:38:22Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-001",
+      "url": "https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:36:43Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 172267,
+      "sha256_raw": "953967185b1da2acd40c9a687e8305b6bb6b9f39b9d9dba2103453d6460e55f6",
+      "sha256_normalized": "055dca783df4ef2844492f98dd3de908af520c0689b3667432adb0844a3e56c3",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "055dca783df4ef2844492f98dd3de908af520c0689b3667432adb0844a3e56c3"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831103648/https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html",
+        "attempted": "2026-08-31T10:36:45Z"
+      }
+    },
+    {
+      "source_id": "SRC-0032",
+      "ref": "REF-002",
+      "url": "https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:37:09Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 82983,
+      "sha256_raw": "a0f9c93e26f0d689db5f20d4f754cfbd18998a7d28226eecf3ca5e3a43521256",
+      "sha256_normalized": "5ecc3650c2f1b8dabb511ff039504f3f83cb7f7b73855fb2bf74c8e63333aa96",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "5ecc3650c2f1b8dabb511ff039504f3f83cb7f7b73855fb2bf74c8e63333aa96"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831103714/https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers",
+        "attempted": "2026-08-31T10:37:11Z"
+      }
+    },
+    {
+      "source_id": "SRC-0060",
+      "ref": "REF-003",
+      "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:37:34Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 349455,
+      "sha256_raw": "4cd0e5c102a080ce1885557a0a7245eea6b23858be753da20b0af9f18a6dff4f",
+      "sha256_normalized": "f571563f145383cbed44bcd2ccaab129f032fd92348103a951c504b8eac9fa5b",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "f571563f145383cbed44bcd2ccaab129f032fd92348103a951c504b8eac9fa5b"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831103740/https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
+        "attempted": "2026-08-31T10:37:36Z"
+      }
+    },
+    {
+      "source_id": "SRC-0061",
+      "ref": "REF-004",
+      "url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/",
+      "format_family": "html",
+      "preservation": "archive_only",
+      "fetched": "2026-08-31T10:37:58Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 83514,
+      "sha256_raw": "07998349f905fb4917e103fb9039575f4d4fa41390c56c85adf6ee01e0c574d2",
+      "sha256_normalized": "883f2f62d70e0aa78a4e1937f1edf2a368a61144f6859903456c4ade082f8823",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "883f2f62d70e0aa78a4e1937f1edf2a368a61144f6859903456c4ade082f8823"
+      },
+      "archive": {
+        "status": "captured",
+        "provider": "web.archive.org",
+        "url": "https://web.archive.org/web/20260831103803/https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/",
+        "attempted": "2026-08-31T10:38:00Z"
+      }
+    }
+  ],
+  "manifest_sha256": "cfaf9e67420b379132779905fbf5d8227b3515829f91782a2da72612264fd68b",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

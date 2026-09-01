@@ -1,20 +1,48 @@
 {{ define "main" }}
-<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 820px;">
 <main class="doc" style="max-width: none;">
 
 <div class="kicker">Coverage</div>
 <h1>Coverage</h1>
 <p class="standfirst">The measured record behind this product: where a source's claims graded, how it names actors, and what the reader-facing tags mean, by classification version.</p>
 
-<ul style="padding-left: 20px; margin: 30px 0; font-size: 16px; line-height: 2;">
-    <li><a href="/coverage/sources/">Source records</a> &middot; grade distribution, hunt value rates, and naming metrics for every source ever cited</li>
-    <li><a href="/coverage/standing/">Standing source list</a> &middot; the fixed sweep list a live issue's pool is drawn from, with add and remove dates</li>
-    <li><a href="/coverage/vocab/">Vocabularies</a> &middot; the controlled lists tags and telemetry mappings are drawn from, versioned independently of this document</li>
-    <li><a href="/coverage/legend/">Tag legend</a> &middot; the canonical, versioned legend explaining what a tag means, for every classification version this site has published under</li>
-    <li><a href="/coverage/corrections/">Corrections</a> &middot; the standing record of what was published, what was wrong, and what changed</li>
-    <li><a href="/claims/">Claim resolver</a> &middot; look up one graded claim by its permalink identifier</li>
-    <li><a href="/entities/">Entities</a> &middot; clusters, malware families, tools, campaigns, and vulnerabilities this product has named</li>
-</ul>
+<div style="border: 1px solid var(--rule); margin-top: 10px;">
+    <a href="/coverage/sources/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Source records</span>
+        <h3 class="card-title">Sources</h3>
+        <p class="card-text">Grade distribution, hunt value rates, and naming metrics for every source ever cited.</p>
+    </a>
+    <a href="/coverage/standing/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Standing list</span>
+        <h3 class="card-title">Standing Source List</h3>
+        <p class="card-text">The fixed sweep list a live issue's pool is drawn from, with add and remove dates.</p>
+    </a>
+    <a href="/coverage/vocab/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Vocabularies</span>
+        <h3 class="card-title">Vocabularies</h3>
+        <p class="card-text">The controlled lists tags and telemetry mappings are drawn from, versioned independently of this document.</p>
+    </a>
+    <a href="/coverage/legend/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Tag legend</span>
+        <h3 class="card-title">Tag Legend</h3>
+        <p class="card-text">The canonical, versioned legend explaining what a tag means, for every classification version this site has published under.</p>
+    </a>
+    <a href="/coverage/corrections/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Corrections</span>
+        <h3 class="card-title">Corrections</h3>
+        <p class="card-text">The standing record of what was published, what was wrong, and what changed.</p>
+    </a>
+    <a href="/claims/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Findability</span>
+        <h3 class="card-title">Claim Resolver</h3>
+        <p class="card-text">Look up one graded claim by its permalink identifier.</p>
+    </a>
+    <a href="/entities/" class="card" style="text-decoration: none;">
+        <span class="card-tag">Findability</span>
+        <h3 class="card-title">Entities</h3>
+        <p class="card-text">Clusters, malware families, tools, campaigns, and vulnerabilities this product has named.</p>
+    </a>
+</div>
 
 </main>
 </div>

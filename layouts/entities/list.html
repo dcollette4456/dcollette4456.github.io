@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 820px;">
 <main class="doc" style="max-width: none;">
 
 <div class="kicker">Findability</div>
@@ -14,19 +14,17 @@
 {{ end }}
 
 {{ if not $any }}
-<p style="font-size: 16px; line-height: 1.7; color: var(--muted); margin: 30px 0;">No entity has been recorded yet. An entity is created only when a graded claim names it &mdash; classification spec &sect;10 forbids inferring one from plausibility or actor history the way it forbids inferring a sector. This page renders directly from <code>/data/entities/</code>, where all five files (clusters, families, tools, campaigns, vulnerabilities) exist and are empty. The dossier strip under an actor heading is what will start linking here, the first time an issue is authored against a real ledger.</p>
+<p class="cov-empty">No entity has been recorded yet. An entity is created only when a graded claim names it &mdash; classification spec &sect;10 forbids inferring one from plausibility or actor history the way it forbids inferring a sector. This page renders directly from <code>/data/entities/</code>, where all five files (clusters, families, tools, campaigns, vulnerabilities) exist and are empty. The dossier strip under an actor heading is what will start linking here, the first time an issue is authored against a real ledger.</p>
 {{ else }}
 {{ range $types }}
 {{ $data := index $.Site.Data.entities . }}
 {{ with $data.entries }}
-<div style="border-top: 1px solid var(--rule); padding: 24px 0;">
-    <h3 style="margin-top: 0; text-transform: capitalize;">{{ $data.entity_type }}s</h3>
-    <ul style="padding-left: 20px; line-height: 2;">
-    {{ range . }}
-        <li><a href="/entities/{{ $data.entity_type }}/{{ .id }}/">{{ .canonical_name }}</a></li>
-    {{ end }}
-    </ul>
-</div>
+<section class="cov-section">
+    <div class="cov-section-head"><span class="name" style="text-transform: capitalize;">{{ $data.entity_type }}s</span><span class="count">{{ len . }}</span></div>
+    <table class="cov-table">
+        {{ range . }}<tr><td><a href="/entities/{{ $data.entity_type }}/{{ .id }}/">{{ .canonical_name }}</a></td></tr>{{ end }}
+    </table>
+</section>
 {{ end }}
 {{ end }}
 {{ end }}

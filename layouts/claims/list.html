@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 820px;">
 <main class="doc" style="max-width: none;">
 
 <div class="kicker">Findability</div>
@@ -8,18 +8,18 @@
 
 {{ $claims := .Site.Data.claims.index }}
 {{ if not $claims }}
-<p style="font-size: 16px; line-height: 1.7; color: var(--muted); margin: 30px 0;">No claim is addressable yet. Every issue published so far was authored directly against these specifications, without the automated grading pipeline, and per classification spec &sect;6 an issue with no ledger behind it carries no <code>data-claim</code> attribute &mdash; the attribute is omitted rather than invented. This page renders directly from <code>/data/claims/index.json</code>, which is empty; nothing is fabricated to fill it. The first resolvable claim arrives with the first issue authored against v4.1, which is what steps 6 and 7 of the ledger build exist to make possible.</p>
-<p style="font-size: 14px; color: var(--faint);">The URL scheme is stable now even though nothing resolves yet: a claim identifier such as <code>TI-20260822-001-C014</code> will resolve at <code>/claims/TI-20260822-001-C014/</code>.</p>
+<p class="cov-empty">No claim is addressable yet. Every issue published so far was authored directly against these specifications, without the automated grading pipeline, and per classification spec &sect;6 an issue with no ledger behind it carries no <code>data-claim</code> attribute &mdash; the attribute is omitted rather than invented. This page renders directly from <code>/data/claims/index.json</code>, which is empty; nothing is fabricated to fill it. The first resolvable claim arrives with the first issue authored against v4.1, which is what steps 6 and 7 of the ledger build exist to make possible.</p>
+<p style="font-size: 13px; color: var(--faint);">The URL scheme is stable now even though nothing resolves yet: a claim identifier such as <code>TI-20260822-001-C014</code> will resolve at <code>/claims/TI-20260822-001-C014/</code>.</p>
 {{ else }}
-<table style="width: 100%; font-size: 14px; margin: 16px 0; border-collapse: collapse;">
-<tr style="border-bottom: 1px solid var(--rule); text-align: left;"><th style="padding: 8px 12px 8px 0;">Claim</th><th style="padding: 8px 12px;">First issue</th><th style="padding: 8px 0;">Citations</th></tr>
-{{ range $id, $entry := $claims }}
-<tr style="border-bottom: 1px solid var(--rule);">
-    <td style="padding: 8px 12px 8px 0; font-family: var(--mono);"><a href="/claims/{{ $id }}/">{{ $id }}</a></td>
-    <td style="padding: 8px 12px;">{{ $entry.first_issue }}</td>
-    <td style="padding: 8px 0;">{{ len $entry.citations }}</td>
-</tr>
-{{ end }}
+<table class="cov-table">
+    <tr><th>Claim</th><th>First issue</th><th class="num">Citations</th></tr>
+    {{ range $id, $entry := $claims }}
+    <tr>
+        <td class="mono"><a href="/claims/{{ $id }}/">{{ $id }}</a></td>
+        <td>{{ $entry.first_issue }}</td>
+        <td class="num">{{ len $entry.citations }}</td>
+    </tr>
+    {{ end }}
 </table>
 {{ end }}
 

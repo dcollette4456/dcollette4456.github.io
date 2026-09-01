@@ -1,18 +1,18 @@
 {{ define "main" }}
-<div class="wrap" style="grid-template-columns: 1fr; max-width: 700px;">
+<div class="wrap" style="grid-template-columns: 1fr; max-width: 820px;">
 <main class="doc" style="max-width: none;">
 
 <div class="kicker">Findability</div>
 <h1>Data Export</h1>
 <p class="standfirst">Classification spec &sect;25. Three static routes, generated at build. This is the product's actual argument: everything else in this system is a procedure for producing a dataset whose defining property is that somebody else can check it.</p>
 
-<ul style="padding-left: 20px; margin: 30px 0; font-size: 16px; line-height: 2;">
-    <li><a href="/data/export/sources.json">/data/export/sources.json</a> &middot; the source registry as rendered on the coverage pages, {{ len .Site.Data.sources.registry }} entries</li>
-    <li><a href="/data/export/claims.jsonl">/data/export/claims.jsonl</a> &middot; one flattened, self-contained record per claim, JSON Lines. Currently empty: no claim ledger exists yet</li>
-    <li><code>/data/claims/index.json</code> &middot; fingerprints, first issue, grade, and citation list &mdash; the join between per-issue ledgers and source records</li>
-</ul>
+<table class="cov-table">
+    <tr><td><a href="/data/export/sources.json">/data/export/sources.json</a></td><td style="color: var(--muted);">The source registry as rendered on the coverage pages</td><td class="num mono">{{ len .Site.Data.sources.registry }} entries</td></tr>
+    <tr><td><a href="/data/export/claims.jsonl">/data/export/claims.jsonl</a></td><td style="color: var(--muted);">One flattened, self-contained record per claim, JSON Lines</td><td class="num mono">empty &mdash; no ledger yet</td></tr>
+    <tr><td><code>/data/claims/index.json</code></td><td style="color: var(--muted);">Fingerprints, first issue, grade, and citation list</td><td class="num mono">empty &mdash; no ledger yet</td></tr>
+</table>
 
-<p style="font-size: 14px; color: var(--muted);">Indicators are not published, per classification spec &sect;9, and the export does not change that. Every claim record carries text, grade with its meaning in words, source name and type, evidentiary status, every mark, entities, the time block, the assertion license, and a resolvable link back to where it was published &mdash; never an indicator list.</p>
+<p class="cov-note">Indicators are not published, per classification spec &sect;9, and the export does not change that. Every claim record carries text, grade with its meaning in words, source name and type, evidentiary status, every mark, entities, the time block, the assertion license, and a resolvable link back to where it was published &mdash; never an indicator list.</p>
 
 </main>
 </div>

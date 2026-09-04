@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dcollette4456.github.io/schema/citations-1.json",
+  "title": "Issue citation list, schema version 1",
+  "description": "One file per issue, data/citations/{serial}.json, listing every source that issue cites -- the input the source registry (data/sources/registry.json) and the evidence manifests (data/evidence/) are built from. Order matters: it is the order REF numbers are assigned in the evidence manifest, so append new citations rather than reordering. Replaces the single hand-appended CITATIONS list scripts/build_registry_backfill.py used to carry, so adding an issue is 'add one small file' instead of 'edit a growing script'.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["url", "canonical_name", "type"],
+    "properties": {
+      "url": { "type": "string", "pattern": "^https?://" },
+      "canonical_name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Reuse the exact string already in the registry for this domain where one exists, so this citation folds into the same registry entry instead of minting a duplicate."
+      },
+      "type": {
+        "type": "string",
+        "description": "Classification spec §3.",
+        "enum": ["GOV", "VND", "MED", "ACA", "TEC", "IND", "NPO", "AGG", "SOC", "ADV", "ANL"]
+      },
+      "origin": {
+        "type": "string",
+        "description": "Two-letter country code. Absent where not established with confidence; never guessed.",
+        "pattern": "^[A-Z]{2}$"
+      }
+    }
+  }
+}

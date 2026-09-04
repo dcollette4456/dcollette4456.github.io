@@ -30,6 +30,8 @@ from urllib.parse import urlparse
 sys.path.insert(0, str(Path(__file__).parent))
 from jsonschema_mini import validate, SchemaError
 from frontmatter_mini import read_front_matter_scalars
+from citations import load_all_citations
+from build_registry import compute_registry
 
 ROOT = Path(__file__).parent.parent
 DATA = ROOT / "data"
@@ -120,6 +122,69 @@ def check_published_issues_have_serials(ledger_by_serial):
         if serial not in ledger_by_serial:
             fail(rel, "front matter.serial", f"serial {serial!r} is not present in data/serials.json",
                  "CLAUDECODEBRIEF §4 item 2")
+
+
+def validate_citations():
+    schema_path = DATA / "schema" / "citations-1.json"
+    citations_dir = DATA / "citations"
+    if not citations_dir.exists():
+        return
+    schema = load_json(schema_path)
+
+    for path in sorted(citations_dir.glob("*.json")):
+        rel = str(path.relative_to(ROOT))
+        serial = path.stem
+        if not re.match(r"^(TI|IW)-(RETRO-[0-9]{3}|[0-9]{8}-[0-9]{3})$", serial):
+            fail(rel, "$", f"filename {serial!r} is not a valid issue serial", "data/schema/citations-1.json")
+            continue
+
+        entries = load_json(path)
+        try:
+            validate(entries, schema)
+        except SchemaError as e:
+            fail(rel, e.path, e.message, "data/schema/citations-1.json")
+            continue
+
+        check_empty_strings(entries, rel)
+
+        seen_urls = {}
+        for i, c in enumerate(entries):
+            url = c["url"]
+            if url in seen_urls:
+                fail(rel, f"$[{i}].url", f"duplicate URL within one citations file (also at index {seen_urls[url]})",
+                     "scripts/capture_evidence.py assigns one REF number per citation position")
+            seen_urls[url] = i
+
+
+def check_registry_matches_citations(existing_registry):
+    """Catches the drift this whole file-split exists to prevent: a
+    citations file edited (or added) without re-running
+    scripts/build_registry.py and committing the result. Recomputes the
+    registry from the same inputs build_registry.py would use and
+    compares keys/cited_in against what's actually on disk."""
+    rel = str((DATA / "sources" / "registry.json").relative_to(ROOT))
+    if not isinstance(existing_registry, list):
+        return
+
+    computed, _held, _dropped = compute_registry(existing_registry, load_all_citations(), now="1970-01-01T00:00:00Z")
+    existing_by_key = {(e["canonical_domain"], e["canonical_name"]): e for e in existing_registry}
+    computed_by_key = {(e["canonical_domain"], e["canonical_name"]): e for e in computed}
+
+    missing = sorted(k[1] for k in computed_by_key.keys() - existing_by_key.keys())
+    if missing:
+        fail(rel, "$", f"{len(missing)} source(s) from data/citations/ are missing from the registry -- "
+             f"run `python3 scripts/build_registry.py` and commit the result: {missing}",
+             "scripts/build_registry.py")
+
+    for key, existing_entry in existing_by_key.items():
+        computed_entry = computed_by_key.get(key)
+        if computed_entry is None:
+            continue  # no citations file references this source anymore; registry correctly kept it
+        if existing_entry.get("cited_in") != computed_entry.get("cited_in"):
+            fail(rel, f"[{existing_entry.get('source_id')}].cited_in",
+                 f"stale for {existing_entry['canonical_name']!r} -- "
+                 f"run `python3 scripts/build_registry.py` and commit the result",
+                 "scripts/build_registry.py")
 
 
 def validate_registry():
@@ -312,6 +377,9 @@ def manifest_recompute_hash(entries):
 def main():
     ledger_by_serial = validate_serials_ledger()
     check_published_issues_have_serials(ledger_by_serial)
+
+    validate_citations()
+    check_registry_matches_citations(load_json(DATA / "sources" / "registry.json"))
 
     registry_by_domain = validate_registry()
     check_published_issue_sources_are_registered(registry_by_domain)

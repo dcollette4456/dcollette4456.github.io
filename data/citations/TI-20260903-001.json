@@ -1,0 +1,75 @@
+[
+  {
+    "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0016",
+    "canonical_name": "SonicWall PSIRT",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "canonical_name": "CISA Known Exploited Vulnerabilities (KEV) Catalog",
+    "type": "TEC",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
+    "canonical_name": "CISA Cybersecurity Advisories",
+    "type": "GOV",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.helpnetsecurity.com/2026/09/02/sonicwall-sma-1000-cve-2026-83548-cve-2026-83549-zero-day-attacks/",
+    "canonical_name": "Help Net Security",
+    "type": "MED"
+  },
+  {
+    "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.rapid7.com/blog/post/etr-critical-sonicwall-sma1000-vulnerabilities-cve-2026-83548-cve-2026-83549-exploited-in-the-wild/",
+    "canonical_name": "Rapid7",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://cybersecuritynews.com/dropbox-lenovo-id-flaw/",
+    "canonical_name": "Cyber Security News",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.theregister.com/security/2026/09/02/legacy_lenovo_login_opens_5000/",
+    "canonical_name": "The Register",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/",
+    "canonical_name": "9to5Mac",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.freemalaysiatoday.com/category/business/2026/09/02/dropbox-says-about-5-000-accounts-compromised-in-august-hack",
+    "canonical_name": "Free Malaysia Today",
+    "type": "MED"
+  },
+  {
+    "url": "https://cybernews.com/news/dropbox-accounts-breached-email-lenovo-id/",
+    "canonical_name": "Cybernews",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.techtimes.com/articles/326355/20260902/dropbox-accounts-breached-lenovo-id-email-flaw-bypassed-passwords-17-days.htm",
+    "canonical_name": "Tech Times",
+    "type": "MED",
+    "origin": "US"
+  }
+]

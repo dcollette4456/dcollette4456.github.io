@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/",
+    "canonical_name": "Microsoft Threat Intelligence",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.rapid7.com/blog/post/tr-muddying-tracks-state-sponsored-shadow-behind-chaos-ransomware/",
+    "canonical_name": "Rapid7",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/",
+    "canonical_name": "SecurityWeek",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.sophos.com/en-us/blog/chaos-in-teams-vishing",
+    "canonical_name": "Sophos",
+    "type": "VND",
+    "origin": "UK"
+  },
+  {
+    "url": "https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  }
+]

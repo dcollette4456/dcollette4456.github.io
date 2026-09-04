@@ -1,0 +1,48 @@
+[
+  {
+    "url": "https://www.huntress.com/blog/n-able-vulnerability-exploitation",
+    "canonical_name": "Huntress",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+    "canonical_name": "CISA Known Exploited Vulnerabilities (KEV) Catalog",
+    "type": "TEC",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant",
+    "canonical_name": "Fortinet / FortiGuard Labs",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
+    "canonical_name": "Darktrace",
+    "type": "VND",
+    "origin": "UK"
+  },
+  {
+    "url": "https://www.govinfosecurity.com/china-linked-hackers-exploit-n-able-flaw-in-ransomware-attacks-a-32506",
+    "canonical_name": "GovInfoSecurity",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://attack.mitre.org/groups/G0129/",
+    "canonical_name": "MITRE ATT&CK",
+    "type": "TEC",
+    "origin": "US"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  }
+]

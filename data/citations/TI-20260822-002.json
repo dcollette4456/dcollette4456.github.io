@@ -1,0 +1,63 @@
+[
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.cryptopolitan.com/did-north-korea-hackers-attack-arrayref/",
+    "canonical_name": "Cryptopolitan",
+    "type": "MED"
+  },
+  {
+    "url": "https://cypro.co.uk/insights/cyber-bulletins/windows-ancillary-function-0-day-cisa-confirms-exploited-flaw/",
+    "canonical_name": "CyPro",
+    "type": "VND",
+    "origin": "UK"
+  },
+  {
+    "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+    "canonical_name": "Rust Security Response Team",
+    "type": "NPO",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.infosecurity-magazine.com/news/north-korean-rust-supply-chain/",
+    "canonical_name": "Infosecurity Magazine",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
+    "canonical_name": "Wiz",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://radar.offseq.com/threat/rust-supply-chain-attack-linked-to-north-korean-hackers-0ce7936d030d6a11",
+    "canonical_name": "OffSeq Threat Radar",
+    "type": "VND"
+  },
+  {
+    "url": "https://rewterz.com/threat-advisory/windows-afd-sys-zero-day-exploited-by-lazarus-active-iocs",
+    "canonical_name": "Rewterz",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.securityweek.com/rust-supply-chain-attack-linked-to-north-korean-hackers/",
+    "canonical_name": "SecurityWeek",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/lazarus-exploits-windows-zero-day-to.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  }
+]

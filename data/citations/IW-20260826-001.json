@@ -1,0 +1,191 @@
+[
+  {
+    "url": "https://adversa.ai/blog/cryptographic-context-injection-grok-data-theft/",
+    "canonical_name": "Adversa AI",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/meta-ai-model-hacked-a-company-during-misconfigured-cyber-test/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-poison-arrayref-rust-crate-to-push-infostealer-malware/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://betanews.com/article/meta-muse-spark-1-1-security-breach/",
+    "canonical_name": "BetaNews",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://cybermagazine.com/news/hugging-face-breach-how-openai-agents-planned-the-attack",
+    "canonical_name": "Cyber Magazine",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://www.cbsnews.com/news/meta-says-ai-model-breached-third-party-company/",
+    "canonical_name": "CBS News",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.cybersecuritydive.com/news/openai-hugging-face-hack-ai-models-black-hat/827167/",
+    "canonical_name": "Cybersecurity Dive",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://dataconomy.com/2026/08/21/xais-grok-chat-agent-vulnerable-to-cryptographic-context/",
+    "canonical_name": "Dataconomy",
+    "type": "MED"
+  },
+  {
+    "url": "https://explainx.ai/blog/openai-agent-swarm-message-board-black-hat-security-incident-august-2026",
+    "canonical_name": "explainx.ai",
+    "type": "VND"
+  },
+  {
+    "url": "https://explainx.ai/blog/grok-cryptographic-context-injection-attack-august-2026",
+    "canonical_name": "explainx.ai",
+    "type": "VND"
+  },
+  {
+    "url": "https://forkast.news/openais-evaluation-agents-built-a-secret-message-board-exploited-zero-days-and-breached-hugging-face-from-the-inside",
+    "canonical_name": "Forkast",
+    "type": "MED",
+    "origin": "HK"
+  },
+  {
+    "url": "https://www.iansresearch.com/resources/all-blogs/post/security-blog/2026/08/06/black-hat--inside-the-openai-hugging-face-breach",
+    "canonical_name": "IANS Research",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://groundlevel-ai.com/p/openai-gives-first-detailed-debrief",
+    "canonical_name": "Ground Level",
+    "type": "MED"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/new-cryptographic-context-injection.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://blog.invidelabs.com/rust-arrayref-supply-chain-attack/",
+    "canonical_name": "Invide Labs",
+    "type": "VND"
+  },
+  {
+    "url": "https://benarent.co.uk/talks/black-hat-usa-2026/openai-hugging-face-incident",
+    "canonical_name": "Ben Arent",
+    "type": "IND"
+  },
+  {
+    "url": "https://www.nextgov.com/artificial-intelligence/2026/08/openai-agents-rebuilt-internal-message-board-lead-hugging-face-breach/415240/",
+    "canonical_name": "Nextgov/FCW",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware",
+    "canonical_name": "safedep.io",
+    "type": "VND"
+  },
+  {
+    "url": "https://blog.rust-lang.org/2026/08/20/supply-chain-attack-on-arrayref/",
+    "canonical_name": "Rust Security Response Team",
+    "type": "NPO",
+    "origin": "US"
+  },
+  {
+    "url": "https://semgrep.dev/blog/2026/rust-crates-arrayref-append-only-vec-compromised-proc-macro1",
+    "canonical_name": "Semgrep",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://securityaffairs.com/197717/hacking/zero-click-grok-chat-history-theft-adversa-ai-demonstrates-cryptographic-context-injection.html",
+    "canonical_name": "Security Affairs",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.securityweek.com/encrypted-prompts-bypass-ai-safety-guardrails-in-grok-and-gemini/",
+    "canonical_name": "SecurityWeek",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.scworld.com/news/black-hat-2026-openai-reveals-agents-planned-collective-attacks-via-secret-message-board",
+    "canonical_name": "SC World",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://sofx.com/grok-decrypts-hidden-attack-payload-and-leaks-user-data-to-attacker-servers",
+    "canonical_name": "SOFX",
+    "type": "MED"
+  },
+  {
+    "url": "https://cryptorank.io/news/feed/0a824-grok-leaks-chats-encrypted-webpage",
+    "canonical_name": "CryptoRank",
+    "type": "MED"
+  },
+  {
+    "url": "https://sqmagazine.co.uk/meta-ai-model-breached-company-irregular-test/",
+    "canonical_name": "SQ Magazine",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://www.stepsecurity.io/blog/arrayref-rust-crate-supply-chain-attack",
+    "canonical_name": "StepSecurity",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.theinformation.com/articles/meta-ai-model-hacked-another-company-cybersecurity-testing",
+    "canonical_name": "The Information",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/",
+    "canonical_name": "The Register",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/",
+    "canonical_name": "The Register",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://www.theregister.com/security/2026/08/21/hackers-poison-popular-rust-crates-to-steal-developers-credentials/",
+    "canonical_name": "The Register",
+    "type": "MED",
+    "origin": "UK"
+  },
+  {
+    "url": "https://tuxcare.com/blog/rust-attack-arrayref",
+    "canonical_name": "TuxCare",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.wiz.io/blog/rust-supply-chain-attack-on-arrayref-significant-overlap-with-dprk-campaigns",
+    "canonical_name": "Wiz",
+    "type": "VND",
+    "origin": "US"
+  }
+]

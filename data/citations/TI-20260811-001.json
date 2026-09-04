@@ -1,0 +1,53 @@
+[
+  {
+    "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
+    "canonical_name": "CISA Cybersecurity Advisories",
+    "type": "GOV",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs",
+    "canonical_name": "ExtraHop",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/",
+    "canonical_name": "KELA Intelligence",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.washingtonpost.com/national-security/2026/07/30/us-spy-agencies-suspect-iran-launched-cyberattack-minnesota-water-facilities/",
+    "canonical_name": "The Washington Post",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust",
+    "canonical_name": "Rescana",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/",
+    "canonical_name": "SafeBreach",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/",
+    "canonical_name": "SOCRadar",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm",
+    "canonical_name": "Tech Times",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/",
+    "canonical_name": "Trellix",
+    "type": "VND",
+    "origin": "US"
+  }
+]

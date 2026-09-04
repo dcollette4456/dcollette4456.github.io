@@ -1,0 +1,90 @@
+[
+  {
+    "url": "https://asec.ahnlab.com/en/94696/",
+    "canonical_name": "AhnLab ASEC",
+    "type": "VND",
+    "origin": "KR"
+  },
+  {
+    "url": "https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says",
+    "canonical_name": "Al Jazeera",
+    "type": "MED",
+    "origin": "QA"
+  },
+  {
+    "url": "https://www.enki.co.kr",
+    "canonical_name": "Enki White Hat",
+    "type": "VND",
+    "origin": "KR"
+  },
+  {
+    "url": "https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm",
+    "canonical_name": "Genians Security Center",
+    "type": "VND",
+    "origin": "KR"
+  },
+  {
+    "url": "https://www.insurancejournal.com/news/international/2026/07/23/878763.htm",
+    "canonical_name": "Insurance Journal",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.boho.or.kr/kr/bbs/view.do",
+    "canonical_name": "Korea Internet & Security Agency (KISA) joint advisory",
+    "type": "GOV",
+    "origin": "KR"
+  },
+  {
+    "url": "https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2",
+    "canonical_name": "Fortinet / FortiGuard Labs",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://attack.mitre.org/groups/G0094/",
+    "canonical_name": "MITRE ATT&CK",
+    "type": "TEC",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.nknews.org/2026/08/crypto-exchange-sues-north-korean-government-and-hackers-over-1-5b-heist/",
+    "canonical_name": "NK News",
+    "type": "MED"
+  },
+  {
+    "url": "https://s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf",
+    "canonical_name": "S2W Talon",
+    "type": "VND",
+    "origin": "KR"
+  },
+  {
+    "url": "https://securityaffairs.com/196417/apt/south-korea-warns-of-state-backed-watering-hole-attacks.html",
+    "canonical_name": "Security Affairs",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm",
+    "canonical_name": "Tech Times",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://therecord.media/south-korea-cyberattack-foreign-ministry",
+    "canonical_name": "The Record (Recorded Future News)",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
+    "canonical_name": "The Record (Recorded Future News)",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://therecord.media/north-korea-hackers-ransomware",
+    "canonical_name": "The Record (Recorded Future News)",
+    "type": "MED",
+    "origin": "US"
+  }
+]

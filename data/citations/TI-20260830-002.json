@@ -1,0 +1,24 @@
+[
+  {
+    "url": "https://socradar.io/blog/doublecup-clickfix-loader-devicemanager-rats/",
+    "canonical_name": "SOCRadar",
+    "type": "VND"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/new-doublecup-clickfix-service-hides-malware-in-browser-cache-images/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/doublecup-uses-clickfix-and-cached-pngs.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://securityboulevard.com/2025/10/threat-actors-weaponizing-open-source-adaptixc2-tied-to-russian-underworld/",
+    "canonical_name": "Security Boulevard",
+    "type": "MED",
+    "origin": "US"
+  }
+]

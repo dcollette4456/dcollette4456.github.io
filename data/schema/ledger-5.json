@@ -1,0 +1,689 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dcollette4456.github.io/schema/ledger-5.json",
+  "title": "Claim ledger, schema version 5",
+  "description": "Classification spec §15 and §24. One JSON file per issue: /data/ledger/{serial}.json, an array of claim objects matching this schema. Per CLAUDECODEBRIEF §6, no data files against this schema exist yet -- it ships now so the first issue authored against v4.1 has a validator waiting for it, and validation failure is a publication block. v5 adds single_pass to grader.agreement, for a claim graded once by one model with no independent cross-check -- previously the enum only had unanimous/majority/split, which are all multi-pass outcomes, so a genuinely single-pass grading run had no honest value to record. Also adds superseding to volatility (spec section 28 names three classes -- durable, perishable, superseding -- the schema only had two).",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": true,
+    "required": [
+      "claim_id",
+      "fingerprint",
+      "issue",
+      "first_issue",
+      "citation_count",
+      "text",
+      "source_id",
+      "source_type",
+      "grade",
+      "relay_depth",
+      "evidentiary_status",
+      "polarity",
+      "volatility",
+      "language",
+      "synthetic",
+      "gates",
+      "gate_vector",
+      "segmentation",
+      "grader",
+      "hunt_value",
+      "sectors",
+      "actors",
+      "assertion_license",
+      "entities",
+      "time",
+      "provenance",
+      "disposition"
+    ],
+    "properties": {
+      "claim_id": {
+        "type": "string",
+        "pattern": "^(TI|IW)-(RETRO-[0-9]{3}|[0-9]{8}-[0-9]{3})-C[0-9]+$"
+      },
+      "fingerprint": {
+        "type": "string",
+        "minLength": 1,
+        "description": "source_id | document_sha256_normalized | gate_vector. Classification spec §2."
+      },
+      "issue": {
+        "type": "string",
+        "minLength": 1
+      },
+      "first_issue": {
+        "type": "string",
+        "minLength": 1
+      },
+      "citation_count": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "text": {
+        "type": "string",
+        "minLength": 1,
+        "description": "No prose from the source. Classification spec §14."
+      },
+      "source_id": {
+        "type": "string",
+        "pattern": "^SRC-[0-9]{4,}$"
+      },
+      "source_type": {
+        "type": "string",
+        "enum": [
+          "GOV",
+          "VND",
+          "MED",
+          "ACA",
+          "TEC",
+          "IND",
+          "NPO",
+          "AGG",
+          "SOC",
+          "ADV",
+          "ANL"
+        ]
+      },
+      "grade": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 6
+      },
+      "access": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "enum": [
+          "open",
+          "gated",
+          "restricted",
+          "withdrawn",
+          "unarchived",
+          "retracted",
+          "retrieval_failed",
+          null
+        ]
+      },
+      "relay_depth": {
+        "type": [
+          "integer",
+          "string"
+        ],
+        "description": "0, 1, 2+ as an integer, or the literal string 'unresolved'. Classification spec §5."
+      },
+      "origin_named": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "evidentiary_status": {
+        "type": "string",
+        "enum": [
+          "observed",
+          "alleged",
+          "adjudicated",
+          "self_reported"
+        ]
+      },
+      "polarity": {
+        "type": "string",
+        "enum": [
+          "positive",
+          "negative"
+        ]
+      },
+      "volatility": {
+        "type": "string",
+        "enum": [
+          "durable",
+          "perishable",
+          "superseding"
+        ]
+      },
+      "language": {
+        "type": "string",
+        "pattern": "^[a-z]{2}$"
+      },
+      "translation": {
+        "type": "string",
+        "enum": [
+          "none",
+          "published",
+          "machine"
+        ]
+      },
+      "synthetic": {
+        "type": "boolean"
+      },
+      "superseded_by": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "disputed": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "vectors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "published_grade": {
+            "type": "integer"
+          },
+          "basis": {
+            "type": "string"
+          },
+          "queued": {
+            "type": "string"
+          }
+        }
+      },
+      "contested": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "attribution_contested": {
+        "type": [
+          "string",
+          "null"
+        ]
+      },
+      "gates": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "retrievable",
+          "origin_stated",
+          "direct_observation",
+          "aggregate",
+          "artifact_test",
+          "method_test",
+          "hedge_test"
+        ],
+        "properties": {
+          "retrievable": {
+            "type": "boolean"
+          },
+          "origin_stated": {
+            "type": "boolean"
+          },
+          "direct_observation": {
+            "type": "boolean"
+          },
+          "aggregate": {
+            "type": "boolean"
+          },
+          "artifact_test": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "n/a"
+            ]
+          },
+          "method_test": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "n/a"
+            ]
+          },
+          "hedge_test": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail",
+              "n/a"
+            ]
+          }
+        }
+      },
+      "gate_vector": {
+        "type": "string",
+        "minLength": 1
+      },
+      "segmentation": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "atomic_assertions",
+          "merged",
+          "assertions"
+        ],
+        "properties": {
+          "atomic_assertions": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "merged": {
+            "type": "boolean"
+          },
+          "merge_basis": {
+            "type": "string"
+          },
+          "assertions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "key",
+                "descriptor"
+              ],
+              "properties": {
+                "key": {
+                  "type": "string",
+                  "pattern": "^A[0-9]+$"
+                },
+                "descriptor": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      "grader": {
+        "type": "object",
+        "additionalProperties": true,
+        "required": [
+          "model",
+          "spec_version",
+          "schema_version",
+          "normalizer",
+          "run",
+          "passes",
+          "agreement"
+        ],
+        "properties": {
+          "model": {
+            "type": "string",
+            "minLength": 1
+          },
+          "spec_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "schema_version": {
+            "const": 5
+          },
+          "normalizer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "run": {
+            "type": "string"
+          },
+          "passes": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "agreement": {
+            "type": "string",
+            "enum": [
+              "unanimous",
+              "majority",
+              "split",
+              "single_pass"
+            ]
+          },
+          "dissent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "reconciliation": {
+            "type": "string",
+            "enum": [
+              "pass",
+              "fail"
+            ]
+          },
+          "reconciliation_passes": {
+            "type": "integer"
+          },
+          "reconciliation_dissent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "hunt_value": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "behavioral",
+          "huntable",
+          "indicator_bearing"
+        ],
+        "properties": {
+          "behavioral": {
+            "type": "boolean"
+          },
+          "behavioral_basis": {
+            "type": "string"
+          },
+          "huntable": {
+            "type": "boolean"
+          },
+          "telemetry_classes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "collection_point_basis": {
+            "type": "string",
+            "enum": [
+              "stated",
+              "derived"
+            ]
+          },
+          "collection_point_source": {
+            "type": "string"
+          },
+          "technique_ids": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "basis"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "basis": {
+                  "type": "string",
+                  "enum": [
+                    "transcribed",
+                    "derived"
+                  ]
+                }
+              }
+            }
+          },
+          "indicator_bearing": {
+            "type": "boolean"
+          }
+        }
+      },
+      "corroboration": {
+        "type": [
+          "object",
+          "null"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "basis": {
+            "type": "string"
+          },
+          "alias_resolved": {
+            "type": "boolean"
+          }
+        }
+      },
+      "sectors": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "confirmed",
+          "contextual"
+        ],
+        "properties": {
+          "confirmed": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contextual": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "justified_by": {
+            "type": "string"
+          }
+        }
+      },
+      "actors": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "subject",
+          "referenced"
+        ],
+        "properties": {
+          "subject": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "referenced": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "names_used_by_source": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "equivalences_stated": {
+            "type": "array"
+          },
+          "justified_by": {
+            "type": "string"
+          }
+        }
+      },
+      "assertion_license": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "may_assert",
+          "may_present_as_fact",
+          "may_ground_recommendation"
+        ],
+        "properties": {
+          "may_assert": {
+            "type": "string",
+            "minLength": 1
+          },
+          "attribution_required": {
+            "type": "boolean"
+          },
+          "required_form": {
+            "type": "string"
+          },
+          "may_present_as_fact": {
+            "type": "boolean"
+          },
+          "may_ground_recommendation": {
+            "type": "boolean"
+          },
+          "expires": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      },
+      "override": {
+        "type": [
+          "object",
+          "null"
+        ]
+      },
+      "entities": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "clusters",
+          "families",
+          "tools",
+          "campaigns",
+          "vulnerabilities"
+        ],
+        "properties": {
+          "clusters": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "families": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tools": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "campaigns": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "vulnerabilities": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "justified_by": {
+            "type": "string"
+          }
+        }
+      },
+      "time": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "source_published",
+          "fetched"
+        ],
+        "properties": {
+          "observed_period": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "start": {
+                "type": "string"
+              },
+              "end": {
+                "type": "string"
+              },
+              "basis": {
+                "type": "string",
+                "enum": [
+                  "stated",
+                  "derived"
+                ]
+              },
+              "precision": {
+                "type": "string",
+                "enum": [
+                  "day",
+                  "month",
+                  "year"
+                ]
+              }
+            }
+          },
+          "source_published": {
+            "type": "string"
+          },
+          "fetched": {
+            "type": "string"
+          },
+          "lag_days": {
+            "type": "integer"
+          }
+        }
+      },
+      "provenance": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "pool"
+        ],
+        "properties": {
+          "pool": {
+            "type": "string",
+            "enum": [
+              "live",
+              "backfill",
+              "corroborating"
+            ]
+          },
+          "source_published": {
+            "type": "string"
+          },
+          "window": {
+            "type": "string"
+          },
+          "capture_is_retrospective": {
+            "type": "boolean"
+          }
+        }
+      },
+      "fetch": {
+        "type": "object",
+        "description": "Tier 1 fetch record. Classification spec §14."
+      },
+      "extracted": {
+        "type": "object",
+        "description": "Tier 2 extracted facts. Classification spec §14. No source prose except title/byline/published."
+      },
+      "archive": {
+        "type": "object",
+        "description": "Tier 3 archive pointer. Classification spec §14."
+      },
+      "disposition": {
+        "type": "string"
+      },
+      "schema_version": {
+        "const": 5
+      }
+    }
+  }
+}

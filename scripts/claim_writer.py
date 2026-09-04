@@ -141,6 +141,20 @@ def _vector(source_type, gates):
             f"|meth:{test(gates['method_test'])}|hedge:{test(gates['hedge_test'])}")
 
 
+def _strip_nulls(obj):
+    """Optional fields set to null rather than omitted don't validate against
+    a typed schema property (None isn't a string, an object, etc.), and the
+    project's own convention throughout is absent-not-fabricated: a field
+    the grader had nothing honest to say about should be missing, not null.
+    Recursively drops None-valued dict keys so a draft that used null for
+    'nothing to report' reads the same as one that omitted the key."""
+    if isinstance(obj, dict):
+        return {k: _strip_nulls(v) for k, v in obj.items() if v is not None}
+    if isinstance(obj, list):
+        return [_strip_nulls(v) for v in obj]
+    return obj
+
+
 def compute_fingerprint(source_id, doc_hash, gate_vector):
     return f"{source_id}|{doc_hash}|{gate_vector}"
 
@@ -198,12 +212,21 @@ def main():
     fingerprint = compute_fingerprint(draft["source_id"], draft["document_sha256_normalized"], gate_vector)
 
     observed_end = None
-    if draft.get("time", {}).get("observed_period"):
-        observed_end = draft["time"]["observed_period"].get("end")
+    observed_period = draft.get("time", {}).get("observed_period")
+    if isinstance(observed_period, dict):
+        observed_end = observed_period.get("end")
     license_ = compute_assertion_license(grade, draft["evidentiary_status"], draft["volatility"], observed_end)
 
     claim_num = len(ledger) + 1
     claim_id = f"{serial}-C{claim_num:03d}"
+
+    time_block = dict(draft["time"])
+    if "observed_period" in time_block and not isinstance(time_block["observed_period"], (dict, type(None))):
+        print(f"NOTE: {claim_id}: time.observed_period was not an object "
+              f"(got {type(time_block['observed_period']).__name__}) -- omitted rather than forced "
+              f"into a shape it doesn't honestly fit. Original value: {time_block['observed_period']!r}",
+              file=sys.stderr)
+        time_block.pop("observed_period")
 
     claim = {
         "claim_id": claim_id,
@@ -223,15 +246,15 @@ def main():
         "synthetic": draft.get("synthetic", False),
         "gates": gates,
         "gate_vector": gate_vector,
-        "segmentation": draft["segmentation"],
-        "grader": draft["grader"],
-        "hunt_value": draft["hunt_value"],
-        "sectors": draft["sectors"],
-        "actors": draft["actors"],
+        "segmentation": _strip_nulls(draft["segmentation"]),
+        "grader": _strip_nulls(draft["grader"]),
+        "hunt_value": _strip_nulls(draft["hunt_value"]),
+        "sectors": _strip_nulls(draft["sectors"]),
+        "actors": _strip_nulls(draft["actors"]),
         "assertion_license": license_,
-        "entities": draft["entities"],
-        "time": draft["time"],
-        "provenance": draft["provenance"],
+        "entities": _strip_nulls(draft["entities"]),
+        "time": _strip_nulls(time_block),
+        "provenance": _strip_nulls(draft["provenance"]),
         "disposition": "open",
     }
     if draft.get("origin_named") is not None:
@@ -247,7 +270,7 @@ def main():
     if draft.get("archive"):
         claim["archive"] = draft["archive"]
 
-    schema = json.loads((ROOT / "data" / "schema" / "ledger-4.json").read_text())
+    schema = json.loads((ROOT / "data" / "schema" / "ledger-5.json").read_text())
     try:
         validate([claim], schema)
     except SchemaError as e:

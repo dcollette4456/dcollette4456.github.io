@@ -130,6 +130,20 @@ CITATIONS = [
     ("https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/", "SecurityWeek", "MED", "US", "TI-20260830-001"),
     ("https://www.sophos.com/en-us/blog/chaos-in-teams-vishing", "Sophos", "VND", "UK", "TI-20260830-001"),
     ("https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html", "The Hacker News", "MED", None, "TI-20260830-001"),
+
+    ("https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0016", "SonicWall PSIRT", "VND", "US", "TI-20260903-001"),
+    ("https://www.cisa.gov/known-exploited-vulnerabilities-catalog", "CISA Known Exploited Vulnerabilities (KEV) Catalog", "TEC", "US", "TI-20260903-001"),
+    ("https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog", "CISA Cybersecurity Advisories", "GOV", "US", "TI-20260903-001"),
+    ("https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/", "BleepingComputer", "MED", "US", "TI-20260903-001"),
+    ("https://www.helpnetsecurity.com/2026/09/02/sonicwall-sma-1000-cve-2026-83548-cve-2026-83549-zero-day-attacks/", "Help Net Security", "MED", None, "TI-20260903-001"),
+    ("https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html", "The Hacker News", "MED", None, "TI-20260903-001"),
+    ("https://www.rapid7.com/blog/post/etr-critical-sonicwall-sma1000-vulnerabilities-cve-2026-83548-cve-2026-83549-exploited-in-the-wild/", "Rapid7", "VND", "US", "TI-20260903-001"),
+    ("https://cybersecuritynews.com/dropbox-lenovo-id-flaw/", "Cyber Security News", "MED", None, "TI-20260903-001"),
+    ("https://www.theregister.com/security/2026/09/02/legacy_lenovo_login_opens_5000/", "The Register", "MED", "UK", "TI-20260903-001"),
+    ("https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/", "9to5Mac", "MED", "US", "TI-20260903-001"),
+    ("https://www.freemalaysiatoday.com/category/business/2026/09/02/dropbox-says-about-5-000-accounts-compromised-in-august-hack", "Free Malaysia Today", "MED", None, "TI-20260903-001"),
+    ("https://cybernews.com/news/dropbox-accounts-breached-email-lenovo-id/", "Cybernews", "MED", None, "TI-20260903-001"),
+    ("https://www.techtimes.com/articles/326355/20260902/dropbox-accounts-breached-lenovo-id-email-flaw-bypassed-passwords-17-days.htm", "Tech Times", "MED", "US", "TI-20260903-001"),
 ]
 
 

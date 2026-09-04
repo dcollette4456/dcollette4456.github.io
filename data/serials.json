@@ -83,6 +83,17 @@
       "article_spec_version": "2.5",
       "authoring": "hand",
       "status": "published"
+    },
+    {
+      "serial": "TI-20260903-001",
+      "assigned": "2026-09-04T00:38:09Z",
+      "title": "Trusting the Asker: SonicWall SMA1000 and Lenovo ID Authentication Bypass",
+      "path": "/issues/sonicwall-lenovo-id-authentication-bypass/",
+      "authoring": "hand",
+      "status": "published",
+      "issue_number": 41,
+      "classification_version": "4.1",
+      "article_spec_version": "2.8"
     }
   ]
 }

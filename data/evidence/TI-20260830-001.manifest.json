@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260830-001",
-  "generated": "2026-08-31T22:12:51Z",
+  "generated": "2026-09-04T01:29:26Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,23 +10,23 @@
       "url": "https://www.bleepingcomputer.com/news/security/ransomware-gang-abuses-microsoft-teams-relays-to-hide-malicious-traffic/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:06Z",
+      "fetched": "2026-09-04T01:25:32Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 89999,
-      "sha256_raw": "13f9e2d6d39edbf0bb8b3b43644fa7a932d25d4480e8eef71eea210919e628c2",
-      "sha256_normalized": "e758d309a81042b3fc9f1364db0d4960529450966253645b961f6575a5a18d00",
+      "content_length": 90052,
+      "sha256_raw": "32d5522c9b777ada0b748d421d47bb88e9f458ea3b96fc1c65b27a9cdbfb1e80",
+      "sha256_normalized": "7af5d31705757e380d69e95d7357f2e47ec0f63ce61f7032480840f10ee84b1c",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "e758d309a81042b3fc9f1364db0d4960529450966253645b961f6575a5a18d00"
+        "value": "7af5d31705757e380d69e95d7357f2e47ec0f63ce61f7032480840f10ee84b1c"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:08Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:25:34Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -35,23 +35,23 @@
       "url": "https://www.bleepingcomputer.com/news/security/fake-it-support-calls-on-microsoft-teams-push-etherrat-malware/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:10Z",
+      "fetched": "2026-09-04T01:26:01Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 90677,
-      "sha256_raw": "824c66ece7b6679646a9975983376ad48f295f3cd6fb4c8015c21b11085677a1",
-      "sha256_normalized": "cf836f5aa4fe92700c2a8c12bdd1a0021b86f924741ee2037637c93f7d19e47b",
+      "content_length": 90734,
+      "sha256_raw": "af9793db1baa2e54d20540606572f3a610a38af8b7bce883562001283aef5a2e",
+      "sha256_normalized": "04968e395b23589f4633aa9be46e37dae24b2681282c6b5fc610bc35bafd5d38",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "cf836f5aa4fe92700c2a8c12bdd1a0021b86f924741ee2037637c93f7d19e47b"
+        "value": "04968e395b23589f4633aa9be46e37dae24b2681282c6b5fc610bc35bafd5d38"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:12Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:26:03Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -60,23 +60,23 @@
       "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:21Z",
+      "fetched": "2026-09-04T01:26:30Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 93069,
-      "sha256_raw": "bbde0eac0125d7b1c9898a03f6e5b8a40143ebc010bad0c934515e31debb865d",
-      "sha256_normalized": "26b77a1ae23fb1c69068ed0902b9c31ffbb93e4c681602362d4bf05cc337e5e3",
+      "content_length": 93023,
+      "sha256_raw": "82db35208f48243e30152ed070c28d5251b3a9d2e20f91352426da0a9d6ac1cf",
+      "sha256_normalized": "9b05ef725d0bf1638af649b0aff8cfc3c0fb77264fec3b266c31651ade01e5f4",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "26b77a1ae23fb1c69068ed0902b9c31ffbb93e4c681602362d4bf05cc337e5e3"
+        "value": "9b05ef725d0bf1638af649b0aff8cfc3c0fb77264fec3b266c31651ade01e5f4"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:23Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:26:32Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -85,23 +85,23 @@
       "url": "https://www.microsoft.com/en-us/security/blog/2024/05/15/threat-actors-misusing-quick-assist-in-social-engineering-attacks-leading-to-ransomware/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:33Z",
+      "fetched": "2026-09-04T01:27:00Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 314011,
-      "sha256_raw": "d32f920cf5e7965140029074527c09019c4a4375da20631791697d92f6d5c7f4",
-      "sha256_normalized": "e1048fd7ac0b0d8ce6bb3034dad108623624d200ab2003a97286742756a93d76",
+      "content_length": 312276,
+      "sha256_raw": "6555ca3377154882c3dccf2d0c53042dd7645ab90cdab34da2396f2637ab07f7",
+      "sha256_normalized": "31fe998d2b1885d17037bca3c4beee41e86e70b69ed3fa333d2d829200003727",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "e1048fd7ac0b0d8ce6bb3034dad108623624d200ab2003a97286742756a93d76"
+        "value": "31fe998d2b1885d17037bca3c4beee41e86e70b69ed3fa333d2d829200003727"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:35Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:27:02Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -110,11 +110,11 @@
       "url": "https://www.rapid7.com/blog/post/tr-muddying-tracks-state-sponsored-shadow-behind-chaos-ransomware/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:37Z",
+      "fetched": "2026-09-04T01:27:30Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 695836,
-      "sha256_raw": "6a60c267c6efaeeee98f0b5349aa5efb30453b304f20481a056f18d6130a53c9",
+      "content_length": 696801,
+      "sha256_raw": "33cf4082ddab0970be8f0f6f9f4e6093d8021cdd7630e50bb4093563ef47833e",
       "sha256_normalized": "b29bc26401c928505284f2ff7aaa03cc3bdbdd4ecd6b8b5e6af6027dd7c45884",
       "normalizer": "html/v1",
       "extractor": null,
@@ -125,8 +125,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:39Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:27:32Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -135,23 +135,23 @@
       "url": "https://www.securityweek.com/iranian-apt-intrusion-masquerades-as-chaos-ransomware-attack/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:41Z",
+      "fetched": "2026-09-04T01:27:59Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 160505,
-      "sha256_raw": "3fdec0a32fdf6b257fb2ce7dbaf946ad00eef7c7e7eff30585b41b6714f338da",
-      "sha256_normalized": "005889fd54e5a07da5f05d45c341afca79b2a07eb56cb49109b437332c414f26",
+      "content_length": 160463,
+      "sha256_raw": "c7090bda40b5274147c12ecff6a5c6bd65b82f4ab6bd37f5ff8da0b8a8f546d8",
+      "sha256_normalized": "6ea7a91890f7aa40b8e571853344aa8737d6476a8b875ccc26890e4877a7b82c",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "005889fd54e5a07da5f05d45c341afca79b2a07eb56cb49109b437332c414f26"
+        "value": "6ea7a91890f7aa40b8e571853344aa8737d6476a8b875ccc26890e4877a7b82c"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:43Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:28:01Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -160,11 +160,11 @@
       "url": "https://www.sophos.com/en-us/blog/chaos-in-teams-vishing",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:46Z",
+      "fetched": "2026-09-04T01:28:29Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 705367,
-      "sha256_raw": "ae92cc31f2c116b3210ca3ed575311ababa947716c66d5bb67bdc06ed77b673a",
+      "content_length": 706255,
+      "sha256_raw": "113e1e6b10bafc4171d72c6848f33c6407a965744565bcd8539bc2cea97a0549",
       "sha256_normalized": "4daa058f288aed4284e65193afa945b3080d5d725118d185c84b80552ad2ffef",
       "normalizer": "html/v1",
       "extractor": null,
@@ -175,8 +175,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:48Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:28:31Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -185,27 +185,27 @@
       "url": "https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:12:49Z",
+      "fetched": "2026-09-04T01:28:58Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 179587,
-      "sha256_raw": "3c7e4a9bb97fdc235757dedac711026e8ddf8dea8b4afd67a03eba7743cafce5",
-      "sha256_normalized": "19bafd648691337ab21d02391ddc38883833a9be51fe28a399002e3c4a6c5b56",
+      "content_length": 180473,
+      "sha256_raw": "ee80b651144d1915a8d8e4ad35cc983d16941a2bf6e52ad2b48bd8ebc60e8fd1",
+      "sha256_normalized": "f13beec86cdff23482305399b44d8dbb98db0f634392d721e63dcde83bc99314",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "19bafd648691337ab21d02391ddc38883833a9be51fe28a399002e3c4a6c5b56"
+        "value": "f13beec86cdff23482305399b44d8dbb98db0f634392d721e63dcde83bc99314"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:12:51Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:29:00Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     }
   ],
-  "manifest_sha256": "cb438b95a7c58f848eff353e49d93a82589f18bfc1d80be164a50172c48d91b3",
+  "manifest_sha256": "d79d6229ecdf046020409e43353a9977e1cffcb1e4facfdaa29db874c2553208",
   "timestamp": {
     "status": "not_yet_anchored"
   }

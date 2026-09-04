@@ -1,0 +1,339 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260903-001",
+  "generated": "2026-09-04T01:35:17Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0064",
+      "ref": "REF-001",
+      "url": "https://psirt.global.sonicwall.com/vuln-detail/SNWLID-2026-0016",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:29:27Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 729,
+      "sha256_raw": "e7f0026e34e37ba03ee2ce84f89e1ebaa0933c4de6cba2228dcc1236436b09e1",
+      "sha256_normalized": "ea23f963e6cf14a3f6cf9f8d64c7cb5cc94b1f0c1d256fb2e135998a6cf964b4",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "ea23f963e6cf14a3f6cf9f8d64c7cb5cc94b1f0c1d256fb2e135998a6cf964b4"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:29:29Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0057",
+      "ref": "REF-002",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:29:54Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 281347,
+      "sha256_raw": "4f6f3cc312536d114b898969e3a98cc9677cc983d754250409d2d5f718547c1b",
+      "sha256_normalized": "9da26f5ab23d532f8776f27f9ee034676c56323c7273b9214e574231ffcf4971",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "9da26f5ab23d532f8776f27f9ee034676c56323c7273b9214e574231ffcf4971"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:20:11Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0001",
+      "ref": "REF-003",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/09/02/cisa-adds-seven-known-exploited-vulnerabilities-catalog",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:29:56Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 55347,
+      "sha256_raw": "9d432f89bd66df363b41b22fb822ce1b77771227957323a185d9e1180ec10732",
+      "sha256_normalized": "5491c6fe14facf2a5d07c5b88b8d392719baccf2c4b45cb65a05bc7715905d99",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "5491c6fe14facf2a5d07c5b88b8d392719baccf2c4b45cb65a05bc7715905d99"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:29:58Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0010",
+      "ref": "REF-004",
+      "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-actively-exploited-sma1000-zero-day-flaws/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:30:25Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 90749,
+      "sha256_raw": "9deef0d715196b17d3f4a99dba085de60941dc8c4cf06f25fecc261d609356e5",
+      "sha256_normalized": "f5650e5a524a6a5e8338311b7fac93a869d3da27bc6f8e1ef7d632eb414b8662",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "f5650e5a524a6a5e8338311b7fac93a869d3da27bc6f8e1ef7d632eb414b8662"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:30:27Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0065",
+      "ref": "REF-005",
+      "url": "https://www.helpnetsecurity.com/2026/09/02/sonicwall-sma-1000-cve-2026-83548-cve-2026-83549-zero-day-attacks/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:30:54Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 86114,
+      "sha256_raw": "16433aeb1af4b16e4b3b931c2751ba17818af4cf0dab815373f71a6a99fc5456",
+      "sha256_normalized": "f5d1b45e9178579060682be55a87c783f4ee7c5bc1b1a49fea3d6aa5718c258b",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "f5d1b45e9178579060682be55a87c783f4ee7c5bc1b1a49fea3d6aa5718c258b"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:30:56Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-006",
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:31:23Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 167420,
+      "sha256_raw": "25d24d29328b273bae3775e58f4dc0b8b505aab3bcc5ef0edd058f4c8c9cb801",
+      "sha256_normalized": "4faecb9829ac017c8858d1365b7450489b00c529d336d8bf1705dddd59903cca",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "4faecb9829ac017c8858d1365b7450489b00c529d336d8bf1705dddd59903cca"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:31:25Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0062",
+      "ref": "REF-007",
+      "url": "https://www.rapid7.com/blog/post/etr-critical-sonicwall-sma1000-vulnerabilities-cve-2026-83548-cve-2026-83549-exploited-in-the-wild/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:31:52Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 444680,
+      "sha256_raw": "2b4fe20a4c2fc81018264f055ef239cdf0532ce34e54a186477a3f5726551825",
+      "sha256_normalized": "21a77ad7b8c8ed71b1e75ea1288f32e1fa3327f384d62088cbc6d28ecf30de18",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "21a77ad7b8c8ed71b1e75ea1288f32e1fa3327f384d62088cbc6d28ecf30de18"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:31:54Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0066",
+      "ref": "REF-008",
+      "url": "https://cybersecuritynews.com/dropbox-lenovo-id-flaw/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:32:22Z",
+      "http_status": 403,
+      "content_type": null,
+      "content_length": 75193,
+      "sha256_raw": "ac4f780358ba4326a07c3a9bb83dff5a70cbb95a22be0f4c9385efe182cd722f",
+      "sha256_normalized": "d227cb6c396e7a198dc64426a1e80bf3117d5689a4e2baca913b488876b78fc5",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "d227cb6c396e7a198dc64426a1e80bf3117d5689a4e2baca913b488876b78fc5"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:32:24Z",
+        "note": "TimeoutError: The read operation timed out"
+      },
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
+    },
+    {
+      "source_id": "SRC-0054",
+      "ref": "REF-009",
+      "url": "https://www.theregister.com/security/2026/09/02/legacy_lenovo_login_opens_5000/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:32:52Z",
+      "http_status": 404,
+      "content_type": null,
+      "content_length": 180617,
+      "sha256_raw": "6eaa18a5a2abd090a6cdff408b3cc38b0f7a2fee3465c9079f56b22667944412",
+      "sha256_normalized": "2e907a7620841c1b071de4706641cb747c26e6d81fe037931361d4d58f2b05d5",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "2e907a7620841c1b071de4706641cb747c26e6d81fe037931361d4d58f2b05d5"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:32:54Z",
+        "note": "TimeoutError: The read operation timed out"
+      },
+      "notes": "http_status 404; local fetch was not 2xx, archive.org was still tried"
+    },
+    {
+      "source_id": "SRC-0067",
+      "ref": "REF-010",
+      "url": "https://9to5mac.com/2026/09/02/dropbox-login-breach-seemingly-caused-by-egregious-authentication-failure/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:33:21Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 153890,
+      "sha256_raw": "a6e6b2c1740cb6145525e853a85529ea56285cb49600b14747741763def3d9d5",
+      "sha256_normalized": "19accae936bb52562f051716446a05ca437fe27ed13627a32b53ef1e4ea91070",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "19accae936bb52562f051716446a05ca437fe27ed13627a32b53ef1e4ea91070"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:33:23Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0068",
+      "ref": "REF-011",
+      "url": "https://www.freemalaysiatoday.com/category/business/2026/09/02/dropbox-says-about-5-000-accounts-compromised-in-august-hack",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:33:51Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 215282,
+      "sha256_raw": "f21573cf06ded47cb38ab8aea3646ff42a528dec27e595c8df5a735197f6e0d0",
+      "sha256_normalized": "33cab94f85f201d4ca4b9bcbbb6fe38c2c898490bcebe68c2b78f18a6482b724",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "33cab94f85f201d4ca4b9bcbbb6fe38c2c898490bcebe68c2b78f18a6482b724"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:33:53Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0069",
+      "ref": "REF-012",
+      "url": "https://cybernews.com/news/dropbox-accounts-breached-email-lenovo-id/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:34:20Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 267079,
+      "sha256_raw": "c3d44a0964543d82d7067fe2633b6a4a6ef75edfc7af0edcbf64cab5b693cec3",
+      "sha256_normalized": "066cde6233a2cfaab269062a26482167c13a729f3573510342793387f86dd92a",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "066cde6233a2cfaab269062a26482167c13a729f3573510342793387f86dd92a"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:34:22Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    },
+    {
+      "source_id": "SRC-0008",
+      "ref": "REF-013",
+      "url": "https://www.techtimes.com/articles/326355/20260902/dropbox-accounts-breached-lenovo-id-email-flaw-bypassed-passwords-17-days.htm",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:34:49Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 337367,
+      "sha256_raw": "b26184ba64e5d57dbb7758611d8d723a58e6571ed958bb91fbfdd2d034e7e737",
+      "sha256_normalized": "391e5f90fef321de8aaf8b73fa5dc2363ccc1786a73b5a8824c51ec9679a3db6",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "391e5f90fef321de8aaf8b73fa5dc2363ccc1786a73b5a8824c51ec9679a3db6"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-04T01:34:51Z",
+        "note": "TimeoutError: The read operation timed out"
+      }
+    }
+  ],
+  "manifest_sha256": "7e1ed6c0a13600812f22fd466253c7d5b58bdd192b0dff8e0ae2e18e742c26ab",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

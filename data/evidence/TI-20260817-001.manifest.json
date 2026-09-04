@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260817-001",
-  "generated": "2026-08-31T22:11:37Z",
+  "generated": "2026-09-04T01:23:34Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -9,24 +9,24 @@
       "ref": "REF-001",
       "url": "https://www.huntress.com/blog/n-able-vulnerability-exploitation",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:10:29Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:19:40Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 439806,
-      "sha256_raw": "6780b9a380c4d43678964e8d8e28d2b41ba42785d8784729faad9572691a34ad",
-      "sha256_normalized": "5978263c427504c4cb90720497da4f96eb0fd35cb1327026747cf06bbf555207",
+      "content_length": 437310,
+      "sha256_raw": "56c8c62bf6289dbd971876a0deb5b9dd36919e3c21fb54425512bb4aa3e3e9fe",
+      "sha256_normalized": "5f27cedf746d3a69844d82f8cb0d8b6088c49cdc9581efda332e11370bb130cc",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "5978263c427504c4cb90720497da4f96eb0fd35cb1327026747cf06bbf555207"
+        "value": "5f27cedf746d3a69844d82f8cb0d8b6088c49cdc9581efda332e11370bb130cc"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831214322/https://www.huntress.com/blog/n-able-vulnerability-exploitation",
-        "attempted": "2026-08-31T22:10:31Z"
+        "attempted": "2026-09-04T01:19:42Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -34,24 +34,24 @@
       "ref": "REF-002",
       "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:10:41Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:20:09Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 279647,
-      "sha256_raw": "037b4fb29be8b5e115d465aa30344a57b7e36e64cca37f1122463392123acd3d",
-      "sha256_normalized": "55c5b70ad533ed17ac2518336d15b9945856bfcdcd0788eeeea1d2df2d28ab7c",
+      "content_length": 281347,
+      "sha256_raw": "4f6f3cc312536d114b898969e3a98cc9677cc983d754250409d2d5f718547c1b",
+      "sha256_normalized": "9da26f5ab23d532f8776f27f9ee034676c56323c7273b9214e574231ffcf4971",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "55c5b70ad533ed17ac2518336d15b9945856bfcdcd0788eeeea1d2df2d28ab7c"
+        "value": "9da26f5ab23d532f8776f27f9ee034676c56323c7273b9214e574231ffcf4971"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831214355/https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
-        "attempted": "2026-08-31T22:10:43Z"
+        "attempted": "2026-09-04T01:20:11Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -59,12 +59,12 @@
       "ref": "REF-003",
       "url": "https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:10:53Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:20:40Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 193625,
-      "sha256_raw": "3975aeb62d52d386dba22a3931a8ae10b2a5dee70f96ea77c77fb4057507cad1",
+      "sha256_raw": "d499a54ffe9922c98335de59405272a2877b92b3c0c0e5ac66fedf41435948c6",
       "sha256_normalized": "415f3a5dc54114a5992b48aaf65809cb8264479dd040d98eec6fc87a9e7d86f4",
       "normalizer": "html/v1",
       "extractor": null,
@@ -73,10 +73,10 @@
         "value": "415f3a5dc54114a5992b48aaf65809cb8264479dd040d98eec6fc87a9e7d86f4"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831214329/https://www.fortinet.com/blog/threat-research/quickfox-supply-chain-attack-used-to-deploy-fdmtp-implant",
-        "attempted": "2026-08-31T22:10:55Z"
+        "attempted": "2026-09-04T01:20:42Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -84,24 +84,24 @@
       "ref": "REF-004",
       "url": "https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:11:05Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:21:09Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 456504,
-      "sha256_raw": "73a0ffb97a9b1f15f5fef398cc171ff60ef8c592b4c1e07b3dab8c826049ebc5",
-      "sha256_normalized": "3ccbc95643f5b56430974283830ebd5db3627f99f656eea2a941dc6ae5c2a1d6",
+      "content_length": 455137,
+      "sha256_raw": "c53c5a277e3a6bf83a8d32eab7f87d65449c3c85bd8a03af484d1eba57e57d00",
+      "sha256_normalized": "ae41be73dcd9fc1fae7c0afc903f3548156f159eb8ea4451012284ff57b85d15",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "3ccbc95643f5b56430974283830ebd5db3627f99f656eea2a941dc6ae5c2a1d6"
+        "value": "ae41be73dcd9fc1fae7c0afc903f3548156f159eb8ea4451012284ff57b85d15"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831214405/https://www.darktrace.com/blog/chinese-apt-campaign-targets-entities-with-updated-fdmtp-backdoor",
-        "attempted": "2026-08-31T22:11:07Z"
+        "attempted": "2026-09-04T01:21:11Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -110,11 +110,11 @@
       "url": "https://www.govinfosecurity.com/china-linked-hackers-exploit-n-able-flaw-in-ransomware-attacks-a-32506",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:18Z",
+      "fetched": "2026-09-04T01:21:39Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 400180,
-      "sha256_raw": "17efc673b7bf6d97df3e003449d0b2007709189f9cf4efa3722771cb7ea0b2d4",
+      "content_length": 400881,
+      "sha256_raw": "28439cc0c3e070b9e4f2253175dca4cad8cdd3a3641fd8e49d0dda151d67ea3e",
       "sha256_normalized": "310dc921382ba9360152f928e64c31373715961064616a8a737b1752d622ca1f",
       "normalizer": "html/v1",
       "extractor": null,
@@ -125,8 +125,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:20Z",
-        "note": "HTTP 523"
+        "attempted": "2026-09-04T01:21:41Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -135,23 +135,23 @@
       "url": "https://thehackernews.com/2026/08/quickfox-supply-chain-attack-delivers.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:28Z",
+      "fetched": "2026-09-04T01:22:08Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 172607,
-      "sha256_raw": "feb407d3a1920881f69f337b66ae6be601c690f1f8343c8b0f639ede7b166105",
-      "sha256_normalized": "4a9f93c8756f3a79fee65d78352ab2668b277125d85c02d39791fab0715d9896",
+      "content_length": 173500,
+      "sha256_raw": "74bebc4ec2ede36ac352e70b1823d1066cb5be769ef19760d33ea520d80dcae8",
+      "sha256_normalized": "f81d2ab64d32a1751eba21647b7da104c203fb6330e3a75d57eb5ab1bb868e98",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "4a9f93c8756f3a79fee65d78352ab2668b277125d85c02d39791fab0715d9896"
+        "value": "f81d2ab64d32a1751eba21647b7da104c203fb6330e3a75d57eb5ab1bb868e98"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:30Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:22:10Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -160,7 +160,7 @@
       "url": "https://attack.mitre.org/groups/G0129/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:31Z",
+      "fetched": "2026-09-04T01:22:37Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 378571,
@@ -175,8 +175,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:33Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:22:39Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -185,27 +185,27 @@
       "url": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:34Z",
+      "fetched": "2026-09-04T01:23:06Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 168365,
-      "sha256_raw": "c8e1e0dacabaa6f2dcf47f8d12da8c1650253f9f3ae16b8ed3cc46a38780070e",
-      "sha256_normalized": "f2f7e4631fa022f6217ed3c3c619d19fa1bbd5fc9342245ffd0fc8b99b57f08b",
+      "content_length": 169239,
+      "sha256_raw": "532748566d32d10f0cf5cedf67fa975e68752bd6c411dfd13b1aa6fe81dfd9a6",
+      "sha256_normalized": "4e1900639ecd98a5568134b3bb447eafdf80622e38879e39e163bedd4daffddf",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "f2f7e4631fa022f6217ed3c3c619d19fa1bbd5fc9342245ffd0fc8b99b57f08b"
+        "value": "4e1900639ecd98a5568134b3bb447eafdf80622e38879e39e163bedd4daffddf"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:36Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:23:08Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     }
   ],
-  "manifest_sha256": "44ebb9f74b1a222759e4cb48e78a38a1c2581c9804ae57f8f26693bededb0ae3",
+  "manifest_sha256": "80ee369320cc4e9e31a32de6d3fa99e5d16214857c04377843d7513deb7f9918",
   "timestamp": {
     "status": "not_yet_anchored"
   }

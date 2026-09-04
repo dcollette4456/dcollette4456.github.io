@@ -262,7 +262,7 @@ def check_published_issue_sources_are_registered(registry_by_domain):
 
 
 def validate_ledgers(registry_source_ids):
-    schema = load_json(DATA / "schema" / "ledger-4.json")
+    schema = load_json(DATA / "schema" / "ledger-5.json")
     ledger_dir = DATA / "ledger"
     known_claim_ids = {}  # serial -> set of claim_id
 
@@ -273,7 +273,7 @@ def validate_ledgers(registry_source_ids):
         try:
             validate(claims, schema)
         except SchemaError as e:
-            fail(rel, e.path, e.message, "classification spec §15 / schema/ledger-4.json")
+            fail(rel, e.path, e.message, "classification spec §15 / schema/ledger-5.json")
             continue
 
         check_empty_strings(claims, rel)

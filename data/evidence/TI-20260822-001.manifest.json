@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260822-001",
-  "generated": "2026-08-31T22:12:05Z",
+  "generated": "2026-09-04T01:25:30Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,23 +10,23 @@
       "url": "https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:38Z",
+      "fetched": "2026-09-04T01:23:35Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 172267,
-      "sha256_raw": "3e25caf0b3da2db55d510e32cc5c361cf4489caab204f8433b7bec49e14c18a7",
-      "sha256_normalized": "055dca783df4ef2844492f98dd3de908af520c0689b3667432adb0844a3e56c3",
+      "content_length": 173160,
+      "sha256_raw": "44ec6c74b02641e902f3b2f8ccdcba81e587e5769801ad7db4fe76e3fbab436e",
+      "sha256_normalized": "f4983429291b497de9c0f3ce567e9097c3d75bda547c3e74cff3583de9e7dbce",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "055dca783df4ef2844492f98dd3de908af520c0689b3667432adb0844a3e56c3"
+        "value": "f4983429291b497de9c0f3ce567e9097c3d75bda547c3e74cff3583de9e7dbce"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:40Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:23:37Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -35,11 +35,11 @@
       "url": "https://therecord.media/russian-military-hackers-pose-as-recruiters-ukraine-it-workers",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:41Z",
+      "fetched": "2026-09-04T01:24:04Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 83004,
-      "sha256_raw": "ffc81852d3ad712e04a4d735322cf97933ac6c26ccbe7af3a81fbbf1c81c2798",
+      "content_length": 82796,
+      "sha256_raw": "fb2c426e65a20866efd276c6949c706869e18115c2cd1329bd0df0923a22846a",
       "sha256_normalized": "5ecc3650c2f1b8dabb511ff039504f3f83cb7f7b73855fb2bf74c8e63333aa96",
       "normalizer": "html/v1",
       "extractor": null,
@@ -50,8 +50,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:43Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:24:06Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -59,24 +59,24 @@
       "ref": "REF-003",
       "url": "https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:11:45Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:24:34Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 349455,
-      "sha256_raw": "4cd0e5c102a080ce1885557a0a7245eea6b23858be753da20b0af9f18a6dff4f",
-      "sha256_normalized": "f571563f145383cbed44bcd2ccaab129f032fd92348103a951c504b8eac9fa5b",
+      "content_length": 349153,
+      "sha256_raw": "09d55f37ad2a2b5c6d627fc12fd63efb359b9a42be6e505ae4ba77bbf6e5fcf5",
+      "sha256_normalized": "f89f784d8974b53ac47e07c2439b8643a7eed5af34e0f15b9815b275fdcd3605",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "f571563f145383cbed44bcd2ccaab129f032fd92348103a951c504b8eac9fa5b"
+        "value": "f89f784d8974b53ac47e07c2439b8643a7eed5af34e0f15b9815b275fdcd3605"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831214651/https://www.microsoft.com/en-us/security/blog/2026/07/31/captivecrunch-midnight-blizzard-targets-travelers-worldwide-for-malware-delivery-and-credential-theft/",
-        "attempted": "2026-08-31T22:11:47Z"
+        "attempted": "2026-09-04T01:24:36Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -85,11 +85,11 @@
       "url": "https://reliaquest.com/blog/threat-spotlight-dns-poisoning-tactics-expand-to-hospitality/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:11:56Z",
+      "fetched": "2026-09-04T01:25:03Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 83514,
-      "sha256_raw": "07998349f905fb4917e103fb9039575f4d4fa41390c56c85adf6ee01e0c574d2",
+      "content_length": 83550,
+      "sha256_raw": "bfee0a778b624365d2f511dd7fdf5f28e84e71c3a8f5b46985683e6c75c84ca1",
       "sha256_normalized": "883f2f62d70e0aa78a4e1937f1edf2a368a61144f6859903456c4ade082f8823",
       "normalizer": "html/v1",
       "extractor": null,
@@ -100,12 +100,12 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:11:58Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:25:05Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     }
   ],
-  "manifest_sha256": "676043f8afbaf9f223816d6208312fd5f0968f62a772a5011347cba1262f6d6c",
+  "manifest_sha256": "34041a37529bd1da99a11fc4be380e2f5b5e1e03e12607476ffd74072d0453ab",
   "timestamp": {
     "status": "not_yet_anchored"
   }

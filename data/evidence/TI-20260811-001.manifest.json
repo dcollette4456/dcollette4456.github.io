@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260811-001",
-  "generated": "2026-08-31T22:03:28Z",
+  "generated": "2026-09-04T00:50:38Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,11 +10,11 @@
       "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:00:53Z",
+      "fetched": "2026-09-04T00:46:04Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 111396,
-      "sha256_raw": "af05e17a55b69cfa99ff7294dc29ff22b8b7176d8c3f937a1ad0ad5d4ddb5c12",
+      "sha256_raw": "b09a79ccfa700941419fd1c6dafd8fcc2dc1d6d0219a55e16729974b4a3522ce",
       "sha256_normalized": "c185e989ede58c8998074d7c25e505812c84d362831b634d1c4a5b498de3759b",
       "normalizer": "html/v1",
       "extractor": null,
@@ -25,8 +25,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:00:55Z",
-        "note": "HTTP 520"
+        "attempted": "2026-09-04T00:46:06Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -34,12 +34,12 @@
       "ref": "REF-002",
       "url": "https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:01:04Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T00:46:33Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 171378,
-      "sha256_raw": "520bc06b0a05270049dc225b60f3f7e8b19354ae900df040363ab1f4c4a0deec",
+      "content_length": 169380,
+      "sha256_raw": "329eea05b22c26ce356c8d20690a4914b2841f0a9806e196ef7bd7388a7e08bf",
       "sha256_normalized": "fe28110999966998bf07911f75de3665d79d73c2bf2c11570930ee749c2bacc4",
       "normalizer": "html/v1",
       "extractor": null,
@@ -48,10 +48,10 @@
         "value": "fe28110999966998bf07911f75de3665d79d73c2bf2c11570930ee749c2bacc4"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831211737/https://www.extrahop.com/blog/aoa-iranian-affiliated-actors-target-u-s-critical-infrastructure-through-plcs",
-        "attempted": "2026-08-31T22:01:06Z"
+        "attempted": "2026-09-04T00:46:35Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -59,24 +59,24 @@
       "ref": "REF-003",
       "url": "https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:01:16Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T00:47:02Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 469128,
-      "sha256_raw": "5df4c26d892adb2c7b2c7c0de9ccbe8b982179de393d16ba8efa4ce254a5b82b",
-      "sha256_normalized": "5061edff81c7890d78104eaa6477e0a9bbd9c7d988e73492da90e3f661acc791",
+      "content_length": 468772,
+      "sha256_raw": "eeb0428b5d563be6c63e5b847c0412b8dcbc9247f5cb5084af1ea9b89c35a2bb",
+      "sha256_normalized": "af420e0df9e5a623a3a46adad76bd4de5b9abfd68edd1a4999daf692017142ed",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "5061edff81c7890d78104eaa6477e0a9bbd9c7d988e73492da90e3f661acc791"
+        "value": "af420e0df9e5a623a3a46adad76bd4de5b9abfd68edd1a4999daf692017142ed"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831211739/https://www.kelacyber.com/blog/irans-apts-and-the-us-enterprise-in-2026-muddywater/",
-        "attempted": "2026-08-31T22:01:18Z"
+        "attempted": "2026-09-04T00:47:04Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -89,8 +89,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:01:44Z",
-        "note": "HTTP 523"
+        "attempted": "2026-09-04T00:47:47Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -98,8 +98,8 @@
       "ref": "REF-005",
       "url": "https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:02:04Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T00:48:14Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 36502,
@@ -112,10 +112,10 @@
         "value": "25211936de4547e8b7cd6c29b1ac2140ece9f179e812cacf5d40dbcac7e595ed"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831211825/https://www.rescana.com/post/rustywater-iranian-muddywater-apt-targets-israeli-government-and-infrastructure-with-advanced-rust",
-        "attempted": "2026-08-31T22:02:06Z"
+        "attempted": "2026-09-04T00:48:16Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -123,12 +123,12 @@
       "ref": "REF-006",
       "url": "https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:02:23Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T00:48:43Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 148527,
-      "sha256_raw": "00573dadc5378ade77c570f57142e2d9e1eb59e484aae0f97f820e9d16c0d9bf",
+      "sha256_raw": "589bcc6b818e1f89af40a4adea64232b04eceaac5b1d4e8da26b0a8eb3f8d696",
       "sha256_normalized": "bc3119377baa64579c2aeb7c1ce20f2c54a444ea408ee4b671267ce57bb71bc0",
       "normalizer": "html/v1",
       "extractor": null,
@@ -137,10 +137,10 @@
         "value": "bc3119377baa64579c2aeb7c1ce20f2c54a444ea408ee4b671267ce57bb71bc0"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831211850/https://www.safebreach.com/blog/cisa-aa26-097a-iranian-plc-exploitation-safebreach-coverage/",
-        "attempted": "2026-08-31T22:02:25Z"
+        "attempted": "2026-09-04T00:48:45Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -149,23 +149,23 @@
       "url": "https://socradar.io/blog/iranian-hackers-plc-us-critical-infrastructure/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:02:36Z",
+      "fetched": "2026-09-04T00:49:12Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 407423,
-      "sha256_raw": "33c3e519d6c0e9d4d3b7017805b2e17cdd6cc1c1a4cd68a923b53d2fd76b07ce",
-      "sha256_normalized": "cf6966bd42cff04b910883b30600ac2eab2b44c199e87a422595d05edcb70265",
+      "content_length": 407506,
+      "sha256_raw": "dea126625a8174db63aaada20d2ddc53d235f7c7465901163dd117c3a81babe4",
+      "sha256_normalized": "d253c81b2a4a1b32a69d6b93a8ad4a7998e21a09ed535140aa5a84c96b8e52dd",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "cf6966bd42cff04b910883b30600ac2eab2b44c199e87a422595d05edcb70265"
+        "value": "d253c81b2a4a1b32a69d6b93a8ad4a7998e21a09ed535140aa5a84c96b8e52dd"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:02:38Z",
-        "note": "HTTP 520"
+        "attempted": "2026-09-04T00:49:14Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -174,23 +174,23 @@
       "url": "https://www.techtimes.com/articles/321335/20260723/iranian-hackers-infiltrate-siemens-schneider-plcs-blinding-operators-fake-readings.htm",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:02:47Z",
+      "fetched": "2026-09-04T00:49:41Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 337213,
-      "sha256_raw": "80fc4f66dbbbfcdf0067ae2b9cab0a568e980708a2cc8b45b050fa9524edc92d",
-      "sha256_normalized": "34893f8dbc394e8c403f1308f9785f23a87e4e3c03e016338e48f7a717fee6b5",
+      "content_length": 337071,
+      "sha256_raw": "55456f1638c8a70fccb5f1c0da3b797f708be855e650959e83b4025a3bf679a7",
+      "sha256_normalized": "e8cc506c0789a15e53041f9bfcdd05e99cd8bfbd952cbe0c0b52aab14a6da43c",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "34893f8dbc394e8c403f1308f9785f23a87e4e3c03e016338e48f7a717fee6b5"
+        "value": "e8cc506c0789a15e53041f9bfcdd05e99cd8bfbd952cbe0c0b52aab14a6da43c"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:02:49Z",
-        "note": "HTTP 523"
+        "attempted": "2026-09-04T00:49:43Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -199,28 +199,28 @@
       "url": "https://www.trellix.com/blogs/research/the-iranian-cyber-capability-2026/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:03:00Z",
+      "fetched": "2026-09-04T00:50:10Z",
       "http_status": 403,
       "content_type": null,
       "content_length": 446,
-      "sha256_raw": "0a216c3f8fabbe3b4607f4fd35aac2badf60bd6d3f9e8065f8056a6a273a1d57",
-      "sha256_normalized": "0b370453ce27be67b470bd9e6571e3705cdfe4e5900f7f59aad09109dcfc3aad",
+      "sha256_raw": "7e1797d284a35bfc76f8e8d346f8e214ff91dc510d6661b4b1fadf0544c5d325",
+      "sha256_normalized": "f185f660d80059cb9e53644d36e5d8b66585879b9f0c250e3964a0a3e70c2d07",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "0b370453ce27be67b470bd9e6571e3705cdfe4e5900f7f59aad09109dcfc3aad"
+        "value": "f185f660d80059cb9e53644d36e5d8b66585879b9f0c250e3964a0a3e70c2d07"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:03:02Z",
+        "attempted": "2026-09-04T00:50:12Z",
         "note": "TimeoutError: The read operation timed out"
       },
       "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
     }
   ],
-  "manifest_sha256": "08eee29ef0c8126728b7aafbddc032511eac7cd306f0d35932e48e3ead959706",
+  "manifest_sha256": "d1b0323be57319453b10e74844749dd0415b166e3162663c0ff7ec3cf54a6d3b",
   "timestamp": {
     "status": "not_yet_anchored"
   }

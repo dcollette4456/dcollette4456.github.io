@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "serial": "TI-20260809-001",
-  "generated": "2026-08-31T22:06:26Z",
+  "generated": "2026-09-04T01:04:16Z",
   "capture_is_retrospective": true,
   "entries": [
     {
@@ -10,11 +10,11 @@
       "url": "https://asec.ahnlab.com/en/94696/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:07Z",
+      "fetched": "2026-09-04T00:57:08Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 137839,
-      "sha256_raw": "7bbd80356fb2be6e61c8b53da7155f0f045dda4b76e3f933c6ec6cb9006963fc",
+      "content_length": 137964,
+      "sha256_raw": "c63fb38b40e909e743f0b562e7539c3acedd3fc21ab006765c2c3ecef199d041",
       "sha256_normalized": "214070ba4c3ed299626c1ec986519b92871f0c05d7c5dd13266fb4cc0b53622e",
       "normalizer": "html/v1",
       "extractor": null,
@@ -25,8 +25,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:09Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T00:57:10Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -35,11 +35,11 @@
       "url": "https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:12Z",
+      "fetched": "2026-09-04T00:57:37Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 192872,
-      "sha256_raw": "d569dc909ff2f0bc29d1556eb9986b92e666c1abe380a290833c5512f200c4dc",
+      "content_length": 193016,
+      "sha256_raw": "318f29631038740c59d5daf73f82764ac335f3c55ff015f96cd44d72cbf51f20",
       "sha256_normalized": "e2e02e63183c9a216bca6c2b4488ed9bd37ff685d8139aa14bdfda1d671be632",
       "normalizer": "html/v1",
       "extractor": null,
@@ -50,8 +50,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:14Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T00:57:39Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -60,7 +60,7 @@
       "url": "https://www.enki.co.kr",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:18Z",
+      "fetched": "2026-09-04T00:58:09Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 1432401,
@@ -75,8 +75,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:20Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T00:58:11Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -85,7 +85,7 @@
       "url": "https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:22Z",
+      "fetched": "2026-09-04T00:58:38Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 257112,
@@ -100,8 +100,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:24Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T00:58:40Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -110,23 +110,23 @@
       "url": "https://www.insurancejournal.com/news/international/2026/07/23/878763.htm",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:25Z",
+      "fetched": "2026-09-04T00:59:07Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 91682,
-      "sha256_raw": "1cf180e677122754c1329c50a7afdecad844d3d1c8c82239e48d8bbe42013131",
-      "sha256_normalized": "aa771a4af2fdef3d3151a5456eae7c4fa24a8147884056580a517570d1c0719c",
+      "content_length": 90884,
+      "sha256_raw": "176a910502a687cb9452be3d053d629c5d0660086f32cf8ad7504a916cbc9019",
+      "sha256_normalized": "e239a469e35989918b72fb491e66219c9c58a95d94597cab4af4b9b36436436a",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "aa771a4af2fdef3d3151a5456eae7c4fa24a8147884056580a517570d1c0719c"
+        "value": "e239a469e35989918b72fb491e66219c9c58a95d94597cab4af4b9b36436436a"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:27Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T00:59:09Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -135,7 +135,7 @@
       "url": "https://www.boho.or.kr/kr/bbs/view.do",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:29Z",
+      "fetched": "2026-09-04T00:59:38Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 959,
@@ -150,8 +150,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:31Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T00:59:40Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -159,12 +159,12 @@
       "ref": "REF-007",
       "url": "https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2",
       "format_family": "html",
-      "preservation": "archive_only",
-      "fetched": "2026-08-31T22:05:33Z",
+      "preservation": "none",
+      "fetched": "2026-09-04T01:00:08Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 129979,
-      "sha256_raw": "7982216babab0e22422814b5e6bdad82a4634e5bb08c343ce240fd4387157345",
+      "content_length": 129980,
+      "sha256_raw": "b9561df72df860b170c3ebc61f428029943696043c191a6acb9ea7b3b5f38f14",
       "sha256_normalized": "d771e1032d19a103ccf13381c83172f7d02e02393f6d33dc2154061cfdc376c0",
       "normalizer": "html/v1",
       "extractor": null,
@@ -173,10 +173,10 @@
         "value": "d771e1032d19a103ccf13381c83172f7d02e02393f6d33dc2154061cfdc376c0"
       },
       "archive": {
-        "status": "captured",
+        "status": "failed",
         "provider": "web.archive.org",
-        "url": "https://web.archive.org/web/20260831212817/https://www.fortinet.com/blog/threat-research/dprk-related-campaigns-with-lnk-and-github-c2",
-        "attempted": "2026-08-31T22:05:35Z"
+        "attempted": "2026-09-04T01:00:10Z",
+        "note": "HTTP 520"
       }
     },
     {
@@ -185,7 +185,7 @@
       "url": "https://attack.mitre.org/groups/G0094/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:46Z",
+      "fetched": "2026-09-04T01:00:25Z",
       "http_status": 200,
       "content_type": "text/html",
       "content_length": 368578,
@@ -200,8 +200,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:48Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:00:27Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -210,23 +210,23 @@
       "url": "https://www.nknews.org/2026/08/crypto-exchange-sues-north-korean-government-and-hackers-over-1-5b-heist/",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:56Z",
+      "fetched": "2026-09-04T01:00:55Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 125293,
-      "sha256_raw": "81db9f7f610abbf7dd54e2e5455a91a5c335ea4864f37341d47d27d4dbfe61ec",
-      "sha256_normalized": "36199c3c4279459d73edcca465cfeff34febecac6482710775404de0e1505f05",
+      "content_length": 125182,
+      "sha256_raw": "9fd6821e5e1b18ec8addd24c08182067ded623e5d578725bb1069ba56b214e0d",
+      "sha256_normalized": "8c14a1d4b7edc9f0eb2e9ca47d90e48616049d69a996394446917bb1f4a74285",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "36199c3c4279459d73edcca465cfeff34febecac6482710775404de0e1505f05"
+        "value": "8c14a1d4b7edc9f0eb2e9ca47d90e48616049d69a996394446917bb1f4a74285"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:05:58Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:00:57Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -235,11 +235,11 @@
       "url": "https://s2w.medium.com/detailed-analysis-of-signbt-malware-cluster-504fc3ab4ecf",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:05:59Z",
+      "fetched": "2026-09-04T01:01:23Z",
       "http_status": 403,
       "content_type": null,
       "content_length": 5850,
-      "sha256_raw": "5a6c0ebb36148150780ea049f5f201a844e1173aafb2c10e88fa842a415af6fa",
+      "sha256_raw": "5c92ebf9f473840e8615054ee95b0014566a89f87cb37f0d92b53bc488722848",
       "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
       "normalizer": "html/v1",
       "extractor": null,
@@ -250,8 +250,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:06:01Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:01:25Z",
+        "note": "TimeoutError: The read operation timed out"
       },
       "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
     },
@@ -261,23 +261,23 @@
       "url": "https://securityaffairs.com/196417/apt/south-korea-warns-of-state-backed-watering-hole-attacks.html",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:06:04Z",
+      "fetched": "2026-09-04T01:01:53Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 111320,
-      "sha256_raw": "51307e8102b75dc72f7e54602e789cbb95dbae6890716c80b873b66bb124f516",
-      "sha256_normalized": "041f668a10b4809de34f8f8a9675240caf51b56a64fd7b8d6e33795eb46600c5",
+      "content_length": 110976,
+      "sha256_raw": "ae07ca1ab4ab1d960d2be7aca6ef71cbeef29c06deeb4ce37e23c076a0989321",
+      "sha256_normalized": "60a983208441d5436d693c0af1bec8445c54d20e94954d44d837742b902daf48",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "041f668a10b4809de34f8f8a9675240caf51b56a64fd7b8d6e33795eb46600c5"
+        "value": "60a983208441d5436d693c0af1bec8445c54d20e94954d44d837742b902daf48"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:06:06Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:01:55Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -286,23 +286,23 @@
       "url": "https://www.techtimes.com/articles/323486/20260807/north-korean-hackers-infected-themselves-exposing-1640-company-breach-researcher.htm",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:06:07Z",
+      "fetched": "2026-09-04T01:02:22Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 342940,
-      "sha256_raw": "e221f0167af532ff08d12afdf4bf3059cc47236c9f95733c5fd49fc5aee99544",
-      "sha256_normalized": "e731ab3b9b40c2cc5dee2b77645f35819b4f89e6ab811bacd29dd89caddd72e1",
+      "content_length": 342798,
+      "sha256_raw": "cbef365aa5bd60e5199f1f2f579fd3e8df03b8fee158cf66930c3a4d0295e32d",
+      "sha256_normalized": "1e808f3009e56bde42119ed95fb0db4ebcb4c6de8a6ecd6864b0990aa68edb96",
       "normalizer": "html/v1",
       "extractor": null,
       "version_identity": {
         "kind": "normalized_hash",
-        "value": "e731ab3b9b40c2cc5dee2b77645f35819b4f89e6ab811bacd29dd89caddd72e1"
+        "value": "1e808f3009e56bde42119ed95fb0db4ebcb4c6de8a6ecd6864b0990aa68edb96"
       },
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:06:09Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:02:24Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -311,11 +311,11 @@
       "url": "https://therecord.media/south-korea-cyberattack-foreign-ministry",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:06:10Z",
+      "fetched": "2026-09-04T01:02:51Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 80079,
-      "sha256_raw": "730a7728e2b595e5946bc404d791e2b4347604201f8bdc87509f4b13847cd09b",
+      "content_length": 79871,
+      "sha256_raw": "118f46ce669f43f66bebada8f88cb0c8c5e85780e8267bdcdbf594c0896649b9",
       "sha256_normalized": "4dfc3c431386ddf8352a66a1fbb0f27331d32ff070953f109ef62f4a166a6ec1",
       "normalizer": "html/v1",
       "extractor": null,
@@ -326,8 +326,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:06:12Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:02:53Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -336,11 +336,11 @@
       "url": "https://therecord.media/kimsuky-north-korea-espionage-groupware-companies",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:06:20Z",
+      "fetched": "2026-09-04T01:03:19Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 79144,
-      "sha256_raw": "65f29bbd2142fa00de2072f46eba77ad48ab3b93fec6b7538a8b3c87c5563420",
+      "content_length": 78936,
+      "sha256_raw": "f5bb42e156b856a38f22c64cc58e961d21ef114fb0d1a5fd7653baea00a91b56",
       "sha256_normalized": "dfdcf77d9671ec2aba2f6da5a8f315e488691b4e4ddf8004affcb46079aabac4",
       "normalizer": "html/v1",
       "extractor": null,
@@ -351,8 +351,8 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:06:22Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:03:21Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     },
     {
@@ -361,11 +361,11 @@
       "url": "https://therecord.media/north-korea-hackers-ransomware",
       "format_family": "html",
       "preservation": "none",
-      "fetched": "2026-08-31T22:06:23Z",
+      "fetched": "2026-09-04T01:03:48Z",
       "http_status": 200,
       "content_type": "text/html",
-      "content_length": 88833,
-      "sha256_raw": "c79d5983dacd51cec527782b221bdb9a89d9cd61f540a28366898c8440860f6c",
+      "content_length": 88625,
+      "sha256_raw": "993c0f1d26a1b10813132375a9e68af87c7056385bb30148d267f148bf130751",
       "sha256_normalized": "313bb9f3374c3baf24c9c43bc471dc31a2cdbdccf7070ba4efa692aa9058f1eb",
       "normalizer": "html/v1",
       "extractor": null,
@@ -376,12 +376,12 @@
       "archive": {
         "status": "failed",
         "provider": "web.archive.org",
-        "attempted": "2026-08-31T22:06:25Z",
-        "note": "URLError: <urlopen error [Errno 111] Connection refused>"
+        "attempted": "2026-09-04T01:03:50Z",
+        "note": "TimeoutError: The read operation timed out"
       }
     }
   ],
-  "manifest_sha256": "304756ec0244ba450b75ea93aef2e40131ae6bac83b7f69d90ceb5ac6933ac7c",
+  "manifest_sha256": "f19cedb0b6a177ca261417c0385b0b37d2e146528d0bfa2c25a4a265225badb9",
   "timestamp": {
     "status": "not_yet_anchored"
   }

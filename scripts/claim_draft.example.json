@@ -1,5 +1,5 @@
 {
-  "_comment": "Worked example: classification spec §15's own PLC-injection claim, as input to claim_writer.py. This is illustrative only -- the placeholder serial TI-20990101-999 is deliberately out of range for any real issue -- copy this file and change it rather than running it as-is.",
+  "_comment": "Worked example: classification spec §15's own PLC-injection claim, as input to claim_writer.py. This is illustrative only -- the placeholder serial TI-20990101-999 is deliberately out of range for any real issue -- copy this file and change it rather than running it as-is. The canonical shape is data/schema/claim-draft-1.json (classification spec §15A); this file is a worked example, not the authority, since an example can drift from the schema silently.",
   "serial": "TI-20990101-999",
   "source_id": "SRC-0001",
   "source_type": "TEC",
@@ -31,8 +31,8 @@
   },
   "grader": {
     "model": "MODEL-ID-PLACEHOLDER",
-    "spec_version": "4.1",
-    "schema_version": 4,
+    "spec_version": "4.2",
+    "schema_version": 6,
     "normalizer": "html/v1",
     "run": "2026-08-11T09:16:22Z",
     "passes": 3,
@@ -75,10 +75,12 @@
     "vulnerabilities": ["CVE-2026-18577"],
     "justified_by": "REF-001, assertion A1"
   },
-  "provenance": {
-    "pool": "live",
-    "source_published": "2026-07-22",
-    "window": "2026-07-12/2026-08-11",
-    "capture_is_retrospective": false
+  "_provenance_note": "provenance.pool, provenance.window and capture_is_retrospective are deliberately absent from this draft -- classification spec §15A puts them in the issue-context category, assigned by claim_writer.py from issue metadata, because an isolated single-document grading call cannot know whether this source arrived in a scheduled sweep or was backfilled after the fact.",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": ["REF-001"],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.2"
   }
 }

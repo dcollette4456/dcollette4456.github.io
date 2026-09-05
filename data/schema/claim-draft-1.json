@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dcollette4456.github.io/schema/claim-draft-1.json",
+  "title": "Claim draft, schema version 1",
+  "description": "Classification spec §15A. One file per claim-source pair, at data/claim_drafts/{serial}/{claim_id}.json, written by the grading pass and read by scripts/claim_writer.py. Carries the authored and transcribed fields; computed fields (grade, gate_vector, fingerprint, assertion_license) are deliberately absent -- claim_writer.py produces them, which is what makes the arithmetic auditable: re-run the writer over the drafts and get the published ledger, or find that you cannot. Issue-context fields (provenance.pool, provenance.window, capture_is_retrospective) are also absent by design: an isolated single-document grading call cannot know whether its source arrived in a scheduled sweep or was backfilled, so claim_writer.py assigns them from issue metadata rather than trusting a grader's guess.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "serial", "source_id", "source_type", "text", "gates",
+    "evidentiary_status", "polarity", "volatility",
+    "document_sha256_normalized", "time", "grader",
+    "segmentation", "hunt_value", "sectors", "actors", "entities",
+    "gate_evaluation"
+  ],
+  "properties": {
+    "serial": { "type": "string", "pattern": "^(TI|IW)-(RETRO-[0-9]{3}|[0-9]{8}-[0-9]{3})$" },
+    "source_id": { "type": "string", "pattern": "^SRC-[0-9]{4,}$" },
+    "source_type": { "type": "string", "enum": ["GOV", "VND", "MED", "ACA", "TEC", "IND", "NPO", "AGG", "SOC", "ADV", "ANL"] },
+    "text": { "type": "string", "minLength": 1 },
+    "gates": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The twelve separately-answerable questions §5's gates 2 and 3 actually ask, decomposed. claim_writer.py computes the ledger's summarized 7-field gate_vector from these; the mapping lives in code, not restated here, so the two cannot drift apart in prose.",
+      "required": [
+        "origin_identified", "primary_reachable", "document_retrieved", "gated",
+        "own_observation", "named_primary", "relay_depth", "self_interested_only",
+        "aggregate", "artifact_test", "method_test", "hedge_test"
+      ],
+      "properties": {
+        "origin_identified": { "type": ["boolean", "null"] },
+        "primary_reachable": { "type": ["boolean", "null"] },
+        "document_retrieved": { "type": ["boolean", "null"] },
+        "gated": { "type": ["boolean", "null"] },
+        "own_observation": { "type": ["boolean", "null"] },
+        "named_primary": { "type": ["boolean", "null"] },
+        "relay_depth": { "type": ["integer", "string", "null"] },
+        "self_interested_only": { "type": ["boolean", "null"] },
+        "aggregate": { "type": ["boolean", "null"] },
+        "artifact_test": { "type": ["string", "null"], "enum": ["pass", "fail", "n/a", "undetermined", null] },
+        "method_test": { "type": ["string", "null"], "enum": ["pass", "fail", "n/a", "undetermined", null] },
+        "hedge_test": { "type": ["string", "null"], "enum": ["pass", "fail", "n/a", "undetermined", null] }
+      }
+    },
+    "evidentiary_status": { "type": ["string", "null"], "enum": ["observed", "alleged", "adjudicated", "self_reported", null] },
+    "polarity": { "type": ["string", "null"], "enum": ["positive", "negative", null] },
+    "volatility": { "type": ["string", "null"], "enum": ["durable", "perishable", "superseding", null] },
+    "scope": { "type": ["string", "null"] },
+    "document_sha256_normalized": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "origin_named": { "type": ["string", "null"] },
+    "time": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["fetched"],
+      "properties": {
+        "observed_period": {
+          "description": "An object when it fits {start, end, basis, precision}; a string carrying a prose explanation when it does not (classification spec §26 -- an observation spanning several unrelated windows is not forced into one). Never fabricated to fit the shape."
+        },
+        "source_published": { "type": ["string", "null"] },
+        "publication_model": { "type": "string", "enum": ["dated", "continuous"] },
+        "fetched": { "type": "string" }
+      }
+    },
+    "grader": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["model", "spec_version", "normalizer", "run", "passes", "agreement"],
+      "properties": {
+        "model": { "type": "string", "minLength": 1 },
+        "spec_version": { "type": "string", "minLength": 1 },
+        "normalizer": { "type": "string", "minLength": 1 },
+        "run": { "type": "string" },
+        "passes": { "type": "integer", "minimum": 1 },
+        "agreement": { "type": "string", "enum": ["unanimous", "majority", "split", "single_pass"] }
+      }
+    },
+    "segmentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["atomic_assertions", "merged", "assertions"],
+      "properties": {
+        "atomic_assertions": { "type": ["integer", "null"], "minimum": 1 },
+        "merged": { "type": ["boolean", "null"] },
+        "merge_basis": { "type": ["string", "null"] },
+        "assertions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key", "descriptor"],
+            "properties": {
+              "key": { "type": "string", "pattern": "^A[0-9]+$" },
+              "descriptor": { "type": "string", "minLength": 1 }
+            }
+          }
+        }
+      }
+    },
+    "hunt_value": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["behavioral", "huntable", "indicator_bearing"],
+      "properties": {
+        "behavioral": { "type": ["boolean", "null"] },
+        "behavioral_basis": { "type": ["string", "null"] },
+        "huntable": { "type": ["boolean", "null"] },
+        "telemetry_classes": { "type": "array", "items": { "type": "string" } },
+        "collection_point_basis": { "type": ["string", "null"], "enum": ["stated", "derived", null] },
+        "collection_point_source": { "type": ["string", "null"] },
+        "technique_ids": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "basis"],
+            "properties": {
+              "id": { "type": "string" },
+              "basis": { "type": "string", "enum": ["transcribed", "derived"] }
+            }
+          }
+        },
+        "indicator_bearing": { "type": ["boolean", "null"] }
+      }
+    },
+    "sectors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["confirmed", "contextual"],
+      "properties": {
+        "confirmed": { "type": "array", "items": { "type": "string" } },
+        "contextual": { "type": "array", "items": { "type": "string" } },
+        "justified_by": { "type": ["string", "null"] }
+      }
+    },
+    "actors": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subject", "referenced"],
+      "properties": {
+        "subject": { "type": "array", "items": { "type": "string" } },
+        "referenced": { "type": "array", "items": { "type": "string" } },
+        "names_used_by_source": { "type": "array", "items": { "type": "string" } },
+        "justified_by": { "type": ["string", "null"] }
+      }
+    },
+    "entities": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clusters", "families", "tools", "campaigns", "vulnerabilities"],
+      "properties": {
+        "clusters": { "type": "array", "items": { "type": "string" } },
+        "families": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } },
+        "campaigns": { "type": "array", "items": { "type": "string" } },
+        "vulnerabilities": { "type": "array", "items": { "type": "string" } },
+        "justified_by": { "type": ["string", "null"] }
+      }
+    },
+    "corroboration": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "count": { "type": "integer", "minimum": 0 },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "basis": { "type": "string" },
+        "alias_resolved": { "type": "boolean" }
+      }
+    },
+    "gate_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["isolation", "sources_in_context", "assertions_graded_in_this_call", "topic_framing_present", "specification_version_read"],
+      "description": "The conditions this claim was gate-evaluated under, recorded rather than asserted. Classification spec §15, §30 stage 4.",
+      "properties": {
+        "isolation": { "type": "string", "enum": ["single_source_single_claim", "multi_source_context", "undisclosed"] },
+        "sources_in_context": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "assertions_graded_in_this_call": { "type": "integer", "minimum": 1 },
+        "topic_framing_present": { "type": "boolean" },
+        "specification_version_read": { "type": "string" },
+        "prompt_version": { "type": "string" }
+      }
+    }
+  }
+}

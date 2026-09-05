@@ -209,7 +209,7 @@ def main():
     source_id_by_key = {(e["canonical_domain"], e["canonical_name"]): e["source_id"] for e in registry}
 
     by_issue = {}
-    for url, name, type_, origin, serial in load_all_citations():
+    for url, name, type_, origin, serial, type_basis in load_all_citations():
         if args.only and serial != args.only:
             continue
         by_issue.setdefault(serial, []).append((url, name))

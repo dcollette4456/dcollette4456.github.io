@@ -52,11 +52,14 @@ def impersonation_check(domain, existing_domains):
 
 
 def load_all_citations(citations_dir=None):
-    """Returns a list of (url, canonical_name, type, origin, serial) tuples,
-    the same shape the old hardcoded CITATIONS list carried, read from every
-    data/citations/*.json file. Files are read in sorted (serial) order for
-    determinism; within a file, citation order is preserved exactly as
-    written, since that order is what assigns REF numbers per issue.
+    """Returns a list of (url, canonical_name, type, origin, serial, type_basis)
+    tuples, read from every data/citations/*.json file. Files are read in
+    sorted (serial) order for determinism; within a file, citation order is
+    preserved exactly as written, since that order is what assigns REF
+    numbers per issue. type_basis is the citing author's own self-description
+    of the publisher (classification spec §21); absent on entries recorded
+    before that field existed, per the same absent-not-fabricated rule that
+    governs everything else here -- nobody is going back to invent one.
     """
     d = Path(citations_dir) if citations_dir else CITATIONS_DIR
     out = []
@@ -64,7 +67,7 @@ def load_all_citations(citations_dir=None):
         serial = path.stem
         entries = json.loads(path.read_text(encoding="utf-8"))
         for e in entries:
-            out.append((e["url"], e["canonical_name"], e["type"], e.get("origin"), serial))
+            out.append((e["url"], e["canonical_name"], e["type"], e.get("origin"), serial, e.get("type_basis")))
     return out
 
 

@@ -1,0 +1,8 @@
+Continental Tech Wire, published 9 June 2026.
+
+According to a report published Monday by CyberFirm X, a Russia-nexus group
+compromised systems at several European energy companies using a zero-day
+vulnerability in a VPN appliance. CyberFirm X's report includes technical
+details of the exploitation chain and a full list of indicators of compromise.
+This outlet has not independently reviewed CyberFirm X's report and is
+relaying its findings as published.

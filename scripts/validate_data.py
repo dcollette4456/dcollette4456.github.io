@@ -125,7 +125,7 @@ def check_published_issues_have_serials(ledger_by_serial):
 
 
 def validate_citations():
-    schema_path = DATA / "schema" / "citations-1.json"
+    schema_path = DATA / "schema" / "citations-2.json"
     citations_dir = DATA / "citations"
     if not citations_dir.exists():
         return
@@ -135,14 +135,14 @@ def validate_citations():
         rel = str(path.relative_to(ROOT))
         serial = path.stem
         if not re.match(r"^(TI|IW)-(RETRO-[0-9]{3}|[0-9]{8}-[0-9]{3})$", serial):
-            fail(rel, "$", f"filename {serial!r} is not a valid issue serial", "data/schema/citations-1.json")
+            fail(rel, "$", f"filename {serial!r} is not a valid issue serial", "data/schema/citations-2.json")
             continue
 
         entries = load_json(path)
         try:
             validate(entries, schema)
         except SchemaError as e:
-            fail(rel, e.path, e.message, "data/schema/citations-1.json")
+            fail(rel, e.path, e.message, "data/schema/citations-2.json")
             continue
 
         check_empty_strings(entries, rel)
@@ -262,7 +262,7 @@ def check_published_issue_sources_are_registered(registry_by_domain):
 
 
 def validate_ledgers(registry_source_ids):
-    schema = load_json(DATA / "schema" / "ledger-5.json")
+    schema = load_json(DATA / "schema" / "ledger-6.json")
     ledger_dir = DATA / "ledger"
     known_claim_ids = {}  # serial -> set of claim_id
 
@@ -273,7 +273,7 @@ def validate_ledgers(registry_source_ids):
         try:
             validate(claims, schema)
         except SchemaError as e:
-            fail(rel, e.path, e.message, "classification spec §15 / schema/ledger-5.json")
+            fail(rel, e.path, e.message, "classification spec §15 / schema/ledger-6.json")
             continue
 
         check_empty_strings(claims, rel)
@@ -309,9 +309,46 @@ def validate_ledgers(registry_source_ids):
                 fail(rel, f"{path}", "negative-polarity claim has no stated scope but was not graded 6",
                      "CLAUDECODEBRIEF §8 item 10 / classification spec §29")
 
+            # classification spec §15A: a ledger entry with no claim draft behind it
+            # is a determination nobody made. claim_writer.py retains the draft at
+            # this exact path when it writes the entry, so absence here means
+            # either the ledger was hand-edited or written by something else.
+            if cid:
+                draft_path = DATA / "claim_drafts" / ledger_path.stem / f"{cid}.json"
+                if not draft_path.exists():
+                    fail(rel, f"{path}.claim_id", f"no claim draft at {draft_path.relative_to(ROOT)} -- "
+                         f"a ledger entry must have the authored draft that produced it",
+                         "classification spec §15A")
+
         known_claim_ids[ledger_path.stem] = seen_ids
 
     return known_claim_ids
+
+
+def validate_claim_drafts():
+    schema_path = DATA / "schema" / "claim-draft-1.json"
+    drafts_root = DATA / "claim_drafts"
+    if not drafts_root.exists():
+        return
+    schema = load_json(schema_path)
+
+    for serial_dir in sorted(p for p in drafts_root.iterdir() if p.is_dir()):
+        for draft_path in sorted(serial_dir.glob("*.json")):
+            rel = str(draft_path.relative_to(ROOT))
+            draft = load_json(draft_path)
+            try:
+                validate(draft, schema)
+            except SchemaError as e:
+                fail(rel, e.path, e.message, "classification spec §15A / schema/claim-draft-1.json")
+                continue
+            check_empty_strings(draft, rel)
+
+            ge = draft.get("gate_evaluation", {})
+            if ge.get("isolation") == "single_source_single_claim" and len(ge.get("sources_in_context", [])) != 1:
+                fail(rel, "$.gate_evaluation.sources_in_context",
+                     f"isolation is 'single_source_single_claim' but sources_in_context holds "
+                     f"{len(ge.get('sources_in_context', []))} entries, not one",
+                     "classification spec §15 / §30 stage 4")
 
 
 def check_data_claim_attributes_resolve(known_claim_ids):
@@ -333,7 +370,7 @@ def check_data_claim_attributes_resolve(known_claim_ids):
 
 
 def validate_manifests(registry_source_ids):
-    schema = load_json(DATA / "schema" / "manifest-1.json")
+    schema = load_json(DATA / "schema" / "manifest-2.json")
     evidence_dir = DATA / "evidence"
     if not evidence_dir.is_dir():
         return
@@ -345,7 +382,7 @@ def validate_manifests(registry_source_ids):
         try:
             validate(manifest, schema)
         except SchemaError as e:
-            fail(rel, e.path, e.message, "CLAUDECODEBRIEF §7.2 / schema/manifest-1.json")
+            fail(rel, e.path, e.message, "CLAUDECODEBRIEF §7.2 / schema/manifest-2.json")
             continue
 
         check_empty_strings(manifest, rel)
@@ -383,6 +420,8 @@ def main():
 
     registry_by_domain = validate_registry()
     check_published_issue_sources_are_registered(registry_by_domain)
+
+    validate_claim_drafts()
 
     registry = load_json(DATA / "sources" / "registry.json")
     registry_source_ids = {e["source_id"] for e in registry} if isinstance(registry, list) else None

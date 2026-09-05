@@ -17,6 +17,18 @@ not attempt to generate claim ledgers for the six published issues from
 their prose... The first real ledger arrives with the first issue
 authored against v4.1."
 
+Classification spec §15A (v4.2) puts `provenance.pool`, `.window`, and
+`capture_is_retrospective` in a fourth category, "issue context": facts
+a grading call cannot know because it holds one isolated document, not
+the issue's sweep history. This tool does not source them from anywhere
+either -- there is no issue-metadata mechanism yet to source them from.
+If the draft omits `provenance` (or omits `pool` specifically), the
+schema's own required-field check rejects the write. That is the
+correct outcome until something actually supplies pool from issue
+context: refuse rather than default it to a guess. Callers currently
+inject `provenance` into the draft by hand before running this tool;
+that is a disclosed gap, not a design.
+
 Usage:
   python3 scripts/claim_writer.py <draft.json>
 
@@ -228,6 +240,21 @@ def main():
               file=sys.stderr)
         time_block.pop("observed_period")
 
+    grader_block = _strip_nulls(draft["grader"])
+    grader_block["schema_version"] = 6  # stamped by the writer, not authored -- classification spec §15A
+
+    if "gate_evaluation" not in draft:
+        print(f"REJECTED: {claim_id}: no gate_evaluation block. Classification spec §15/§30 stage 4 "
+              f"requires the conditions a claim was gate-evaluated under to be recorded, not asserted.",
+              file=sys.stderr)
+        sys.exit(1)
+    gate_evaluation = _strip_nulls(draft["gate_evaluation"])
+    if gate_evaluation.get("isolation") == "single_source_single_claim" and len(gate_evaluation.get("sources_in_context", [])) != 1:
+        print(f"REJECTED: {claim_id}: gate_evaluation.isolation is 'single_source_single_claim' but "
+              f"sources_in_context does not hold exactly one entry: {gate_evaluation.get('sources_in_context')!r}",
+              file=sys.stderr)
+        sys.exit(1)
+
     claim = {
         "claim_id": claim_id,
         "fingerprint": fingerprint,
@@ -246,15 +273,16 @@ def main():
         "synthetic": draft.get("synthetic", False),
         "gates": gates,
         "gate_vector": gate_vector,
+        "gate_evaluation": gate_evaluation,
         "segmentation": _strip_nulls(draft["segmentation"]),
-        "grader": _strip_nulls(draft["grader"]),
+        "grader": grader_block,
         "hunt_value": _strip_nulls(draft["hunt_value"]),
         "sectors": _strip_nulls(draft["sectors"]),
         "actors": _strip_nulls(draft["actors"]),
         "assertion_license": license_,
         "entities": _strip_nulls(draft["entities"]),
         "time": _strip_nulls(time_block),
-        "provenance": _strip_nulls(draft["provenance"]),
+        "provenance": _strip_nulls(draft.get("provenance", {})),
         "disposition": "open",
     }
     if draft.get("origin_named") is not None:
@@ -270,7 +298,7 @@ def main():
     if draft.get("archive"):
         claim["archive"] = draft["archive"]
 
-    schema = json.loads((ROOT / "data" / "schema" / "ledger-5.json").read_text())
+    schema = json.loads((ROOT / "data" / "schema" / "ledger-6.json").read_text())
     try:
         validate([claim], schema)
     except SchemaError as e:
@@ -283,9 +311,22 @@ def main():
         json.dump(ledger, f, indent=2, ensure_ascii=False)
         f.write("\n")
 
+    # Classification spec §15A: the draft is retained at the ledger entry's
+    # own claim_id, committed, not ephemeral -- it is the only record of the
+    # authored inputs behind a computed grade. Writing it here, keyed to the
+    # id the ledger just assigned, is also what makes the anti-fabrication
+    # check (a claim draft exists for every ledger entry) a plain file-exists
+    # test rather than a fuzzy name match against whatever the grader called it.
+    draft_dir = ROOT / "data" / "claim_drafts" / serial
+    draft_dir.mkdir(parents=True, exist_ok=True)
+    with open(draft_dir / f"{claim_id}.json", "w", encoding="utf-8") as f:
+        json.dump(draft, f, indent=2, ensure_ascii=False)
+        f.write("\n")
+
     print(f"wrote {claim_id}: grade {grade}, {gate_vector}")
     print(f"  fingerprint: {fingerprint}")
     print(f"  {ledger_path.relative_to(ROOT)} now has {len(ledger)} claim(s)")
+    print(f"  draft retained at {(draft_dir / f'{claim_id}.json').relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

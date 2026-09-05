@@ -34,7 +34,7 @@
         <h2>BEHAVIORS THIS WEEK</h2>
         <span style="font: 400 14px Spectral, serif; color: #7d2231;"><a href="/behaviors/">All behaviors →</a></span>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: #e2ded6; border: 1px solid #e2ded6;">
+    <div class="behaviors-grid">
         {{ range .Params.behaviors }}
         <div class="card">
             <div class="card-tag">{{ .id }} · {{ .tactic }}</div>
@@ -53,7 +53,7 @@
 </div>
 {{ end }}
 
-<div style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6; display: grid; grid-template-columns: 1fr 1fr; gap: 56px;">
+<div class="subscribe-grid" style="padding: 36px 44px 44px; background: #f5f2ec; border-top: 1px solid #e2ded6;">
     <!-- Cadence (weekly vs monthly) is an open decision, article spec section 3 and
          classification spec section 17 decision 6. Do not add a frequency promise
          here until it is settled; update this line and the one below together. -->

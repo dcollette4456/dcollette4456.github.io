@@ -117,16 +117,26 @@ def guess_canonical_name(name_hint, domain):
 
 
 def build_citations(refs, registry_by_domain):
-    """refs: list of {ref_num, url, name_hint}, in file order. Returns
-    (citations_list, needs_type_list). File order is preserved regardless
-    of ref_num -- REF numbers are reassigned downstream by
-    capture_evidence.py from list order, per citations.py's own
-    docstring, so this only needs to not scramble the order the draft
-    itself presented sources in."""
+    """refs: list of {ref_num, url, name_hint}. Returns (citations_list,
+    needs_type_list), ordered ascending by ref_num where the draft gave
+    one explicitly.
+
+    This order is not cosmetic: citations.py's load order IS the REF
+    numbering downstream (capture_evidence.py assigns REF-{i:03d} from
+    array position), and the draft's own {{< cite N >}} markers and
+    src-shortcode [REF-NNN] titles reference those same explicit numbers.
+    Writing this file in raw document-appearance order rather than
+    ascending ref_num silently reassigns every REF number the moment they
+    don't already match -- caught by testing this against a real article
+    whose References section isn't itself in REF order. A ref with no
+    parsed number (the HTML <li id="ref-NNN"> form always has one; a
+    malformed shortcode might not) sorts after every numbered one, in the
+    order it was found."""
+    ordered = sorted(enumerate(refs), key=lambda pair: (pair[1]["ref_num"] is None, pair[1]["ref_num"] or 0, pair[0]))
     citations = []
     needs_type = []
     seen_urls = set()
-    for r in refs:
+    for _, r in ordered:
         url = r["url"]
         if url in seen_urls:
             continue

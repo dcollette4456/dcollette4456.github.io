@@ -11,9 +11,11 @@ tags: ["classification v4.2", "article spec v2.9", "build notes", "re-grade", "i
 **Covers:** the change request closing the grading-to-ledger gap, the first
 isolated re-grade run against TI-20260817-001, and the specification revisions
 that resulted.
-**Status:** amendments applied to both specifications, now versioned at
-`docs/specs/`. Code and schema changes committed to `claude/v4-2-amendments`.
-Several items open, tracked below.
+**Status:** amendments applied to both specifications. Code and schema changes
+committed to `claude/v4-2-amendments`. The specifications themselves are kept
+out of this public repository for now, a deliberate choice unrelated to the
+technical work, tracked in the Open section below. Several other items open,
+tracked there too.
 
 ## What this project is for
 
@@ -155,11 +157,13 @@ diff.
 
 A specification that cannot see the code will describe a plausible repository,
 and plausible is wrong often enough to matter. §1's first requirement for
-reproducibility is a published rule. That requirement was unmet for the rule
-itself, and is not any longer: both documents now live at `docs/specs/` on
-`claude/v4-2-amendments`. §24 carries a standing check going forward: every
-statement of the form "until X exists" carries the path to X so the claim is
-testable.
+reproducibility is a published rule. That requirement is still unmet for the
+rule itself: both documents were briefly committed to `docs/specs/` on this
+branch and then deliberately pulled back out, a decision about the
+specifications' own disclosure status rather than a reversal of the finding
+above. See the Open section for why. §24 carries a standing check going
+forward regardless: every statement of the form "until X exists" carries the
+path to X so the claim is testable.
 
 ## Errors made in the process, recorded rather than quietly fixed
 
@@ -187,26 +191,36 @@ rather than resolve it. That instruction earned its place.
 Schema 6 with the required `gate_evaluation` block and `time.publication_model`,
 additive against schema 5. `claim-draft-1.json`. `citations-2.json` carrying
 `type_basis`. The anti-fabrication check enforcing that a ledger entry has a
-draft behind it. Draft retention wired into `claim_writer.py`. Specifications at
-v4.2 and v2.9, now versioned.
+draft behind it. Draft retention wired into `claim_writer.py`. Both
+specifications amended to v4.2 and v2.9, held outside this public repository
+for now.
 
 ## Open
 
-**Immediate, closed since this log was first drafted.** Both specifications are
-now in version control, at `docs/specs/`, committed to the branch this work
-lives on. Article §12 and §5 were reopened and corrected: the three stale
-"Not built" rows, the two missing list routes (`/entities/`, `/claims/`, live as
-list-only routes with no per-item detail page yet), and the footer credit that
-still read v4.1 and v2.8. `claim_writer.py`'s handling of an omitted
-`provenance` was checked directly rather than inferred: it fails cleanly
-through the normal schema-validation path (`SchemaError`, not a crash) because
-`provenance.pool` is a required ledger field with no injection logic behind it
+**Immediate, closed since this log was first drafted, with one exception.**
+Article §12 and §5 were reopened and corrected: the three stale "Not built"
+rows, the two missing list routes (`/entities/`, `/claims/`, live as list-only
+routes with no per-item detail page yet), and the footer credit that still
+read v4.1 and v2.8. `claim_writer.py`'s handling of an omitted `provenance`
+was checked directly rather than inferred: it fails cleanly through the normal
+schema-validation path (`SchemaError`, not a crash) because `provenance.pool`
+is a required ledger field with no injection logic behind it
 yet, which matches what the code's own comments already claimed but had not
 actually been exercised. That gap, no issue-metadata source for `pool` to be
 injected from, is still real and still open; what changed is that it is now a
 verified gap rather than an assumed one. This section is being corrected here,
 in place, rather than treated as settled and left to go stale the same way the
 specifications themselves did.
+
+**The exception: the specifications are not in this repository, on purpose,
+for now.** They were committed to `docs/specs/` briefly and then deliberately
+reverted. This repository is public, so committing them to any branch put
+them on public GitHub regardless of whether that branch ever merges to `main`
+or deploys to the site, a distinction that matters if patent protection is
+ever pursued for the classification system and does not matter otherwise.
+§1's reproducibility requirement, a published rule, is genuinely unmet by
+this. The rule exists; it just doesn't have a public home right now, and
+whether it gets one depends on a decision outside this project's own scope.
 
 **Near.** Run the content-presence check retroactively over every stored
 capture across all published issues and publish the count of shells. The scope

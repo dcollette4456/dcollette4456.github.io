@@ -50,8 +50,8 @@ from claim_writer import compute_grade  # noqa: E402
 CORPUS_DIR = ROOT / "tests" / "conformance"
 
 
-def load_answer_key():
-    return json.loads((CORPUS_DIR / "answer_key.json").read_text(encoding="utf-8"))
+def load_answer_key(corpus_dir):
+    return json.loads((corpus_dir / "answer_key.json").read_text(encoding="utf-8"))
 
 
 def check_case(case, actual):
@@ -117,7 +117,8 @@ def check_case(case, actual):
         "hedge_test": actual.get("hedge_test"),
     }
     try:
-        actual_grade, _access, _relay, _gates_block, _vector = compute_grade(gates_for_compute, "positive", None)
+        actual_grade, _access, _relay, _gates_block, _vector = compute_grade(
+            gates_for_compute, actual.get("polarity", "positive"), actual.get("scope"))
     except Exception as e:
         mismatches.append(f"compute_grade() raised {type(e).__name__}: {e} on gates {gates_for_compute}")
         return False, mismatches
@@ -131,11 +132,17 @@ def check_case(case, actual):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    p.add_argument("--results-dir", default=str(CORPUS_DIR / "results"))
+    p.add_argument("--corpus-dir", default=str(CORPUS_DIR),
+                   help="Directory holding answer_key.json and a results/ subdir "
+                        "(default tests/conformance; pass tests/conformance/adversarial "
+                        "for the adversarial half of the corpus).")
+    p.add_argument("--results-dir", default=None,
+                   help="Default: <corpus-dir>/results")
     args = p.parse_args()
-    results_dir = Path(args.results_dir)
+    corpus_dir = Path(args.corpus_dir)
+    results_dir = Path(args.results_dir) if args.results_dir else corpus_dir / "results"
 
-    key = load_answer_key()
+    key = load_answer_key(corpus_dir)
     cases = key["cases"]
 
     passed = 0

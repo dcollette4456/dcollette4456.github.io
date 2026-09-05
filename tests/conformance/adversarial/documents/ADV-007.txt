@@ -1,0 +1,9 @@
+Signal Ledger Blog, roundup post, 15 August 2026.
+
+TechDaily and Continental Wire have both now covered this campaign.
+TechDaily's report states that it is relaying analysis originally published
+by SecBlog, a boutique research outlet, and Continental Wire's report says
+the same -- both outlets describe SecBlog as the original source of the
+technical findings, including the malware family identification. We have not
+reviewed SecBlog's original post ourselves and are summarizing what TechDaily
+and Continental Wire report about it.

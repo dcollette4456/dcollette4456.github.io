@@ -1,0 +1,16 @@
+{
+  "gate_0_is_analysis": true,
+  "source_type": "ANL",
+  "origin_identified": null,
+  "primary_reachable": null,
+  "document_retrieved": true,
+  "gated": false,
+  "own_observation": false,
+  "named_primary": null,
+  "relay_depth": null,
+  "self_interested_only": false,
+  "aggregate": false,
+  "artifact_test": "n/a",
+  "method_test": "n/a",
+  "hedge_test": "n/a"
+}

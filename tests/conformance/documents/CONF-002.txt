@@ -1,0 +1,9 @@
+Redline Cyber, Field Notes, published 3 May 2026.
+
+Redline Cyber's incident response team responded to an intrusion at a mid-size
+logistics firm in March 2026. The attacker gained initial access through a
+phishing email and moved laterally using stolen credentials before exfiltrating
+data from the firm's file servers. Redline Cyber is withholding technical
+indicators, hashes, and infrastructure details at the client's request, and
+this notice is intended only to disclose that the engagement occurred and to
+describe the attacker's general approach.

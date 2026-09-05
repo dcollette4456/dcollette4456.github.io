@@ -1,0 +1,12 @@
+Vantage Point Security, Incident Brief VP-2026-0233, published 20 April 2026.
+
+Vantage Point Security's incident response team responded to a business email
+compromise engagement at a mid-size freight brokerage in April 2026. During the
+engagement, Vantage Point directly recovered the phishing email that initiated
+the compromise, the malicious Excel attachment it carried, and the second-stage
+payload the attachment's macro downloaded once enabled. Vantage Point analyzed
+the payload in its own malware analysis environment and confirmed it functioned
+as a remote access tool. This brief publishes the SHA-256 hash of the malicious
+attachment, the SHA-256 hash of the second-stage payload, the command-and-control
+domain the payload connected to, and two IP addresses observed resolving that
+domain during the engagement window.

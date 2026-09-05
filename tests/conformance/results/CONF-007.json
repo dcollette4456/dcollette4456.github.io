@@ -1,0 +1,16 @@
+{
+  "gate_0_is_analysis": false,
+  "source_type": "IND",
+  "origin_identified": true,
+  "primary_reachable": false,
+  "document_retrieved": true,
+  "gated": false,
+  "own_observation": false,
+  "named_primary": true,
+  "relay_depth": 2,
+  "self_interested_only": false,
+  "aggregate": false,
+  "artifact_test": "n/a",
+  "method_test": "n/a",
+  "hedge_test": "n/a"
+}

@@ -1,0 +1,8 @@
+Signal Ledger Blog, published 20 June 2026.
+
+This post's account of the incident is based on TechDaily's article covering
+the breach, published last week. TechDaily's article itself was based on
+research TechDaily attributed to SecBlog, an independent security research
+outlet, which TechDaily said had reviewed leaked forum posts describing the
+compromise. This post has not independently verified SecBlog's findings and
+is relaying TechDaily's summary of them.

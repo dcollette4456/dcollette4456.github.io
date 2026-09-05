@@ -63,6 +63,35 @@ ARCHIVE_TIMEOUT = 25
 ARCHIVE_DELAY_SECONDS = 2
 MAX_BODY_BYTES = 8 * 1024 * 1024
 
+# Classification spec §5A (v4.2 amendment B): "A capture that returns a page
+# containing no article is a retrieval failure, not a retrieval." A consent
+# screen, a registration modal, or an empty client-rendered shell returns
+# HTTP 200 with a healthy byte count and hashes cleanly -- indistinguishable
+# from a real capture by status code or length alone, and the silent-edit
+# check (§14) will forever report "unchanged" on a document nobody actually
+# captured.
+#
+# What this checks: normalized text word count only. It is a length
+# heuristic, not the assertion-text match the amendment actually specifies
+# ("checked for the presence of the assertion text or a substantial subset
+# of its distinctive terms") -- that check needs to know what assertion the
+# citation supports, which lives in a claim draft, not in the citations
+# file this script reads. Wiring per-claim term matching in is the real
+# fix; this catches the common failure mode (a shell page with next to no
+# body text) without pretending to catch the rest. content_check.status
+# stays "insufficient" rather than something that reads as a pass on a
+# document this script never actually verified contains anything.
+MIN_CONTENT_WORDS = 150
+
+
+def content_presence_check(normalized_text):
+    word_count = len(normalized_text.split())
+    if word_count < MIN_CONTENT_WORDS:
+        return {"status": "insufficient", "normalized_word_count": word_count,
+                "basis": "length_heuristic", "threshold": MIN_CONTENT_WORDS}
+    return {"status": "ok", "normalized_word_count": word_count,
+            "basis": "length_heuristic", "threshold": MIN_CONTENT_WORDS}
+
 
 def now_iso():
     return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
@@ -153,6 +182,8 @@ def build_fresh_entry(source_id, ref, url, fetch_cache, archive_cache):
     normalized = normalize_html(body)
     sha_norm = hashlib.sha256(normalized.encode("utf-8")).hexdigest()
 
+    content_check = content_presence_check(normalized)
+
     entry.update({
         "fetched": now_iso(),
         "http_status": result["http_status"],
@@ -163,7 +194,13 @@ def build_fresh_entry(source_id, ref, url, fetch_cache, archive_cache):
         "normalizer": "html/v1",
         "extractor": None,
         "version_identity": {"kind": "normalized_hash", "value": sha_norm},
+        "content_check": content_check,
     })
+    if content_check["status"] == "insufficient":
+        print(f"    WARNING: {url} normalized to only {content_check['normalized_word_count']} words "
+              f"(threshold {MIN_CONTENT_WORDS}) -- likely a shell capture (consent screen, login wall, "
+              f"empty client-rendered page). classification spec §5A: this should be graded as "
+              f"retrieval_failed, not as a successful capture.", file=sys.stderr)
 
     if url not in archive_cache:
         time.sleep(ARCHIVE_DELAY_SECONDS)
@@ -223,6 +260,7 @@ def main():
     archive_retries = 0
     issues_written = 0
     issues_skipped = 0
+    content_check_insufficient = 0
 
     for serial, cites in sorted(by_issue.items()):
         manifest_path = evidence_dir / f"{serial}.manifest.json"
@@ -268,6 +306,8 @@ def main():
                 new_fetches += 1
                 print(f"[{new_fetches}] {serial} {ref}: fetching {url}", file=sys.stderr)
                 entry = build_fresh_entry(source_id, ref, url, fetch_cache, archive_cache)
+                if entry.get("content_check", {}).get("status") == "insufficient":
+                    content_check_insufficient += 1
             else:
                 archive_retries += 1
                 entry = retry_archive_only(prior, archive_cache)
@@ -284,7 +324,7 @@ def main():
             continue
 
         manifest = {
-            "schema_version": 1,
+            "schema_version": 2,
             "serial": serial,
             "generated": now_iso(),
             "capture_is_retrospective": True,
@@ -309,6 +349,10 @@ def main():
     print(f"\ndone. {issues_written} manifest(s) written, {issues_skipped} unchanged and left alone. "
           f"{len(fetch_cache)} new URL(s) fetched ({fetch_failed} fetch failures), "
           f"{archive_retries} archive-only retries, {captured} archived, {failed} archive attempts failed.")
+    if content_check_insufficient:
+        print(f"WARNING: {content_check_insufficient} new capture(s) flagged content_check.status=insufficient "
+              f"(likely shell pages). Grade any claim built on these as retrieval_failed per §5A rather than "
+              f"treating the capture as a real retrieval.")
 
 
 if __name__ == "__main__":

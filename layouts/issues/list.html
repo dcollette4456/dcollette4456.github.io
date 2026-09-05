@@ -15,7 +15,7 @@
 
 <div style="display: flex; flex-direction: column;">
     {{ range .Paginator.Pages }}
-    <div style="display: grid; grid-template-columns: 96px 1fr 220px; gap: 32px; padding: 26px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
+    <div class="list-row" style="--list-row-cols: 96px 1fr 220px;">
         <div style="display: flex; flex-direction: column; gap: 5px;">
             <span style="font: 500 20px/1 'JetBrains Mono', monospace; color: #7d2231;">{{ .Params.issueNumber }}</span>
             <span style="font: 400 11px/1 'JetBrains Mono', monospace; color: #6b665e;">{{ .Date.Format "2 Jan" | upper }}</span>

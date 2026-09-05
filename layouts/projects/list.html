@@ -8,7 +8,7 @@
 
 <div style="display: flex; flex-direction: column;">
     {{ range where .Site.RegularPages "Type" "projects" }}
-    <div style="display: grid; grid-template-columns: 200px 1fr; gap: 40px; padding: 32px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
+    <div class="list-row" style="--list-row-cols: 200px 1fr;">
         <div style="display: flex; flex-direction: column; gap: 8px;">
             <h3 style="margin: 0; font: 500 18px/1 Spectral, serif; color: #7d2231;">{{ .Date.Format "2 Jan 2006" }}</h3>
             {{ if .Params.status }}

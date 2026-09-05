@@ -10,7 +10,7 @@
     {{ range where .Site.RegularPages "Type" "projects" }}
     <div style="display: grid; grid-template-columns: 200px 1fr; gap: 40px; padding: 32px 44px; border-bottom: 1px solid #ece8e0; align-items: start;">
         <div style="display: flex; flex-direction: column; gap: 8px;">
-            <h3 style="margin: 0; font: 500 18px/1 Spectral, serif; color: #7d2231;">{{ .Params.year }}</h3>
+            <h3 style="margin: 0; font: 500 18px/1 Spectral, serif; color: #7d2231;">{{ .Date.Format "2 Jan 2006" }}</h3>
             {{ if .Params.status }}
             <span style="font: 400 12px/1 'JetBrains Mono', monospace; color: #6b665e;">{{ .Params.status }}</span>
             {{ end }}

@@ -1,0 +1,8 @@
+Vantage Point Research, incident writeup, 20 July 2026.
+
+Our IR team responded to an intrusion at a manufacturing firm. The initial
+access vector is unclear; it is likely phishing, though we cannot rule out an
+exposed remote-access tool, and we have not fully confirmed which. What we
+can say with certainty is that this intrusion is the work of Cobalt Serpent,
+an actor we've tracked publicly since 2021, based on overlapping tooling and
+hosting patterns we identified during this engagement.

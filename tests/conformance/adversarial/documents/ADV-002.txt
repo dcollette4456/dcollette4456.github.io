@@ -1,0 +1,9 @@
+Northwind Security, client advisory, 2 August 2026.
+
+One of our managed-detection clients, a regional hospital network, experienced
+an intrusion attempt last month that our SOC contained before impact. Based
+on the pattern of initial-access attempts we have observed across our client
+base this quarter -- phishing with medical-themed lures, arriving
+disproportionately at healthcare-sector clients -- we assess that healthcare
+organizations are being disproportionately targeted by this activity right
+now.

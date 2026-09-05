@@ -370,7 +370,7 @@ def check_data_claim_attributes_resolve(known_claim_ids):
 
 
 def validate_manifests(registry_source_ids):
-    schema = load_json(DATA / "schema" / "manifest-1.json")
+    schema = load_json(DATA / "schema" / "manifest-2.json")
     evidence_dir = DATA / "evidence"
     if not evidence_dir.is_dir():
         return
@@ -382,7 +382,7 @@ def validate_manifests(registry_source_ids):
         try:
             validate(manifest, schema)
         except SchemaError as e:
-            fail(rel, e.path, e.message, "CLAUDECODEBRIEF §7.2 / schema/manifest-1.json")
+            fail(rel, e.path, e.message, "CLAUDECODEBRIEF §7.2 / schema/manifest-2.json")
             continue
 
         check_empty_strings(manifest, rel)

@@ -1,0 +1,3 @@
+{{- $def := .Get "def" -}}
+{{- $label := .Get "label" | default "" -}}
+<span class="term" tabindex="0">{{ .Inner }}<span class="tip">{{ with $label }}<b>{{ . }}</b>{{ end }}{{ $def }}</span></span>

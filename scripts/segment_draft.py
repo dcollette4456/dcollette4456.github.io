@@ -96,11 +96,20 @@ def load_citations_ordered(serial):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def load_registry_by_domain():
+def load_registry_by_domain_and_name():
+    """Keyed by (canonical_domain, canonical_name), matching the key
+    build_registry.py itself uses. Domain alone is not a unique key into
+    the registry -- cisa.gov, for one real example already in this
+    registry, carries both "CISA Cybersecurity Advisories" and the "CISA
+    Known Exploited Vulnerabilities (KEV) Catalog" as separate registered
+    sources. A citation's own canonical_name (already an admission
+    judgment made in data/citations/{serial}.json by this point) is what
+    disambiguates which one a given citation resolves to."""
     path = ROOT / "data" / "sources" / "registry.json"
     if not path.exists():
         return {}
-    return {e["canonical_domain"]: e for e in json.loads(path.read_text(encoding="utf-8"))}
+    return {(e["canonical_domain"], e["canonical_name"]): e
+            for e in json.loads(path.read_text(encoding="utf-8"))}
 
 
 def main():
@@ -121,7 +130,7 @@ def main():
     # docstring -- same rule capture_evidence.py uses when it writes the
     # evidence manifest, so REF numbers here will match REF numbers there.
     ref_to_citation = {i: c for i, c in enumerate(citations, start=1)}
-    registry_by_domain = load_registry_by_domain()
+    registry_by_domain_and_name = load_registry_by_domain_and_name()
 
     split = split_claims(claims)
     segments = []
@@ -133,7 +142,7 @@ def main():
             unresolved.append(c["sub_id"])
             continue
         domain = canonical_domain(citation["url"])
-        registry_entry = registry_by_domain.get(domain)
+        registry_entry = registry_by_domain_and_name.get((domain, citation["canonical_name"]))
         source_id = registry_entry["source_id"] if registry_entry else None
         if source_id is None:
             unresolved.append(c["sub_id"])

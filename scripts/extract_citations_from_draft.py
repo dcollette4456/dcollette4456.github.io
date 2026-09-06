@@ -131,7 +131,20 @@ def build_citations(refs, registry_by_domain):
     whose References section isn't itself in REF order. A ref with no
     parsed number (the HTML <li id="ref-NNN"> form always has one; a
     malformed shortcode might not) sorts after every numbered one, in the
-    order it was found."""
+    order it was found.
+
+    registry_by_domain is domain -> list of registry entries (a domain can
+    carry more than one registered source, e.g. cisa.gov hosts both "CISA
+    Cybersecurity Advisories" and the "CISA Known Exploited Vulnerabilities
+    (KEV) Catalog" as separate registered sources). A single candidate on
+    the domain resolves the way it always did. Multiple candidates cannot
+    be resolved by domain alone -- silently picking one would misattribute
+    the citation to the wrong existing source's type and history -- so the
+    guessed name is matched case-insensitively against the candidates'
+    canonical_name, and where that still doesn't land on exactly one match,
+    the citation is left NEEDS_TYPE with the candidates listed, the same
+    admission judgment this script already asks a human to make for a
+    genuinely new domain."""
     ordered = sorted(enumerate(refs), key=lambda pair: (pair[1]["ref_num"] is None, pair[1]["ref_num"] or 0, pair[0]))
     citations = []
     needs_type = []
@@ -142,7 +155,19 @@ def build_citations(refs, registry_by_domain):
             continue
         seen_urls.add(url)
         domain = canonical_domain(url)
-        registry_entry = registry_by_domain.get(domain)
+        candidates = registry_by_domain.get(domain, [])
+        registry_entry = None
+        ambiguous_candidates = None
+        if len(candidates) == 1:
+            registry_entry = candidates[0]
+        elif len(candidates) > 1:
+            guessed = guess_canonical_name(r["name_hint"], domain).lower()
+            matches = [c for c in candidates if c["canonical_name"].lower() == guessed]
+            if len(matches) == 1:
+                registry_entry = matches[0]
+            else:
+                ambiguous_candidates = [c["canonical_name"] for c in candidates]
+
         if registry_entry:
             entry = {
                 "url": url,
@@ -161,17 +186,27 @@ def build_citations(refs, registry_by_domain):
                 "canonical_name": name,
                 "type": "NEEDS_TYPE",
             }
-            needs_type.append({"url": url, "domain": domain, "canonical_name": name})
+            needs_type_entry = {"url": url, "domain": domain, "canonical_name": name}
+            if ambiguous_candidates:
+                needs_type_entry["ambiguous_with_existing"] = ambiguous_candidates
+            needs_type.append(needs_type_entry)
         citations.append(entry)
     return citations, needs_type
 
 
 def load_registry_by_domain():
+    """domain -> list of registry entries. A list, not a single entry,
+    because a domain is not a unique key into the registry -- see
+    build_citations()'s docstring for why (cisa.gov is the real example
+    already in this registry)."""
     registry_path = ROOT / "data" / "sources" / "registry.json"
     if not registry_path.exists():
         return {}
     registry = json.loads(registry_path.read_text(encoding="utf-8"))
-    return {e["canonical_domain"]: e for e in registry}
+    by_domain = {}
+    for e in registry:
+        by_domain.setdefault(e["canonical_domain"], []).append(e)
+    return by_domain
 
 
 def main():
@@ -210,6 +245,11 @@ def main():
               f"AGG, SOC, ADV, ANL}} -- do not guess from the domain name alone.", file=sys.stderr)
         for n in needs_type:
             print(f"  NEEDS_TYPE  {n['domain']:40s} {n['canonical_name']!r:40s} {n['url']}", file=sys.stderr)
+            if n.get("ambiguous_with_existing"):
+                print(f"      this domain already has {len(n['ambiguous_with_existing'])} other registered "
+                      f"source(s) and the guessed name didn't match any of them: {n['ambiguous_with_existing']}. "
+                      f"Confirm by hand whether this is one of those sources (fix canonical_name to match "
+                      f"exactly) or a genuinely new source at this domain.", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,354 @@
+{
+  "schema_version": 2,
+  "serial": "TI-20260914-001",
+  "generated": "2026-09-14T22:33:16Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0070",
+      "ref": "REF-001",
+      "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:30:02Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 1222891,
+      "sha256_raw": "5c3503b695810e6398c5b3c137aa1b50c13c70cb41cf88663b3b9d4768882493",
+      "sha256_normalized": "faa3726c026478c0d97722350bb64dd44ccbc4a2795096d8a4f2db9684c38d0e",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "faa3726c026478c0d97722350bb64dd44ccbc4a2795096d8a4f2db9684c38d0e"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 36448,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:30:04Z",
+        "note": "rate limited (429)"
+      }
+    },
+    {
+      "source_id": "SRC-0071",
+      "ref": "REF-002",
+      "url": "https://hunt.io/blog/chinese-operator-secflow-claude-qwen-deepseek-asia",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:30:05Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 967694,
+      "sha256_raw": "e64a9f3253df2cb0aba0806b313b568001b989974736a18df95490b4f6f3385b",
+      "sha256_normalized": "6e547bafc24df38d939d60f13492775859faf0a5b0a03fe7069e333527bb58ae",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "6e547bafc24df38d939d60f13492775859faf0a5b0a03fe7069e333527bb58ae"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 11591,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:30:07Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0072",
+      "ref": "REF-003",
+      "url": "https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:30:13Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 626742,
+      "sha256_raw": "5c289a3ff7f4043952514afb8e3b6b2c757ce0d901cd34cb645160624f4509ee",
+      "sha256_normalized": "3b99804649e2e4ca90f0a1e3aaf63b59d1003b7453c364b4ce0902896e0ebf77",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "3b99804649e2e4ca90f0a1e3aaf63b59d1003b7453c364b4ce0902896e0ebf77"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 13828,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:30:15Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0073",
+      "ref": "REF-004",
+      "url": "https://www.networkworld.com/article/4216884/china-linked-hackers-turn-cisco-ios-xr-routers-into-covert-attack-infrastructure.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:30:22Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 234317,
+      "sha256_raw": "142f7e7f2c2ec13d57b73d54dc45b48d887138dbfbcc481c55aef4438669bb92",
+      "sha256_normalized": "391c3147105e3587da931cec302fc495f8d452b6f33e90d5caac0631a2be5dd9",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "391c3147105e3587da931cec302fc495f8d452b6f33e90d5caac0631a2be5dd9"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 1261,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:30:24Z",
+        "note": "URLError: <urlopen error timed out>"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-005",
+      "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:30:49Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 178281,
+      "sha256_raw": "4108b396fa7e45a8da07249568515b6e47f515881458e72c04a9dc127e7843fe",
+      "sha256_normalized": "fea5ac2c0e53931001ac1abd37645f7cd9cb8ecebf7736ee98bc2c714369b8e8",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "fea5ac2c0e53931001ac1abd37645f7cd9cb8ecebf7736ee98bc2c714369b8e8"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 1632,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:30:51Z",
+        "note": "URLError: <urlopen error timed out>"
+      }
+    },
+    {
+      "source_id": "SRC-0032",
+      "ref": "REF-006",
+      "url": "https://therecord.media/router-hacks-fire-ant-group-china",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:31:17Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 88531,
+      "sha256_raw": "cee0f327328a4743a5c99df011cc2436fe2021f81882d8d55730846c81fb63f5",
+      "sha256_normalized": "f99fb9c5dd8f377eb83cda41b66a737932512adeaec6650e49a70aeb7f3bdd5e",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "f99fb9c5dd8f377eb83cda41b66a737932512adeaec6650e49a70aeb7f3bdd5e"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 898,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:31:19Z",
+        "note": "URLError: <urlopen error timed out>"
+      }
+    },
+    {
+      "source_id": "SRC-0074",
+      "ref": "REF-007",
+      "url": "https://www.proofpoint.com/us/blog/threat-insight/once-bluemoon-multiple-state-aligned-threat-actors-rapidly-adopt-novel-exploit",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:31:44Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 179831,
+      "sha256_raw": "e658a77588559f6387c9a7e057a12dc0e693bdce9181bd3eee9c9c0c5d059e99",
+      "sha256_normalized": "90f62814cc29af92712f970800c19e8fd96b4e0b34b04d5fbf7fe5c079b35a81",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "90f62814cc29af92712f970800c19e8fd96b4e0b34b04d5fbf7fe5c079b35a81"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 5521,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:31:46Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-008",
+      "url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:31:58Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 179598,
+      "sha256_raw": "2bfbc274c1b26100c6acb71baa44de688e5d8858a59b1427c950b1fc7024a85a",
+      "sha256_normalized": "d8f4beb9ce296b5d5bd9973f655bf453ef17d15feef81cd151c1d01898976018",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "d8f4beb9ce296b5d5bd9973f655bf453ef17d15feef81cd151c1d01898976018"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 1893,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:32:00Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0075",
+      "ref": "REF-009",
+      "url": "https://www.technadu.com/bluemoon-exploit-kit-chains-chrome-windows-zero-days-in-espionage-campaigns/636326/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:32:08Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 1664491,
+      "sha256_raw": "7424daf9e1d3957fed4d934948f44c0f7d93ac69e0c01ff9d98a623f6a50bf1a",
+      "sha256_normalized": "70261f243ae3c3c51b3ec98102b63fc8ca5810333647709e99ca10a1d834080e",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "70261f243ae3c3c51b3ec98102b63fc8ca5810333647709e99ca10a1d834080e"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 1260,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:32:10Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0076",
+      "ref": "REF-010",
+      "url": "https://www.it-connect.tech/bluemoon-how-updated-pcs-were-compromised-through-chrome-and-windows-flaws/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:32:22Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 166820,
+      "sha256_raw": "de016806042b6982f64ebccc079b4ac535fda98e5a52d5ed52e02a8a281fabc0",
+      "sha256_normalized": "4fb9d1b84b06adbaf0395321f5943f163d5fab661124424166da8eab1b8408ee",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "4fb9d1b84b06adbaf0395321f5943f163d5fab661124424166da8eab1b8408ee"
+      },
+      "content_check": {
+        "status": "ok",
+        "normalized_word_count": 1119,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:32:24Z",
+        "note": "URLError: <urlopen error timed out>"
+      }
+    },
+    {
+      "source_id": "SRC-0069",
+      "ref": "REF-011",
+      "url": "https://cybernews.com/news/claude-deepseek-qwen-target-governments-asia/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-14T22:32:49Z",
+      "http_status": 403,
+      "content_type": null,
+      "content_length": 5831,
+      "sha256_raw": "696098f9bca751d299903a0d69f1dd87c7ca7a9bdeca5c19e5ee155a7f318e20",
+      "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c"
+      },
+      "content_check": {
+        "status": "insufficient",
+        "normalized_word_count": 3,
+        "basis": "length_heuristic",
+        "threshold": 150
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-14T22:32:51Z",
+        "note": "URLError: <urlopen error timed out>"
+      },
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
+    }
+  ],
+  "manifest_sha256": "3350e950587cd466664d737461566b39c755d869f31b03382c1e70c72beb7dca",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

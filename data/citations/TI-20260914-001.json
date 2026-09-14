@@ -1,0 +1,65 @@
+[
+  {
+    "url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+    "canonical_name": "Anthropic Threat Intelligence",
+    "type": "VND",
+    "type_basis": "self-described AI model developer publishing its own threat intelligence report about misuse of its own platform"
+  },
+  {
+    "url": "https://hunt.io/blog/chinese-operator-secflow-claude-qwen-deepseek-asia",
+    "canonical_name": "Hunt.io",
+    "type": "VND",
+    "type_basis": "self-described commercial threat-intelligence research vendor publishing its own investigative blog"
+  },
+  {
+    "url": "https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/",
+    "canonical_name": "Sygnia",
+    "type": "VND",
+    "type_basis": "self-described incident-response and cybersecurity vendor publishing its own investigation"
+  },
+  {
+    "url": "https://www.networkworld.com/article/4216884/china-linked-hackers-turn-cisco-ios-xr-routers-into-covert-attack-infrastructure.html",
+    "canonical_name": "Network World",
+    "type": "MED",
+    "type_basis": "self-described technology and IT trade publication"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/china-linked-fire-ant-hijacks-cisco.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://therecord.media/router-hacks-fire-ant-group-china",
+    "canonical_name": "The Record (Recorded Future News)",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.proofpoint.com/us/blog/threat-insight/once-bluemoon-multiple-state-aligned-threat-actors-rapidly-adopt-novel-exploit",
+    "canonical_name": "Proofpoint",
+    "type": "VND",
+    "type_basis": "self-described commercial cybersecurity vendor publishing its own threat research"
+  },
+  {
+    "url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.technadu.com/bluemoon-exploit-kit-chains-chrome-windows-zero-days-in-espionage-campaigns/636326/",
+    "canonical_name": "TechNadu",
+    "type": "MED",
+    "type_basis": "self-described technology news publication"
+  },
+  {
+    "url": "https://www.it-connect.tech/bluemoon-how-updated-pcs-were-compromised-through-chrome-and-windows-flaws/",
+    "canonical_name": "it-connect.tech",
+    "type": "MED",
+    "type_basis": "self-described French-language IT and security news/tutorial site",
+    "origin": "FR"
+  },
+  {
+    "url": "https://cybernews.com/news/claude-deepseek-qwen-target-governments-asia/",
+    "canonical_name": "Cybernews",
+    "type": "MED"
+  }
+]

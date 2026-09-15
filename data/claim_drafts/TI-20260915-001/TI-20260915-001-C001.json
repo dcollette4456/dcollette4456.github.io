@@ -1,0 +1,99 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "source_published": "2026-09-04",
+    "fetched": "2026-09-15T01:39:55Z"
+  },
+  "hunt_value": {
+    "behavioral": true,
+    "behavioral_basis": "abuses Falcon Sensor's Office macro remediation to spawn a SYSTEM process",
+    "huntable": true,
+    "telemetry_classes": [
+      "process-execution"
+    ],
+    "collection_point_basis": "derived",
+    "collection_point_source": "endpoint running CrowdStrike Falcon Sensor",
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": [
+      "Nightmare Eclipse"
+    ],
+    "justified_by": "self-chosen handle credited with the release"
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "FalconFlank",
+      "CrowdStrike Falcon Sensor"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [],
+    "justified_by": "named PoC and affected product"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "the September 3, 2026 public release of FalconFlank exploit code and whether CrowdStrike was given advance notice before publication"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": null,
+  "source_id": "SRC-0010",
+  "source_type": "MED",
+  "text": "the September 3, 2026 public release of FalconFlank exploit code and whether CrowdStrike was given advance notice before publication",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": false,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": false,
+    "named_primary": true,
+    "relay_depth": 1,
+    "self_interested_only": false,
+    "aggregate": false,
+    "artifact_test": "n/a",
+    "method_test": "n/a",
+    "hedge_test": "n/a"
+  },
+  "evidentiary_status": "alleged",
+  "polarity": "positive",
+  "volatility": "durable",
+  "document_sha256_normalized": "9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498",
+  "_display_id": "C001a",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-002"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

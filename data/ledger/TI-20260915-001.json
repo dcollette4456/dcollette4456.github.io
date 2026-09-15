@@ -1,0 +1,2141 @@
+[
+  {
+    "claim_id": "TI-20260915-001-C001",
+    "fingerprint": "SRC-0010|9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498|MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the September 3, 2026 public release of FalconFlank exploit code and whether CrowdStrike was given advance notice before publication",
+    "source_id": "SRC-0010",
+    "source_type": "MED",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-002"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the September 3, 2026 public release of FalconFlank exploit code and whether CrowdStrike was given advance notice before publication"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": true,
+      "behavioral_basis": "abuses Falcon Sensor's Office macro remediation to spawn a SYSTEM process",
+      "huntable": true,
+      "telemetry_classes": [
+        "process-execution"
+      ],
+      "collection_point_basis": "derived",
+      "collection_point_source": "endpoint running CrowdStrike Falcon Sensor",
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": [
+        "Nightmare Eclipse"
+      ],
+      "justified_by": "self-chosen handle credited with the release"
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "FalconFlank",
+        "CrowdStrike Falcon Sensor"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named PoC and affected product"
+    },
+    "time": {
+      "source_published": "2026-09-04",
+      "fetched": "2026-09-15T01:39:55Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C002",
+    "fingerprint": "SRC-0054|28f2fa408def642befd0ee4ba66074f9420257dbaea9ae6c2fafca3dc4cc0ea0|MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the September 3, 2026 public release of FalconFlank exploit code and whether CrowdStrike was given advance notice before publication",
+    "source_id": "SRC-0054",
+    "source_type": "MED",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-003"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the September 3, 2026 public release of FalconFlank exploit code and whether CrowdStrike was given advance notice before publication"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": [
+        "Nightmare Eclipse",
+        "Chaotic Eclipse",
+        "Infinite Nightmare",
+        "MSNightmare",
+        "Kevin Beaumont"
+      ],
+      "justified_by": "named discloser and independent verifier"
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named affected product"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-03",
+        "end": "2026-09-03",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-03T19:08:00Z",
+      "fetched": "2026-09-15T01:40:06Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C003",
+    "fingerprint": "SRC-0054|28f2fa408def642befd0ee4ba66074f9420257dbaea9ae6c2fafca3dc4cc0ea0|MED|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the researcher's publicly used aliases and their history of prior vulnerability disclosures against other named vendors",
+    "source_id": "SRC-0054",
+    "source_type": "MED",
+    "grade": 1,
+    "relay_depth": 0,
+    "evidentiary_status": "observed",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": true,
+      "aggregate": false,
+      "artifact_test": "pass",
+      "method_test": "pass",
+      "hedge_test": "pass"
+    },
+    "gate_vector": "MED|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-003"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the researcher's publicly used aliases and their history of prior vulnerability disclosures against other named vendors"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": [
+        "Nightmare Eclipse",
+        "Chaotic Eclipse",
+        "Infinite Nightmare",
+        "MSNightmare"
+      ],
+      "justified_by": "named aliases"
+    },
+    "assertion_license": {
+      "may_assert": "attributed_observation",
+      "may_present_as_fact": false,
+      "required_form": "name the source; do not say established, confirmed, or verified",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon",
+        "Kaspersky Endpoint Antivirus",
+        "Avast Antivirus"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named prior targets"
+    },
+    "time": {
+      "source_published": "2026-09-03T19:08:00Z",
+      "fetched": "2026-09-15T01:40:06Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C004",
+    "fingerprint": "SRC-0031|191c1733106fab6b9c22ee0b387960e72da0c702627605b9dfc465cd90327572|MED|R:y|D:y|A:n|art:f|meth:f|hedge:p",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the researcher's publicly used aliases and their history of prior vulnerability disclosures against other named vendors",
+    "source_id": "SRC-0031",
+    "source_type": "MED",
+    "grade": 2,
+    "relay_depth": 0,
+    "evidentiary_status": "observed",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": true,
+      "aggregate": false,
+      "artifact_test": "fail",
+      "method_test": "fail",
+      "hedge_test": "pass"
+    },
+    "gate_vector": "MED|R:y|D:y|A:n|art:f|meth:f|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-005"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the researcher's publicly used aliases and their history of prior vulnerability disclosures against other named vendors"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": [
+        "Chaotic Eclipse",
+        "Infinite Nightmare",
+        "MSNightmare",
+        "Nightmare-Eclipse"
+      ],
+      "justified_by": "named aliases"
+    },
+    "assertion_license": {
+      "may_assert": "attributed_observation_unchecked",
+      "may_present_as_fact": false,
+      "required_form": "name the source; do not imply the artifacts can be independently checked",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "HardBreacher",
+        "PrettyPrague",
+        "UnDefend",
+        "RedSun"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named prior PoCs"
+    },
+    "time": {
+      "source_published": "2026-09-03",
+      "fetched": "2026-09-15T01:40:26Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C005",
+    "fingerprint": "SRC-0077|cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the technical mechanism by which FalconFlank achieves privilege escalation (the race condition and DLL/library side-loading path through Falcon's macro remediation feature)",
+    "source_id": "SRC-0077",
+    "source_type": "VND",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-001"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the technical mechanism by which FalconFlank achieves privilege escalation (the race condition and DLL/library side-loading path through Falcon's macro remediation feature)"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T02:15:00Z",
+      "passes": 3,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": true,
+      "behavioral_basis": "TOCTOU race hijacking macro remediation, resulting in DLL side-loading and SYSTEM execution",
+      "huntable": true,
+      "telemetry_classes": [
+        "process-execution",
+        "image-load"
+      ],
+      "collection_point_basis": "stated",
+      "collection_point_source": "csfalconservice.exe process behavior and abnormal DLL loads",
+      "indicator_bearing": true
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": [
+        "Nightmare Eclipse",
+        "Chaotic Eclipse"
+      ],
+      "justified_by": "named discloser"
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor",
+        "FalconFlank",
+        "Microsoft Office"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named affected product and exploit"
+    },
+    "time": {
+      "source_published": "2026-09-04",
+      "fetched": "2026-09-15T01:39:45Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C006",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the technical mechanism by which FalconFlank achieves privilege escalation (the race condition and DLL/library side-loading path through Falcon's macro remediation feature)",
+    "source_id": "SRC-0078",
+    "source_type": "NPO",
+    "grade": 5,
+    "relay_depth": 2,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the technical mechanism by which FalconFlank achieves privilege escalation (the race condition and DLL/library side-loading path through Falcon's macro remediation feature)"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "reported_unverifiable_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the party reported to have found this; state no document is available; never assert it happened; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor",
+        "FalconFlank"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product/exploit; no race-condition language actually used by this source"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-03",
+        "end": "2026-09-03",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-06",
+      "fetched": "2026-09-15T01:40:36Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C007",
+    "fingerprint": "SRC-0077|cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work",
+    "source_id": "SRC-0077",
+    "source_type": "VND",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-001"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor",
+        "FalconFlank"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product/exploit"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-03",
+        "end": "2026-09-04",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-04",
+      "fetched": "2026-09-15T01:39:45Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C008",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work",
+    "source_id": "SRC-0078",
+    "source_type": "NPO",
+    "grade": 5,
+    "relay_depth": 2,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "perishable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "reported_unverifiable_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the party reported to have found this; state no document is available; never assert it happened; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": "2026-10-06"
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-03",
+        "end": "2026-09-06",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-06",
+      "fetched": "2026-09-15T01:40:36Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C009",
+    "fingerprint": "SRC-0010|9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498|MED|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "CrowdStrike's own statement in response to FalconFlank and its recommended workaround",
+    "source_id": "SRC-0010",
+    "source_type": "MED",
+    "grade": 1,
+    "relay_depth": 0,
+    "evidentiary_status": "self_reported",
+    "polarity": "positive",
+    "volatility": "perishable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": true,
+      "aggregate": false,
+      "artifact_test": "pass",
+      "method_test": "pass",
+      "hedge_test": "pass"
+    },
+    "gate_vector": "MED|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-002"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "CrowdStrike's own statement in response to FalconFlank and its recommended workaround"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "attributed_observation",
+      "may_present_as_fact": false,
+      "required_form": "name the source; do not say established, confirmed, or verified; carries evidentiary status 'self_reported' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": "2026-10-04"
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-04",
+        "end": "2026-09-04",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-04",
+      "fetched": "2026-09-15T01:39:55Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open",
+    "origin_named": "a CrowdStrike spokesperson"
+  },
+  {
+    "claim_id": "TI-20260915-001-C010",
+    "fingerprint": "SRC-0019|44e13d561b41aa2cae54fce49e232fba855ec121ddc52cb2e1f0008a86d24c45|MED|R:y|D:y|A:n|art:p|meth:na|hedge:p",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "CrowdStrike's own statement in response to FalconFlank and its recommended workaround",
+    "source_id": "SRC-0019",
+    "source_type": "MED",
+    "grade": 1,
+    "relay_depth": 0,
+    "evidentiary_status": "self_reported",
+    "polarity": "positive",
+    "volatility": "perishable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": true,
+      "aggregate": false,
+      "artifact_test": "pass",
+      "method_test": "n/a",
+      "hedge_test": "pass"
+    },
+    "gate_vector": "MED|R:y|D:y|A:n|art:p|meth:na|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-004"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "CrowdStrike's own statement in response to FalconFlank and its recommended workaround"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "attributed_observation",
+      "may_present_as_fact": false,
+      "required_form": "name the source; do not say established, confirmed, or verified; carries evidentiary status 'self_reported' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product"
+    },
+    "time": {
+      "source_published": "2026-09-03",
+      "fetched": "2026-09-15T01:40:16Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open",
+    "origin_named": "a CrowdStrike spokesperson"
+  },
+  {
+    "claim_id": "TI-20260915-001-C011",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "whether a CVE identifier, CVSS score, or vendor patch exists for FalconFlank at the time this document was published",
+    "source_id": "SRC-0078",
+    "source_type": "NPO",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "negative",
+    "volatility": "perishable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "whether a CVE identifier, CVSS score, or vendor patch exists for FalconFlank at the time this document was published"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": "2026-10-06"
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-06",
+        "end": "2026-09-06",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-06",
+      "fetched": "2026-09-15T01:40:36Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open",
+    "scope": "As of this document's publication date (2026-09-06): no CVE identifier assigned, no CVSS score published, no vendor patch released for FalconFlank, per CrowdStrike's own statements and contemporaneous press reporting. Does not cover CrowdStrike's non-public customer-support-portal tech alert."
+  },
+  {
+    "claim_id": "TI-20260915-001-C012",
+    "fingerprint": "SRC-0010|9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498|MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "whether a CVE identifier, CVSS score, or vendor patch exists for FalconFlank at the time this document was published",
+    "source_id": "SRC-0010",
+    "source_type": "MED",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "negative",
+    "volatility": "perishable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-002"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "whether a CVE identifier, CVSS score, or vendor patch exists for FalconFlank at the time this document was published"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": "2026-10-04"
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named product"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-04",
+        "end": "2026-09-04",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-04",
+      "fetched": "2026-09-15T01:39:55Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open",
+    "scope": "Absence of a CVE identifier, CVSS score, and vendor patch for FalconFlank, as of this article's 2026-09-04 publication, per Nightmare Eclipse's disclosure statement and CrowdStrike's non-denial to direct inquiry."
+  },
+  {
+    "claim_id": "TI-20260915-001-C013",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "the specific staging technique described for how the malicious file is planted and executed (an OLE-formatted file placed in the PowerShell application directory, and how a subsequent PowerShell invocation is claimed to load a planted library)",
+    "source_id": "SRC-0078",
+    "source_type": "NPO",
+    "grade": 5,
+    "relay_depth": 2,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "the specific staging technique described for how the malicious file is planted and executed (an OLE-formatted file placed in the PowerShell application directory, and how a subsequent PowerShell invoc"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": true,
+      "behavioral_basis": "file-write into PowerShell v1.0 app directory then image-load on subsequent invocation",
+      "huntable": true,
+      "telemetry_classes": [
+        "file-write",
+        "image-load",
+        "process-execution"
+      ],
+      "collection_point_basis": "stated",
+      "collection_point_source": "document's own hunting recommendation for library files written to the PowerShell v1.0 application directory",
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "reported_unverifiable_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the party reported to have found this; state no document is available; never assert it happened; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon",
+        "PowerShell"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "named tools in staging description"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-03",
+        "end": "2026-09-03",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-06",
+      "fetched": "2026-09-15T01:40:36Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C014",
+    "fingerprint": "SRC-0079|7ffff232ec9fb630fc2c25c831c648a74776acc60628eccaee26d7859c9564e5|IND|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "this author's argument about whether FalconFlank represents a vendor-specific defect or a structural pattern across endpoint-security products, and which other named incidents this document points to as part of that pattern",
+    "source_id": "SRC-0079",
+    "source_type": "IND",
+    "grade": 1,
+    "relay_depth": 0,
+    "evidentiary_status": "observed",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": true,
+      "aggregate": false,
+      "artifact_test": "pass",
+      "method_test": "pass",
+      "hedge_test": "pass"
+    },
+    "gate_vector": "IND|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-007"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "this author's argument about whether FalconFlank represents a vendor-specific defect or a structural pattern across endpoint-security products, and which other named incidents this document points to "
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "attributed_observation",
+      "may_present_as_fact": false,
+      "required_form": "name the source; do not say established, confirmed, or verified",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "CrowdStrike Falcon Sensor",
+        "Microsoft Defender",
+        "Kaspersky Endpoint Security for Windows",
+        "BitLocker"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [
+        "CVE-2026-33825",
+        "CVE-2026-50656",
+        "CVE-2026-69414"
+      ],
+      "justified_by": "named incidents in the pattern argument"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-04-02",
+        "end": "2026-09-03",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-06",
+      "fetched": "2026-09-15T01:40:40Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open",
+    "origin_named": "Mathew Clark / Secure in Seconds"
+  },
+  {
+    "claim_id": "TI-20260915-001-C015",
+    "fingerprint": "SRC-0077|096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it",
+    "source_id": "SRC-0077",
+    "source_type": "VND",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-010"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": true,
+      "behavioral_basis": "msmpeng.exe child process creation, token duplication, junction/symlink creation, hive mounting",
+      "huntable": true,
+      "telemetry_classes": [
+        "process-execution",
+        "file-write",
+        "registry"
+      ],
+      "collection_point_basis": "stated",
+      "collection_point_source": "audit trails for msmpeng.exe and user profile service events",
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "Microsoft Defender"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [
+        "CVE-2026-50656"
+      ],
+      "justified_by": "named CVE and product"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-06-01",
+        "end": "2026-07-31",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-08-12",
+      "fetched": "2026-09-15T01:40:53Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C016",
+    "fingerprint": "SRC-0080|86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it",
+    "source_id": "SRC-0080",
+    "source_type": "VND",
+    "grade": 6,
+    "relay_depth": "unresolved",
+    "evidentiary_status": "self_reported",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": false,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-009"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "unattributed_assertion_exists",
+      "may_present_as_fact": false,
+      "required_form": "state only that the assertion was made and by whom; nothing else; carries evidentiary status 'self_reported' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "Microsoft Defender"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [],
+      "justified_by": "document names Defender but not CVE-2026-50656 itself"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-06-16",
+        "end": "2026-07-08",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-08-17",
+      "fetched": "2026-09-15T01:40:49Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C017",
+    "fingerprint": "SRC-0019|da5a604e8f6a9f6c710d5db0aa60d3b884101c9d2b68731f5321575c966b7d62|MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's",
+    "source_id": "SRC-0019",
+    "source_type": "MED",
+    "grade": 4,
+    "relay_depth": 1,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-008"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": true,
+      "behavioral_basis": "plant EICAR, symlink redirect, CLFS identity swap to phoneinfo.dll, QueueReporting task abuse",
+      "huntable": true,
+      "telemetry_classes": [
+        "file-write",
+        "scheduled-task",
+        "process-execution",
+        "image-load"
+      ],
+      "collection_point_basis": "derived",
+      "collection_point_source": "derived from Dormann's described exploit chain",
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": [
+        "Chaotic Eclipse",
+        "Kevin Beaumont",
+        "Will Dormann"
+      ],
+      "justified_by": "named discloser and independent verifiers"
+    },
+    "assertion_license": {
+      "may_assert": "relayed_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the relay and the named primary; never present as the primary's own words; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": true,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "Microsoft Defender",
+        "Microsoft Malware Protection Engine"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [
+        "CVE-2026-50656",
+        "CVE-2026-69414"
+      ],
+      "justified_by": "named CVEs for RoguePlanet and ShieldBreak"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-08-12",
+        "end": "2026-08-13",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-08-12",
+      "fetched": "2026-09-15T01:40:44Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C018",
+    "fingerprint": "SRC-0080|86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's",
+    "source_id": "SRC-0080",
+    "source_type": "VND",
+    "grade": 6,
+    "relay_depth": "unresolved",
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-009"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "unattributed_assertion_exists",
+      "may_present_as_fact": false,
+      "required_form": "state only that the assertion was made and by whom; nothing else; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "Microsoft Defender",
+        "Microsoft Malware Protection Engine"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [
+        "CVE-2026-69414"
+      ],
+      "justified_by": "named CVE for ShieldBreak"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-08",
+        "end": "2026-08",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-08-17",
+      "fetched": "2026-09-15T01:40:49Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C019",
+    "fingerprint": "SRC-0077|096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's",
+    "source_id": "SRC-0077",
+    "source_type": "VND",
+    "grade": 5,
+    "relay_depth": 2,
+    "evidentiary_status": "alleged",
+    "polarity": "positive",
+    "volatility": "perishable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-010"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": true,
+      "behavioral_basis": "host-based behavioral patterns; msmpeng.exe and user profile service audit",
+      "huntable": true,
+      "telemetry_classes": [
+        "process-execution",
+        "file-write",
+        "registry"
+      ],
+      "collection_point_basis": "stated",
+      "collection_point_source": "host-based EDR audit logs for msmpeng.exe and Defender-related activity",
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "reported_unverifiable_finding",
+      "may_present_as_fact": false,
+      "required_form": "name the party reported to have found this; state no document is available; never assert it happened; carries evidentiary status 'alleged' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": "2026-09-11"
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "Microsoft Defender"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [
+        "CVE-2026-50656"
+      ],
+      "justified_by": "named CVE for RoguePlanet only"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-08-12",
+        "end": "2026-08-12",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-08-12",
+      "fetched": "2026-09-15T01:40:53Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open"
+  },
+  {
+    "claim_id": "TI-20260915-001-C020",
+    "fingerprint": "SRC-0054|0d11d41655002281ad109c89edd741a00cf95112548f77d30fc47ccc1a29e9b6|MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "issue": "TI-20260915-001",
+    "first_issue": "TI-20260915-001",
+    "citation_count": 1,
+    "text": "whether Microsoft shipped a patch for ShieldBreak/CVE-2026-69414 on September Patch Tuesday, and what ShieldCrash is claimed to do against it",
+    "source_id": "SRC-0054",
+    "source_type": "MED",
+    "grade": 6,
+    "relay_depth": "unresolved",
+    "evidentiary_status": "self_reported",
+    "polarity": "positive",
+    "volatility": "durable",
+    "language": "en",
+    "synthetic": false,
+    "gates": {
+      "retrievable": true,
+      "origin_stated": true,
+      "direct_observation": false,
+      "aggregate": false,
+      "artifact_test": "n/a",
+      "method_test": "n/a",
+      "hedge_test": "n/a"
+    },
+    "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-012"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
+    "segmentation": {
+      "atomic_assertions": 1,
+      "merged": false,
+      "assertions": [
+        {
+          "key": "A1",
+          "descriptor": "whether Microsoft shipped a patch for ShieldBreak/CVE-2026-69414 on September Patch Tuesday, and what ShieldCrash is claimed to do against it"
+        }
+      ]
+    },
+    "grader": {
+      "model": "claude-sonnet-5",
+      "spec_version": "4.1",
+      "schema_version": 6,
+      "normalizer": "html/v1",
+      "run": "2026-09-15T12:00:00Z",
+      "passes": 1,
+      "agreement": "unanimous"
+    },
+    "hunt_value": {
+      "behavioral": false,
+      "huntable": false,
+      "telemetry_classes": [],
+      "indicator_bearing": false
+    },
+    "sectors": {
+      "confirmed": [],
+      "contextual": []
+    },
+    "actors": {
+      "subject": [],
+      "referenced": [],
+      "names_used_by_source": []
+    },
+    "assertion_license": {
+      "may_assert": "unattributed_assertion_exists",
+      "may_present_as_fact": false,
+      "required_form": "state only that the assertion was made and by whom; nothing else; carries evidentiary status 'self_reported' at every hop",
+      "attribution_required": true,
+      "may_ground_recommendation": false,
+      "expires": null
+    },
+    "entities": {
+      "clusters": [],
+      "families": [],
+      "tools": [
+        "Microsoft Defender"
+      ],
+      "campaigns": [],
+      "vulnerabilities": [
+        "CVE-2026-69414",
+        "CVE-2026-50656"
+      ],
+      "justified_by": "named CVEs"
+    },
+    "time": {
+      "observed_period": {
+        "start": "2026-09-08",
+        "end": "2026-09-09",
+        "basis": "derived",
+        "precision": "day"
+      },
+      "source_published": "2026-09-09T18:23:00Z",
+      "fetched": "2026-09-15T01:41:00Z"
+    },
+    "provenance": {
+      "pool": "live",
+      "capture_is_retrospective": true
+    },
+    "disposition": "open",
+    "origin_named": "nightmare eclipse (aka msnightmare)"
+  }
+]

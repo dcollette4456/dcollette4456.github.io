@@ -1,0 +1,98 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "source_published": "2026-09-03T19:08:00Z",
+    "fetched": "2026-09-15T01:40:06Z"
+  },
+  "hunt_value": {
+    "behavioral": false,
+    "huntable": false,
+    "telemetry_classes": [],
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": [
+      "Nightmare Eclipse",
+      "Chaotic Eclipse",
+      "Infinite Nightmare",
+      "MSNightmare"
+    ],
+    "justified_by": "named aliases"
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "CrowdStrike Falcon",
+      "Kaspersky Endpoint Antivirus",
+      "Avast Antivirus"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [],
+    "justified_by": "named prior targets"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "the researcher's publicly used aliases and their history of prior vulnerability disclosures against other named vendors"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": null,
+  "source_id": "SRC-0054",
+  "source_type": "MED",
+  "text": "the researcher's publicly used aliases and their history of prior vulnerability disclosures against other named vendors",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": null,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": true,
+    "named_primary": null,
+    "relay_depth": null,
+    "self_interested_only": null,
+    "aggregate": false,
+    "artifact_test": "pass",
+    "method_test": "pass",
+    "hedge_test": "pass"
+  },
+  "evidentiary_status": "observed",
+  "polarity": "positive",
+  "volatility": "durable",
+  "document_sha256_normalized": "28f2fa408def642befd0ee4ba66074f9420257dbaea9ae6c2fafca3dc4cc0ea0",
+  "_display_id": "C002a",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-003"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

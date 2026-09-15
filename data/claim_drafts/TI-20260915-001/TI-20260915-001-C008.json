@@ -1,0 +1,96 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "observed_period": {
+      "start": "2026-09-03",
+      "end": "2026-09-06",
+      "basis": "derived",
+      "precision": "day"
+    },
+    "source_published": "2026-09-06",
+    "fetched": "2026-09-15T01:40:36Z"
+  },
+  "hunt_value": {
+    "behavioral": false,
+    "huntable": false,
+    "telemetry_classes": [],
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": []
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "CrowdStrike Falcon"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [],
+    "justified_by": "named product"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": null,
+  "source_id": "SRC-0078",
+  "source_type": "NPO",
+  "text": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": true,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": false,
+    "named_primary": true,
+    "relay_depth": 2,
+    "self_interested_only": false,
+    "aggregate": null,
+    "artifact_test": null,
+    "method_test": null,
+    "hedge_test": null
+  },
+  "evidentiary_status": "alleged",
+  "polarity": "positive",
+  "volatility": "perishable",
+  "document_sha256_normalized": "0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4",
+  "_display_id": "C004b",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-006"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

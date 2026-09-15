@@ -349,7 +349,8 @@
       "TI-20260822-002",
       "TI-20260830-001",
       "TI-20260830-002",
-      "TI-20260903-001"
+      "TI-20260903-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
@@ -377,7 +378,8 @@
         "TI-20260822-002",
         "TI-20260830-001",
         "TI-20260830-002",
-        "TI-20260903-001"
+        "TI-20260903-001",
+        "TI-20260915-001"
       ]
     },
     "origin": "US"
@@ -698,7 +700,8 @@
       "TI-20260830-001",
       "TI-20260830-002",
       "TI-20260903-001",
-      "TI-20260914-001"
+      "TI-20260914-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
@@ -729,7 +732,8 @@
         "TI-20260830-001",
         "TI-20260830-002",
         "TI-20260903-001",
-        "TI-20260914-001"
+        "TI-20260914-001",
+        "TI-20260915-001"
       ]
     }
   },
@@ -1152,7 +1156,8 @@
     "synthetic": false,
     "cited_in": [
       "IW-20260826-001",
-      "TI-20260809-001"
+      "TI-20260809-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://securityaffairs.com/196417/apt/south-korea-warns-of-state-backed-watering-hole-attacks.html",
@@ -1177,7 +1182,8 @@
       "record_status": "insufficient",
       "from_issues": [
         "IW-20260826-001",
-        "TI-20260809-001"
+        "TI-20260809-001",
+        "TI-20260915-001"
       ]
     }
   },
@@ -1998,7 +2004,8 @@
     "synthetic": false,
     "cited_in": [
       "IW-20260826-001",
-      "TI-20260903-001"
+      "TI-20260903-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/",
@@ -2023,7 +2030,8 @@
       "record_status": "insufficient",
       "from_issues": [
         "IW-20260826-001",
-        "TI-20260903-001"
+        "TI-20260903-001",
+        "TI-20260915-001"
       ]
     },
     "origin": "UK"
@@ -2557,7 +2565,8 @@
     "synthetic": false,
     "cited_in": [
       "TI-20260903-001",
-      "TI-20260914-001"
+      "TI-20260914-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://cybernews.com/news/dropbox-accounts-breached-email-lenovo-id/",
@@ -2582,7 +2591,8 @@
       "record_status": "insufficient",
       "from_issues": [
         "TI-20260903-001",
-        "TI-20260914-001"
+        "TI-20260914-001",
+        "TI-20260915-001"
       ]
     }
   },
@@ -2838,5 +2848,152 @@
       ]
     },
     "origin": "FR"
+  },
+  {
+    "source_id": "SRC-0077",
+    "canonical_name": "Arctic Wolf",
+    "canonical_domain": "arcticwolf.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://arcticwolf.com/resources/blog/crowdstrike-falcon-sensor-local-privilege-escalation-zero-day-falconflank/",
+      "admitted": "2026-09-15T08:45:53Z",
+      "assigned_type": "VND",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0078",
+    "canonical_name": "Cloud Security Alliance",
+    "canonical_domain": "labs.cloudsecurityalliance.org",
+    "type": "NPO",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-falconflank-edr-privilege-escalation-20260/",
+      "admitted": "2026-09-15T08:45:53Z",
+      "assigned_type": "NPO",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0079",
+    "canonical_name": "Secure in Seconds",
+    "canonical_domain": "secureinseconds.com",
+    "type": "IND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.secureinseconds.com/blog/2026-09-06-crowdstrike-falconflank-zero-day-edr-supply-chain",
+      "admitted": "2026-09-15T08:45:53Z",
+      "assigned_type": "IND",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0080",
+    "canonical_name": "Malwarebytes",
+    "canonical_domain": "malwarebytes.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.malwarebytes.com/blog/bugs/2026/08/shieldbreak-bypasses-microsofts-patch-for-earlier-defender-flaw",
+      "admitted": "2026-09-15T08:45:53Z",
+      "assigned_type": "VND",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    },
+    "origin": "US"
   }
 ]

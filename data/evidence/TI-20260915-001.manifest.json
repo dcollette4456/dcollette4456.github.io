@@ -1,0 +1,313 @@
+{
+  "schema_version": 1,
+  "serial": "TI-20260915-001",
+  "generated": "2026-09-15T01:41:09Z",
+  "capture_is_retrospective": true,
+  "entries": [
+    {
+      "source_id": "SRC-0077",
+      "ref": "REF-001",
+      "url": "https://arcticwolf.com/resources/blog/crowdstrike-falcon-sensor-local-privilege-escalation-zero-day-falconflank/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:39:45Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 344139,
+      "sha256_raw": "a8c80e9fb82e9f079b62219a09d262136906aa2bfa03702dd9d9597ab8a4aaf8",
+      "sha256_normalized": "cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:39:47Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0010",
+      "ref": "REF-002",
+      "url": "https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:39:55Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 92092,
+      "sha256_raw": "fba1a78afbd6b8a4c0dd3651e07d210544dd99651ac2bdfb91c3538db0cd298e",
+      "sha256_normalized": "9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:39:57Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0054",
+      "ref": "REF-003",
+      "url": "https://www.theregister.com/security/2026/09/03/prolific-microsoft-0-day-hunter-drops-crowdstrike-falcon-exploit-poc/5294318",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:06Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 167989,
+      "sha256_raw": "1ed05066ba7d90c674be19bf13eb75846a3346fd150810ed2ea67f97ecf5f5d8",
+      "sha256_normalized": "28f2fa408def642befd0ee4ba66074f9420257dbaea9ae6c2fafca3dc4cc0ea0",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "28f2fa408def642befd0ee4ba66074f9420257dbaea9ae6c2fafca3dc4cc0ea0"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:08Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-004",
+      "url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:16Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 173778,
+      "sha256_raw": "146f4b424006ba3cbbdb0c68b122bd57b5a2fb240a105da01fb6d837b41aa9a9",
+      "sha256_normalized": "44e13d561b41aa2cae54fce49e232fba855ec121ddc52cb2e1f0008a86d24c45",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "44e13d561b41aa2cae54fce49e232fba855ec121ddc52cb2e1f0008a86d24c45"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:18Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0031",
+      "ref": "REF-005",
+      "url": "https://securityaffairs.com/198342/hacking/chaotic-eclipse-releases-crowdstrike-falcon-zeroday-falconflank.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:26Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 126163,
+      "sha256_raw": "51b121877abb7ed98e8941c7a1de7b8ae7942035d504ee1753e1a9452c1bb919",
+      "sha256_normalized": "191c1733106fab6b9c22ee0b387960e72da0c702627605b9dfc465cd90327572",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "191c1733106fab6b9c22ee0b387960e72da0c702627605b9dfc465cd90327572"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:28Z",
+        "note": "HTTP 500"
+      }
+    },
+    {
+      "source_id": "SRC-0078",
+      "ref": "REF-006",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-falconflank-edr-privilege-escalation-20260/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:36Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 106226,
+      "sha256_raw": "bf301c7f79d6bbdfccc30584b395d827d7fe816a33a08515d558e060082dc96e",
+      "sha256_normalized": "0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:38Z",
+        "note": "rate limited (429)"
+      }
+    },
+    {
+      "source_id": "SRC-0079",
+      "ref": "REF-007",
+      "url": "https://www.secureinseconds.com/blog/2026-09-06-crowdstrike-falconflank-zero-day-edr-supply-chain",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:40Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 98216,
+      "sha256_raw": "332402a618a57ab16989b0065fa07674117163fa35509d7f162d3784350fcf96",
+      "sha256_normalized": "7ffff232ec9fb630fc2c25c831c648a74776acc60628eccaee26d7859c9564e5",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "7ffff232ec9fb630fc2c25c831c648a74776acc60628eccaee26d7859c9564e5"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:42Z",
+        "note": "rate limited (429)"
+      }
+    },
+    {
+      "source_id": "SRC-0019",
+      "ref": "REF-008",
+      "url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:44Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 175760,
+      "sha256_raw": "4def988e6a8f49ce49b2334e1a69e1de3e2d63f45715187575c85a1e3851251e",
+      "sha256_normalized": "da5a604e8f6a9f6c710d5db0aa60d3b884101c9d2b68731f5321575c966b7d62",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "da5a604e8f6a9f6c710d5db0aa60d3b884101c9d2b68731f5321575c966b7d62"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:46Z",
+        "note": "rate limited (429)"
+      }
+    },
+    {
+      "source_id": "SRC-0080",
+      "ref": "REF-009",
+      "url": "https://www.malwarebytes.com/blog/bugs/2026/08/shieldbreak-bypasses-microsofts-patch-for-earlier-defender-flaw",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:49Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 323530,
+      "sha256_raw": "65b1bb1b01afcde166f6c58457ee611731feff2c215cc40015cc91948f6024b7",
+      "sha256_normalized": "86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:51Z",
+        "note": "rate limited (429)"
+      }
+    },
+    {
+      "source_id": "SRC-0077",
+      "ref": "REF-010",
+      "url": "https://arcticwolf.com/resources/blog/cve-2026-50656-rogueplanet-shieldbreak/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:53Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 346367,
+      "sha256_raw": "f975a69efae13ffd92ff1dffd1d06f780497f13f38a3380b9afe0bde0b9aa8d3",
+      "sha256_normalized": "096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:55Z",
+        "note": "rate limited (429)"
+      }
+    },
+    {
+      "source_id": "SRC-0069",
+      "ref": "REF-011",
+      "url": "https://cybernews.com/security/microsoft-defender-patch-bypass-shieldbreak-exploit/",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:40:56Z",
+      "http_status": 403,
+      "content_type": null,
+      "content_length": 5885,
+      "sha256_raw": "ea12079716e2da95678d4ea18774a6a348979c600e43e4e1e2e448162d9b1fea",
+      "sha256_normalized": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "6a0825976dfcfc0b4c60faf4c8b53b35f470565fafd2e5a89375815386a1c15c"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:40:58Z",
+        "note": "rate limited (429)"
+      },
+      "notes": "http_status 403; local fetch was not 2xx, archive.org was still tried"
+    },
+    {
+      "source_id": "SRC-0054",
+      "ref": "REF-012",
+      "url": "https://www.theregister.com/security/2026/09/09/serial-microsoft-0-day-hunter-drops-yet-another-defender-exploit/5295335",
+      "format_family": "html",
+      "preservation": "none",
+      "fetched": "2026-09-15T01:41:00Z",
+      "http_status": 200,
+      "content_type": "text/html",
+      "content_length": 165362,
+      "sha256_raw": "84c69d737cd2b76552af6878d0ae136964d5abe9afc80e404f720399db0aed55",
+      "sha256_normalized": "0d11d41655002281ad109c89edd741a00cf95112548f77d30fc47ccc1a29e9b6",
+      "normalizer": "html/v1",
+      "extractor": null,
+      "version_identity": {
+        "kind": "normalized_hash",
+        "value": "0d11d41655002281ad109c89edd741a00cf95112548f77d30fc47ccc1a29e9b6"
+      },
+      "archive": {
+        "status": "failed",
+        "provider": "web.archive.org",
+        "attempted": "2026-09-15T01:41:02Z",
+        "note": "HTTP 500"
+      }
+    }
+  ],
+  "manifest_sha256": "c5d8f015b012418be671524d9e16432f5fb9a3c88db5c70fd11c33279d7a8d3f",
+  "timestamp": {
+    "status": "not_yet_anchored"
+  }
+}

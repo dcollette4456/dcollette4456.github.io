@@ -1,0 +1,69 @@
+[
+  {
+    "url": "https://arcticwolf.com/resources/blog/crowdstrike-falcon-sensor-local-privilege-escalation-zero-day-falconflank/",
+    "canonical_name": "Arctic Wolf",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/",
+    "canonical_name": "BleepingComputer",
+    "type": "MED",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.theregister.com/security/2026/09/03/prolific-microsoft-0-day-hunter-drops-crowdstrike-falcon-exploit-poc/5294318",
+    "canonical_name": "The Register",
+    "type": "MED",
+    "origin": "GB"
+  },
+  {
+    "url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://securityaffairs.com/198342/hacking/chaotic-eclipse-releases-crowdstrike-falcon-zeroday-falconflank.html",
+    "canonical_name": "Security Affairs",
+    "type": "MED"
+  },
+  {
+    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-falconflank-edr-privilege-escalation-20260/",
+    "canonical_name": "Cloud Security Alliance",
+    "type": "NPO",
+    "origin": "US"
+  },
+  {
+    "url": "https://www.secureinseconds.com/blog/2026-09-06-crowdstrike-falconflank-zero-day-edr-supply-chain",
+    "canonical_name": "Secure in Seconds",
+    "type": "IND"
+  },
+  {
+    "url": "https://thehackernews.com/2026/08/shieldbreak-zero-day-poc-claims.html",
+    "canonical_name": "The Hacker News",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.malwarebytes.com/blog/bugs/2026/08/shieldbreak-bypasses-microsofts-patch-for-earlier-defender-flaw",
+    "canonical_name": "Malwarebytes",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://arcticwolf.com/resources/blog/cve-2026-50656-rogueplanet-shieldbreak/",
+    "canonical_name": "Arctic Wolf",
+    "type": "VND",
+    "origin": "US"
+  },
+  {
+    "url": "https://cybernews.com/security/microsoft-defender-patch-bypass-shieldbreak-exploit/",
+    "canonical_name": "Cybernews",
+    "type": "MED"
+  },
+  {
+    "url": "https://www.theregister.com/security/2026/09/09/serial-microsoft-0-day-hunter-drops-yet-another-defender-exploit/5295335",
+    "canonical_name": "The Register",
+    "type": "MED",
+    "origin": "GB"
+  }
+]

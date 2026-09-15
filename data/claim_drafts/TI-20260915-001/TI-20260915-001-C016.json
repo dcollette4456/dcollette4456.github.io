@@ -1,0 +1,96 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "observed_period": {
+      "start": "2026-06-16",
+      "end": "2026-07-08",
+      "basis": "derived",
+      "precision": "day"
+    },
+    "source_published": "2026-08-17",
+    "fetched": "2026-09-15T01:40:49Z"
+  },
+  "hunt_value": {
+    "behavioral": false,
+    "huntable": false,
+    "telemetry_classes": [],
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": []
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "Microsoft Defender"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [],
+    "justified_by": "document names Defender but not CVE-2026-50656 itself"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": null,
+  "source_id": "SRC-0080",
+  "source_type": "VND",
+  "text": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it",
+  "gates": {
+    "origin_identified": false,
+    "primary_reachable": null,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": false,
+    "named_primary": true,
+    "relay_depth": 1,
+    "self_interested_only": true,
+    "aggregate": false,
+    "artifact_test": "n/a",
+    "method_test": "n/a",
+    "hedge_test": "n/a"
+  },
+  "evidentiary_status": "self_reported",
+  "polarity": "positive",
+  "volatility": "durable",
+  "document_sha256_normalized": "86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e",
+  "_display_id": "C009b",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-009"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

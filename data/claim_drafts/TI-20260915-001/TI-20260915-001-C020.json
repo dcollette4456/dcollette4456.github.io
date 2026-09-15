@@ -1,0 +1,99 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "observed_period": {
+      "start": "2026-09-08",
+      "end": "2026-09-09",
+      "basis": "derived",
+      "precision": "day"
+    },
+    "source_published": "2026-09-09T18:23:00Z",
+    "fetched": "2026-09-15T01:41:00Z"
+  },
+  "hunt_value": {
+    "behavioral": false,
+    "huntable": false,
+    "telemetry_classes": [],
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": []
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "Microsoft Defender"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [
+      "CVE-2026-69414",
+      "CVE-2026-50656"
+    ],
+    "justified_by": "named CVEs"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "whether Microsoft shipped a patch for ShieldBreak/CVE-2026-69414 on September Patch Tuesday, and what ShieldCrash is claimed to do against it"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": "nightmare eclipse (aka msnightmare)",
+  "source_id": "SRC-0054",
+  "source_type": "MED",
+  "text": "whether Microsoft shipped a patch for ShieldBreak/CVE-2026-69414 on September Patch Tuesday, and what ShieldCrash is claimed to do against it",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": true,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": false,
+    "named_primary": true,
+    "relay_depth": 1,
+    "self_interested_only": true,
+    "aggregate": false,
+    "artifact_test": "n/a",
+    "method_test": "n/a",
+    "hedge_test": "n/a"
+  },
+  "evidentiary_status": "self_reported",
+  "polarity": "positive",
+  "volatility": "durable",
+  "document_sha256_normalized": "0d11d41655002281ad109c89edd741a00cf95112548f77d30fc47ccc1a29e9b6",
+  "_display_id": "C011",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-012"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

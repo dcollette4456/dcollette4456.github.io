@@ -101,7 +101,7 @@
       "title": "Borrowing the Guard's Keys: CrowdStrike Falcon and Microsoft Defender's Own Remediation Engines Become Privilege-Escalation Paths",
       "path": "/issues/edr-remediation-engine-privilege-escalation/",
       "authoring": "pipeline",
-      "status": "draft",
+      "status": "published",
       "issue_number": 42,
       "classification_version": "4.1",
       "article_spec_version": "2.8"

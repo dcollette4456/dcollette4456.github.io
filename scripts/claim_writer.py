@@ -81,7 +81,7 @@ def compute_grade(g, polarity, scope):
     if not direct_observation:
         if g.get("self_interested_only"):
             gates = _gates_block(True, origin_stated, False, False, "n/a", "n/a", "n/a")
-            return 6, access, None, gates, _vector("", gates)
+            return 6, access, "unresolved", gates, _vector("", gates)
 
         relay_depth = g.get("relay_depth")
         if relay_depth == "unresolved" or (not g.get("named_primary") and relay_depth is None):
@@ -236,6 +236,8 @@ def main():
     }
     if draft.get("origin_named") is not None:
         claim["origin_named"] = draft["origin_named"]
+    if draft.get("scope") is not None:
+        claim["scope"] = draft["scope"]
     if access_addendum:
         claim["access"] = access_addendum
     if "corroboration" in draft:

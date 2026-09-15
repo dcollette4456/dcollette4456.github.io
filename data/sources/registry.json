@@ -349,7 +349,8 @@
       "TI-20260822-002",
       "TI-20260830-001",
       "TI-20260830-002",
-      "TI-20260903-001"
+      "TI-20260903-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://www.bleepingcomputer.com/news/security/lazarus-hackers-exploited-windows-zero-day-to-target-defense-firms/",
@@ -377,7 +378,8 @@
         "TI-20260822-002",
         "TI-20260830-001",
         "TI-20260830-002",
-        "TI-20260903-001"
+        "TI-20260903-001",
+        "TI-20260915-001"
       ]
     },
     "origin": "US"
@@ -697,7 +699,8 @@
       "TI-20260822-002",
       "TI-20260830-001",
       "TI-20260830-002",
-      "TI-20260903-001"
+      "TI-20260903-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://thehackernews.com/2026/08/rust-supply-chain-attack-puts-build.html",
@@ -727,7 +730,8 @@
         "TI-20260822-002",
         "TI-20260830-001",
         "TI-20260830-002",
-        "TI-20260903-001"
+        "TI-20260903-001",
+        "TI-20260915-001"
       ]
     }
   },
@@ -1150,7 +1154,8 @@
     "synthetic": false,
     "cited_in": [
       "IW-20260826-001",
-      "TI-20260809-001"
+      "TI-20260809-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://securityaffairs.com/196417/apt/south-korea-warns-of-state-backed-watering-hole-attacks.html",
@@ -1175,7 +1180,8 @@
       "record_status": "insufficient",
       "from_issues": [
         "IW-20260826-001",
-        "TI-20260809-001"
+        "TI-20260809-001",
+        "TI-20260915-001"
       ]
     }
   },
@@ -1994,7 +2000,8 @@
     "synthetic": false,
     "cited_in": [
       "IW-20260826-001",
-      "TI-20260903-001"
+      "TI-20260903-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://www.theregister.com/security/2026/08/06/openai-reveals-its-rogue-agent-swarm-went-a-little-bit-borg-ahead-of-hugging-face-hack/",
@@ -2019,7 +2026,8 @@
       "record_status": "insufficient",
       "from_issues": [
         "IW-20260826-001",
-        "TI-20260903-001"
+        "TI-20260903-001",
+        "TI-20260915-001"
       ]
     },
     "origin": "UK"
@@ -2552,7 +2560,8 @@
     "language": "en",
     "synthetic": false,
     "cited_in": [
-      "TI-20260903-001"
+      "TI-20260903-001",
+      "TI-20260915-001"
     ],
     "admission": {
       "first_seen_url": "https://cybernews.com/news/dropbox-accounts-breached-email-lenovo-id/",
@@ -2576,8 +2585,156 @@
       "distribution": {},
       "record_status": "insufficient",
       "from_issues": [
-        "TI-20260903-001"
+        "TI-20260903-001",
+        "TI-20260915-001"
       ]
     }
+  },
+  {
+    "source_id": "SRC-0070",
+    "canonical_name": "Arctic Wolf",
+    "canonical_domain": "arcticwolf.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://arcticwolf.com/resources/blog/crowdstrike-falcon-sensor-local-privilege-escalation-zero-day-falconflank/",
+      "admitted": "2026-09-15T01:39:20Z",
+      "assigned_type": "VND",
+      "type_basis": "Malwarebytes-published company page not reachable at time of check; Wikipedia/press-directory corroboration (Datanyze, ZoomInfo, company overview page) describes Arctic Wolf as a security operations/MDR vendor headquartered in Eden Prairie, Minnesota. Type assigned VND on that basis, not from the domain alone.",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0071",
+    "canonical_name": "Cloud Security Alliance",
+    "canonical_domain": "labs.cloudsecurityalliance.org",
+    "type": "NPO",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-falconflank-edr-privilege-escalation-20260/",
+      "admitted": "2026-09-15T01:39:20Z",
+      "assigned_type": "NPO",
+      "type_basis": "cloudsecurityalliance.org's own About page (direct fetch timed out) corroborated via third-party company-profile sources describing CSA as a nonprofit industry association headquartered in Seattle, WA, founded 2008, publishing cloud-security research and best practices. Type assigned NPO on that basis.",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    },
+    "origin": "US"
+  },
+  {
+    "source_id": "SRC-0072",
+    "canonical_name": "Secure in Seconds",
+    "canonical_domain": "secureinseconds.com",
+    "type": "IND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.secureinseconds.com/blog/2026-09-06-crowdstrike-falconflank-zero-day-edr-supply-chain",
+      "admitted": "2026-09-15T01:39:20Z",
+      "assigned_type": "IND",
+      "type_basis": "secureinseconds.com/about, fetched directly: describes itself as an independent creator's newsletter/blog run by one named individual (a practicing security architect), not a vendor selling a product or service. Type assigned IND on that basis.",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0073",
+    "canonical_name": "Malwarebytes",
+    "canonical_domain": "malwarebytes.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260915-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.malwarebytes.com/blog/bugs/2026/08/shieldbreak-bypasses-microsofts-patch-for-earlier-defender-flaw",
+      "admitted": "2026-09-15T01:39:20Z",
+      "assigned_type": "VND",
+      "type_basis": "malwarebytes.com/company, fetched directly: self-describes as a cybersecurity and privacy protection company headquartered in Santa Clara, CA, selling consumer and enterprise security products. Type assigned VND on that basis.",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260915-001"
+      ]
+    },
+    "origin": "US"
   }
 ]

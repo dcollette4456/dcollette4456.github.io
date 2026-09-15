@@ -1,0 +1,96 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "observed_period": {
+      "start": "2026-09-04",
+      "end": "2026-09-04",
+      "basis": "derived",
+      "precision": "day"
+    },
+    "source_published": "2026-09-04",
+    "fetched": "2026-09-15T01:39:55Z"
+  },
+  "hunt_value": {
+    "behavioral": false,
+    "huntable": false,
+    "telemetry_classes": [],
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": []
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "CrowdStrike Falcon"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [],
+    "justified_by": "named product"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "CrowdStrike's own statement in response to FalconFlank and its recommended workaround"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": "a CrowdStrike spokesperson",
+  "source_id": "SRC-0010",
+  "source_type": "MED",
+  "text": "CrowdStrike's own statement in response to FalconFlank and its recommended workaround",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": false,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": true,
+    "named_primary": null,
+    "relay_depth": null,
+    "self_interested_only": null,
+    "aggregate": false,
+    "artifact_test": "pass",
+    "method_test": "pass",
+    "hedge_test": "pass"
+  },
+  "evidentiary_status": "self_reported",
+  "polarity": "positive",
+  "volatility": "perishable",
+  "document_sha256_normalized": "9e26dc8e87a3303180864ab5b785b7784b02423f093b422507d8e91c99b41498",
+  "_display_id": "C005a",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-002"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

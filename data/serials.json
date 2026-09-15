@@ -96,13 +96,24 @@
       "article_spec_version": "2.8"
     },
     {
+      "serial": "TI-20260914-001",
+      "assigned": "2026-09-14T22:26:55Z",
+      "title": "Closing the Loop: Midnight Blizzard's AI-Automated Malware Evasion Cycle",
+      "path": "/issues/midnight-blizzard-ai-malware-evasion-loop/",
+      "authoring": "hand",
+      "status": "published",
+      "issue_number": 42,
+      "classification_version": "4.2",
+      "article_spec_version": "2.9"
+    },
+    {
       "serial": "TI-20260915-001",
       "assigned": "2026-09-15T01:37:34Z",
       "title": "Borrowing the Guard's Keys: CrowdStrike Falcon and Microsoft Defender's Own Remediation Engines Become Privilege-Escalation Paths",
       "path": "/issues/edr-remediation-engine-privilege-escalation/",
       "authoring": "pipeline",
       "status": "published",
-      "issue_number": 42,
+      "issue_number": 43,
       "classification_version": "4.1",
       "article_spec_version": "2.8"
     }

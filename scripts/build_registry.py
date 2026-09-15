@@ -45,7 +45,7 @@ from citations import load_all_citations, impersonation_check, canonical_domain 
 
 def compute_registry(existing, citations, now):
     """existing: the registry list currently on disk (or []).
-    citations: the (url, name, type, origin, serial) tuples from
+    citations: the (url, name, type, origin, serial, type_basis) tuples from
     load_all_citations(). now: an ISO timestamp string, used only for
     admission records on brand-new entries.
     Returns (registry_list, held_for_review, dropped_names)."""
@@ -53,7 +53,7 @@ def compute_registry(existing, citations, now):
 
     grouped = {}
     order_of_first_appearance = []
-    for url, name, type_, origin, serial in citations:
+    for url, name, type_, origin, serial, type_basis in citations:
         key = (canonical_domain(url), name)
         if key not in grouped:
             grouped[key] = {
@@ -62,6 +62,7 @@ def compute_registry(existing, citations, now):
                 "type": type_,
                 "origin": origin,
                 "first_seen_url": url,
+                "type_basis": type_basis,
                 "cited_in": [],
             }
             order_of_first_appearance.append(key)
@@ -129,9 +130,10 @@ def compute_registry(existing, citations, now):
                 "first_seen_url": g["first_seen_url"],
                 "admitted": now,
                 "assigned_type": g["type"],
-                "type_basis": (
-                    "assigned from publisher name and domain as cited in the issue's "
-                    "References list; not yet verified against a fetched about/masthead page"
+                "type_basis": g["type_basis"] or (
+                    "no self-description recorded at citation; type assigned by the citing "
+                    "author from the publisher's name and domain, not yet verified against a "
+                    "fetched about/masthead page"
                 ),
                 "domain_age_days": None,
                 "impersonation_check": impersonation_note,

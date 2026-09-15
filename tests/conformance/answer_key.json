@@ -1,0 +1,162 @@
+{
+  "_comment": "Frozen answer key for the conformance corpus, classification spec v4.2. Each document's expected outcome, hand-computed against the gate rules by reading the document text against sections 4, 4A, and 5 -- not by running any grader. Run the corpus with a fresh isolated Agent call per document (same isolation as classification spec section 30 stage 4), then compare with scripts/run_conformance_corpus.py. Update this file only when the specification changes what the correct answer is, never to match whatever a grader returned; a mismatch is a finding to investigate, not the key to correct.",
+  "schema_version": 1,
+  "specification_version": "4.2",
+  "cases": [
+    {
+      "id": "CONF-001",
+      "path_tested": "Grade 1: own observation, all gate-5 tests pass",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 1,
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "pass",
+        "method_test": "pass",
+        "hedge_test": "n/a"
+      },
+      "why": "IR engagement, own recovery of the phishing email/attachment/payload (own_observation true, relay_depth 0). Artifact test passes: two SHA-256 hashes, a C2 domain, two IPs are all published. Method test passes: the document states the collection method (own IR engagement, own malware analysis environment). Hedge test is n/a -- this is a direct factual observation about delivery and analysis, not an attribution or intent claim. All applicable gate-5 tests pass, section 5: grade 1."
+    },
+    {
+      "id": "CONF-002",
+      "path_tested": "Grade 2: own observation, artifact test fails (no checkable artifact published)",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 2,
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "fail",
+        "method_test": "pass",
+        "hedge_test": "n/a"
+      },
+      "why": "Own IR engagement, own observation (relay_depth 0). Method test passes: an IR engagement is a stated collection method. Artifact test fails: the document explicitly withholds every hash, IP, and other checkable artifact. Hedge n/a, direct factual observation. Any applicable test failing caps at grade 2, section 5."
+    },
+    {
+      "id": "CONF-003",
+      "path_tested": "Grade 2: hedge test fails on an inferential (attribution) claim",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 2,
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "pass",
+        "method_test": "pass",
+        "hedge_test": "fail"
+      },
+      "why": "Own IR engagement (own_observation true). Artifact test passes: a SHA-256 hash and an IP address are published. Method test passes: IR engagement is a stated method. The attribution to 'Emberwolf' is an inferential actor-linkage claim (section 5's hedge test applies to attribution, intent, actor linkage), and the document states no confidence level and does not hedge the attribution at all -- it states it as a plain identification. Hedge test fails. Any applicable test failing caps at grade 2."
+    },
+    {
+      "id": "CONF-004",
+      "path_tested": "Grade 3: aggregate over the source's private data (gate 4)",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 3,
+        "own_observation": true,
+        "aggregate": true,
+        "relay_depth": 0,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "A population statistic (14 percent of monitored endpoints) drawn from the source's own telemetry, explicitly stated as not independently reproducible. Gate 4: is the claim an aggregate over the source's private data -- yes. Stop at grade 3 per section 5; gate 5's individual tests are not reached because gate 4 already resolved the grade."
+    },
+    {
+      "id": "CONF-005",
+      "path_tested": "Grade 4: relay of a named finding, primary not fetched by the reading party",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 4,
+        "own_observation": false,
+        "relay_depth": 1,
+        "named_primary": true,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "The outlet did not observe the compromise itself; it names CyberFirm X's report as the source and explicitly says it has not independently reviewed it. Gate 3: reporting a named finding from elsewhere -- grade 4, stop, relay_depth 1. Gate 5's tests are not reached; grade 4 is set at gate 3."
+    },
+    {
+      "id": "CONF-006",
+      "path_tested": "Grade 5: origin identified, no document reachable by anyone",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 5,
+        "origin_identified": true,
+        "own_observation": false,
+        "primary_reachable": false,
+        "document_retrieved": false,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "An origin is identified (unnamed sources familiar with the investigation) and no document behind it can be opened by anyone -- explicitly, no official statement and no incident report has been published by any party. Gate 2's first bullet requires origin_identified true, primary_reachable false, and document_retrieved false together: grade 5, stop. Missing origin_identified from this case's expected fields during corpus construction let compute_grade() fall through to gate 3 and return grade 6 instead -- caught by the same self-consistency check that caught CONF-009's error, before any real grader was run."
+    },
+    {
+      "id": "CONF-007",
+      "path_tested": "Grade 5: relay depth two or more (the cited source is itself relaying)",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 5,
+        "own_observation": false,
+        "relay_depth": 2,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "The document read (Signal Ledger Blog) relays TechDaily, which the document says itself relayed SecBlog's research. That is two documents between the document read and any underlying observation. Gate 3: 'where the document read is relaying a document that is itself relaying' -- grade 5, relay_depth 2, stop."
+    },
+    {
+      "id": "CONF-008",
+      "path_tested": "Grade 6: no traceable origin at all",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 6,
+        "own_observation": false,
+        "origin_identified": false,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "No origin is named ('there are reports', no source identified) and no method is described. Gate 3: 'the assertion has no traceable origin at all' -- grade 6, stop. This is the no-origin case section 5 and its worked-example commentary specifically distinguish from grade 5 (an identified-but-unreachable origin) and from grade 2 (an outlet asserting a finding on its own unstated authority)."
+    },
+    {
+      "id": "CONF-009",
+      "path_tested": "Grade 6: only the party the claim benefits is vouching for it",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 6,
+        "own_observation": false,
+        "self_interested_only": true,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "The attacker's own leak-site post is the only party vouching for the breach claim, and the claim (a successful breach with stolen data) directly benefits the party making it -- pressure for ransom payment. own_observation is false here even though the attacker is describing something it did: gate 3's header example list (own IR engagement, own sensors, own scan, own artifact recovery, own network, own catalog, own repository, own court record) is what qualifies as a legitimate own-observation, and an unevidenced self-serving boast is not one of those -- it is gate 3's own separate self-interested-only failure case. Corrected during corpus construction: an earlier draft of this answer key marked own_observation true here, which would have skipped the self-interested-only check entirely (it only runs inside the 'not direct observation' branch of compute_grade) and produced grade 2 instead of grade 6. Caught by cross-checking the answer key against scripts/claim_writer.py's actual compute_grade() before ever running a real grader against it."
+    },
+    {
+      "id": "CONF-010",
+      "path_tested": "Grade 1: TEC structured record, method_test is n/a rather than counted against the claim",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 1,
+        "source_type": "TEC",
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "pass",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "A structured catalog record (KEV entry) is TEC by gate 1 (structured record overrides to TEC). Own catalog counts as own observation under gate 3. Artifact test passes: the CVE identifier itself is a checkable artifact. Method test is n/a for TEC per section 5's carve-out -- a structured record does not describe a collection method and none is required. Hedge n/a, factual record. All applicable tests pass (method is not applicable, not failing): grade 1."
+    },
+    {
+      "id": "CONF-011",
+      "path_tested": "Gate 0: the author's own inference, not a sourced claim -- ANL, no grade digit",
+      "expected": {
+        "gate_0_is_analysis": true,
+        "expected_grade": null,
+        "expected_tag_family": "ANL"
+      },
+      "why": "The document is explicit that this is the author's own synthesis across publicly reported incidents, not a specific observed finding, and it says so directly ('this is our own synthesis'). Gate 0: own inference, synthesis, correlation, forecast, or recommendation is not a sourced claim -- takes ANL and a confidence word, stop. No grade digit applies; grading this against gates 1 through 5 as though it were a sourced claim is itself a wrong answer, per section 5's ordering (gate 0 runs first and stops)."
+    }
+  ]
+}

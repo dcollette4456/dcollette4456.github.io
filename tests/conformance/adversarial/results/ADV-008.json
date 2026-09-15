@@ -1,0 +1,18 @@
+{
+  "gate_0_is_analysis": false,
+  "source_type": "VND",
+  "origin_identified": true,
+  "primary_reachable": null,
+  "document_retrieved": true,
+  "gated": false,
+  "own_observation": true,
+  "named_primary": false,
+  "relay_depth": 0,
+  "self_interested_only": false,
+  "aggregate": false,
+  "artifact_test": "n/a",
+  "method_test": "n/a",
+  "hedge_test": "n/a",
+  "polarity": "negative",
+  "scope": null
+}

@@ -1,0 +1,6 @@
+{{- $label := .Get "label" -}}
+{{- $style := .Get "style" | default "box" -}}
+<div class="callout {{ if eq $style "box" }}callout-box{{ end }}">
+  {{ with $label }}<span class="callout-label">{{ . }}</span>{{ end }}
+  {{ .Page.RenderString .Inner }}
+</div>

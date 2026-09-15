@@ -1,0 +1,105 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "observed_period": {
+      "start": "2026-06-01",
+      "end": "2026-07-31",
+      "basis": "derived",
+      "precision": "day"
+    },
+    "source_published": "2026-08-12",
+    "fetched": "2026-09-15T01:40:53Z"
+  },
+  "hunt_value": {
+    "behavioral": true,
+    "behavioral_basis": "msmpeng.exe child process creation, token duplication, junction/symlink creation, hive mounting",
+    "huntable": true,
+    "telemetry_classes": [
+      "process-execution",
+      "file-write",
+      "registry"
+    ],
+    "collection_point_basis": "stated",
+    "collection_point_source": "audit trails for msmpeng.exe and user profile service events",
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": []
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "Microsoft Defender"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [
+      "CVE-2026-50656"
+    ],
+    "justified_by": "named CVE and product"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": null,
+  "source_id": "SRC-0077",
+  "source_type": "VND",
+  "text": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": true,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": false,
+    "named_primary": true,
+    "relay_depth": 1,
+    "self_interested_only": false,
+    "aggregate": false,
+    "artifact_test": "n/a",
+    "method_test": "n/a",
+    "hedge_test": "n/a"
+  },
+  "evidentiary_status": "alleged",
+  "polarity": "positive",
+  "volatility": "durable",
+  "document_sha256_normalized": "096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0",
+  "_display_id": "C009a",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-010"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

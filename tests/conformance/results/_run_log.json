@@ -1,0 +1,15 @@
+{
+  "_comment": "One entry per full corpus run. Append, never overwrite -- the point of this file is watching the divergence rate over time as the specification, the grading prompt, or the model changes (classification spec v4.2 section 32's standing concern, applied to this fixed corpus rather than to a sample of a real issue).",
+  "runs": [
+    {
+      "date": "2026-09-05",
+      "specification_version": "4.2",
+      "grader": "claude-sonnet-5, via isolated Agent tool calls, one per document, no memory of this repository or of each other",
+      "cases_total": 11,
+      "cases_scored": 11,
+      "cases_passed": 11,
+      "divergence_rate": 0.0,
+      "notes": "First run of the corpus. Three errors were found and corrected in the answer key itself before this run, by cross-checking the key's hand-derived expected values against scripts/claim_writer.py's actual compute_grade() function (not against any grader output): CONF-004 was missing 'aggregate: true', CONF-006 was missing 'origin_identified: true', and CONF-009 had own_observation recorded as true when the correct reading of gate 3 is false (an unevidenced self-interested boast does not qualify as one of gate 3's listed own-observation examples). All three would have produced a silently wrong 'correct' answer for the corpus to grade against. See content/projects/conformance-corpus-first-run.md for the full writeup."
+    }
+  ]
+}

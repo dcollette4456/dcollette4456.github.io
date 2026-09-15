@@ -1,0 +1,10 @@
+Harrow Point Labs, Threat Research Note, published 11 May 2026.
+
+During a recent incident response engagement, Harrow Point Labs identified
+tactics, techniques, and procedures consistent with a cluster the firm tracks
+internally. The attacker deployed a custom loader (SHA-256:
+9f2c1a4e7b6d3f0a8c5e2b1d4f7a0c3e6b9d2f5a8c1e4b7d0a3f6c9e2b5d8a1f4c) and
+established command-and-control at 203.0.113.44. Harrow Point Labs identified
+this activity as belonging to the group it tracks as Emberwolf, based on
+infrastructure overlap with campaigns the firm observed in previous
+engagements.

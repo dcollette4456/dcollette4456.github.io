@@ -1,0 +1,10 @@
+Bracken Vulnerability Intelligence, blog post, 22 July 2026.
+
+We wanted to flag a vulnerability our team is now tracking:
+
+CVE-2026-41022
+Status: Actively exploited
+Date added to our internal watchlist: 18 July 2026
+
+We're monitoring for further developments and will update this post as we
+learn more.

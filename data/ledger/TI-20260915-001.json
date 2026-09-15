@@ -25,6 +25,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-002"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -38,7 +47,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -122,6 +131,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-003"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -135,7 +153,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -223,6 +241,15 @@
       "hedge_test": "pass"
     },
     "gate_vector": "MED|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-003"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -236,7 +263,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -319,6 +346,15 @@
       "hedge_test": "pass"
     },
     "gate_vector": "MED|R:y|D:y|A:n|art:f|meth:f|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-005"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -332,7 +368,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -392,12 +428,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C005",
-    "fingerprint": "SRC-0070|cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0077|cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "the technical mechanism by which FalconFlank achieves privilege escalation (the race condition and DLL/library side-loading path through Falcon's macro remediation feature)",
-    "source_id": "SRC-0070",
+    "source_id": "SRC-0077",
     "source_type": "VND",
     "grade": 4,
     "relay_depth": 1,
@@ -416,6 +452,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-001"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -429,7 +474,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T02:15:00Z",
       "passes": 3,
@@ -492,12 +537,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C006",
-    "fingerprint": "SRC-0071|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "the technical mechanism by which FalconFlank achieves privilege escalation (the race condition and DLL/library side-loading path through Falcon's macro remediation feature)",
-    "source_id": "SRC-0071",
+    "source_id": "SRC-0078",
     "source_type": "NPO",
     "grade": 5,
     "relay_depth": 2,
@@ -516,6 +561,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -529,7 +583,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -587,12 +641,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C007",
-    "fingerprint": "SRC-0070|cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0077|cc44330b9e7c323fb77b75c539294ba1af2cb25f09f38e7204005348b8128e6a|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work",
-    "source_id": "SRC-0070",
+    "source_id": "SRC-0077",
     "source_type": "VND",
     "grade": 4,
     "relay_depth": 1,
@@ -611,6 +665,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-001"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -624,7 +687,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -682,12 +745,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C008",
-    "fingerprint": "SRC-0071|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "which Windows versions and CrowdStrike Falcon configuration/policy states are required for FalconFlank to work",
-    "source_id": "SRC-0071",
+    "source_id": "SRC-0078",
     "source_type": "NPO",
     "grade": 5,
     "relay_depth": 2,
@@ -706,6 +769,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -719,7 +791,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -800,6 +872,15 @@
       "hedge_test": "pass"
     },
     "gate_vector": "MED|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-002"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -813,7 +894,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -895,6 +976,15 @@
       "hedge_test": "pass"
     },
     "gate_vector": "MED|R:y|D:y|A:n|art:p|meth:na|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-004"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -908,7 +998,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -960,12 +1050,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C011",
-    "fingerprint": "SRC-0071|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "whether a CVE identifier, CVSS score, or vendor patch exists for FalconFlank at the time this document was published",
-    "source_id": "SRC-0071",
+    "source_id": "SRC-0078",
     "source_type": "NPO",
     "grade": 4,
     "relay_depth": 1,
@@ -984,6 +1074,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -997,7 +1096,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1079,6 +1178,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-002"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1092,7 +1200,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1150,12 +1258,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C013",
-    "fingerprint": "SRC-0071|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0078|0c4b07a9503027c96cb9e7a1ab53a5a7b448b4a7d043247fa549e91e57c4e7e4|NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "the specific staging technique described for how the malicious file is planted and executed (an OLE-formatted file placed in the PowerShell application directory, and how a subsequent PowerShell invocation is claimed to load a planted library)",
-    "source_id": "SRC-0071",
+    "source_id": "SRC-0078",
     "source_type": "NPO",
     "grade": 5,
     "relay_depth": 2,
@@ -1174,6 +1282,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "NPO|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-006"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1187,7 +1304,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1252,12 +1369,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C014",
-    "fingerprint": "SRC-0072|7ffff232ec9fb630fc2c25c831c648a74776acc60628eccaee26d7859c9564e5|IND|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "fingerprint": "SRC-0079|7ffff232ec9fb630fc2c25c831c648a74776acc60628eccaee26d7859c9564e5|IND|R:y|D:y|A:n|art:p|meth:p|hedge:p",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "this author's argument about whether FalconFlank represents a vendor-specific defect or a structural pattern across endpoint-security products, and which other named incidents this document points to as part of that pattern",
-    "source_id": "SRC-0072",
+    "source_id": "SRC-0079",
     "source_type": "IND",
     "grade": 1,
     "relay_depth": 0,
@@ -1276,6 +1393,15 @@
       "hedge_test": "pass"
     },
     "gate_vector": "IND|R:y|D:y|A:n|art:p|meth:p|hedge:p",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-007"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1289,7 +1415,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1354,12 +1480,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C015",
-    "fingerprint": "SRC-0070|096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0077|096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it",
-    "source_id": "SRC-0070",
+    "source_id": "SRC-0077",
     "source_type": "VND",
     "grade": 4,
     "relay_depth": 1,
@@ -1378,6 +1504,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-010"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1391,7 +1526,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1457,12 +1592,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C016",
-    "fingerprint": "SRC-0073|86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0080|86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "CVE-2026-50656 (RoguePlanet): what the vulnerability is, when it was disclosed, and when Microsoft patched it",
-    "source_id": "SRC-0073",
+    "source_id": "SRC-0080",
     "source_type": "VND",
     "grade": 6,
     "relay_depth": "unresolved",
@@ -1481,6 +1616,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-009"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1494,7 +1638,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1575,6 +1719,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-008"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1588,7 +1741,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1662,12 +1815,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C018",
-    "fingerprint": "SRC-0073|86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0080|86d7c8aa7de6c017d986f197d1dc9dca1f9bff37749f014c3016c674f6e0b76e|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's",
-    "source_id": "SRC-0073",
+    "source_id": "SRC-0080",
     "source_type": "VND",
     "grade": 6,
     "relay_depth": "unresolved",
@@ -1686,6 +1839,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-009"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1699,7 +1861,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1759,12 +1921,12 @@
   },
   {
     "claim_id": "TI-20260915-001-C019",
-    "fingerprint": "SRC-0070|096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "fingerprint": "SRC-0077|096fd188e9f0f4bd77b63ceb68afcd8bcad3f1a7e167937256bd792ae6e76bd0|VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
     "issue": "TI-20260915-001",
     "first_issue": "TI-20260915-001",
     "citation_count": 1,
     "text": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's",
-    "source_id": "SRC-0070",
+    "source_id": "SRC-0077",
     "source_type": "VND",
     "grade": 5,
     "relay_depth": 2,
@@ -1783,6 +1945,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "VND|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-010"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1796,7 +1967,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,
@@ -1886,6 +2057,15 @@
       "hedge_test": "n/a"
     },
     "gate_vector": "MED|R:y|D:n|A:n|art:na|meth:na|hedge:na",
+    "gate_evaluation": {
+      "isolation": "single_source_single_claim",
+      "sources_in_context": [
+        "REF-012"
+      ],
+      "assertions_graded_in_this_call": 1,
+      "topic_framing_present": false,
+      "specification_version_read": "4.1"
+    },
     "segmentation": {
       "atomic_assertions": 1,
       "merged": false,
@@ -1899,7 +2079,7 @@
     "grader": {
       "model": "claude-sonnet-5",
       "spec_version": "4.1",
-      "schema_version": 4,
+      "schema_version": 6,
       "normalizer": "html/v1",
       "run": "2026-09-15T12:00:00Z",
       "passes": 1,

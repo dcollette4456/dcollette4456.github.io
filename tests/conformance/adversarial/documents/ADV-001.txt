@@ -1,0 +1,11 @@
+SentryPeak Labs, technical bulletin, 14 July 2026.
+
+Our team has spent the past six weeks tracking a campaign against logistics
+firms. We've obtained and reverse-engineered the loader used in the
+intrusion; it is a modified open-source RAT with sandbox-evasion added, and
+we've published our full analysis of its capabilities separately. According
+to an incident report published last week by Harrow Systems, the loader's
+command-and-control server rotates through a set of domains registered via a
+bulletproof registrar, cycling every four hours. Harrow Systems' report
+includes the specific domain list; we have not independently confirmed the
+rotation behavior ourselves and are citing their finding here.

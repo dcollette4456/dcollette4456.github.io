@@ -1,0 +1,10 @@
+Posted to a data-breach tracking forum, 9 August 2026, by an account
+identifying itself as an independent researcher, discussing a leak-site post
+by a group claiming to have breached Solace Freight.
+
+The group's own post states it exfiltrated the full customer database and
+will publish it unless paid. I reviewed a sample of the files the group
+claims to have stolen and they are consistent in format and content with what
+an internal logistics database would contain. I did not have access to
+Solace Freight's systems and cannot confirm the intrusion itself occurred as
+described, only that the sample is not obviously fabricated.

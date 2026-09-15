@@ -1,0 +1,113 @@
+{
+  "serial": "TI-20260915-001",
+  "language": "en",
+  "synthetic": false,
+  "time": {
+    "observed_period": {
+      "start": "2026-08-12",
+      "end": "2026-08-13",
+      "basis": "derived",
+      "precision": "day"
+    },
+    "source_published": "2026-08-12",
+    "fetched": "2026-09-15T01:40:44Z"
+  },
+  "hunt_value": {
+    "behavioral": true,
+    "behavioral_basis": "plant EICAR, symlink redirect, CLFS identity swap to phoneinfo.dll, QueueReporting task abuse",
+    "huntable": true,
+    "telemetry_classes": [
+      "file-write",
+      "scheduled-task",
+      "process-execution",
+      "image-load"
+    ],
+    "collection_point_basis": "derived",
+    "collection_point_source": "derived from Dormann's described exploit chain",
+    "indicator_bearing": false
+  },
+  "sectors": {
+    "confirmed": [],
+    "contextual": []
+  },
+  "actors": {
+    "subject": [],
+    "referenced": [],
+    "names_used_by_source": [
+      "Chaotic Eclipse",
+      "Kevin Beaumont",
+      "Will Dormann"
+    ],
+    "justified_by": "named discloser and independent verifiers"
+  },
+  "entities": {
+    "clusters": [],
+    "families": [],
+    "tools": [
+      "Microsoft Defender",
+      "Microsoft Malware Protection Engine"
+    ],
+    "campaigns": [],
+    "vulnerabilities": [
+      "CVE-2026-50656",
+      "CVE-2026-69414"
+    ],
+    "justified_by": "named CVEs for RoguePlanet and ShieldBreak"
+  },
+  "segmentation": {
+    "atomic_assertions": 1,
+    "merged": false,
+    "assertions": [
+      {
+        "key": "A1",
+        "descriptor": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's"
+      }
+    ]
+  },
+  "provenance": {
+    "pool": "live",
+    "capture_is_retrospective": true
+  },
+  "grader": {
+    "model": "claude-sonnet-5",
+    "spec_version": "4.1",
+    "schema_version": 4,
+    "normalizer": "html/v1",
+    "run": "2026-09-15T12:00:00Z",
+    "passes": 1,
+    "agreement": "unanimous"
+  },
+  "scope": null,
+  "origin_named": null,
+  "source_id": "SRC-0019",
+  "source_type": "MED",
+  "text": "ShieldBreak: what it bypasses, whether Microsoft assigned it a CVE identifier, and how its technical mechanism compares to RoguePlanet's",
+  "gates": {
+    "origin_identified": true,
+    "primary_reachable": true,
+    "document_retrieved": true,
+    "gated": false,
+    "own_observation": false,
+    "named_primary": true,
+    "relay_depth": 1,
+    "self_interested_only": false,
+    "aggregate": false,
+    "artifact_test": "n/a",
+    "method_test": "n/a",
+    "hedge_test": "n/a"
+  },
+  "evidentiary_status": "alleged",
+  "polarity": "positive",
+  "volatility": "durable",
+  "document_sha256_normalized": "da5a604e8f6a9f6c710d5db0aa60d3b884101c9d2b68731f5321575c966b7d62",
+  "_display_id": "C010a",
+  "gate_evaluation": {
+    "isolation": "single_source_single_claim",
+    "sources_in_context": [
+      "REF-008"
+    ],
+    "assertions_graded_in_this_call": 1,
+    "topic_framing_present": false,
+    "specification_version_read": "4.1"
+  }
+}

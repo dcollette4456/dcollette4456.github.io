@@ -1,0 +1,16 @@
+{
+  "gate_0_is_analysis": false,
+  "source_type": "TEC",
+  "origin_identified": true,
+  "primary_reachable": true,
+  "document_retrieved": true,
+  "gated": false,
+  "own_observation": true,
+  "named_primary": null,
+  "relay_depth": 0,
+  "self_interested_only": false,
+  "aggregate": false,
+  "artifact_test": "pass",
+  "method_test": "n/a",
+  "hedge_test": "n/a"
+}

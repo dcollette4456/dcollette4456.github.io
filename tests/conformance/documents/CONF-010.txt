@@ -1,0 +1,7 @@
+Known Exploited Vulnerabilities Catalog, structured record, accessed 1 July 2026.
+
+CVE-2026-55555. Vendor: Acme Corp. Product: Acme Gateway. Date Added:
+2026-06-01. Due Date: 2026-06-22. Vulnerability Name: Acme Gateway
+Authentication Bypass Vulnerability. Short Description: Acme Gateway contains
+an authentication bypass vulnerability that allows a remote, unauthenticated
+attacker to gain administrative access to the affected device.

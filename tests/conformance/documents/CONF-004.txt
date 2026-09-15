@@ -1,0 +1,7 @@
+Bastion Telemetry Group, Quarterly Exposure Report, published 2 June 2026.
+
+Across Bastion Telemetry Group's global sensor network, 14 percent of
+monitored endpoints running the affected software version showed signs of
+exploitation attempts between 1 and 15 May 2026. This figure is drawn from
+Bastion's own telemetry across its customer base and cannot be independently
+reproduced from data outside Bastion's holdings.

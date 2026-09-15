@@ -1,0 +1,7 @@
+Perimeter Watch Analyst Note, published 5 July 2026.
+
+In our assessment, this pattern of activity likely reflects a broader trend
+toward supply-chain compromise as a preferred initial access vector across the
+threat landscape. We have not observed a specific campaign confirming this
+trend; this is our own synthesis of publicly reported incidents over the past
+year.

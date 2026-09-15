@@ -5,7 +5,7 @@
   "capture_is_retrospective": true,
   "entries": [
     {
-      "source_id": "SRC-0070",
+      "source_id": "SRC-0077",
       "ref": "REF-001",
       "url": "https://arcticwolf.com/resources/blog/crowdstrike-falcon-sensor-local-privilege-escalation-zero-day-falconflank/",
       "format_family": "html",
@@ -130,7 +130,7 @@
       }
     },
     {
-      "source_id": "SRC-0071",
+      "source_id": "SRC-0078",
       "ref": "REF-006",
       "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-falconflank-edr-privilege-escalation-20260/",
       "format_family": "html",
@@ -155,7 +155,7 @@
       }
     },
     {
-      "source_id": "SRC-0072",
+      "source_id": "SRC-0079",
       "ref": "REF-007",
       "url": "https://www.secureinseconds.com/blog/2026-09-06-crowdstrike-falconflank-zero-day-edr-supply-chain",
       "format_family": "html",
@@ -205,7 +205,7 @@
       }
     },
     {
-      "source_id": "SRC-0073",
+      "source_id": "SRC-0080",
       "ref": "REF-009",
       "url": "https://www.malwarebytes.com/blog/bugs/2026/08/shieldbreak-bypasses-microsofts-patch-for-earlier-defender-flaw",
       "format_family": "html",
@@ -230,7 +230,7 @@
       }
     },
     {
-      "source_id": "SRC-0070",
+      "source_id": "SRC-0077",
       "ref": "REF-010",
       "url": "https://arcticwolf.com/resources/blog/cve-2026-50656-rogueplanet-shieldbreak/",
       "format_family": "html",
@@ -306,7 +306,7 @@
       }
     }
   ],
-  "manifest_sha256": "4a04e63e419623edc88a4d92a5263fe4519737b63927244a0f722fc1612d4649",
+  "manifest_sha256": "c5d8f015b012418be671524d9e16432f5fb9a3c88db5c70fd11c33279d7a8d3f",
   "timestamp": {
     "status": "not_yet_anchored"
   }

@@ -1,0 +1,161 @@
+{
+  "_comment": "Adversarial half of the conformance corpus, classification spec v4.2. Unlike tests/conformance/answer_key.json, these documents are not built to make one gate path the only defensible reading -- each is built to make the WRONG path look tempting, by putting a distractor next to the real gate-relevant fact. Same discipline as the cooperative corpus: this key was checked against scripts/claim_writer.py's compute_grade() before any real grader ran against it, and update this file only when the specification changes what the correct answer is, never to match whatever a grader returned.",
+  "schema_version": 1,
+  "specification_version": "4.2",
+  "cases": [
+    {
+      "id": "ADV-001",
+      "path_tested": "Own-observation trap: first-person language about a different fact bleeds into a relayed claim",
+      "trap": "The document opens with 'our team has... obtained and reverse-engineered the loader' (a genuine own observation about the loader's capabilities) immediately before the graded assertion, which is explicitly sourced to Harrow Systems and explicitly NOT independently confirmed. A grader reading momentum rather than gates could carry the 'our team' framing forward onto the C2-rotation claim.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 4,
+        "own_observation": false,
+        "relay_depth": 1,
+        "named_primary": true,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "The graded assertion is the C2 rotation behavior, which the document explicitly attributes to Harrow Systems' report and explicitly states was not independently confirmed by the document's own author. Gate 3: relay of a named, identified primary -- grade 4, relay_depth 1, stop. The earlier own-observation language belongs to a different assertion (the loader's identity and capabilities) and does not transfer."
+    },
+    {
+      "id": "ADV-002",
+      "path_tested": "Aggregate trap: a single-client anecdote is the framing, but the actual justification is a cross-client statistic",
+      "trap": "The document leads with one specific hospital-network client, which reads like a checkable, specific own-observation. The actual sector-targeting assertion is justified two sentences later by 'the pattern... across our client base this quarter' -- an aggregate over the source's own private telemetry, not the single anecdote.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 3,
+        "own_observation": true,
+        "aggregate": true,
+        "relay_depth": 0,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "Gate 4: is the claim an aggregate over the source's private data -- yes, the sector-targeting assessment rests on a cross-client pattern that nobody outside Northwind's own telemetry can reproduce. Grade 3, stop, per section 5. The single hospital anecdote is scene-setting for a different, narrower claim (that one client was targeted) and is not the assertion under grading."
+    },
+    {
+      "id": "ADV-003",
+      "path_tested": "Hedge trap: hedging language present in the document, attached to the wrong assertion",
+      "trap": "The document hedges heavily on the initial-access vector ('unclear... likely... cannot rule out') immediately before stating the attribution 'with certainty' and with no confidence qualifier at all. A grader that lets the nearby hedge language color the attribution's hedge test would wrongly mark it pass.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 2,
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "fail",
+        "method_test": "pass",
+        "hedge_test": "fail"
+      },
+      "why": "Own IR engagement (own_observation true). The attribution to Cobalt Serpent is an inferential actor-linkage claim and section 5's hedge test applies to it specifically, not to the separate initial-access-vector sentence. The document states the attribution 'with certainty' -- hedge test fails. Method test passes: the document describes how it reached the attribution (overlapping tooling and hosting patterns identified during the engagement). Artifact test fails: no specific checkable artifact (hash, domain, IOC) is published for the overlap. Any applicable test failing caps at grade 2."
+    },
+    {
+      "id": "ADV-004",
+      "path_tested": "Artifact trap: real, checkable artifacts are published, but for a different assertion than the one graded",
+      "trap": "A hash and an IP are published prominently and would satisfy the artifact test for the loader/payload claim. The graded assertion -- deliberate spacing of post-compromise actions -- is explicitly stated to have no artifact beyond the behavioral pattern itself. A grader crediting the nearby hash/IP toward this claim's artifact test would wrongly mark it pass.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 2,
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "fail",
+        "method_test": "pass",
+        "hedge_test": "n/a"
+      },
+      "why": "Own engagement (own_observation true). The artifact test asks whether something specific and checkable was published about THIS assertion -- the document is explicit that the spacing claim has no artifact beyond the pattern itself, so artifact_test fails regardless of the unrelated hash and IP published two sentences earlier for the loader/payload claim. Method test passes: the document states how it concluded this (review of the intrusion timeline). Hedge n/a: a direct behavioral observation, not an attribution or intent claim about who did it. Any applicable test failing caps at grade 2."
+    },
+    {
+      "id": "ADV-005",
+      "path_tested": "No-origin trap: a self-referential citation loop dressed as confirmation",
+      "trap": "'We can now confirm... consistent with what we first reported' reads like an outlet standing behind verified reporting. It names no source at all -- only the outlet's own earlier, equally unsourced claim. This is different from CONF-006's 'unnamed sources familiar with the investigation,' which does count as an identified-if-unreachable origin; here there is no origin of any kind, named or unnamed, beyond the outlet asserting it.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 6,
+        "own_observation": false,
+        "origin_identified": false,
+        "named_primary": false,
+        "relay_depth": null,
+        "self_interested_only": false,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "No origin is named, not even an unnamed role or affiliation -- the only support offered is the outlet's own prior, equally unsourced claim, and the company itself has issued no statement. Gate 3: 'the assertion has no traceable origin at all' -- grade 6, stop. compute_grade()'s no-named-primary-and-relay-depth-null branch returns grade 6 for exactly this shape."
+    },
+    {
+      "id": "ADV-006",
+      "path_tested": "Self-interested-only trap: a third party appears to corroborate, but explicitly does not confirm the graded fact",
+      "trap": "An 'independent researcher' reviewing the leaked sample reads like outside verification. Read carefully, that reviewer explicitly disclaims confirming the intrusion itself -- only that the sample 'is not obviously fabricated.' The only party actually vouching that the intrusion occurred as described is the attacker's own leak-site post, which benefits from the claim.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 6,
+        "own_observation": false,
+        "self_interested_only": true,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "The graded assertion is that the intrusion occurred and the database was exfiltrated as described. Only the attacker's own post supports that specific claim, and the claim benefits the attacker (ransom pressure). The researcher's statement supports a narrower, different claim (the sample's plausibility) and explicitly does not extend to the intrusion's occurrence. own_observation false, self_interested_only true per gate 3's separate self-interested-only branch -- grade 6."
+    },
+    {
+      "id": "ADV-007",
+      "path_tested": "Relay-depth trap: two outlets citing the same single upstream source reads like independent corroboration, not extra distance",
+      "trap": "'TechDaily and Continental Wire have both now covered this' sounds like two-source agreement. Both outlets are explicitly relaying the same single original source, SecBlog, and the document being graded is itself relaying both of them -- three documents in a chain, two hops between the document read and the original observation.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 5,
+        "own_observation": false,
+        "relay_depth": 2,
+        "artifact_test": "n/a",
+        "method_test": "n/a",
+        "hedge_test": "n/a"
+      },
+      "why": "Signal Ledger Blog relays TechDaily and Continental Wire, both of which the document itself says are relaying SecBlog's original findings. That is two documents between the document read and any underlying observation, per CONF-007's rule -- grade 5, relay_depth 2, stop. The two-outlet framing is not corroboration; it is one relay chain described from two mirrors, and section 7's independence gate would find nothing here even if this were being scored for corroboration rather than grade."
+    },
+    {
+      "id": "ADV-008",
+      "path_tested": "Negative-claim trap: language that sounds like scope but names no population, sensor coverage, or time period",
+      "trap": "'A broad and diverse set of environments across many industries and geographies' reads as though it satisfies section 29's scope requirement. It states no customer count, no sensor coverage, no technique-specific detection method, and no time window -- it is marketing-register vagueness, not a stated scope, and a grader that transcribes it into the scope field as though it counts would let this claim through ungated.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 6,
+        "own_observation": true,
+        "aggregate": false,
+        "polarity": "negative",
+        "scope": null,
+        "artifact_test": "n/a",
+        "method_test": "fail",
+        "hedge_test": "n/a"
+      },
+      "why": "This is a negative observation (polarity negative), gradeable normally if scope is real, per section 29. The document names no actual population, sensor coverage, or time period -- only vague marketing language -- so the correct answer records scope as null (no real scope stated) rather than transcribing the sentence as though it satisfied the requirement. Section 29: 'we found no evidence' with no stated scope is grade 6 without it, and compute_grade()'s negative-polarity-no-scope branch forces grade 6 regardless of how the interim artifact/method tests read."
+    },
+    {
+      "id": "ADV-009",
+      "path_tested": "Source-type trap: field/bullet formatting imitates a structured (TEC) record, but a narrative author is present",
+      "trap": "The CVE/Status/Date-added bullet layout looks like the KEV-style catalog entry in CONF-010, which correctly gets source_type TEC and a method_test n/a carve-out. This document has a narrative author speaking in first person ('we wanted to flag,' 'we're monitoring... will update') around the bullets -- it is a vendor blog post, not a narrative-free structured record, and the TEC carve-out does not apply to it.",
+      "expected": {
+        "gate_0_is_analysis": false,
+        "expected_grade": 2,
+        "source_type": "VND",
+        "own_observation": true,
+        "relay_depth": 0,
+        "artifact_test": "pass",
+        "method_test": "fail",
+        "hedge_test": "n/a"
+      },
+      "why": "Gate 1: a document with a narrative author is VND, not TEC, regardless of table-like formatting inside it -- the TEC override in section 5 is for structured records with no narrative author, and this post has one throughout. Because it is VND, method_test is NOT waived to n/a: the post states no collection method or basis for the 'actively exploited' status, so method_test fails. Artifact test passes: the CVE identifier itself is a checkable artifact, per CONF-010's own reasoning. Own observation true (their own watchlist). Any applicable test failing caps at grade 2 -- not the grade 1 a TEC misclassification would produce."
+    },
+    {
+      "id": "ADV-010",
+      "path_tested": "Gate 0 trap: the author's own analytic synthesis, phrased in the domain's normal claim-shape ('actors,' 'activity'), rather than in CONF-011's more obviously meta framing",
+      "trap": "The assertion reads like a typical sourced finding about actor behavior ('supply-chain compromise... becoming more accessible to lower-tier actors'), the shape most claims in this corpus take, which could tempt a grader straight into gates 1 through 5 looking for an origin, find none, and land on grade 6 (unattributed assertion) instead of recognizing gate 0 fires first.",
+      "expected": {
+        "gate_0_is_analysis": true,
+        "expected_grade": null,
+        "expected_tag_family": "ANL"
+      },
+      "why": "The document states directly, twice, that this is the author's own synthesis across unrelated engagements and its own analytic judgment, not a finding from any single observed campaign. Gate 0: the author's own inference, synthesis, correlation, forecast, or recommendation is not a sourced claim -- ANL, a confidence word, stop. Grading this against gates 1 through 5 as though it were a sourced claim -- which its surface phrasing invites -- is itself the wrong answer, and would produce grade 6 rather than the correct 'not a claim at all.'"
+    }
+  ]
+}

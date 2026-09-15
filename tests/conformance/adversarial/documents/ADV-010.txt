@@ -1,0 +1,9 @@
+Internal analysis note, Meridian Threat Group, 30 July 2026.
+
+Across the several engagements our team has worked this year involving
+supply-chain compromises, we have not found a consistent single actor behind
+them; rather, our own assessment, based on synthesizing patterns across these
+unrelated cases, is that supply-chain compromise as a technique is becoming
+more accessible to lower-tier actors generally. This is our own analytic
+judgment and is not based on any single observed campaign; we assess this
+with moderate confidence.

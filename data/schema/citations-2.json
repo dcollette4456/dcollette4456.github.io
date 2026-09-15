@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dcollette4456.github.io/schema/citations-2.json",
+  "title": "Issue citation list, schema version 2",
+  "description": "One file per issue, data/citations/{serial}.json, listing every source that issue cites -- the input the source registry (data/sources/registry.json) and the evidence manifests (data/evidence/) are built from. Order matters: it is the order REF numbers are assigned in the evidence manifest, so append new citations rather than reordering. v2 adds type_basis (classification spec §21 amendment): 'type' is author-supplied, a change from the pipeline auto-assigning it from domain/publisher name, and type_basis is where the author records what the publisher's own self-description actually said, so the judgment call is checkable. type_basis is optional rather than required, on purpose -- every citation recorded under v1 (schema version 1) has no such field, and backfilling one now would be inventing a self-description nobody actually read at the time. Required for anything cited going forward; absent, not fabricated, on what's already on file.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["url", "canonical_name", "type"],
+    "properties": {
+      "url": { "type": "string", "pattern": "^https?://" },
+      "canonical_name": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Reuse the exact string already in the registry for this domain where one exists, so this citation folds into the same registry entry instead of minting a duplicate."
+      },
+      "type": {
+        "type": "string",
+        "description": "Classification spec §3. Author-supplied: the citing author reads the publisher's self-description and assigns the type, per classification spec §21's amendment. This makes the source-record denominators in §12 author-influenced rather than mechanical, and that is disclosed via type_basis rather than folded into housekeeping.",
+        "enum": ["GOV", "VND", "MED", "ACA", "TEC", "IND", "NPO", "AGG", "SOC", "ADV", "ANL"]
+      },
+      "type_basis": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The publisher's self-description, verbatim, in the citing author's own words -- what the site says about itself, not a judgment about whether that's accurate. Optional: absent on anything cited before this field existed (schema v1), required going forward."
+      },
+      "origin": {
+        "type": "string",
+        "description": "Two-letter country code. Absent where not established with confidence; never guessed.",
+        "pattern": "^[A-Z]{2}$"
+      }
+    }
+  }
+}

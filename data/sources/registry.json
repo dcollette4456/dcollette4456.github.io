@@ -700,6 +700,7 @@
       "TI-20260830-001",
       "TI-20260830-002",
       "TI-20260903-001",
+      "TI-20260914-001",
       "TI-20260915-001"
     ],
     "admission": {
@@ -731,6 +732,7 @@
         "TI-20260830-001",
         "TI-20260830-002",
         "TI-20260903-001",
+        "TI-20260914-001",
         "TI-20260915-001"
       ]
     }
@@ -1194,7 +1196,8 @@
     "synthetic": false,
     "cited_in": [
       "TI-20260809-001",
-      "TI-20260822-001"
+      "TI-20260822-001",
+      "TI-20260914-001"
     ],
     "admission": {
       "first_seen_url": "https://therecord.media/south-korea-cyberattack-foreign-ministry",
@@ -1219,7 +1222,8 @@
       "record_status": "insufficient",
       "from_issues": [
         "TI-20260809-001",
-        "TI-20260822-001"
+        "TI-20260822-001",
+        "TI-20260914-001"
       ]
     },
     "origin": "US"
@@ -2561,6 +2565,7 @@
     "synthetic": false,
     "cited_in": [
       "TI-20260903-001",
+      "TI-20260914-001",
       "TI-20260915-001"
     ],
     "admission": {
@@ -2586,12 +2591,266 @@
       "record_status": "insufficient",
       "from_issues": [
         "TI-20260903-001",
+        "TI-20260914-001",
         "TI-20260915-001"
       ]
     }
   },
   {
     "source_id": "SRC-0070",
+    "canonical_name": "Anthropic Threat Intelligence",
+    "canonical_domain": "anthropic.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.anthropic.com/threat-intelligence-report-september-2026",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "VND",
+      "type_basis": "self-described AI model developer publishing its own threat intelligence report about misuse of its own platform",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0071",
+    "canonical_name": "Hunt.io",
+    "canonical_domain": "hunt.io",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://hunt.io/blog/chinese-operator-secflow-claude-qwen-deepseek-asia",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "VND",
+      "type_basis": "self-described commercial threat-intelligence research vendor publishing its own investigative blog",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0072",
+    "canonical_name": "Sygnia",
+    "canonical_domain": "sygnia.co",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.sygnia.co/blog/fire-ant-evolves-from-hypervisors-to-trusted-infrastructure/",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "VND",
+      "type_basis": "self-described incident-response and cybersecurity vendor publishing its own investigation",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0073",
+    "canonical_name": "Network World",
+    "canonical_domain": "networkworld.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.networkworld.com/article/4216884/china-linked-hackers-turn-cisco-ios-xr-routers-into-covert-attack-infrastructure.html",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "MED",
+      "type_basis": "self-described technology and IT trade publication",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0074",
+    "canonical_name": "Proofpoint",
+    "canonical_domain": "proofpoint.com",
+    "type": "VND",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.proofpoint.com/us/blog/threat-insight/once-bluemoon-multiple-state-aligned-threat-actors-rapidly-adopt-novel-exploit",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "VND",
+      "type_basis": "self-described commercial cybersecurity vendor publishing its own threat research",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0075",
+    "canonical_name": "TechNadu",
+    "canonical_domain": "technadu.com",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.technadu.com/bluemoon-exploit-kit-chains-chrome-windows-zero-days-in-espionage-campaigns/636326/",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "MED",
+      "type_basis": "self-described technology news publication",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    }
+  },
+  {
+    "source_id": "SRC-0076",
+    "canonical_name": "it-connect.tech",
+    "canonical_domain": "it-connect.tech",
+    "type": "MED",
+    "language": "en",
+    "synthetic": false,
+    "cited_in": [
+      "TI-20260914-001"
+    ],
+    "admission": {
+      "first_seen_url": "https://www.it-connect.tech/bluemoon-how-updated-pcs-were-compromised-through-chrome-and-windows-flaws/",
+      "admitted": "2026-09-14T22:27:01Z",
+      "assigned_type": "MED",
+      "type_basis": "self-described French-language IT and security news/tutorial site",
+      "domain_age_days": null,
+      "impersonation_check": "no near-match against registry canonical domains",
+      "review_flag": "first_citation",
+      "reviewed": false
+    },
+    "live": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient"
+    },
+    "backfill": {
+      "unique_claims": 0,
+      "citations": 0,
+      "distribution": {},
+      "record_status": "insufficient",
+      "from_issues": [
+        "TI-20260914-001"
+      ]
+    },
+    "origin": "FR"
+  },
+  {
+    "source_id": "SRC-0077",
     "canonical_name": "Arctic Wolf",
     "canonical_domain": "arcticwolf.com",
     "type": "VND",
@@ -2602,9 +2861,9 @@
     ],
     "admission": {
       "first_seen_url": "https://arcticwolf.com/resources/blog/crowdstrike-falcon-sensor-local-privilege-escalation-zero-day-falconflank/",
-      "admitted": "2026-09-15T01:39:20Z",
+      "admitted": "2026-09-15T08:45:53Z",
       "assigned_type": "VND",
-      "type_basis": "Malwarebytes-published company page not reachable at time of check; Wikipedia/press-directory corroboration (Datanyze, ZoomInfo, company overview page) describes Arctic Wolf as a security operations/MDR vendor headquartered in Eden Prairie, Minnesota. Type assigned VND on that basis, not from the domain alone.",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
       "domain_age_days": null,
       "impersonation_check": "no near-match against registry canonical domains",
       "review_flag": "first_citation",
@@ -2628,7 +2887,7 @@
     "origin": "US"
   },
   {
-    "source_id": "SRC-0071",
+    "source_id": "SRC-0078",
     "canonical_name": "Cloud Security Alliance",
     "canonical_domain": "labs.cloudsecurityalliance.org",
     "type": "NPO",
@@ -2639,9 +2898,9 @@
     ],
     "admission": {
       "first_seen_url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-falconflank-edr-privilege-escalation-20260/",
-      "admitted": "2026-09-15T01:39:20Z",
+      "admitted": "2026-09-15T08:45:53Z",
       "assigned_type": "NPO",
-      "type_basis": "cloudsecurityalliance.org's own About page (direct fetch timed out) corroborated via third-party company-profile sources describing CSA as a nonprofit industry association headquartered in Seattle, WA, founded 2008, publishing cloud-security research and best practices. Type assigned NPO on that basis.",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
       "domain_age_days": null,
       "impersonation_check": "no near-match against registry canonical domains",
       "review_flag": "first_citation",
@@ -2665,7 +2924,7 @@
     "origin": "US"
   },
   {
-    "source_id": "SRC-0072",
+    "source_id": "SRC-0079",
     "canonical_name": "Secure in Seconds",
     "canonical_domain": "secureinseconds.com",
     "type": "IND",
@@ -2676,9 +2935,9 @@
     ],
     "admission": {
       "first_seen_url": "https://www.secureinseconds.com/blog/2026-09-06-crowdstrike-falconflank-zero-day-edr-supply-chain",
-      "admitted": "2026-09-15T01:39:20Z",
+      "admitted": "2026-09-15T08:45:53Z",
       "assigned_type": "IND",
-      "type_basis": "secureinseconds.com/about, fetched directly: describes itself as an independent creator's newsletter/blog run by one named individual (a practicing security architect), not a vendor selling a product or service. Type assigned IND on that basis.",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
       "domain_age_days": null,
       "impersonation_check": "no near-match against registry canonical domains",
       "review_flag": "first_citation",
@@ -2701,7 +2960,7 @@
     }
   },
   {
-    "source_id": "SRC-0073",
+    "source_id": "SRC-0080",
     "canonical_name": "Malwarebytes",
     "canonical_domain": "malwarebytes.com",
     "type": "VND",
@@ -2712,9 +2971,9 @@
     ],
     "admission": {
       "first_seen_url": "https://www.malwarebytes.com/blog/bugs/2026/08/shieldbreak-bypasses-microsofts-patch-for-earlier-defender-flaw",
-      "admitted": "2026-09-15T01:39:20Z",
+      "admitted": "2026-09-15T08:45:53Z",
       "assigned_type": "VND",
-      "type_basis": "malwarebytes.com/company, fetched directly: self-describes as a cybersecurity and privacy protection company headquartered in Santa Clara, CA, selling consumer and enterprise security products. Type assigned VND on that basis.",
+      "type_basis": "no self-description recorded at citation; type assigned by the citing author from the publisher's name and domain, not yet verified against a fetched about/masthead page",
       "domain_age_days": null,
       "impersonation_check": "no near-match against registry canonical domains",
       "review_flag": "first_citation",
